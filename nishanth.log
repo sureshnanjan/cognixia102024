@@ -1,0 +1,860 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20241009123145
+Username: ASCENDION\nishanth.jaganathan
+RunAs User: ASCENDION\nishanth.jaganathan
+Configuration Name: 
+Machine: LAPTOP-O3N4467T (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 18532
+PSVersion: 5.1.22621.4111
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4111
+BuildVersion: 10.0.22621.4111
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is nishanth.log
+PS C:\Users\nishanth.jaganathan> new-item -path nishanth -name 'QA-Training' -itemtype directory
+
+
+    Directory:
+    C:\Users\nishanth.jaganathan\nishanth
+
+
+Mode                 LastWriteTime         Length
+----                 -------------         ------
+d-----        09-10-2024     12:33
+
+
+PS C:\Users\nishanth.jaganathan> set-location nishanth\QA-Training
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> git --version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the
+name of a cmdlet, function, script file, or
+operable program. Check the spelling of the name,
+or if a path was included, verify that the path
+is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (gi
+   t:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundExce
+   ption
+
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> invoke-webrequest -uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe%20-OutFile%20git-installer.exe
+>> TerminatingError(Invoke-WebRequest): "The request was aborted: The connection was closed unexpectedly."
+invoke-webrequest : The request was aborted: The connection was closed unexpectedly.
+At line:1 char:1
++ invoke-webrequest -uri https://github.com/git-for-windows/git/release ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest], 
+WebException
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+invoke-webrequest : The request was aborted: The
+connection was closed unexpectedly.
+At line:1 char:1
++ invoke-webrequest -uri
+https://github.com/git-for-windows/git/release ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (
+   System.Net.HttpWebRequest:HttpWebRequest) [In
+  voke-WebRequest], WebException
+    + FullyQualifiedErrorId : WebCmdletWebRespons
+   eException,Microsoft.PowerShell.Commands.Invo
+  keWebRequestCommand
+
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> invoke-webrequest -uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe%20-OutFile%20git-installer.exe
+>> TerminatingError(Invoke-WebRequest): "Skip to content 
+Navigation Menu
+Toggle navigation 
+ 
+Sign in 
+Product  
+Actions
+Automate any workflow 
+Security
+Find and fix vulnerabilities 
+Codespaces
+Instant dev environments 
+GitHub Copilot
+Write better code with AI 
+Code review
+Manage code changes 
+Issues
+Plan and track work 
+Discussions
+Collaborate outside of code 
+Explore 
+All features 
+Documentation 
+GitHub Skills 
+Blog 
+Solutions  
+By size 
+Enterprise 
+Teams 
+Startups 
+By industry 
+Healthcare 
+Financial services 
+Manufacturing 
+By use case 
+CI/CD & Automation 
+DevOps 
+DevSecOps 
+Resources  
+Topics 
+AI 
+DevOps 
+Security 
+Software Development 
+View all 
+Explore 
+Learning Pathways 
+White papers, Ebooks, Webinars 
+Customer Stories 
+Partners 
+Open Source  
+GitHub Sponsors
+Fund open source developers 
+The ReadME Project
+GitHub community articles 
+Repositories 
+Topics 
+Trending 
+Collections 
+Enterprise  
+Enterprise platform
+AI-powered developer platform 
+Available add-ons 
+Advanced Security
+Enterprise-grade security features "
+invoke-webrequest : Skip to content 
+Navigation Menu
+Toggle navigation 
+ 
+Sign in 
+Product  
+Actions
+Automate any workflow 
+Security
+Find and fix vulnerabilities 
+Codespaces
+Instant dev environments 
+GitHub Copilot
+Write better code with AI 
+Code review
+Manage code changes 
+Issues
+Plan and track work 
+Discussions
+Collaborate outside of code 
+Explore 
+All features 
+Documentation 
+GitHub Skills 
+Blog 
+Solutions  
+By size 
+Enterprise 
+Teams 
+Startups 
+By industry 
+Healthcare 
+Financial services 
+Manufacturing 
+By use case 
+CI/CD & Automation 
+DevOps 
+DevSecOps 
+Resources  
+Topics 
+AI 
+DevOps 
+Security 
+Software Development 
+View all 
+Explore 
+Learning Pathways 
+White papers, Ebooks, Webinars 
+Customer Stories 
+Partners 
+Open Source  
+GitHub Sponsors
+Fund open source developers 
+The ReadME Project
+GitHub community articles 
+Repositories 
+Topics 
+Trending 
+Collections 
+Enterprise  
+Enterprise platform
+AI-powered developer platform 
+Available add-ons 
+Advanced Security
+Enterprise-grade security features 
+At line:1 char:1
++ invoke-webrequest -uri https://github.com/git-for-windows/git/release ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest], 
+WebException
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+invoke-webrequest : Skip to content
+Navigation Menu
+Toggle navigation
+
+Sign in
+Product
+Actions
+Automate any workflow
+Security
+Find and fix vulnerabilities
+Codespaces
+Instant dev environments
+GitHub Copilot
+Write better code with AI
+Code review
+Manage code changes
+Issues
+Plan and track work
+Discussions
+Collaborate outside of code
+Explore
+All features
+Documentation
+GitHub Skills
+Blog
+Solutions
+By size
+Enterprise
+Teams
+Startups
+By industry
+Healthcare
+Financial services
+Manufacturing
+By use case
+CI/CD & Automation
+DevOps
+DevSecOps
+Resources
+Topics
+AI
+DevOps
+Security
+Software Development
+View all
+Explore
+Learning Pathways
+White papers, Ebooks, Webinars
+Customer Stories
+Partners
+Open Source
+GitHub Sponsors
+Fund open source developers
+The ReadME Project
+GitHub community articles
+Repositories
+Topics
+Trending
+Collections
+Enterprise
+Enterprise platform
+AI-powered developer platform
+Available add-ons
+Advanced Security
+Enterprise-grade security features
+At line:1 char:1
++ invoke-webrequest -uri
+https://github.com/git-for-windows/git/release ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (
+   System.Net.HttpWebRequest:HttpWebRequest) [In
+  voke-WebRequest], WebException
+    + FullyQualifiedErrorId : WebCmdletWebRespons
+   eException,Microsoft.PowerShell.Commands.Invo
+  keWebRequestCommand
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> git --version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the
+name of a cmdlet, function, script file, or
+operable program. Check the spelling of the name,
+or if a path was included, verify that the path
+is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (gi
+   t:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundExce
+   ption
+
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> invoke-webrequest -uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe%20-OutFile%20git-installer.exe
+>> TerminatingError(Invoke-WebRequest): "Skip to content 
+Navigation Menu
+Toggle navigation 
+ 
+Sign in 
+Product  
+Actions
+Automate any workflow 
+Security
+Find and fix vulnerabilities 
+Codespaces
+Instant dev environments 
+GitHub Copilot
+Write better code with AI 
+Code review
+Manage code changes 
+Issues
+Plan and track work 
+Discussions
+Collaborate outside of code 
+Explore 
+All features 
+Documentation 
+GitHub Skills 
+Blog 
+Solutions  
+By size 
+Enterprise 
+Teams 
+Startups 
+By industry 
+Healthcare 
+Financial services 
+Manufacturing 
+By use case 
+CI/CD & Automation 
+DevOps 
+DevSecOps 
+Resources  
+Topics 
+AI 
+DevOps 
+Security 
+Software Development 
+View all 
+Explore 
+Learning Pathways 
+White papers, Ebooks, Webinars 
+Customer Stories 
+Partners 
+Open Source  
+GitHub Sponsors
+Fund open source developers 
+The ReadME Project
+GitHub community articles 
+Repositories 
+Topics 
+Trending 
+Collections 
+Enterprise  
+Enterprise platform
+AI-powered developer platform 
+Available add-ons 
+Advanced Security
+Enterprise-grade security features "
+invoke-webrequest : Skip to content 
+Navigation Menu
+Toggle navigation 
+ 
+Sign in 
+Product  
+Actions
+Automate any workflow 
+Security
+Find and fix vulnerabilities 
+Codespaces
+Instant dev environments 
+GitHub Copilot
+Write better code with AI 
+Code review
+Manage code changes 
+Issues
+Plan and track work 
+Discussions
+Collaborate outside of code 
+Explore 
+All features 
+Documentation 
+GitHub Skills 
+Blog 
+Solutions  
+By size 
+Enterprise 
+Teams 
+Startups 
+By industry 
+Healthcare 
+Financial services 
+Manufacturing 
+By use case 
+CI/CD & Automation 
+DevOps 
+DevSecOps 
+Resources  
+Topics 
+AI 
+DevOps 
+Security 
+Software Development 
+View all 
+Explore 
+Learning Pathways 
+White papers, Ebooks, Webinars 
+Customer Stories 
+Partners 
+Open Source  
+GitHub Sponsors
+Fund open source developers 
+The ReadME Project
+GitHub community articles 
+Repositories 
+Topics 
+Trending 
+Collections 
+Enterprise  
+Enterprise platform
+AI-powered developer platform 
+Available add-ons 
+Advanced Security
+Enterprise-grade security features 
+At line:1 char:1
++ invoke-webrequest -uri https://github.com/git-for-windows/git/release ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest], 
+WebException
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+invoke-webrequest : Skip to content
+Navigation Menu
+Toggle navigation
+
+Sign in
+Product
+Actions
+Automate any workflow
+Security
+Find and fix vulnerabilities
+Codespaces
+Instant dev environments
+GitHub Copilot
+Write better code with AI
+Code review
+Manage code changes
+Issues
+Plan and track work
+Discussions
+Collaborate outside of code
+Explore
+All features
+Documentation
+GitHub Skills
+Blog
+Solutions
+By size
+Enterprise
+Teams
+Startups
+By industry
+Healthcare
+Financial services
+Manufacturing
+By use case
+CI/CD & Automation
+DevOps
+DevSecOps
+Resources
+Topics
+AI
+DevOps
+Security
+Software Development
+View all
+Explore
+Learning Pathways
+White papers, Ebooks, Webinars
+Customer Stories
+Partners
+Open Source
+GitHub Sponsors
+Fund open source developers
+The ReadME Project
+GitHub community articles
+Repositories
+Topics
+Trending
+Collections
+Enterprise
+Enterprise platform
+AI-powered developer platform
+Available add-ons
+Advanced Security
+Enterprise-grade security features
+At line:1 char:1
++ invoke-webrequest -uri
+https://github.com/git-for-windows/git/release ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (
+   System.Net.HttpWebRequest:HttpWebRequest) [In
+  voke-WebRequest], WebException
+    + FullyQualifiedErrorId : WebCmdletWebRespons
+   eException,Microsoft.PowerShell.Commands.Invo
+  keWebRequestCommand
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe%20-OutFile%20git-installer.exe
+>> TerminatingError(Invoke-WebRequest): "The request was aborted: The connection was closed unexpectedly."
+Invoke-WebRequest : The request was aborted: The connection was closed unexpectedly.
+At line:1 char:1
++ Invoke-WebRequest -Uri https://github.com/git-for-windows/git/release ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest], 
+WebException
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+Invoke-WebRequest : The request was aborted: The
+connection was closed unexpectedly.
+At line:1 char:1
++ Invoke-WebRequest -Uri
+https://github.com/git-for-windows/git/release ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (
+   System.Net.HttpWebRequest:HttpWebRequest) [In
+  voke-WebRequest], WebException
+    + FullyQualifiedErrorId : WebCmdletWebRespons
+   eException,Microsoft.PowerShell.Commands.Invo
+  keWebRequestCommand
+
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe%20-OutFile%20git-installer.exe
+>> TerminatingError(Invoke-WebRequest): "Skip to content 
+Navigation Menu
+Toggle navigation 
+ 
+Sign in 
+Product  
+Actions
+Automate any workflow 
+Security
+Find and fix vulnerabilities 
+Codespaces
+Instant dev environments 
+GitHub Copilot
+Write better code with AI 
+Code review
+Manage code changes 
+Issues
+Plan and track work 
+Discussions
+Collaborate outside of code 
+Explore 
+All features 
+Documentation 
+GitHub Skills 
+Blog 
+Solutions  
+By size 
+Enterprise 
+Teams 
+Startups 
+By industry 
+Healthcare 
+Financial services 
+Manufacturing 
+By use case 
+CI/CD & Automation 
+DevOps 
+DevSecOps 
+Resources  
+Topics 
+AI 
+DevOps 
+Security 
+Software Development 
+View all 
+Explore 
+Learning Pathways 
+White papers, Ebooks, Webinars 
+Customer Stories 
+Partners 
+Open Source  
+GitHub Sponsors
+Fund open source developers 
+The ReadME Project
+GitHub community articles 
+Repositories 
+Topics 
+Trending 
+Collections 
+Enterprise  
+Enterprise platform
+AI-powered developer platform 
+Available add-ons "
+Invoke-WebRequest : Skip to content 
+Navigation Menu
+Toggle navigation 
+ 
+Sign in 
+Product  
+Actions
+Automate any workflow 
+Security
+Find and fix vulnerabilities 
+Codespaces
+Instant dev environments 
+GitHub Copilot
+Write better code with AI 
+Code review
+Manage code changes 
+Issues
+Plan and track work 
+Discussions
+Collaborate outside of code 
+Explore 
+All features 
+Documentation 
+GitHub Skills 
+Blog 
+Solutions  
+By size 
+Enterprise 
+Teams 
+Startups 
+By industry 
+Healthcare 
+Financial services 
+Manufacturing 
+By use case 
+CI/CD & Automation 
+DevOps 
+DevSecOps 
+Resources  
+Topics 
+AI 
+DevOps 
+Security 
+Software Development 
+View all 
+Explore 
+Learning Pathways 
+White papers, Ebooks, Webinars 
+Customer Stories 
+Partners 
+Open Source  
+GitHub Sponsors
+Fund open source developers 
+The ReadME Project
+GitHub community articles 
+Repositories 
+Topics 
+Trending 
+Collections 
+Enterprise  
+Enterprise platform
+AI-powered developer platform 
+Available add-ons 
+At line:1 char:1
++ Invoke-WebRequest -Uri https://github.com/git-for-windows/git/release ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest], 
+WebException
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+Invoke-WebRequest : Skip to content
+Navigation Menu
+Toggle navigation
+
+Sign in
+Product
+Actions
+Automate any workflow
+Security
+Find and fix vulnerabilities
+Codespaces
+Instant dev environments
+GitHub Copilot
+Write better code with AI
+Code review
+Manage code changes
+Issues
+Plan and track work
+Discussions
+Collaborate outside of code
+Explore
+All features
+Documentation
+GitHub Skills
+Blog
+Solutions
+By size
+Enterprise
+Teams
+Startups
+By industry
+Healthcare
+Financial services
+Manufacturing
+By use case
+CI/CD & Automation
+DevOps
+DevSecOps
+Resources
+Topics
+AI
+DevOps
+Security
+Software Development
+View all
+Explore
+Learning Pathways
+White papers, Ebooks, Webinars
+Customer Stories
+Partners
+Open Source
+GitHub Sponsors
+Fund open source developers
+The ReadME Project
+GitHub community articles
+Repositories
+Topics
+Trending
+Collections
+Enterprise
+Enterprise platform
+AI-powered developer platform
+Available add-ons
+At line:1 char:1
++ Invoke-WebRequest -Uri
+https://github.com/git-for-windows/git/release ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (
+   System.Net.HttpWebRequest:HttpWebRequest) [In
+  voke-WebRequest], WebException
+    + FullyQualifiedErrorId : WebCmdletWebRespons
+   eException,Microsoft.PowerShell.Commands.Invo
+  keWebRequestCommand
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> invoke-webrequest -uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe -OutFile git-installer.exe
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> .\git-installer.exe /VERYSILENT /NORESTART
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> git --version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the
+name of a cmdlet, function, script file, or
+operable program. Check the spelling of the name,
+or if a path was included, verify that the path
+is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (gi
+   t:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundExce
+   ption
+
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> invoke-webrequest -uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe -OutFile git-installer.exe
+>> TerminatingError(Invoke-WebRequest): "The process cannot access the file 'C:\Users\nishanth.jaganathan\nishanth\QA-Training\git-installer.exe' because it is being used by another process."
+invoke-webrequest : The process cannot access the file 
+'C:\Users\nishanth.jaganathan\nishanth\QA-Training\git-installer.exe' because it is being used by another process.
+At line:1 char:1
++ invoke-webrequest -uri https://github.com/git-for-windows/git/release ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Invoke-WebRequest], IOException
+    + FullyQualifiedErrorId : System.IO.IOException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+invoke-webrequest : The process cannot access the
+file 'C:\Users\nishanth.jaganathan\nishanth\QA-Tra
+ining\git-installer.exe' because it is being used
+by another process.
+At line:1 char:1
++ invoke-webrequest -uri
+https://github.com/git-for-windows/git/release ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [
+   Invoke-WebRequest], IOException
+    + FullyQualifiedErrorId : System.IO.IOExcepti
+   on,Microsoft.PowerShell.Commands.InvokeWebReq
+  uestCommand
+
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> .\git-installer.exe /VERYSILENT /NORESTART
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> git --version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the
+name of a cmdlet, function, script file, or
+operable program. Check the spelling of the name,
+or if a path was included, verify that the path
+is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (gi
+   t:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundExce
+   ption
+
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> git --version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the
+name of a cmdlet, function, script file, or
+operable program. Check the spelling of the name,
+or if a path was included, verify that the path
+is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (gi
+   t:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundExce
+   ption
+
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> git --version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of
+the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\nishanth.jaganathan\nishanth\QA-Training> .\git-installer.exe /VERYSILENT /NORESTART
