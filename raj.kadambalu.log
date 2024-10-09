@@ -1,0 +1,87 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20241009123307
+Username: ASCENDION\raj.kadambalu
+RunAs User: ASCENDION\raj.kadambalu
+Configuration Name: 
+Machine: LAPTOP-MBVO5HB3 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 19872
+PSVersion: 5.1.22621.4111
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4111
+BuildVersion: 10.0.22621.4111
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Raj.kadambalu.log
+PS C:\Users\raj.kadambalu> cls
+PS C:\Users\raj.kadambalu> new-item -path C:\Users\raj.kadambalu\OneDrive - ascendion\Desktop\Raj.ascendion -name 'qa-training' -itemtype directory
+PS C:\Users\raj.kadambalu> TerminatingError(New-Item): "A positional parameter cannot be found that accepts argument '-'."
+New-Item : A positional parameter cannot be found that accepts argument '-'.
+At line:1 char:1
++ new-item -path C:\Users\raj.kadambalu\OneDrive - ascendion\Desktop\Ra ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : A positional parameter cannot be found that accepts argument '-'.
+At line:1 char:1
++ new-item -path C:\Users\raj.kadambalu\OneDrive - ascendion\Desktop\Ra ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingExc
+   eption
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Com
+   mands.NewItemCommand
+
+PS C:\Users\raj.kadambalu> new-item -path C:\raj.ascendion -name 'qa-training' -itemtype directory
+
+
+    Directory: C:\raj.ascendion
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        09-10-2024     12:42                qa-training
+
+
+PS C:\Users\raj.kadambalu> set-location C:\raj.ascendion\qa-training
+PS C:\raj.ascendion\qa-training> git --version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the name of a cmdlet, function, script
+file, or operable program. Check the spelling of the name, or if a path was
+included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundExce
+   ption
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\raj.ascendion\qa-training>  Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe -OutFile git-installer.exe
+PS C:\raj.ascendion\qa-training> .\git-installer.exe /VERYSILENT /NORESTART
+PS C:\raj.ascendion\qa-training> git --version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the name of a cmdlet, function, script
+file, or operable program. Check the spelling of the name, or if a path was
+included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundExce
+   ption
+    + FullyQualifiedErrorId : CommandNotFoundException
+
