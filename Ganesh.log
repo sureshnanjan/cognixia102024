@@ -1,0 +1,101 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20241009123622
+Username: ASCENDION\ganesh.rao
+RunAs User: ASCENDION\ganesh.rao
+Configuration Name: 
+Machine: LAPTOP-LVI61CN3 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 15820
+PSVersion: 5.1.22621.4111
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4111
+BuildVersion: 10.0.22621.4111
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Ganesh.log
+PS C:\Users\ganesh.rao>  New-Item -Path C:ganeshFolder -Name ‘QA-Training’ -ItemType Directory
+
+
+    Directory: C:\Users\ganesh.rao\ganeshFolder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        09-10-2024     12:45                QA-Training
+
+
+PS C:\Users\ganesh.rao> dir
+
+
+    Directory: C:\Users\ganesh.rao
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        09-10-2024     10:36                .ms-ad
+d-r---        07-10-2024     15:16                Contacts
+d-----        08-10-2024     11:40                Documents
+d-r---        08-10-2024     14:19                Downloads
+d-r---        07-10-2024     15:16                Favorites
+d-----        09-10-2024     12:45                ganeshFolder
+d-r---        07-10-2024     15:16                Links
+d-r---        07-10-2024     15:16                Music
+d-r---        07-10-2024     15:34                OneDrive
+dar--l        09-10-2024     10:25                OneDrive - ascendion
+d-r---        07-10-2024     15:34                Pictures
+d-r---        07-10-2024     15:16                Saved Games
+d-r---        07-10-2024     15:30                Searches
+d-r---        09-10-2024     10:24                Videos
+-a----        09-10-2024     12:36              0 Ganesh.log
+
+
+PS C:\Users\ganesh.rao> cd .\ganeshFolder\
+PS C:\Users\ganesh.rao\ganeshFolder> dir
+
+
+    Directory: C:\Users\ganesh.rao\ganeshFolder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        09-10-2024     12:45                QA-Training
+
+
+PS C:\Users\ganesh.rao\ganeshFolder> cd .\QA-Training\
+PS C:\Users\ganesh.rao\ganeshFolder\QA-Training> git
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\ganesh.rao\ganeshFolder\QA-Training> Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe -OutFile git-installer.exe
+PS C:\Users\ganesh.rao\ganeshFolder\QA-Training> git --version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
