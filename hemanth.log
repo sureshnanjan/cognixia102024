@@ -1,0 +1,102 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20241009123604
+Username: ASCENDION\hemanth.mittapelli
+RunAs User: ASCENDION\hemanth.mittapelli
+Configuration Name: 
+Machine: LAPTOP-KQTJ2L3O (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 14192
+PSVersion: 5.1.22621.4111
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4111
+BuildVersion: 10.0.22621.4111
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is hemanth.log
+PS C:\Users\hemanth.mittapelli> New-Item -Path C:\Users\hemanth.mittapelli\OneDrive - ascendion\Desktop\testing -Name ‘QA-Training’ -ItemType Directory
+PS C:\Users\hemanth.mittapelli> TerminatingError(New-Item): "A positional parameter cannot be found that accepts argument '-'."
+New-Item : A positional parameter cannot be found that accepts argument '-'.
+At line:1 char:1
++ New-Item -Path C:\Users\hemanth.mittapelli\OneDrive - ascendion\Deskt ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : A positional parameter cannot be found that accepts argument '-'.
+At line:1 char:1
++ New-Item -Path C:\Users\hemanth.mittapelli\OneDrive - ascendion\Deskt ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\hemanth.mittapelli> New-Item -Path C:\Testing -Name ‘QA-Training’ -ItemType Directory
+
+
+    Directory: C:\Testing
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        09-10-2024     12:43                QA-Training
+
+
+PS C:\Users\hemanth.mittapelli> 3.2. Set-Location C:\Testing\QA-Training
+At line:1 char:9
++ 3.2. Set-Location C:\Testing\QA-Training
++         ~~~~~~~~~
+Unexpected token '-Location' in expression or statement.
+
+At line:1 char:19
++ 3.2. Set-Location C:\Testing\QA-Training
++                   ~~~~~~~~~~~~~~~~~~~~~~
+Unexpected token 'C:\Testing\QA-Training' in expression or statement.
+At line:1 char:9
++ 3.2. Set-Location C:\Testing\QA-Training
++         ~~~~~~~~~
+Unexpected token '-Location' in expression or statement.
+
+At line:1 char:19
++ 3.2. Set-Location C:\Testing\QA-Training
++                   ~~~~~~~~~~~~~~~~~~~~~~
+Unexpected token 'C:\Testing\QA-Training' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\hemanth.mittapelli> Set-Location C:\Testing\QA-Training
+PS C:\Testing\QA-Training> Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe -OutFile git-installer.exe
+PS C:\Testing\QA-Training> git --version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Testing\QA-Training> .\git-installer.exe /VERYSILENT /NORESTART
+PS C:\Testing\QA-Training> git –-version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git –-version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git –-version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
