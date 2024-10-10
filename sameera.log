@@ -1,0 +1,100 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20241009130050
+Username: ASCENDION\sameera.mohamed
+RunAs User: ASCENDION\sameera.mohamed
+Configuration Name: 
+Machine: LAPTOP-J22Q9I2Q (Microsoft Windows NT 10.0.22621.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 25160
+PSVersion: 5.1.22621.4111
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4111
+BuildVersion: 10.0.22621.4111
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is sameera.log
+PS C:\Users\sameera.mohamed> new-item -path C:\sameera.ascendion -Name ‘QA-Training’ -ItemType Directory
+
+
+    Directory: C:\sameera.ascendion
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        09-10-2024     13:03                QA-Training
+
+
+PS C:\Users\sameera.mohamed> set-location C:\sameera.ascendion\QA-Training
+PS C:\sameera.ascendion\QA-Training> git --version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the name of a
+cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that
+the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [],
+    CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\sameera.ascendion\QA-Training> Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe 
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {77, 90, 80, 0...}
+RawContent        : HTTP/1.1 200 OK
+                    Connection: keep-alive
+                    x-ms-request-id:
+                    1944b3ff-001e-003a-3219-13fb2d000000
+                    x-ms-version: 2023-11-03
+                    x-ms-creation-time: Fri, 23 Feb 2024
+                    20:56:47 GMT
+                    x-ms-blob-content-md5: Yf2F...
+Headers           : {[Connection, keep-alive],
+                    [x-ms-request-id,
+                    1944b3ff-001e-003a-3219-13fb2d000000],
+                    [x-ms-version, 2023-11-03],
+                    [x-ms-creation-time, Fri, 23 Feb 2024
+                    20:56:47 GMT]...}
+RawContentLength  : 65350776
+
+
+
+PS C:\sameera.ascendion\QA-Training> Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe -OutFile git-installer.exe
+PS C:\sameera.ascendion\QA-Training> .\git-installer.exe /VERYSILENT /NORESTART
+PS C:\sameera.ascendion\QA-Training> git --version
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the name of a
+cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that
+the path is correct and try again.
+At line:1 char:1
++ git --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [],
+    CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\sameera.ascendion\QA-Training> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20241009162011
+**********************
