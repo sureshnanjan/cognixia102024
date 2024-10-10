@@ -1,0 +1,335 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20241009210829
+Username: ASCENDION\anudharshini.kamaraj
+RunAs User: ASCENDION\anudharshini.kamaraj
+Configuration Name: 
+Machine: LAPTOP-ULQ60SPG (Microsoft Windows NT 10.0.22621.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 26556
+PSVersion: 5.1.22621.4249
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4249
+BuildVersion: 10.0.22621.4249
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is anudharshini.log
+PS C:\Users\anudharshini.kamaraj> New-Item -path -name'QA-Training' -ItemType Directory
+
+
+    Directory: C:\Users\anudharshini.kamaraj
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        09-10-2024     21:09                -nameQA-Training
+
+
+PS C:\Users\anudharshini.kamaraj> Set-Location -name \QA-Training
+>> TerminatingError(Set-Location): "A parameter cannot be found that matches parameter name 'name'."
+Set-Location : A parameter cannot be found that matches parameter name 'name'.
+At line:1 char:14
++ Set-Location -name \QA-Training
++              ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A parameter cannot be found that matches parameter
+name 'name'.
+At line:1 char:14
++ Set-Location -name \QA-Training
++              ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], P
+   arameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.Power
+   Shell.Commands.SetLocationCommand
+
+PS C:\Users\anudharshini.kamaraj> Set-Location -path \QA-Training
+Set-Location : Cannot find path 'C:\QA-Training' because it does not exist.
+At line:1 char:1
++ Set-Location -path \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\QA-Training:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot find path 'C:\QA-Training' because it does not
+exist.
+At line:1 char:1
++ Set-Location -path \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\QA-Training:String
+   ) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Comm
+   ands.SetLocationCommand
+
+PS C:\Users\anudharshini.kamaraj> Set-Location -path -name \QA-Training
+>> TerminatingError(Set-Location): "A positional parameter cannot be found that accepts argument '\QA-Training'."
+Set-Location : A positional parameter cannot be found that accepts argument '\QA-Training'.
+At line:1 char:1
++ Set-Location -path -name \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A positional parameter cannot be found that accepts argument
+'\QA-Training'.
+At line:1 char:1
++ Set-Location -path -name \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBi
+   ndingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell
+   .Commands.SetLocationCommand
+
+PS C:\Users\anudharshini.kamaraj> Set-Location -path -name \QA-Training
+>> TerminatingError(Set-Location): "A positional parameter cannot be found that accepts argument '\QA-Training'."
+Set-Location : A positional parameter cannot be found that accepts argument '\QA-Training'.
+At line:1 char:1
++ Set-Location -path -name \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A positional parameter cannot be found that accepts argument '\QA-Training'.
+At line:1 char:1
++ Set-Location -path -name \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\anudharshini.kamaraj> Set-Location C:/Users/anudharshini.kamaraj\QA-Training
+Set-Location : Cannot find path 'C:\Users\anudharshini.kamaraj\QA-Training' because it does not exist.
+At line:1 char:1
++ Set-Location C:/Users/anudharshini.kamaraj\QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\anudha...raj\QA-Training:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot find path 'C:\Users\anudharshini.kamaraj\QA-Training' because it does not exist.
+At line:1 char:1
++ Set-Location C:/Users/anudharshini.kamaraj\QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\anudha...raj\QA-Training:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\anudharshini.kamaraj> Set-Location -path -name \QA-Training
+>> TerminatingError(Set-Location): "A positional parameter cannot be found that accepts argument '\QA-Training'."
+Set-Location : A positional parameter cannot be found that accepts argument '\QA-Training'.
+At line:1 char:1
++ Set-Location -path -name \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A positional parameter cannot be found that accepts argument '\QA-Training'.
+At line:1 char:1
++ Set-Location -path -name \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\anudharshini.kamaraj> Set-Location -path -name \QA-Training
+>> TerminatingError(Set-Location): "A positional parameter cannot be found that accepts argument '\QA-Training'."
+Set-Location : A positional parameter cannot be found that accepts argument '\QA-Training'.
+At line:1 char:1
++ Set-Location -path -name \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A positional parameter cannot be found that accepts argument '\QA-Training'.
+At line:1 char:1
++ Set-Location -path -name \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\anudharshini.kamaraj> Set-Location -name \QA-Training
+>> TerminatingError(Set-Location): "A parameter cannot be found that matches parameter name 'name'."
+Set-Location : A parameter cannot be found that matches parameter name 'name'.
+At line:1 char:14
++ Set-Location -name \QA-Training
++              ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A parameter cannot be found that matches parameter name 'name'.
+At line:1 char:14
++ Set-Location -name \QA-Training
++              ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\anudharshini.kamaraj> Set-Location -name \-nameQA-Training
+>> TerminatingError(Set-Location): "A parameter cannot be found that matches parameter name 'name'."
+Set-Location : A parameter cannot be found that matches parameter name 'name'.
+At line:1 char:14
++ Set-Location -name \-nameQA-Training
++              ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A parameter cannot be found that matches parameter name 'name'.
+At line:1 char:14
++ Set-Location -name \-nameQA-Training
++              ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\anudharshini.kamaraj> Set-Location C:\Users\QA-Training
+Set-Location : Cannot find path 'C:\Users\QA-Training' because it does not exist.
+At line:1 char:1
++ Set-Location C:\Users\QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\QA-Training:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot find path 'C:\Users\QA-Training' because it does not exist.
+At line:1 char:1
++ Set-Location C:\Users\QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\QA-Training:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\anudharshini.kamaraj>  New-Item -path  -name'QA-engineer' -ItemType Directory
+
+
+    Directory: C:\Users\anudharshini.kamaraj
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        09-10-2024     22:00                -nameQA-engineer
+
+
+PS C:\Users\anudharshini.kamaraj> Set-Location C:\User\-nameQA-engineer
+Set-Location : Cannot find path 'C:\User\-nameQA-engineer' because it does not exist.
+At line:1 char:1
++ Set-Location C:\User\-nameQA-engineer
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\User\-nameQA-engineer:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot find path 'C:\User\-nameQA-engineer' because it does not exist.
+At line:1 char:1
++ Set-Location C:\User\-nameQA-engineer
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\User\-nameQA-engineer:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\anudharshini.kamaraj> Set-Location C:\Users\anudharshini.kamaraj\-nameQA-engineer
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer>  Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe -OutFile git-installer.exe
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer>  .\git-installer.exe /VERYSILENT /NORESTART
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer>  git –-version
+git: 'ΓÇô-version' is not a git command. See 'git --help'.
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer> git --version
+git version 2.44.0.windows.1
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer>  git clone https://github.com/sureshnanjan/cognixia102024.git
+Cloning into 'cognixia102024'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer>  Set-Location cognixia102024
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer\cognixia102024> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer\cognixia102024> 1. git checkout -b anudharshini-branch
+At line:1 char:4
++ 1. git checkout -b anudharshini-branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+At line:1 char:4
++ 1. git checkout -b anudharshini-branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer\cognixia102024> 1. git checkout -b <anudharshini>-branch
+At line:1 char:4
++ 1. git checkout -b <anudharshini>-branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+
+At line:1 char:20
++ 1. git checkout -b <anudharshini>-branch
++                    ~
+The '<' operator is reserved for future use.
+At line:1 char:4
++ 1. git checkout -b <anudharshini>-branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+
+At line:1 char:20
++ 1. git checkout -b <anudharshini>-branch
++                    ~
+The '<' operator is reserved for future use.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer\cognixia102024>  git checkout -b <anudharshini>-branch
+At line:1 char:18
++  git checkout -b <anudharshini>-branch
++                  ~
+The '<' operator is reserved for future use.
+At line:1 char:18
++  git checkout -b <anudharshini>-branch
++                  ~
+The '<' operator is reserved for future use.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer\cognixia102024> git checkout -b anudharshini -branch
+Switched to a new branch 'ranch'
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer\cognixia102024>  git checkout -b <anudharshini>-branch
+At line:1 char:18
++  git checkout -b <anudharshini>-branch
++                  ~
+The '<' operator is reserved for future use.
+At line:1 char:18
++  git checkout -b <anudharshini>-branch
++                  ~
+The '<' operator is reserved for future use.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer\cognixia102024> 1. git checkout -b anudharshini-branch
+At line:1 char:4
++ 1. git checkout -b anudharshini-branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+At line:1 char:4
++ 1. git checkout -b anudharshini-branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer\cognixia102024> 1. git checkout -b <anudharshini>-branch
+At line:1 char:4
++ 1. git checkout -b <anudharshini>-branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+
+At line:1 char:20
++ 1. git checkout -b <anudharshini>-branch
++                    ~
+The '<' operator is reserved for future use.
+At line:1 char:4
++ 1. git checkout -b <anudharshini>-branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+
+At line:1 char:20
++ 1. git checkout -b <anudharshini>-branch
++                    ~
+The '<' operator is reserved for future use.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer\cognixia102024> git checkout -b anudharshini-branch
+Switched to a new branch 'anudharshini-branch'
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer\cognixia102024> git status
+On branch anudharshini-branch
+nothing to commit, working tree clean
+PS C:\Users\anudharshini.kamaraj\-nameQA-engineer\cognixia102024> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20241009221622
+**********************
