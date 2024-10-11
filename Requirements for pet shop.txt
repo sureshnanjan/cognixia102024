@@ -25,7 +25,7 @@ Functional Requirements:
 6. User Reviews and Ratings
    - Allow customers to leave reviews and rate products.
 
-7. Content Management System (CMS)
+7. Content Management System 
    - Admin panel to manage products, categories, and user accounts.
    - Blog or articles section for pet care tips.
 
@@ -38,7 +38,6 @@ Functional Requirements:
 
 10. Security
    - SSL certificate for secure transactions.
-   - Compliance with data protection regulations (e.g., GDPR).
 
 Non-Functional Requirements:
 
@@ -55,7 +54,6 @@ Design Requirements:
 
 1. User-Friendly Interface
    - Intuitive navigation and layout.
-   - Clear calls to action (CTAs).
 
 2. Branding
    - Consistent use of logos, colors, and fonts that reflect the brand.
