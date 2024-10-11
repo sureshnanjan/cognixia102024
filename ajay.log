@@ -1,0 +1,155 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20241011133744
+Username: ASCENDION\ajay.chevuri
+RunAs User: ASCENDION\ajay.chevuri
+Configuration Name: 
+Machine: LAPTOP-O1UTEOU0 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 14708
+PSVersion: 5.1.22621.4249
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4249
+BuildVersion: 10.0.22621.4249
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is ajay.log
+PS C:\Users\ajay.chevuri> new-item -path C:\Users\ajay.chevuri\ajay_folder -name 'QA-Training' -itemtype directory
+
+
+    Directory: C:\Users\ajay.chevuri\ajay_folder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11-10-2024     13:43                QA-Training
+
+
+PS C:\Users\ajay.chevuri> cd QA-Training
+cd : Cannot find path 'C:\Users\ajay.chevuri\QA-Training' because it does not exist.
+At line:1 char:1
++ cd QA-Training
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\ajay.chevuri\QA-Training:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : Cannot find path 'C:\Users\ajay.chevuri\QA-Training' because it does not exist.
+At line:1 char:1
++ cd QA-Training
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\ajay.chevuri\QA-Training:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\ajay.chevuri> set-location C:\Users\ajay.chevuri\ajay_folder\QA-Training
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training> git --version
+git version 2.44.0.windows.1
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training> git clone https://github.com/sureshnanjan/cognixia102024.git
+Receiving objects: 100% (48/48), 135.86 KiB | 2.06 MiB/s, done.
+Resolving deltas: 100% (12/12), done.
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training> set-location cognixia102024
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training\cognixia102024> git status
+
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training\cognixia102024> git checkout -b ajay-branch
+
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training\cognixia102024> git status
+
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training\cognixia102024> get_childitem -name *.log
+get_childitem : The term 'get_childitem' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get_childitem -name *.log
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get_childitem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+get_childitem : The term 'get_childitem' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get_childitem -name *.log
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get_childitem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training\cognixia102024> get_childitem -name *.log suresh.log
+get_childitem : The term 'get_childitem' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get_childitem -name *.log suresh.log
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get_childitem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+get_childitem : The term 'get_childitem' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get_childitem -name *.log suresh.log
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get_childitem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training\cognixia102024> get-childitem -name *.log 
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training\cognixia102024> get-childitem -name *.log suresh.log
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training\cognixia102024> git status
+
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training\cognixia102024> move-item  C:\Users\ajay.chevuri.log
+move-item : Cannot find path 'C:\Users\ajay.chevuri.log' because it does not exist.
+At line:1 char:1
++ move-item  C:\Users\ajay.chevuri.log
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\ajay.chevuri.log:String) [Move-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+move-item : Cannot find path 'C:\Users\ajay.chevuri.log' because it does not exist.
+At line:1 char:1
++ move-item  C:\Users\ajay.chevuri.log
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\ajay.chevuri.log:String) [Move-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training\cognixia102024> move-item  C:\Users\ajay.chevuri\ajay.log
+move-item : The process cannot access the file because it is being used by another process.
+At line:1 char:1
++ move-item  C:\Users\ajay.chevuri\ajay.log
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\ajay.chevuri\ajay.log:FileInfo) [Move-Item], IOException
+    + FullyQualifiedErrorId : MoveFileInfoItemIOError,Microsoft.PowerShell.Commands.MoveItemCommand
+move-item : The process cannot access the file because it is being used by another process.
+At line:1 char:1
++ move-item  C:\Users\ajay.chevuri\ajay.log
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\ajay.chevuri\ajay.log:FileInfo) [Move-Item], IOException
+    + FullyQualifiedErrorId : MoveFileInfoItemIOError,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training\cognixia102024> move-item  \C:\Users\ajay.chevuri\ajay.log
+move-item : Cannot find drive. A drive with the name '\C' does not exist.
+At line:1 char:1
++ move-item  \C:\Users\ajay.chevuri\ajay.log
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\C:String) [Move-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+move-item : Cannot find drive. A drive with the name '\C' does not exist.
+At line:1 char:1
++ move-item  \C:\Users\ajay.chevuri\ajay.log
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\C:String) [Move-Item], DriveNotFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training\cognixia102024> move-item C:\Users\ajay.chevuri\ajay.log
+move-item : The process cannot access the file because it is being used by another process.
+At line:1 char:1
++ move-item C:\Users\ajay.chevuri\ajay.log
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\ajay.chevuri\ajay.log:FileInfo) [Move-Item], IOException
+    + FullyQualifiedErrorId : MoveFileInfoItemIOError,Microsoft.PowerShell.Commands.MoveItemCommand
+move-item : The process cannot access the file because it is being used by another process.
+At line:1 char:1
++ move-item C:\Users\ajay.chevuri\ajay.log
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\ajay.chevuri\ajay.log:FileInfo) [Move-Item], IOException
+    + FullyQualifiedErrorId : MoveFileInfoItemIOError,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\ajay.chevuri\ajay_folder\QA-Training\cognixia102024> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20241011134839
+**********************
