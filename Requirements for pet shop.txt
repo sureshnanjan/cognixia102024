@@ -36,19 +36,19 @@ Functional Requirements:
 9. Mobile Responsiveness
    - Ensure the website is usable on various devices (phones, tablets).
 
+10. Security
+   - SSL certificate for secure transactions.
+   - Compliance with data protection regulations (e.g., GDPR).
+
 Non-Functional Requirements:
 
 1. Performance
    - Fast loading times for a better user experience.
 
-2. Security
-   - SSL certificate for secure transactions.
-   - Compliance with data protection regulations (e.g., GDPR).
-
-3. Scalability
+2. Scalability
    - Ability to handle an increasing number of users and products.
 
-4. SEO Optimization
+3. SEO Optimization
    - Ensure the website is optimized for search engines to improve visibility.
 
 Design Requirements:
