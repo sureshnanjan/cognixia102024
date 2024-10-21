@@ -1,0 +1,46 @@
+Requirements - JPetStore
+
+Functional Requirements:
+
+Home Page:
+	Browse Products, 
+	View Cart, 
+	Sign in
+	Sign Up
+
+1. Sign In:
+
+	If valid username and valid password is given, go to User Dashboard.
+	If failed, show error message.
+
+2. Sign Up:
+
+	Give user details such as name, address and username and password to create a account, after successful registration go to User Dashboard.
+
+3. Browse Products:
+
+	Categories: Fish, Dogs, Cats, Birds, etc.
+	Select a category → View Products.
+	Select a product → View Product Details.
+		Options: Add to Cart, Continue Shopping.
+
+4. View Cart:
+
+	Display the selected items in the cart.
+	Options: Checkout, Continue Shopping, Remove Item.
+
+5. Checkout:
+	Enter Shipping Information.
+	Choose Payment Method.
+	Confirm Order.
+	Display Order Confirmation.
+	User Dashboard
+
+
+Non-Functional Requirements:
+
+1. Performance
+	Ensure that the system responds quickly by improving the user experience by reducing waiting times.
+
+2. Security
+   - SSL certificate for secure transactions.
