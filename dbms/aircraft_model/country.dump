@@ -1,0 +1,11 @@
+INSERT INTO country (country_id, country_name) VALUES
+(101, 'United States'),
+(102, 'Canada'),
+(103, 'Mexico'),
+(104, 'Brazil'),
+(105, 'United Kingdom'),
+(106, 'Germany'),
+(107, 'France'),
+(108, 'India'),
+(109, 'Australia'),
+(110, 'Japan');

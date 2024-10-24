@@ -1,0 +1,11 @@
+INSERT INTO flight (flight_code, airline_id) VALUES
+('AA101', 1),
+('DL202', 2),
+('UA303', 3),
+('SW404', 4),
+('AC505', 5),
+('LH606', 6),
+('BA707', 7),
+('EK808', 8),
+('QF909', 9),
+('AF010', 10);

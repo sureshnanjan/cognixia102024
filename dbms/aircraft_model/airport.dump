@@ -1,0 +1,11 @@
+INSERT INTO airport (airport_code, city_id, airport_name) VALUES
+('JFK', 1, 'John F. Kennedy International Airport'),
+('YYZ', 2, 'Toronto Pearson International Airport'),
+('MEX', 3, 'Mexico City International Airport'),
+('GRU', 4, 'São Paulo–Guarulhos International Airport'),
+('LHR', 5, 'London Heathrow Airport'),
+('TXL', 6, 'Berlin Tegel Airport'),
+('CDG', 7, 'Charles de Gaulle Airport'),
+('BOM', 8, 'Chhatrapati Shivaji Maharaj International Airport'),
+('SYD', 9, 'Sydney Kingsford Smith Airport'),
+('NRT', 10, 'Narita International Airport');
