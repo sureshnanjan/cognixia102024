@@ -1,0 +1,79 @@
+-- Insert data into account_type
+INSERT INTO account_type (account_type_id, account_type) VALUES
+(1, 'Savings'),
+(2, 'Checking'),
+(3, 'Business'),
+(4, 'Joint'),
+(5, 'Retirement'),
+(6, 'Certificate of Deposit'),
+(7, 'Money Market'),
+(8, 'Trust'),
+(9, 'Custodial'),
+(10, 'Health Savings');
+
+-- Insert data into account_status
+INSERT INTO account_status (status_id, status_value) VALUES
+(1, 'Active'),
+(2, 'Inactive'),
+(3, 'Closed'),
+(4, 'Suspended'),
+(5, 'Pending'),
+(6, 'Frozen'),
+(7, 'Overdrawn'),
+(8, 'Verified'),
+(9, 'Fraud Alert'),
+(10, 'Reopened');
+
+-- Insert data into customer
+INSERT INTO customer (customer_id, first_name, last_name, date_of_birth, signup_date) VALUES
+(1, 'Alice', 'Smith', '1990-05-10', '2020-01-15'),
+(2, 'Bob', 'Johnson', '1985-11-23', '2020-03-22'),
+(3, 'Charlie', 'Brown', '1992-07-30', '2021-06-10'),
+(4, 'Diana', 'White', '1988-02-14', '2022-05-05'),
+(5, 'Eve', 'Davis', '1995-12-01', '2023-01-30'),
+(6, 'Frank', 'Wilson', '1982-08-20', '2020-04-12'),
+(7, 'Grace', 'Lee', '1991-09-17', '2021-08-09'),
+(8, 'Hank', 'Martinez', '1975-02-22', '2019-11-25'),
+(9, 'Ivy', 'Garcia', '1989-04-05', '2022-02-19'),
+(10, 'Jack', 'Miller', '1980-10-15', '2023-05-01');
+
+-- Insert data into account
+INSERT INTO account (account_number, account_type_id, status_id, date_opened, date_closed) VALUES
+(1001, 1, 1, '2020-01-20', NULL),
+(1002, 2, 1, '2020-02-18', NULL),
+(1003, 1, 2, '2020-03-15', NULL),
+(1004, 3, 1, '2021-07-20', NULL),
+(1005, 4, 1, '2022-01-10', NULL),
+(1006, 5, 1, '2023-03-15', NULL),
+(1007, 6, 1, '2021-04-22', NULL),
+(1008, 7, 1, '2020-09-01', NULL),
+(1009, 8, 1, '2022-06-30', NULL),
+(1010, 9, 1, '2023-04-10', NULL);
+
+-- Insert data into customer_account
+INSERT INTO customer_account (account_number, customer_id) VALUES
+(1001, 1),
+(1002, 2),
+(1003, 1),
+(1004, 3),
+(1005, 4),
+(1006, 5),
+(1007, 6),
+(1008, 7),
+(1002, 3),
+(1009, 8),
+(1010, 9),
+(1001, 10);
+
+-- Insert data into transaction
+INSERT INTO transaction (transaction_id, transaction_datetime, from_account, to_account, description) VALUES
+(1, '2024-10-01 10:00:00', 1001, 1002, 'Transfer from Alice to Bob'),
+(2, '2024-10-02 12:30:00', 1002, 1003, 'Payment from Bob to Charlie'),
+(3, '2024-10-03 14:45:00', 1004, 1001, 'Deposit to Alice'),
+(4, '2024-10-04 15:00:00', 1005, 1006, 'Transfer from Eve to Frank'),
+(5, '2024-10-05 09:15:00', 1007, 1008, 'Transfer from Grace to Hank'),
+(6, '2024-10-06 11:00:00', 1009, 1010, 'Payment from Ivy to Jack'),
+(7, '2024-10-07 13:45:00', 1001, 1005, 'Transfer from Alice to Eve'),
+(8, '2024-10-08 10:30:00', 1002, 1007, 'Payment from Bob to Grace'),
+(9, '2024-10-09 14:00:00', 1003, 1004, 'Transfer from Charlie to Diana'),
+(10, '2024-10-10 16:30:00', 1006, 1002, 'Deposit from Frank to Bob');
