@@ -1,0 +1,5 @@
+INSERT INTO transaction (transaction_id, transaction_datetime, from_account, to_account, description, amount)
+VALUES 
+(1, '2023-07-15 10:30:00', 1001, 1002, 'Payment from John to Jane', 250.00),
+(2, '2023-08-10 14:45:00', 1003, 1001, 'Refund from Michael to John', 120.50),
+(3, '2023-09-22 09:20:00', 1001, 1003, 'Transfer from John to Michael', 500.00);

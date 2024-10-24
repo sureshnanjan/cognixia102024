@@ -1,0 +1,5 @@
+INSERT INTO account (account_number, account_type_id, status_id, date_opened, date_closed)
+VALUES 
+(1001, 1, 1, '2022-01-15', NULL), -- Active checking account
+(1002, 2, 2, '2021-09-10', '2023-04-01'), -- Closed savings account
+(1003, 3, 3, '2022-03-22', NULL); -- Suspended credit account

@@ -1,0 +1,5 @@
+INSERT INTO customer_account (account_number, customer_id)
+VALUES 
+(1001, 1), -- John Doe's checking account
+(1002, 2), -- Jane Smith's closed savings account
+(1003, 3);
