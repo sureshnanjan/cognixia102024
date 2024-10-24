@@ -1,2 +1,0 @@
-Name	No_of_films
-GINA DEGENERES	42
