@@ -1,0 +1,9 @@
+rental_duration
+6
+
+rental_id
+16051
+
+
+rental_date	due_date
+2024-10-24 13:02:50	2024-10-30 13:02:50
