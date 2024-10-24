@@ -1,0 +1,2 @@
+rental_id	rental_date	inventory_id	customer_id	return_date	staff_id
+16051	2024-10-24 17:23:40	1	1	NULL	1

@@ -1,0 +1,4 @@
+INSERT INTO account_type (account_type_id, account_type) VALUES
+(1, 'Savings'),
+(2, 'Checking'),
+(3, 'Business');

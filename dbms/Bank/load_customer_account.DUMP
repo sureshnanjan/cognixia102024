@@ -1,0 +1,6 @@
+INSERT INTO customer_account (customer_id, account_number) VALUES
+(1, 100001), -- John Doe
+(1, 100002), -- John Doe also has Checking Account
+(2, 100002), -- Jane Smith
+(3, 100003), -- Alice Johnson
+(4, 100001); -- Bob Williams
