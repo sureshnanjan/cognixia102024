@@ -1,0 +1,168 @@
+-- Insert data into product_category
+INSERT INTO product_category (category_id, category_name) VALUES
+(1, 'Electronics'),
+(2, 'Clothing'),
+(3, 'Home & Garden'),
+(4, 'Sports & Outdoors'),
+(5, 'Health & Beauty'),
+(6, 'Toys'),
+(7, 'Automotive'),
+(8, 'Books'),
+(9, 'Jewelry'),
+(10, 'Pet Supplies');
+
+-- Insert data into brand
+INSERT INTO brand (brand_id, brand_name) VALUES
+(1, 'Apple'),
+(2, 'Nike'),
+(3, 'Samsung'),
+(4, 'Adidas'),
+(5, 'Sony'),
+(6, 'LG'),
+(7, 'Under Armour'),
+(8, 'Puma'),
+(9, 'Lego'),
+(10, 'Nestle');
+
+-- Insert data into colour
+INSERT INTO colour (colour_id, colour_name) VALUES
+(1, 'Red'),
+(2, 'Blue'),
+(3, 'Green'),
+(4, 'Black'),
+(5, 'White'),
+(6, 'Yellow'),
+(7, 'Pink'),
+(8, 'Gray'),
+(9, 'Purple'),
+(10, 'Orange');
+
+-- Insert data into size
+INSERT INTO size (size_id, size_name) VALUES
+(1, 'Small'),
+(2, 'Medium'),
+(3, 'Large'),
+(4, 'X-Large'),
+(5, 'One Size'),
+(6, '34'),
+(7, '36'),
+(8, '38'),
+(9, '40'),
+(10, '42');
+
+-- Insert data into supplier
+INSERT INTO supplier (supplier_id, supplier_name) VALUES
+(1, 'Supplier A'),
+(2, 'Supplier B'),
+(3, 'Supplier C'),
+(4, 'Supplier D'),
+(5, 'Supplier E'),
+(6, 'Supplier F'),
+(7, 'Supplier G'),
+(8, 'Supplier H'),
+(9, 'Supplier I'),
+(10, 'Supplier J');
+
+-- Insert data into product
+INSERT INTO product (product_id, product_category_id, brand_id, colour_id, size_id, supplier_id, product_name) VALUES
+(1, 1, 1, 2, 3, 1, 'Apple iPhone 13'),
+(2, 2, 2, 1, 1, 2, 'Nike T-Shirt'),
+(3, 1, 3, 4, 5, 3, 'Samsung Galaxy S21'),
+(4, 3, 4, 5, 6, 4, 'Outdoor Furniture Set'),
+(5, 2, 5, 1, 2, 5, 'Adidas Hoodie'),
+(6, 5, 6, 6, 4, 6, 'LG Facial Cream'),
+(7, 4, 7, 3, 7, 7, 'Under Armour Sports Bra'),
+(8, 6, 8, 9, 8, 8, 'Puma Running Shoes'),
+(9, 7, 9, 10, 5, 9, 'Lego Building Kit'),
+(10, 8, 10, 2, 5, 10, 'Nestle Chocolate');
+
+-- Insert data into supplier_order
+INSERT INTO supplier_order (order_id, supplier_id, order_discount) VALUES
+(1, 1, 5.00),
+(2, 2, 10.00),
+(3, 3, 15.00),
+(4, 4, 0.00),
+(5, 5, 7.50),
+(6, 6, 2.00),
+(7, 7, 3.25),
+(8, 8, 0.00),
+(9, 9, 12.00),
+(10, 10, 4.75);
+
+-- Insert data into supplier_order_line
+INSERT INTO supplier_order_line (order_line_id, product_id, order_id, qty, discount, price) VALUES
+(1, 1, 1, 10, 1.00, 699.00),
+(2, 2, 2, 20, 0.50, 25.00),
+(3, 3, 3, 15, 2.00, 799.00),
+(4, 4, 4, 5, 0.00, 500.00),
+(5, 5, 5, 25, 1.50, 60.00),
+(6, 6, 6, 30, 0.25, 30.00),
+(7, 7, 7, 10, 0.75, 45.00),
+(8, 8, 8, 50, 1.00, 75.00),
+(9, 9, 9, 100, 0.00, 120.00),
+(10, 10, 10, 200, 2.00, 15.00);
+
+-- Insert data into user_account
+INSERT INTO user_account (username, first_name, last_name, email_address) VALUES
+('alice', 'Alice', 'Smith', 'alice@example.com'),
+('bob', 'Bob', 'Johnson', 'bob@example.com'),
+('charlie', 'Charlie', 'Brown', 'charlie@example.com'),
+('diana', 'Diana', 'White', 'diana@example.com'),
+('eve', 'Eve', 'Davis', 'eve@example.com'),
+('frank', 'Frank', 'Wilson', 'frank@example.com'),
+('grace', 'Grace', 'Lee', 'grace@example.com'),
+('hank', 'Hank', 'Martinez', 'hank@example.com'),
+('ivy', 'Ivy', 'Garcia', 'ivy@example.com'),
+('jack', 'Jack', 'Miller', 'jack@example.com');
+
+-- Insert data into address
+INSERT INTO address (address_id, address_line, city, postal_code, country) VALUES
+(1, '123 Main St', 'New York', '10001', 'USA'),
+(2, '456 Elm St', 'Los Angeles', '90001', 'USA'),
+(3, '789 Oak St', 'Chicago', '60601', 'USA'),
+(4, '101 Maple St', 'Houston', '77001', 'USA'),
+(5, '202 Pine St', 'Phoenix', '85001', 'USA'),
+(6, '303 Birch St', 'Philadelphia', '19101', 'USA'),
+(7, '404 Cedar St', 'San Antonio', '78201', 'USA'),
+(8, '505 Spruce St', 'San Diego', '92101', 'USA'),
+(9, '606 Walnut St', 'Dallas', '75201', 'USA'),
+(10, '707 Cherry St', 'San Jose', '95101', 'USA');
+
+-- Insert data into customer_order
+INSERT INTO customer_order (order_id, username, shipping_address, billing_address, order_date, order_discount) VALUES
+(1, 'alice', 1, 1, '2024-10-01', 5.00),
+(2, 'bob', 2, 2, '2024-10-02', 0.00),
+(3, 'charlie', 3, 3, '2024-10-03', 10.00),
+(4, 'diana', 4, 4, '2024-10-04', 2.50),
+(5, 'eve', 5, 5, '2024-10-05', 1.25),
+(6, 'frank', 6, 6, '2024-10-06', 0.00),
+(7, 'grace', 7, 7, '2024-10-07', 3.00),
+(8, 'hank', 8, 8, '2024-10-08', 0.00),
+(9, 'ivy', 9, 9, '2024-10-09', 12.00),
+(10, 'jack', 10, 10, '2024-10-10', 4.75);
+
+-- Insert data into customer_order_line
+INSERT INTO customer_order_line (order_line_id, product_id, order_id, qty, discount, price) VALUES
+(1, 1, 1, 1, 10.00, 699.00),
+(2, 2, 2, 2, 0.00, 50.00),
+(3, 3, 3, 1, 5.00, 799.00),
+(4, 4, 4, 1, 0.00, 500.00),
+(5, 5, 5, 3, 2.50, 180.00),
+(6, 6, 6, 1, 0.00, 30.00),
+(7, 7, 7, 1, 1.50, 45.00),
+(8, 8, 8, 1, 0.00, 75.00),
+(9, 9, 9, 2, 0.00, 240.00),
+(10, 10, 10, 5, 0.00, 75.00);
+
+-- Insert data into user_address
+INSERT INTO user_address (address_id, username) VALUES
+(1, 'alice'),
+(2, 'bob'),
+(3, 'charlie'),
+(4, 'diana'),
+(5, 'eve'),
+(6, 'frank'),
+(7, 'grace'),
+(8, 'hank'),
+(9, 'ivy'),
+(10, 'jack');
