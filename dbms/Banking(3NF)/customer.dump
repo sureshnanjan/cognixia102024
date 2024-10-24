@@ -1,0 +1,13 @@
+-- Insert data into the customer table
+
+INSERT INTO customer (customer_id, first_name, last_name, date_of_birth, signup_date)
+VALUES (1, 'John', 'Doe', '1985-06-15', '2020-01-01'),
+       (2, 'Jane', 'Smith', '1990-07-20', '2020-03-05'),
+       (3, 'David', 'Brown', '1978-10-10', '2021-06-10'),
+       (4, 'Laura', 'Wilson', '1982-11-15', '2021-02-21'),
+       (5, 'Emily', 'Johnson', '1995-08-25', '2020-07-14'),
+       (6, 'Michael', 'Davis', '1991-12-01', '2022-09-13'),
+       (7, 'Sarah', 'Miller', '1988-04-22', '2019-11-01'),
+       (8, 'James', 'Taylor', '1983-01-08', '2021-08-12'),
+       (9, 'Anna', 'Martinez', '1979-05-18', '2021-03-19'),
+       (10, 'Robert', 'Garcia', '1986-09-23', '2021-10-25');
