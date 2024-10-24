@@ -1,0 +1,26 @@
+7 Principle of Software testing
+1. Testing shows presence of defects
+2. Exhaustive testing is not possible
+3. Early Testing
+4. Defect clustering
+5. Pesticide paradox
+6. Testing is context dependent
+7. Absence of errors fallacy
+
+Test case for black-box testing:
+1. Boundary value analysis
+2. Equivalence partitioning
+3. State transition testing
+4. Decision table testing
+4. Graph based testing
+5. Error guessing technique  
+
+Mind Map
+
+Tools for testing:
+	1. Flow chart
+	2. State Transition diagrams
+	3. Context Diagram
+	4. Mind Maps
+	5. ER Diagram
+	6. Mock ups
