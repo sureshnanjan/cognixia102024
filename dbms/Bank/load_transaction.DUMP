@@ -1,0 +1,4 @@
+INSERT INTO transaction (transaction_datetime, from_account, to_account, description) VALUES
+('2023-01-20 10:00:00', 100001, 100002, 'Transfer to checking account'), 
+('2023-02-15 14:30:00', 100002, 100001, 'Transfer to savings account'), 
+('2023-03-10 09:45:00', 100001, 100003, 'Payment for services');
