@@ -1,0 +1,16 @@
+INSERT INTO account_status (status_id, status_value) VALUES
+(1, 'Active'),
+(2, 'Inactive'),
+(3, 'Pending'),
+(4, 'Suspended'),
+(5, 'Closed'),
+(6, 'Blocked'),
+(7, 'Frozen'),
+(8, 'Dormant'),
+(9, 'Overdrawn'),
+(10, 'Under Review'),
+(11, 'Deactivated'),
+(12, 'Locked'),
+(13, 'Verified'),
+(14, 'Expired'),
+(15, 'Transferred');
