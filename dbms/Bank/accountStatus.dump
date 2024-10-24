@@ -1,0 +1,5 @@
+INSERT INTO account_status (status_id, status_value)
+VALUES 
+(1, 'Active'),
+(2, 'Closed'),
+(3, 'Suspended');
