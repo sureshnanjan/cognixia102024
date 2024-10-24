@@ -1,0 +1,2 @@
+first_name	actor_id	film_count
+GINA	107	42

@@ -1,0 +1,4 @@
+INSERT INTO account (account_number, account_type_id, status_id, date_opened, date_closed) VALUES
+(100001, 1, 1, '2023-01-15', NULL), 
+(100002, 2, 1, '2023-02-10', NULL), 
+(100003, 3, 2, '2023-03-01', NULL); 
