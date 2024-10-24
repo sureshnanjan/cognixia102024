@@ -1,0 +1,11 @@
+INSERT INTO transaction (transaction_datetime, from_account, to_account, description, amount) VALUES
+('2023-10-01 12:00:00', 1, 2, 'Transfer from Savings to Checking', 150.00),
+('2023-10-02 13:30:00', 3, 1, 'Deposit to Savings', 200.00),
+('2023-10-03 09:45:00', 2, 4, 'Payment for bills', 75.50),
+('2023-10-04 11:00:00', 5, 3, 'Withdrawal from Business Account', 300.00),
+('2023-10-05 15:15:00', 4, 6, 'Transfer to Retirement Account', 500.00),
+('2023-10-06 10:30:00', 6, 5, 'Investment in Stock', 250.00),
+('2023-10-07 14:00:00', 7, 8, 'Payment for services', 125.75),
+('2023-10-08 16:45:00', 8, 1, 'Transfer between accounts', 100.00),
+('2023-10-09 09:15:00', 9, 2, 'Deposit from Salary', 600.00),
+('2023-10-10 18:30:00', 10, 3, 'Fund Transfer', 80.00);

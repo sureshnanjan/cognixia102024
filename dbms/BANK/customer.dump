@@ -1,0 +1,11 @@
+INSERT INTO customer (first_name, last_name, date_of_birth, signup_date) VALUES
+('John', 'Doe', '1990-01-15', NOW()),
+('Jane', 'Smith', '1985-05-23', NOW()),
+('Alice', 'Johnson', '2000-09-10', NOW()),
+('Bob', 'Brown', '1992-12-01', NOW()),
+('Charlie', 'Davis', '1978-07-30', NOW()),
+('Diana', 'Wilson', '1995-03-14', NOW()),
+('Ethan', 'Garcia', '1988-11-02', NOW()),
+('Fiona', 'Martinez', '1993-06-25', NOW()),
+('George', 'Hernandez', '1980-04-05', NOW()),
+('Hannah', 'Lopez', '1991-10-19', NOW());
