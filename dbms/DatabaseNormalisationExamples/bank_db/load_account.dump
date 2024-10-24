@@ -1,0 +1,17 @@
+INSERT INTO account (account_number, account_type_id, status_id, date_opened, date_closed)
+VALUES
+(1001, 1, 1, '2020-01-10', NULL),  -- Savings, Active
+(1002, 2, 3, '2021-06-15', NULL),  -- Credit Card, Pending
+(1003, 3, 2, '2019-04-12', NULL),  -- Checking, Inactive
+(1004, 4, 5, '2021-03-09', '2022-03-09'),  -- Loan, Closed
+(1005, 5, 1, '2018-05-24', NULL),  -- Business, Active
+(1006, 6, 4, '2022-02-01', NULL),  -- Fixed Deposit, Suspended
+(1007, 7, 3, '2017-08-19', NULL),  -- Investment, Pending
+(1008, 8, 6, '2020-12-10', NULL),  -- Student, Blocked
+(1009, 9, 1, '2021-09-14', NULL),  -- Retirement, Active
+(1010, 10, 2, '2021-05-05', NULL),  -- Premium, Inactive
+(1011, 11, 7, '2019-01-08', NULL),  -- Joint, Frozen
+(1012, 12, 5, '2020-07-23', '2021-07-23'),  -- Trust, Closed
+(1013, 13, 4, '2021-10-12', NULL),  -- Mortgage, Suspended
+(1014, 14, 8, '2019-06-05', NULL),  -- Virtual, Dormant
+(1015, 15, 1, '2020-11-04', NULL);  -- Salary, Active
