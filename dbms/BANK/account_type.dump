@@ -1,0 +1,11 @@
+INSERT INTO account_type (account_type) VALUES
+('Savings'),
+('Checking'),
+('Business'),
+('Student'),
+('Joint'),
+('Retirement'),
+('Investment'),
+('High Yield'),
+('Money Market'),
+('Certificate of Deposit');
