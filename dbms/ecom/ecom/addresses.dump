@@ -1,0 +1,10 @@
+-- Insert data into addresses
+INSERT INTO addresses (address_id, address) VALUES 
+(1, '123 Main St, Bengaluru, India'),
+(2, '456 Elm St, Bengaluru, India'),
+(3, '789 Oak St, Bengaluru, India'),
+(4, '101 Pine St, Bengaluru, India'),
+(5, '202 Maple St, Bengaluru, India'),
+(6, '303 Cedar St, Bengaluru, India'),
+(7, '404 Birch St, Bengaluru, India'),
+(8, '505 Walnut St, Bengaluru, India');
