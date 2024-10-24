@@ -1,0 +1,16 @@
+INSERT INTO account_type (account_type_id, account_type) VALUES
+(1, 'Savings'),
+(2, 'Credit Card'),
+(3, 'Checking'),
+(4, 'Loan'),
+(5, 'Business'),
+(6, 'Fixed Deposit'),
+(7, 'Investment'),
+(8, 'Student'),
+(9, 'Retirement'),
+(10, 'Premium'),
+(11, 'Joint'),
+(12, 'Trust'),
+(13, 'Mortgage'),
+(14, 'Virtual'),
+(15, 'Salary');
