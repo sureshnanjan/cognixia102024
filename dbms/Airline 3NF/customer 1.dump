@@ -1,0 +1,11 @@
+INSERT INTO customer (customer_id, country_id, first_name, last_name, passport_number, email_address, phone_number) VALUES
+(1, 101, 'John', 'Doe', 'A1234567', 'john.doe@example.com', '+1234567890'),
+(2, 102, 'Jane', 'Smith', 'B2345678', 'jane.smith@example.com', '+1245678901'),
+(3, 103, 'Carlos', 'Garcia', 'C3456789', 'carlos.garcia@example.com', '+1256789012'),
+(4, 104, 'Maria', 'Silva', 'D4567890', 'maria.silva@example.com', '+1267890123'),
+(5, 105, 'James', 'Brown', 'E5678901', 'james.brown@example.com', '+1278901234'),
+(6, 106, 'Hans', 'Müller', 'F6789012', 'hans.mueller@example.com', '+1289012345'),
+(7, 107, 'Sophie', 'Dupont', 'G7890123', 'sophie.dupont@example.com', '+1290123456'),
+(8, 108, 'Raj', 'Patel', 'H8901234', 'raj.patel@example.com', '+1301234567'),
+(9, 109, 'Emma', 'Wilson', 'I9012345', 'emma.wilson@example.com', '+1312345678'),
+(10, 110, 'Takashi', 'Yamamoto', 'J0123456', 'takashi.yamamoto@example.com', '+1323456789');
