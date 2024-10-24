@@ -1,0 +1,2 @@
+actor_id	first_name	last_name	film_count
+107	GINA	DEGENERES	42
