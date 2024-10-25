@@ -1,0 +1,13 @@
+-- Insert data into the account_type table
+
+INSERT INTO account_type (account_type_id, account_type)
+VALUES (1, 'Savings'),
+       (2, 'Credit Card'),
+       (3, 'Transaction'),
+       (4, 'Loan'),
+       (5, 'Fixed Deposit'),
+       (6, 'Business Account'),
+       (7, 'Overdraft'),
+       (8, 'Recurring Deposit'),
+       (9, 'Mortgage'),
+       (10, 'Personal Loan');
