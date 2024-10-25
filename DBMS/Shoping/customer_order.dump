@@ -1,6 +1,0 @@
--- Insert data into customer_order
-INSERT INTO customer_order (order_id, username, shipping_address_id, billing_address_id, order_date, order_discount) VALUES 
-(1, 'johndoe', 1, 1, NOW(), 10.00),
-(2, 'janedoe', 2, 2, NOW(), 5.00),
-(3, 'alice', 3, 3, NOW(), 0.00),
-(4, 'bob', 4, 4, NOW(), 15.00);
