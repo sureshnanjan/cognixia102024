@@ -1,0 +1,6 @@
+-- Insert data into users_account
+INSERT INTO users_account (username, first_name, last_name, email_address) VALUES 
+('johndoe', 'John', 'Doe', 'john.doe@example.com'),
+('janedoe', 'Jane', 'Doe', 'jane.doe@example.com'),
+('alice', 'Alice', 'Smith', 'alice.smith@example.com'),
+('bob', 'Bob', 'Johnson', 'bob.johnson@example.com');
