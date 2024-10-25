@@ -1,0 +1,6 @@
+INSERT INTO account_type(account_type_id, account_type) VALUES
+(1, 'Savings'),
+(2, 'Current'),
+(3, 'Salary'),
+(4, 'Fixed Deposit'),
+(5, 'NRI');

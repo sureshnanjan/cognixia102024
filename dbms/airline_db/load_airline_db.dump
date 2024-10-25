@@ -1,0 +1,183 @@
+-- 1. Insert records into Country Table
+INSERT INTO country (country_id, country_name) VALUES
+(1, 'United States'),
+(2, 'Canada'),
+(3, 'United Kingdom'),
+(4, 'Germany'),
+(5, 'France'),
+(6, 'Australia'),
+(7, 'India'),
+(8, 'Japan'),
+(9, 'Brazil'),
+(10, 'South Africa');
+
+-- 2. Insert records into City Table
+INSERT INTO city (city_id, city_name, country_id) VALUES
+(1, 'New York', 1),
+(2, 'Toronto', 2),
+(3, 'London', 3),
+(4, 'Berlin', 4),
+(5, 'Paris', 5),
+(6, 'Sydney', 6),
+(7, 'Mumbai', 7),
+(8, 'Tokyo', 8),
+(9, 'Rio de Janeiro', 9),
+(10, 'Cape Town', 10);
+
+-- 3. Insert records into Airport Table
+INSERT INTO airport (airport_code, airport_name, city_id) VALUES
+('JFK', 'John F. Kennedy International Airport', 1),
+('YYZ', 'Toronto Pearson International Airport', 2),
+('LHR', 'Heathrow Airport', 3),
+('TXL', 'Berlin Tegel Airport', 4),
+('CDG', 'Charles de Gaulle Airport', 5),
+('SYD', 'Sydney Kingsford Smith Airport', 6),
+('BOM', 'Chhatrapati Shivaji Maharaj International Airport', 7),
+('NRT', 'Narita International Airport', 8),
+('GIG', 'Galeão International Airport', 9),
+('CPT', 'Cape Town International Airport', 10);
+
+-- 4. Insert records into Airline Table
+INSERT INTO airline (airline_id, airline_name) VALUES
+(1, 'American Airlines'),
+(2, 'Air Canada'),
+(3, 'British Airways'),
+(4, 'Lufthansa'),
+(5, 'Air France'),
+(6, 'Qantas'),
+(7, 'IndiGo'),
+(8, 'All Nippon Airways'),
+(9, 'LATAM Airlines'),
+(10, 'South African Airways');
+
+-- 5. Insert records into Manufacturer Table
+INSERT INTO manufacturer (manufacturer_id, manufacturer_name) VALUES
+(1, 'Boeing'),
+(2, 'Airbus'),
+(3, 'Embraer'),
+(4, 'Bombardier'),
+(5, 'McDonnell Douglas'),
+(6, 'Cessna'),
+(7, 'Lockheed Martin'),
+(8, 'Dassault'),
+(9, 'Sukhoi'),
+(10, 'Fokker');
+
+-- 6. Insert records into Aircraft Model Table
+INSERT INTO aircraft_model (model_id, manufacturer_id, model_name) VALUES
+(1, 1, 'Boeing 737'),
+(2, 1, 'Boeing 747'),
+(3, 2, 'Airbus A320'),
+(4, 2, 'Airbus A380'),
+(5, 3, 'Embraer E175'),
+(6, 4, 'Bombardier CRJ900'),
+(7, 5, 'DC-10'),
+(8, 6, 'Cessna 172'),
+(9, 7, 'Lockheed Martin C-130'),
+(10, 8, 'Dassault Falcon 7X');
+
+-- 7. Insert records into Aircraft Table
+INSERT INTO aircraft (aircraft_id, aircraft_model_id, owned_by_airline_id) VALUES
+(1, 1, 1),
+(2, 2, 1),
+(3, 3, 2),
+(4, 4, 2),
+(5, 5, 3),
+(6, 6, 4),
+(7, 7, 5),
+(8, 8, 6),
+(9, 9, 7),
+(10, 10, 8);
+
+-- 8. Insert records into Seat Class Table
+INSERT INTO seat_class (seat_class_id, class_name) VALUES
+(1, 'Economy'),
+(2, 'Business'),
+(3, 'First'),
+(4, 'Premium Economy'),
+(5, 'Coach'),
+(6, 'Luxury'),
+(7, 'Standard'),
+(8, 'Deluxe'),
+(9, 'Economy Plus'),
+(10, 'Executive');
+
+-- 9. Insert records into Aircraft Seat Table
+INSERT INTO aircraft_seat (seat_id, aircraft_id, seat_class_id) VALUES
+(1, 1, 1),
+(2, 1, 2),
+(3, 1, 3),
+(4, 2, 1),
+(5, 2, 2),
+(6, 3, 1),
+(7, 4, 2),
+(8, 5, 3),
+(9, 6, 1),
+(10, 7, 2);
+
+-- 10. Insert records into Flight Table
+INSERT INTO flight (flight_code, airline_id) VALUES
+('AA100', 1),
+('AC200', 2),
+('BA300', 3),
+('LH400', 4),
+('AF500', 5),
+('QF600', 6),
+('6E700', 7),
+('NH800', 8),
+('LA900', 9),
+('SA1000', 10);
+
+-- 11. Insert records into Leg Table
+INSERT INTO leg (leg_id, arrival_airport_code, departure_airport_code, arrival_time, departure_time, aircraft_id, flight_code) VALUES
+(1, 'JFK', 'YYZ', '2024-10-01 12:00:00', '2024-10-01 10:00:00', 1, 'AA100'),
+(2, 'YYZ', 'LHR', '2024-10-02 14:00:00', '2024-10-02 12:00:00', 2, 'AC200'),
+(3, 'LHR', 'TXL', '2024-10-03 16:00:00', '2024-10-03 14:00:00', 3, 'BA300'),
+(4, 'TXL', 'CDG', '2024-10-04 18:00:00', '2024-10-04 16:00:00', 4, 'LH400'),
+(5, 'CDG', 'SYD', '2024-10-05 20:00:00', '2024-10-05 18:00:00', 5, 'AF500'),
+(6, 'SYD', 'BOM', '2024-10-06 22:00:00', '2024-10-06 20:00:00', 6, 'QF600'),
+(7, 'BOM', 'NRT', '2024-10-07 00:00:00', '2024-10-06 23:00:00', 7, '6E700'),
+(8, 'NRT', 'GIG', '2024-10-08 02:00:00', '2024-10-08 00:00:00', 8, 'NH800'),
+(9, 'GIG', 'CPT', '2024-10-09 04:00:00', '2024-10-09 02:00:00', 9, 'LA900'),
+(10, 'CPT', 'JFK', '2024-10-10 06:00:00', '2024-10-10 04:00:00', 10, 'SA1000');
+
+-- 12. Insert records into Customer Table
+INSERT INTO customer (customer_id, first_name, last_name, passport_number, email_address, phone_number, country_id) VALUES
+(1, 'John', 'Doe', 'X1234567', 'john.doe@example.com', '+1234567890', 1),
+(2, 'Jane', 'Smith', 'X2345678', 'jane.smith@example.com', '+1987654321', 2),
+(3, 'Robert', 'Brown', 'X3456789', 'robert.brown@example.com', '+1122334455', 3),
+(4, 'Emily', 'Davis', 'X4567890', 'emily.davis@example.com', '+2233445566', 4),
+(5, 'Michael', 'Wilson', 'X5678901', 'michael.wilson@example.com', '+3344556677', 5),
+(6, 'Jessica', 'Garcia', 'X6789012', 'jessica.garcia@example.com', '+4455667788', 6),
+(7, 'David', 'Martinez', 'X7890123', 'david.martinez@example.com', '+5566778899', 7),
+(8, 'Sarah', 'Anderson', 'X8901234', 'sarah.anderson@example.com', '+6677889900', 8),
+(9, 'James', 'Taylor', 'X9012345', 'james.taylor@example.com', '+7788990011', 9),
+(10, 'Linda', 'Thomas', 'X0123456', 'linda.thomas@example.com', '+9835479567', 10);
+
+
+-- 1. Insert records into Booking Table
+INSERT INTO booking (booking_id, airline_id, customer_id) VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 4),
+(5, 5, 5),
+(6, 6, 6),
+(7, 7, 7),
+(8, 8, 8),
+(9, 9, 9),
+(10, 10, 10);
+
+-- 2. Insert records into Booking Leg Table
+INSERT INTO booking_leg (booking_leg_id, booking_id, leg_id, seat_id, price) VALUES
+(1, 1, 1, 1, 250.00),
+(2, 1, 2, 2, 300.00),
+(3, 2, 3, 3, 450.00),
+(4, 2, 4, 4, 400.00),
+(5, 3, 5, 5, 500.00),
+(6, 4, 6, 6, 200.00),
+(7, 5, 7, 7, 350.00),
+(8, 6, 8, 8, 600.00),
+(9, 7, 9, 9, 700.00),
+(10, 8, 10, 10, 800.00);
+

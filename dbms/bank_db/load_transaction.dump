@@ -1,0 +1,9 @@
+INSERT INTO transaction(transaction_id, transaction_datetime, from_account, to_account, description, amount) VALUES
+(1, '2023-01-21 10:00:00', 1001, 1002, 'Transfer to Jane Smith', 100.00),
+(2, '2023-02-15 14:30:00', 1003, 1004, 'Payment for services', 200.50),
+(3, '2023-03-05 09:45:00', 1005, 1006, 'Deposit to Fixed Deposit', 1500.00),
+(4, '2023-04-10 11:15:00', 1012, 1008, 'Transfer to Frank Wilson', 250.00),
+(5, '2023-05-20 16:00:00', 1009, 1010, 'Monthly Salary Payment', 3000.00),
+(6, '2023-06-12 08:30:00', 1011, 1012, 'Bill Payment', 120.75),
+(7, '2023-07-25 10:15:00', 1013, 1014, 'Transfer to Laura Rodriguez', 400.00),
+(8, '2023-08-30 13:00:00', 1015, 1001, 'Transfer from John Doe', 50.00);
