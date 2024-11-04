@@ -1,0 +1,12 @@
+using sureshutil;
+using System;
+public class SureshMain{
+
+public static void Main()
+{
+
+	Test.message();
+        Console.WriteLine(Test.fibo(3));
+}
+	
+}

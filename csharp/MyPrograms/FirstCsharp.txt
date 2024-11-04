@@ -1,0 +1,16 @@
+using System;
+using ExternalUtility;
+namespace Logesh{
+   class FirstCsharp{
+       static void Main(){
+            int val=10;
+            Console.WriteLine("Hello From Main Method");
+            Console.WriteLine("value from Main Method:"+val);
+	     External myObj = new External();
+   		myObj.message();
+	
+            //ExternalUtility.External.message();
+            //ExternalUtility.External.addNumber(10,20);
+       }
+   }
+}

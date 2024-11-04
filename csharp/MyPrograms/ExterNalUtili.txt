@@ -1,0 +1,11 @@
+using System;
+namespace ExternalUtility{
+  public class External{
+      static int addNumber(int a,int b){
+            return a+b;
+      }
+      static void message(){
+          Console.WriteLine("Welcome from External");
+      }
+  }
+}
