@@ -1,0 +1,10 @@
+namespace sam
+{
+    public class add  
+    {
+        public static int AddNumbers(int x, int y)  
+        {
+            return x + y;
+        }
+    }
+}

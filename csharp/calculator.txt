@@ -1,0 +1,14 @@
+using System;
+
+class Calculator
+{
+    static void Main()
+    {
+        int a = 10;
+        int b = 20;
+        
+        int result = sam.add.AddNumbers(a, b);
+
+        Console.WriteLine("The result of the addition is: " + result);
+    }
+}
