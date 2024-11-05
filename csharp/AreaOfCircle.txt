@@ -1,0 +1,17 @@
+using System;
+ 
+namespace CircleApp
+{
+    class CircleAreaCalculator{
+        public static void Main(string[] args){
+            
+            double radius = 5.0;
+            
+            Circle circle = new Circle();
+            
+            double area = circle.CalculateArea(radius);
+            
+            Console.WriteLine("The area of the circle with radius {radius} is: "+ area);
+        }
+    }
+}

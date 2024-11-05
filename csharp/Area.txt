@@ -1,0 +1,11 @@
+using System;
+ 
+namespace CircleApp{
+    public class Circle{
+
+        public double CalculateArea(double radius)
+        {
+            return Math.PI * radius * radius;
+        }
+    }
+}
