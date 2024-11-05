@@ -1,0 +1,21 @@
+using System;
+ 
+public class EmployeeInfo
+{
+    public static void Main()
+    {
+        Console.Write("Enter Employee Name: ");
+        string name = Console.ReadLine();
+ 
+        Console.Write("Enter Employee ID: ");
+        string employeeId = Console.ReadLine();
+ 
+        Console.Write("Enter City: ");
+        string city = Console.ReadLine();
+
+        Console.WriteLine("\nEmployee Details:");
+        Console.WriteLine("Name: "+ name);
+        Console.WriteLine("Employee ID: "+ employeeId);
+        Console.WriteLine("City: "+ city);
+    }
+}
