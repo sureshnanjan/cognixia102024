@@ -1,20 +1,24 @@
 using System;
-namespace Attendance.Tracking{
-class Attendance1{
-static void Main(){
-string title = "The Attendance for Today";
-//string date = "04/11/2024";
-DateTime date = new DateTime(2024,11,4);
-string[] listofstudents = {"Anu", "Shravya"};
-System.Console.WriteLine(title);
-System.Console.WriteLine(date);
-//System.Console.WriteLine(listofstudents);
-foreach (string element in listofstudents)
+using Suresh;
+
+namespace Attendance.Tracking
 {
-    Console.Write(element);
-}
+    class Attendance1
+    {
+        static void Main()
+        {
+            string title = "The Attendance for Today";
 
+            Console.WriteLine("Current Date: " + MyDate.GetCurrentDate());
+            Console.WriteLine("Current Time: " + MyDate.GetCurrentTime());
+            Console.WriteLine("Current Year: " + MyDate.GetCurrentYear());
 
-}
-}
+            string[] listofstudents = { "Anu", "Shravya" };
+            Console.WriteLine(title);
+            foreach (string element in listofstudents)
+            {
+                Console.Write(element);
+            }
+        }
+    }
 }

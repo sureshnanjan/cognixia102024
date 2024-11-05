@@ -1,5 +1,25 @@
-namespace Suresh{
-public class MyDate{
+using System; 
 
-}
+namespace Suresh 
+{
+    public class MyDate 
+    {
+
+        public static string GetCurrentDate()
+        {
+            return DateTime.Now.ToShortDateString();
+        }
+
+
+        public static string GetCurrentTime()
+        {
+            return DateTime.Now.ToShortTimeString();
+        }
+
+
+        public static int GetCurrentYear()
+        {
+            return DateTime.Now.Year;
+        }
+    }
 }
