@@ -1,0 +1,10 @@
+using System;
+using Suresh;
+namespace Something{
+class Example{
+static void Main(){
+MyDate ex=new MyDate();
+ex.meth();
+}
+}
+}

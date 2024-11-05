@@ -1,5 +1,8 @@
 namespace Suresh{
 public class MyDate{
 
+public void meth(){
+System.Console.Write("meth has been called");
+}
 }
 }
