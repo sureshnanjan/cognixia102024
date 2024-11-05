@@ -1,5 +1,7 @@
 namespace Suresh{
 public class MyDate{
-
+public static void MyNewDateMeth(){
+System.Console.WriteLine("This is My New Date Method in namespace Suresh");
+}
 }
 }
