@@ -1,5 +1,7 @@
 namespace Suresh{
 public class MyDate{
-
+public static void MynewMethod(){
+System.Console.WriteLine("New method");
+}
 }
 }
