@@ -1,5 +1,8 @@
 namespace Suresh{
 public class MyDate{
+public void display(){
+  System.Console.WriteLine("This is an example in method block");
+}
 
 }
 }
