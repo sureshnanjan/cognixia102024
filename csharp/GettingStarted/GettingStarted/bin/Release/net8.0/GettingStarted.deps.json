@@ -7,14 +7,38 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "GettingStarted/1.0.0": {
+        "dependencies": {
+          "PetstoreModel": "1.0.0",
+          "TypeSystemDemo": "1.0.0"
+        },
         "runtime": {
           "GettingStarted.dll": {}
+        }
+      },
+      "PetstoreModel/1.0.0": {
+        "runtime": {
+          "PetstoreModel.dll": {}
+        }
+      },
+      "TypeSystemDemo/1.0.0": {
+        "runtime": {
+          "TypeSystemDemo.dll": {}
         }
       }
     }
   },
   "libraries": {
     "GettingStarted/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PetstoreModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TypeSystemDemo/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

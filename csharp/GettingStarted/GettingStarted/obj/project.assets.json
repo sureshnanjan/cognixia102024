@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "PetstoreModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/PetstoreModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PetstoreModel.dll": {}
+        }
+      },
+      "TypeSystemDemo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/TypeSystemDemo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TypeSystemDemo.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PetstoreModel/1.0.0": {
+      "type": "project",
+      "path": "../PetstoreModel/PetstoreModel.csproj",
+      "msbuildProject": "../PetstoreModel/PetstoreModel.csproj"
+    },
+    "TypeSystemDemo/1.0.0": {
+      "type": "project",
+      "path": "../TypeSystemDemo/TypeSystemDemo.csproj",
+      "msbuildProject": "../TypeSystemDemo/TypeSystemDemo.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "PetstoreModel >= 1.0.0",
+      "TypeSystemDemo >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\nanja\\.nuget\\packages\\": {}
@@ -33,7 +68,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj": {
+              "projectPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj"
+            },
+            "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj": {
+              "projectPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

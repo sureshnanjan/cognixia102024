@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PetstoreModel\PetstoreModel.csproj" />
+    <ProjectReference Include="..\TypeSystemDemo\TypeSystemDemo.csproj" />
+  </ItemGroup>
+
 </Project>
