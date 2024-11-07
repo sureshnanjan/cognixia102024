@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GettingStarted")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a06b9dedbafd105dabea16b878b604afd2a02d80")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+addfa26d25ffa96cc2c4a589927cac9f501df666")]
+>>>>>>> 0a7223b (files added)
 [assembly: System.Reflection.AssemblyProductAttribute("GettingStarted")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GettingStarted")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

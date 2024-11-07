@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "ISI/yy23tbM=",
+=======
+  "dgSpecHash": "fW5M+SkP4Ac=",
+>>>>>>> 0a7223b (files added)
   "success": true,
-  "projectFilePath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+  "projectFilePath": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -14,8 +14,8 @@ namespace GettingStarted
         string _title;
         string _description;
         DateTime _current_date;
-        string[] participants;
-        Participant[] tr_participants;
+        string participants;
+        //Participant[] tr_participants;
 
         // Operation
         /// <summary>
@@ -29,14 +29,17 @@ namespace GettingStarted
         {
             this._title = title;
             this._description = desc;
-            foreach (var item in participants.Split(","))
-            {
-                //this.participants.Append(item);
-            }
-            
+            this.participants = participants;
+            //foreach (string item in participants.Split(","))
+            //{
+            //    this.participants.Append(item);
+            //}
+
+
 
         }
 
+<<<<<<< HEAD
         /// <summary>
         /// 
         /// </summary>
@@ -136,6 +139,19 @@ namespace GettingStarted
             DayOfWeek dayofWeek = DayOfWeek.Sunday;
 
 
+=======
+        public void Populate() {
+            Console.WriteLine(_title+" "+ _description+" "+participants);
+        
+        }
+        static void Main(string[] args)
+        {
+            string md="Ganesh Rao";
+            Console.WriteLine("Hello, World!");
+            TrainingDashboard automationTraining = new TrainingDashboard("training", "job", md);
+            automationTraining.Populate();
+            automationTraining.Publish();
+>>>>>>> 0a7223b (files added)
         }
 
         private static void MoveObjects(IMove[] movingobjects)
