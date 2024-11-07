@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj": {}
+    "C:\\Users\\logesh.s\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj": {}
   },
   "projects": {
-    "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj": {
+    "C:\\Users\\logesh.s\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+        "projectUniqueName": "C:\\Users\\logesh.s\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
         "projectName": "GettingStarted",
-        "projectPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
-        "packagesPath": "C:\\Users\\nanja\\.nuget\\packages\\",
-        "outputPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\obj\\",
+        "projectPath": "C:\\Users\\logesh.s\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+        "packagesPath": "C:\\Users\\logesh.s\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\logesh.s\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nanja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\logesh.s\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
