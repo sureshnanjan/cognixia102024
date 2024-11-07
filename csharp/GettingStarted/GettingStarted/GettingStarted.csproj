@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\KeywordLearning\KeywordLearning.csproj" />
     <ProjectReference Include="..\PetstoreModel\PetstoreModel.csproj" />
     <ProjectReference Include="..\TypeSystemDemo\TypeSystemDemo.csproj" />
   </ItemGroup>
