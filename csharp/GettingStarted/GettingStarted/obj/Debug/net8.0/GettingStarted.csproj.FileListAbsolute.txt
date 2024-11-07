@@ -13,3 +13,11 @@ C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingS
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.pdb
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.genruntimeconfig.cache
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\ref\GettingStarted.dll
+C:\Users\anudharshini.kamaraj\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anudharshini.kamaraj\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.AssemblyInfoInputs.cache
+C:\Users\anudharshini.kamaraj\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.AssemblyInfo.cs
+C:\Users\anudharshini.kamaraj\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.csproj.CoreCompileInputs.cache
+C:\Users\anudharshini.kamaraj\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.sourcelink.json
+C:\Users\anudharshini.kamaraj\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.dll
+C:\Users\anudharshini.kamaraj\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\refint\GettingStarted.dll
+C:\Users\anudharshini.kamaraj\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.pdb
