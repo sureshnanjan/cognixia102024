@@ -34,8 +34,7 @@
               "RelativeToolTip": "Participant.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T05:30:01.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T05:30:01.63Z"
             },
             {
               "$type": "Document",
@@ -43,9 +42,9 @@
               "Title": "TrainingDashboard.cs",
               "DocumentMoniker": "C:\\Users\\sameera.mohamed\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
               "RelativeDocumentMoniker": "TrainingDashboard.cs",
-              "ToolTip": "C:\\Users\\sameera.mohamed\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs*",
-              "RelativeToolTip": "TrainingDashboard.cs*",
-              "ViewState": "AgIAACAAAAAAAAAAAAAUwA4AAAAcAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\sameera.mohamed\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeToolTip": "TrainingDashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T05:28:58.35Z",
               "EditorCaption": ""
@@ -60,8 +59,7 @@
               "RelativeToolTip": "GettingStarted.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-06T05:30:07.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T05:30:07.865Z"
             }
           ]
         }
