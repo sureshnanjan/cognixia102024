@@ -8,6 +8,7 @@ namespace TypeSystemDemo
 {
     public class Car : IMove
     {
+        const float PI = 3.14f;
         private int privateVar;
         private int priReadonly;
         public int publicVar;

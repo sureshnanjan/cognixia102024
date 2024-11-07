@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TypeSystemDemo
 {
-    internal class Derived: Base
+    public class Derived: Base
     {
     }
 }

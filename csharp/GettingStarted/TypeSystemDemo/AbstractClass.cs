@@ -8,6 +8,7 @@ namespace TypeSystemDemo
 {
     public abstract class AbstractClass
     {
+        public abstract string Name { get; }
         public void Method() { }
 
         public abstract void Method2(); 

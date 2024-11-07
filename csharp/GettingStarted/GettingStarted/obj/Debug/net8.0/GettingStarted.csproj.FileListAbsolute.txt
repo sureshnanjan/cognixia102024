@@ -19,3 +19,5 @@ C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingS
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\TypeSystemDemo.pdb
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.csproj.AssemblyReference.cache
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingS.04AAEC2E.Up2Date
+C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\GettingStarted.xml
+C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.xml

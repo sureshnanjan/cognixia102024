@@ -6,7 +6,5 @@ using System.Threading.Tasks;
 
 namespace TypeSystemDemo
 {
-    public class AbsDerived: AbstractClass
-    {
-    }
+    
 }

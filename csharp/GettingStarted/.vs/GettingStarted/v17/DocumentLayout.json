@@ -7,24 +7,44 @@
       "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\classdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\classdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\abstractclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\abstractclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\absderived.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\absderived.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\enumdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\enumdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\derived.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\derived.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\classdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\classdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\imove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{82E8B46A-DF00-4177-99B2-59B5DCF3DB81}|PetstoreModel\\PetstoreModel.csproj|solutionrelative:petstoremodel\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\enumdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\enumdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{82E8B46A-DF00-4177-99B2-59B5DCF3DB81}|PetstoreModel\\PetstoreModel.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\petstoremodel\\petstoremodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{82E8B46A-DF00-4177-99B2-59B5DCF3DB81}|PetstoreModel\\PetstoreModel.csproj|solutionrelative:petstoremodel\\petstoremodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -54,62 +70,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IMove.cs",
-              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\IMove.cs",
-              "RelativeDocumentMoniker": "TypeSystemDemo\\IMove.cs",
-              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\IMove.cs",
-              "RelativeToolTip": "TypeSystemDemo\\IMove.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T07:21:53.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Bird.cs",
-              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Bird.cs",
-              "RelativeDocumentMoniker": "TypeSystemDemo\\Bird.cs",
-              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Bird.cs",
-              "RelativeToolTip": "TypeSystemDemo\\Bird.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T07:08:37.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Bike.cs",
-              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Bike.cs",
-              "RelativeDocumentMoniker": "TypeSystemDemo\\Bike.cs",
-              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Bike.cs",
-              "RelativeToolTip": "TypeSystemDemo\\Bike.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T07:08:21.603Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Car.cs",
-              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Car.cs",
-              "RelativeDocumentMoniker": "TypeSystemDemo\\Car.cs",
-              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Car.cs",
-              "RelativeToolTip": "TypeSystemDemo\\Car.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAwAAAAYAAAA",
+              "Title": "AbsDerived.cs",
+              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\AbsDerived.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\AbsDerived.cs",
+              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\AbsDerived.cs",
+              "RelativeToolTip": "TypeSystemDemo\\AbsDerived.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T07:08:05.748Z",
+              "WhenOpened": "2024-11-06T10:24:34.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AbstractClass.cs",
+              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\AbstractClass.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\AbstractClass.cs",
+              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\AbstractClass.cs",
+              "RelativeToolTip": "TypeSystemDemo\\AbstractClass.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T10:16:54.224Z",
               "EditorCaption": ""
             },
             {
@@ -118,13 +104,78 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TrainingDashboard.cs",
+              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
+              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T07:28:34.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Base.cs",
+              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Base.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\Base.cs",
+              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Base.cs",
+              "RelativeToolTip": "TypeSystemDemo\\Base.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T10:21:09.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Derived.cs",
+              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Derived.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\Derived.cs",
+              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Derived.cs",
+              "RelativeToolTip": "TypeSystemDemo\\Derived.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T10:21:26.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnumDemo.cs",
+              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\EnumDemo.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\EnumDemo.cs",
+              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\EnumDemo.cs",
+              "RelativeToolTip": "TypeSystemDemo\\EnumDemo.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAAwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T05:54:47.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Bike.cs",
+              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Bike.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\Bike.cs",
+              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Bike.cs",
+              "RelativeToolTip": "TypeSystemDemo\\Bike.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T07:08:21.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ClassDemo.cs",
               "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\ClassDemo.cs",
               "RelativeDocumentMoniker": "TypeSystemDemo\\ClassDemo.cs",
               "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\ClassDemo.cs",
               "RelativeToolTip": "TypeSystemDemo\\ClassDemo.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAxAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAwAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T05:53:17.543Z",
               "EditorCaption": ""
@@ -132,19 +183,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\User.cs",
-              "RelativeDocumentMoniker": "PetstoreModel\\User.cs",
-              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\User.cs",
-              "RelativeToolTip": "PetstoreModel\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Car.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\Car.cs",
+              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Car.cs",
+              "RelativeToolTip": "TypeSystemDemo\\Car.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T05:41:05.929Z",
+              "WhenOpened": "2024-11-06T07:08:05.748Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Participant.cs",
               "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\Participant.cs",
               "RelativeDocumentMoniker": "GettingStarted\\Participant.cs",
@@ -157,20 +208,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TrainingDashboard.cs",
-              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
-              "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
-              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
-              "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAAAEEAAABHAAAA",
+              "DocumentIndex": 10,
+              "Title": "Bird.cs",
+              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Bird.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\Bird.cs",
+              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Bird.cs",
+              "RelativeToolTip": "TypeSystemDemo\\Bird.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T07:28:34.783Z",
+              "WhenOpened": "2024-11-06T07:08:37.665Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
+              "Title": "IMove.cs",
+              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\IMove.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\IMove.cs",
+              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\IMove.cs",
+              "RelativeToolTip": "TypeSystemDemo\\IMove.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T07:21:53.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\User.cs",
+              "RelativeDocumentMoniker": "PetstoreModel\\User.cs",
+              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\User.cs",
+              "RelativeToolTip": "PetstoreModel\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T05:41:05.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "PetstoreModel",
               "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj",
               "RelativeDocumentMoniker": "PetstoreModel\\PetstoreModel.csproj",
@@ -183,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "InterfaceDemo.cs",
               "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\InterfaceDemo.cs",
               "RelativeDocumentMoniker": "TypeSystemDemo\\InterfaceDemo.cs",
@@ -192,19 +269,6 @@
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T05:54:00.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EnumDemo.cs",
-              "DocumentMoniker": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\EnumDemo.cs",
-              "RelativeDocumentMoniker": "TypeSystemDemo\\EnumDemo.cs",
-              "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\EnumDemo.cs",
-              "RelativeToolTip": "TypeSystemDemo\\EnumDemo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T05:54:47.191Z",
               "EditorCaption": ""
             }
           ]

@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace TypeSystemDemo
 {
-    internal enum EnumDemo
+    public enum EnumDemo
     {
+    }
+
+    public enum DayofWeek {
+        sunday,
+        momday,
+        tuesday,
+        wednesday,
+        thursday
     }
 }
