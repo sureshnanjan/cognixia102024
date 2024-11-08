@@ -35,7 +35,7 @@
             string trainername = "Suresh Nanjan";
             Console.WriteLine("Hello, World!");
             TrainingDashboard automationTraining = new TrainingDashboard("","","");
-            automationTraining.Populate()
+            //automationTraining.Populate();
             automationTraining.Publish();
         }
     }
