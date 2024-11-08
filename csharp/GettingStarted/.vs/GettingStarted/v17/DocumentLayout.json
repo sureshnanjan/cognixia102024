@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\decimal_int_return.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\decimal_int_return.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\if_else.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\if_else.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\default_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\default_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\interface_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\interface_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\break_continue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\break_continue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\switchcase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\switchcase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\sizeof_lock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\sizeof_lock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\while_long.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\while_long.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\if_else.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\if_else.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\switchcase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\switchcase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,24 +50,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "decimal_int_return.cs",
+              "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\decimal_int_return.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\decimal_int_return.cs",
+              "ToolTip": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\decimal_int_return.cs",
+              "RelativeToolTip": "KeywordLearning\\decimal_int_return.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T16:16:54.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "default_.cs",
+              "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\default_.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\default_.cs",
+              "ToolTip": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\default_.cs",
+              "RelativeToolTip": "KeywordLearning\\default_.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T14:53:33.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "interface_.cs",
+              "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\interface_.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\interface_.cs",
+              "ToolTip": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\interface_.cs",
+              "RelativeToolTip": "KeywordLearning\\interface_.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T14:33:43.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "sizeof_lock.cs",
+              "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\sizeof_lock.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\sizeof_lock.cs",
+              "ToolTip": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\sizeof_lock.cs",
+              "RelativeToolTip": "KeywordLearning\\sizeof_lock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T14:28:17.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "break_continue.cs",
+              "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\break_continue.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\break_continue.cs",
+              "ToolTip": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\break_continue.cs",
+              "RelativeToolTip": "KeywordLearning\\break_continue.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T08:10:27.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TrainingDashboard.cs",
+              "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
+              "ToolTip": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T11:58:42.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "while_long.cs",
+              "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\while_long.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\while_long.cs",
+              "ToolTip": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\while_long.cs",
+              "RelativeToolTip": "KeywordLearning\\while_long.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T14:21:01.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "if_else.cs",
               "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\if_else.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\if_else.cs",
               "ToolTip": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\if_else.cs",
               "RelativeToolTip": "KeywordLearning\\if_else.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T08:30:36.617Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "class_keyword.cs",
               "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\class_keyword.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\class_keyword.cs",
@@ -60,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "switchcase.cs",
               "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\switchcase.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\switchcase.cs",
@@ -68,34 +179,7 @@
               "RelativeToolTip": "KeywordLearning\\switchcase.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAQwBgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T06:43:41.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "break_continue.cs",
-              "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\break_continue.cs",
-              "RelativeDocumentMoniker": "KeywordLearning\\break_continue.cs",
-              "ToolTip": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\break_continue.cs",
-              "RelativeToolTip": "KeywordLearning\\break_continue.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T08:10:27.107Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TrainingDashboard.cs",
-              "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
-              "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
-              "ToolTip": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs*",
-              "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T11:58:42.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T06:43:41.393Z"
             }
           ]
         }

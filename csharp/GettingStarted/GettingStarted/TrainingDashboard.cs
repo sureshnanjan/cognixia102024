@@ -15,6 +15,16 @@ class TrainingDashboard()
         three.display();
         break_continue four = new break_continue();
         four.display();
+        long_while five = new long_while();
+        five.display();
+        sizeof_lock six = new sizeof_lock();
+        six.display();
+        interface_ seven = new interface_();
+        seven.display();
+        default_ eight = new default_();
+        eight.display();
+        decimal_int_return nine = new decimal_int_return();
+        nine.display();
         //DelegateKeyword five = new DelegateKeyword();
         //five.display();
         //FixedKeyword six = new FixedKeyword();
