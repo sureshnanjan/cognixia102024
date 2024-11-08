@@ -14,8 +14,8 @@ namespace GettingStarted
         string _title;
         string _description;
         DateTime _current_date;
-        string[] participants;
-        Participant[] tr_participants;
+       // string[] participants;
+        //Participant[] tr_participants;
 
         // Operation
         /// <summary>
@@ -121,6 +121,7 @@ namespace GettingStarted
             
             string trainername = "Suresh Nanjan";
             Console.WriteLine("Hello, World!");
+<<<<<<< HEAD
             TrainingDashboard automationTraining = new TrainingDashboard("", "", "");
             //automationTraining.Populate()
             //automationTraining.Publish();
@@ -136,6 +137,11 @@ namespace GettingStarted
             DayOfWeek dayofWeek = DayOfWeek.Sunday;
 
 
+=======
+            TrainingDashboard automationTraining = new TrainingDashboard("","","");
+           // automationTraining.Populate();
+            automationTraining.Publish();
+>>>>>>> 34d0c63 (added)
         }
 
         private static void MoveObjects(IMove[] movingobjects)
