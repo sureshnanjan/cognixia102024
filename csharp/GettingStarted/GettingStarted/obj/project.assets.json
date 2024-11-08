@@ -59,19 +59,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sampath.palaniappan\\.nuget\\packages\\": {}
+    "C:\\Users\\nishanth.jaganathan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sampath.palaniappan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+      "projectUniqueName": "C:\\Users\\nishanth.jaganathan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
       "projectName": "GettingStarted",
-      "projectPath": "C:\\Users\\sampath.palaniappan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
-      "packagesPath": "C:\\Users\\sampath.palaniappan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sampath.palaniappan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\obj\\",
+      "projectPath": "C:\\Users\\nishanth.jaganathan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+      "packagesPath": "C:\\Users\\nishanth.jaganathan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nishanth.jaganathan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sampath.palaniappan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nishanth.jaganathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -85,14 +85,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\sampath.palaniappan\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj": {
-              "projectPath": "C:\\Users\\sampath.palaniappan\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj"
+            "C:\\Users\\nishanth.jaganathan\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj": {
+              "projectPath": "C:\\Users\\nishanth.jaganathan\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj"
             },
-            "C:\\Users\\sampath.palaniappan\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj": {
-              "projectPath": "C:\\Users\\sampath.palaniappan\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj"
+            "C:\\Users\\nishanth.jaganathan\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj": {
+              "projectPath": "C:\\Users\\nishanth.jaganathan\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj"
             },
-            "C:\\Users\\sampath.palaniappan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj": {
-              "projectPath": "C:\\Users\\sampath.palaniappan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj"
+            "C:\\Users\\nishanth.jaganathan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj": {
+              "projectPath": "C:\\Users\\nishanth.jaganathan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj"
             }
           }
         }

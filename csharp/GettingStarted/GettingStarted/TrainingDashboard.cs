@@ -14,8 +14,8 @@ namespace GettingStarted
         string _title;
         string _description;
         DateTime _current_date;
-        string[] participants;
-        Participant[] tr_participants;
+       // string[] participants;
+        //Participant[] tr_participants;
 
         // Operation
         /// <summary>
@@ -64,7 +64,24 @@ namespace GettingStarted
             Console.WriteLine(multipled);
             Console.WriteLine(added);
             Console.WriteLine(adddoubled);
-            numbers.
+
+            //absrtact
+            Animal mycat = new cat();
+            mycat.sound();
+            Animal mydog = new dog();
+            mydog.sound();
+            //enum
+            weeks workingdays = weeks.Monday | weeks.Tuesday | weeks.Wednesday;
+            Console.WriteLine($"workingdays: {workingdays}");
+            weeks workfromhome = weeks.Thursday | weeks.Friday;
+            Console.WriteLine($"workfromhome: {workfromhome}");
+            weeks holidays = weeks.Saturday | weeks.Sunday;
+            Console.WriteLine($"Holidays: {holidays}");
+            //interface
+            username id = new username();
+            id.Account();
+            id.user_details();
+            //numbers.
         }
 
         private static void SomeOtherMethod() {
@@ -135,6 +152,10 @@ namespace GettingStarted
             ClassDemo cl2 = new ClassDemo(2, "two");
             DayOfWeek dayofWeek = DayOfWeek.Sunday;
 
+
+          //TrainingDashboard automationTraining = new TrainingDashboard("","","");
+           // automationTraining.Populate();
+            automationTraining.Publish();
 
         }
 
