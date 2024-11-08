@@ -9,8 +9,8 @@
         string _title;
         string _description;
         DateTime _current_date;
-        string[] participants;
-        Participant[] tr_participants;
+       // string[] participants;
+        //Participant[] tr_participants;
 
         // Operation
         public void Publish() {
@@ -35,7 +35,7 @@
             string trainername = "Suresh Nanjan";
             Console.WriteLine("Hello, World!");
             TrainingDashboard automationTraining = new TrainingDashboard("","","");
-            automationTraining.Populate()
+           // automationTraining.Populate();
             automationTraining.Publish();
         }
     }
