@@ -1,6 +1,7 @@
 ﻿using System.Reflection.Metadata;
 using PetstoreModel;
 using TypeSystemDemo;
+using TypeSystemDemo.GettingStarted;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
@@ -82,6 +83,14 @@ namespace GettingStarted
             id.Account();
             id.user_details();
             //numbers.
+            //condition
+            
+            Condition condition = new Condition();
+
+            // Call the methods of Condition class
+            condition.CheckIfElse();   // Calls if-else method
+            condition.CheckSwitchCase();  // Calls switch-case method
+            condition.CheckTernary();  // Calls ternary method
         }
 
         private static void SomeOtherMethod() {

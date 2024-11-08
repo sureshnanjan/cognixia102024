@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace TypeSystemDemo
 {
-    public abstract class AbstractClass
+    internal class @delegate
     {
-        public abstract string Name { get; }
-        public void Method() { }
-
-        public abstract void Method2(); 
     }
 }
