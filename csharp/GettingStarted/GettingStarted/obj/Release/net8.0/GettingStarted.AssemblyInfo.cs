@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GettingStarted")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb1880a13a5bec9b1e12e4121ac7d124a52d897f")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ba7b05f5c72d5572a403a719cb653a03fccf0ae")]
->>>>>>> cf0adeb800db852aa70b670726d15cc7c8e908bc
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ea4f978c4ba886554004fde8e62d106a7b4f573")]
 [assembly: System.Reflection.AssemblyProductAttribute("GettingStarted")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GettingStarted")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
