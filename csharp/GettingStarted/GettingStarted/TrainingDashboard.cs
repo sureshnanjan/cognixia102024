@@ -7,9 +7,48 @@ class TrainingDashboard()
 {
     public static void Main(string[] args)
     {
+<<<<<<< HEAD
         class_keyword ck = new class_keyword();
         //ck.display();
         ck.calculate();
+=======
+        // Fields
+        string _title;
+        string _description;
+        DateTime _current_date;
+        string participants;
+        Participant[] tr_participants;
+
+        // Operation
+        public void Publish() {
+            Console.WriteLine("This is the Data for Dashboard");
+        }
+
+        public TrainingDashboard(string title, string desc, string participants)
+        {
+            this._title = title;
+            this._description = desc;
+            this.participants = participants;  
+            //foreach (var item in participants.Split(","))
+            //{
+                //this.participants.Append(item);
+            //}
+            
+
+        }
+
+        public void Populate() {
+            Console.WriteLine(_title + " " + _description + " " + participants);
+        }
+        static void Main(string[] args)
+        {
+            string trainername = "Suresh Nanjan";
+            Console.WriteLine("Hello, World!");
+            TrainingDashboard automationTraining = new TrainingDashboard("Training","Job","Samson");
+            automationTraining.Populate();
+            automationTraining.Publish();
+        }
+>>>>>>> 667ea71 (file added)
     }
 }
 

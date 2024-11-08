@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\",
   "Documents": [
     {
+<<<<<<< HEAD
+=======
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> 667ea71 (file added)
       "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\work_folder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\gettingstarted.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\gettingstarted.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+>>>>>>> 667ea71 (file added)
     }
   ],
   "DocumentGroupContainers": [
@@ -21,14 +33,45 @@
           "SelectedChildIndex": 0,
           "Children": [
             {
+<<<<<<< HEAD
+=======
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Participant.cs",
+              "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\Participant.cs",
+              "RelativeDocumentMoniker": "GettingStarted\\Participant.cs",
+              "ToolTip": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\Participant.cs",
+              "RelativeToolTip": "GettingStarted\\Participant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T09:40:07.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GettingStarted",
+              "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+              "RelativeDocumentMoniker": "GettingStarted\\GettingStarted.csproj",
+              "ToolTip": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+              "RelativeToolTip": "GettingStarted\\GettingStarted.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-05T07:31:59.378Z"
+            },
+            {
+>>>>>>> 667ea71 (file added)
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TrainingDashboard.cs",
               "DocumentMoniker": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
               "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
               "ToolTip": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
               "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAB8AAAAAAAAAAAAqwCoAAAAJAAAAAAAAAA==",
+>>>>>>> 667ea71 (file added)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T11:58:42.776Z",
               "EditorCaption": ""
