@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "wDq0LV6Dk8w=",
-=======
-  "dgSpecHash": "n0SXk+FMt4Y=",
->>>>>>> 667ea71 (file added)
   "success": true,
   "projectFilePath": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
   "expectedPackageFiles": [],

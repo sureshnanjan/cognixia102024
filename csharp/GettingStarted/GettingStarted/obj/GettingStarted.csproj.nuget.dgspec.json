@@ -15,7 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samson.karre\\AppData\\Roaming\\NuGet\\NuGet.Config",
-<<<<<<< HEAD
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,8 +85,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samson.karre\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
->>>>>>> 667ea71 (file added)
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -134,7 +131,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
-<<<<<<< HEAD
         }
       }
     },
@@ -255,8 +251,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
-=======
->>>>>>> 667ea71 (file added)
         }
       }
     }
