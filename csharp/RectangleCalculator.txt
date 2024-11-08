@@ -1,0 +1,20 @@
+using System;
+
+namespace AreaApp
+{
+    class RectangleAreaCalculator
+    {
+        static void Main(string[] args)
+        {
+            
+            Rectangle rectangle = new Rectangle();
+            
+            double length = 5.0;
+            double width = 3.0;
+            
+            double area = rectangle.CalculateArea(length, width);
+            
+            Console.WriteLine("The area of the rectangle is: " + area);
+        }
+    }
+}

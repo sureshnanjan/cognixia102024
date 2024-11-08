@@ -121,6 +121,7 @@ namespace GettingStarted
             
             string trainername = "Suresh Nanjan";
             Console.WriteLine("Hello, World!");
+<<<<<<< HEAD
             TrainingDashboard automationTraining = new TrainingDashboard("", "", "");
             //automationTraining.Populate()
             //automationTraining.Publish();
@@ -136,6 +137,11 @@ namespace GettingStarted
             DayOfWeek dayofWeek = DayOfWeek.Sunday;
 
 
+=======
+            TrainingDashboard automationTraining = new TrainingDashboard("","","");
+            //automationTraining.Populate();
+            automationTraining.Publish();
+>>>>>>> 265cf90 (csharp)
         }
 
         private static void MoveObjects(IMove[] movingobjects)

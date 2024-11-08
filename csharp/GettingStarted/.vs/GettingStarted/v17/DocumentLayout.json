@@ -1,12 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\",
+  "WorkspaceRootPath": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\athesh.alagarsamy\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -61,6 +62,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{82E8B46A-DF00-4177-99B2-59B5DCF3DB81}|PetstoreModel\\PetstoreModel.csproj|c:\\trainings-2021\\vendors\\cognixia\\cognixia102024\\csharp\\gettingstarted\\petstoremodel\\petstoremodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{82E8B46A-DF00-4177-99B2-59B5DCF3DB81}|PetstoreModel\\PetstoreModel.csproj|solutionrelative:petstoremodel\\petstoremodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+=======
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\athesh.alagarsamy\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\athesh.alagarsamy\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\gettingstarted.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\gettingstarted.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+>>>>>>> 265cf90 (csharp)
     }
   ],
   "DocumentGroupContainers": [
@@ -155,6 +164,7 @@
               "EditorCaption": ""
             },
             {
+<<<<<<< HEAD
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Bike.cs",
@@ -228,6 +238,43 @@
               "ToolTip": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\IMove.cs",
               "RelativeToolTip": "TypeSystemDemo\\IMove.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAASAAAA",
+=======
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Participant.cs",
+              "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\Participant.cs",
+              "RelativeDocumentMoniker": "GettingStarted\\Participant.cs",
+              "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\Participant.cs",
+              "RelativeToolTip": "GettingStarted\\Participant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T09:40:07.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GettingStarted",
+              "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+              "RelativeDocumentMoniker": "GettingStarted\\GettingStarted.csproj",
+              "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+              "RelativeToolTip": "GettingStarted\\GettingStarted.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-05T07:31:59.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TrainingDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
+              "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+>>>>>>> 265cf90 (csharp)
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T07:21:53.969Z",
               "EditorCaption": ""
