@@ -12,6 +12,7 @@
         "projectPath": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
         "packagesPath": "C:\\Users\\athesh.alagarsamy\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\obj\\",
+<<<<<<< HEAD
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\athesh.alagarsamy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,9 +83,11 @@
         "projectPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj",
         "packagesPath": "C:\\Users\\nanja\\.nuget\\packages\\",
         "outputPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\obj\\",
+=======
+>>>>>>> 265cf90189994d5d23163962f9e5e3328a06f787
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nanja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\athesh.alagarsamy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -130,7 +133,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },

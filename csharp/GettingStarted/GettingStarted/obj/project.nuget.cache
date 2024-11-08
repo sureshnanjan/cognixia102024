@@ -1,10 +1,14 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "ISI/yy23tbM=",
 =======
   "dgSpecHash": "tYz74RrBJG0=",
 >>>>>>> 265cf90 (csharp)
+=======
+  "dgSpecHash": "tYz74RrBJG0=",
+>>>>>>> 265cf90189994d5d23163962f9e5e3328a06f787
   "success": true,
   "projectFilePath": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
   "expectedPackageFiles": [],
