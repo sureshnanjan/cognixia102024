@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ISI/yy23tbM=",
+  "dgSpecHash": "wDq0LV6Dk8w=",
   "success": true,
-  "projectFilePath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+  "projectFilePath": "C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Work_Folder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

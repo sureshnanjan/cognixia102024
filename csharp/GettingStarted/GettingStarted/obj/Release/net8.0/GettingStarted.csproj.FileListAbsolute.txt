@@ -13,9 +13,27 @@ C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingS
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingStarted.pdb
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingStarted.genruntimeconfig.cache
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\ref\GettingStarted.dll
+<<<<<<< HEAD
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingStarted.csproj.AssemblyReference.cache
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\PetstoreModel.dll
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\TypeSystemDemo.dll
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\PetstoreModel.pdb
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\TypeSystemDemo.pdb
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingS.04AAEC2E.Up2Date
+=======
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingStarted.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingStarted.AssemblyInfoInputs.cache
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingStarted.AssemblyInfo.cs
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingStarted.csproj.CoreCompileInputs.cache
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingStarted.sourcelink.json
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingStarted.dll
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\refint\GettingStarted.dll
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingStarted.pdb
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\GettingStarted.exe
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\GettingStarted.deps.json
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\GettingStarted.runtimeconfig.json
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\GettingStarted.dll
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\GettingStarted.pdb
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingStarted.genruntimeconfig.cache
+C:\Work_Folder\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\ref\GettingStarted.dll
+>>>>>>> 667ea71 (file added)
