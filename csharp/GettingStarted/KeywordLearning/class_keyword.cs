@@ -91,6 +91,7 @@ namespace KeywordLearning
             try
             {
                 int result = 10 / 1;  // Correct division (previously division by zero)
+                Console.WriteLine(result);
             }
             catch (DivideByZeroException ex)
             {

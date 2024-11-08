@@ -8,7 +8,7 @@ namespace GettingStarted
         // Fields
         private string _title;
         private string _description;
-        private DateTime _currentDate;
+       // private DateTime _currentDate;
         private Participant[] _trParticipants;
 
         // Constructor that accepts a list of participant names and maps them to Participant objects
