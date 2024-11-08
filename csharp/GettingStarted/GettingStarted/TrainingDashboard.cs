@@ -64,7 +64,24 @@ namespace GettingStarted
             Console.WriteLine(multipled);
             Console.WriteLine(added);
             Console.WriteLine(adddoubled);
-            numbers.
+
+            //absrtact
+            Animal mycat = new cat();
+            mycat.sound();
+            Animal mydog = new dog();
+            mydog.sound();
+            //enum
+            weeks workingdays = weeks.Monday | weeks.Tuesday | weeks.Wednesday;
+            Console.WriteLine($"workingdays: {workingdays}");
+            weeks workfromhome = weeks.Thursday | weeks.Friday;
+            Console.WriteLine($"workfromhome: {workfromhome}");
+            weeks holidays = weeks.Saturday | weeks.Sunday;
+            Console.WriteLine($"Holidays: {holidays}");
+            //interface
+            username id = new username();
+            id.Account();
+            id.user_details();
+            //numbers.
         }
 
         private static void SomeOtherMethod() {
@@ -121,7 +138,6 @@ namespace GettingStarted
             
             string trainername = "Suresh Nanjan";
             Console.WriteLine("Hello, World!");
-<<<<<<< HEAD
             TrainingDashboard automationTraining = new TrainingDashboard("", "", "");
             //automationTraining.Populate()
             //automationTraining.Publish();
@@ -137,11 +153,10 @@ namespace GettingStarted
             DayOfWeek dayofWeek = DayOfWeek.Sunday;
 
 
-=======
-            TrainingDashboard automationTraining = new TrainingDashboard("","","");
+          //TrainingDashboard automationTraining = new TrainingDashboard("","","");
            // automationTraining.Populate();
             automationTraining.Publish();
->>>>>>> 34d0c63 (added)
+
         }
 
         private static void MoveObjects(IMove[] movingobjects)
