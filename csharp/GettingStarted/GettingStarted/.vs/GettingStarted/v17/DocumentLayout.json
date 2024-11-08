@@ -32,7 +32,11 @@
               "RelativeDocumentMoniker": "TrainingDashboard.cs",
               "ToolTip": "C:\\Users\\saritha.pathuri\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
               "RelativeToolTip": "TrainingDashboard.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+>>>>>>> cf0adeb800db852aa70b670726d15cc7c8e908bc
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T05:28:09.603Z",
               "EditorCaption": ""
@@ -47,7 +51,12 @@
               "RelativeToolTip": "Participant.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2024-11-06T05:28:03.384Z"
+=======
+              "WhenOpened": "2024-11-06T05:28:03.384Z",
+              "EditorCaption": ""
+>>>>>>> cf0adeb800db852aa70b670726d15cc7c8e908bc
             },
             {
               "$type": "Document",
@@ -59,7 +68,12 @@
               "RelativeToolTip": "GettingStarted.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+<<<<<<< HEAD
               "WhenOpened": "2024-11-06T05:28:00.692Z"
+=======
+              "WhenOpened": "2024-11-06T05:28:00.692Z",
+              "EditorCaption": ""
+>>>>>>> cf0adeb800db852aa70b670726d15cc7c8e908bc
             }
           ]
         }

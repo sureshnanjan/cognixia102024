@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\GettingStarted.exe
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\GettingStarted.deps.json
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\GettingStarted.runtimeconfig.json
@@ -21,6 +22,8 @@ C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingS
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\TypeSystemDemo.pdb
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingS.04AAEC2E.Up2Date
 =======
+=======
+>>>>>>> cf0adeb800db852aa70b670726d15cc7c8e908bc
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\GettingStarted.exe
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\GettingStarted.deps.json
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Release\net8.0\GettingStarted.runtimeconfig.json
@@ -51,4 +54,7 @@ C:\Users\saritha.pathuri\QA-Training\cognixia102024\csharp\GettingStarted\Gettin
 C:\Users\saritha.pathuri\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingStarted.pdb
 C:\Users\saritha.pathuri\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\GettingStarted.genruntimeconfig.cache
 C:\Users\saritha.pathuri\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Release\net8.0\ref\GettingStarted.dll
+<<<<<<< HEAD
 >>>>>>> c585ce6 (Files Added)
+=======
+>>>>>>> cf0adeb800db852aa70b670726d15cc7c8e908bc

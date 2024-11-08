@@ -4,5 +4,12 @@
   "success": true,
   "projectFilePath": "C:\\Users\\saritha.pathuri\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\saritha.pathuri\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< HEAD
     "\\bin",
     "\\obj"
+=======
+    "\\bin"
+>>>>>>> cf0adeb800db852aa70b670726d15cc7c8e908bc
   ],
   "PreviewInSolutionExplorer": false
 }
