@@ -108,6 +108,42 @@ namespace GettingStarted
             eligibilityChecker.CheckIfElse(age2);
             eligibilityChecker.CheckAgeCategory(age2);
             eligibilityChecker.CheckTernary(age2);
+
+            //delegate
+            Console.WriteLine("\nDelegate\n");
+            TemperatureConverter converter = new TemperatureConverter();
+
+            TemperatureConversion celsiusToFahrenheit = converter.CelsiusToFahrenheit;
+            TemperatureConversion fahrenheitToCelsius = converter.FahrenheitToCelsius;
+            TemperatureConversion celsiusToKelvin = converter.CelsiusToKelvin;
+
+            double tempCelsius = 25.0;
+            Console.WriteLine($"{tempCelsius}°C to Fahrenheit: {celsiusToFahrenheit(tempCelsius):F2}°F");
+            Console.WriteLine($"{tempCelsius}°C to Kelvin: {celsiusToKelvin(tempCelsius):F2}K");
+
+            double tempFahrenheit = 77.0;
+            Console.WriteLine($"{tempFahrenheit}°F to Celsius: {fahrenheitToCelsius(tempFahrenheit):F2}°C");
+
+            //override
+            Console.WriteLine("\noverride\n");
+            Employee manager = new Manager();
+            Employee developer = new Developer();
+            manager.DisplayRole();  
+            developer.DisplayRole();
+
+            //Size of
+            Console.WriteLine("\nsize of\n");
+            Console.WriteLine("Size of int: " + sizeof(int));
+            Console.WriteLine("Size of float: " + sizeof(float));
+            Console.WriteLine("Size of double: " + sizeof(double));
+            Console.WriteLine("Size of char: " + sizeof(char));
+            Console.WriteLine("Size of bool: " + sizeof(bool));
+
+            //foreach
+            Console.WriteLine("\nforeach\n");
+            NumberPrinter printer = new NumberPrinter();
+
+            printer.PrintNumbers();
         }
 
 

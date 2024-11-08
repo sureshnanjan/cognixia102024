@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\athesh.alagarsamy\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\loop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\loop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\athesh.alagarsamy\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\override.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\override.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\athesh.alagarsamy\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\delegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\delegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\athesh.alagarsamy\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\condition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\condition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,6 +55,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Loop.cs",
+              "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Loop.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\Loop.cs",
+              "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Loop.cs",
+              "RelativeToolTip": "TypeSystemDemo\\Loop.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T16:16:04.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Override.cs",
+              "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Override.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\Override.cs",
+              "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Override.cs",
+              "RelativeToolTip": "TypeSystemDemo\\Override.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowBkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:30:51.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delegate.cs",
+              "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Delegate.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\Delegate.cs",
+              "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Delegate.cs",
+              "RelativeToolTip": "TypeSystemDemo\\Delegate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:22:17.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Condition.cs",
               "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Condition.cs",
               "RelativeDocumentMoniker": "TypeSystemDemo\\Condition.cs",
@@ -50,12 +101,11 @@
               "RelativeToolTip": "TypeSystemDemo\\Condition.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAAADQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:03:07.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:03:07.036Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "AbstractClass.cs",
               "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\AbstractClass.cs",
               "RelativeDocumentMoniker": "TypeSystemDemo\\AbstractClass.cs",
@@ -63,12 +113,11 @@
               "RelativeToolTip": "TypeSystemDemo\\AbstractClass.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAgwBcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T09:01:03.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T09:01:03.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "InterfaceDemo.cs",
               "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\InterfaceDemo.cs",
               "RelativeDocumentMoniker": "TypeSystemDemo\\InterfaceDemo.cs",
@@ -76,12 +125,11 @@
               "RelativeToolTip": "TypeSystemDemo\\InterfaceDemo.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAowB8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T09:24:24.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T09:24:24.394Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "EnumDemo.cs",
               "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\EnumDemo.cs",
               "RelativeDocumentMoniker": "TypeSystemDemo\\EnumDemo.cs",
@@ -89,8 +137,7 @@
               "RelativeToolTip": "TypeSystemDemo\\EnumDemo.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T09:05:59.025Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T09:05:59.025Z"
             },
             {
               "$type": "Document",
@@ -100,7 +147,7 @@
               "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
               "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
               "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAAwGAAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAkwI4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T07:28:34.783Z",
               "EditorCaption": ""
