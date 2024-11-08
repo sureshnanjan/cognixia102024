@@ -1,4 +1,0 @@
-inventory_id
-2
-3
-4

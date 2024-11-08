@@ -1,6 +1,0 @@
--- Insert data into user_address
-INSERT INTO user_address (address_id, username) VALUES 
-(1, 'johndoe'),
-(2, 'janedoe'),
-(3, 'alice'),
-(4, 'bob');
