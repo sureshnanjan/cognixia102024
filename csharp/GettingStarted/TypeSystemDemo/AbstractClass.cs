@@ -6,11 +6,32 @@ using System.Threading.Tasks;
 
 namespace TypeSystemDemo
 {
-    public abstract class AbstractClass
+    public abstract class Appliance
     {
-        public abstract string Name { get; }
-        public void Method() { }
+        public abstract void Operate();
+    }
 
-        public abstract void Method2(); 
+    public class WashingMachine : Appliance
+    {
+        public override void Operate()
+        {
+            Console.WriteLine("Whirr... washing clothes");
+        }
+    }
+
+    public class Refrigerator : Appliance
+    {
+        public override void Operate()
+        {
+            Console.WriteLine("Hum... cooling food");
+        }
+    }
+
+    public class Microwave : Appliance
+    {
+        public override void Operate()
+        {
+            Console.WriteLine("Beep beep... heating food");
+        }
     }
 }

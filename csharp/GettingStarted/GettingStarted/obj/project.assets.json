@@ -85,14 +85,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj": {
-              "projectPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj"
+            "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj": {
+              "projectPath": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj"
             },
-            "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj": {
-              "projectPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj"
+            "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj": {
+              "projectPath": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj"
             },
-            "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj": {
-              "projectPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj"
+            "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj": {
+              "projectPath": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj"
             }
           }
         }

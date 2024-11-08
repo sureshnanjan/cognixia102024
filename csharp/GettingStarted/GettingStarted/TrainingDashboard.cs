@@ -14,8 +14,8 @@ namespace GettingStarted
         string _title;
         string _description;
         DateTime _current_date;
-        string[] participants;
-        Participant[] tr_participants;
+       // string[] participants;
+        //Participant[] tr_participants;
 
         // Operation
         /// <summary>
@@ -64,8 +64,53 @@ namespace GettingStarted
             Console.WriteLine(multipled);
             Console.WriteLine(added);
             Console.WriteLine(adddoubled);
-            numbers.
+
+            //absrtact
+            Console.WriteLine("\nAbsrtact\n");
+            Appliance wash = new WashingMachine();
+            wash.Operate();
+            Appliance fridge = new Refrigerator();
+            fridge.Operate();
+            Appliance micro = new Microwave();
+            micro.Operate();
+
+            //enum
+            Console.WriteLine("\nEnum\n");
+            Vehicle car = new Vehicle(VehicleType.Car, FuelType.Gasoline);
+            car.DisplayInfo();
+
+            Vehicle electricBike = new Vehicle(VehicleType.Bicycle, FuelType.None);
+            electricBike.DisplayInfo();
+
+            Vehicle hybridTruck = new Vehicle(VehicleType.Truck, FuelType.Hybrid);
+            hybridTruck.DisplayInfo();
+
+
+            //interface
+            Console.WriteLine("\nInterface\n");
+            LibraryMember member = new LibraryMember();
+            member.BookDetails();
+            member.MemberDetails();
+            //numbers.
+
+            //condition
+            Console.WriteLine("\nConditions\n");
+            VotingEligibility eligibilityChecker = new VotingEligibility();
+
+            int age1 = 20;
+            Console.WriteLine("Age: " + age1);
+            eligibilityChecker.CheckIfElse(age1);
+            eligibilityChecker.CheckAgeCategory(age1);
+            eligibilityChecker.CheckTernary(age1);
+
+            int age2 = 12;
+            Console.WriteLine("\nAge: " + age2);
+            eligibilityChecker.CheckIfElse(age2);
+            eligibilityChecker.CheckAgeCategory(age2);
+            eligibilityChecker.CheckTernary(age2);
         }
+
+
 
         private static void SomeOtherMethod() {
             Console.WriteLine("Doing some other complext operation");
@@ -121,7 +166,6 @@ namespace GettingStarted
             
             string trainername = "Suresh Nanjan";
             Console.WriteLine("Hello, World!");
-<<<<<<< HEAD
             TrainingDashboard automationTraining = new TrainingDashboard("", "", "");
             //automationTraining.Populate()
             //automationTraining.Publish();
@@ -137,11 +181,10 @@ namespace GettingStarted
             DayOfWeek dayofWeek = DayOfWeek.Sunday;
 
 
-=======
-            TrainingDashboard automationTraining = new TrainingDashboard("","","");
-            //automationTraining.Populate();
+          //TrainingDashboard automationTraining = new TrainingDashboard("","","");
+           // automationTraining.Populate();
             automationTraining.Publish();
->>>>>>> 265cf90 (csharp)
+
         }
 
         private static void MoveObjects(IMove[] movingobjects)

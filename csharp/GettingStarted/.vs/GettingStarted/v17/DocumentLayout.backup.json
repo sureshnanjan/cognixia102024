@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\athesh.alagarsamy\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\athesh.alagarsamy\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\condition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\condition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\athesh.alagarsamy\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\gettingstarted.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\gettingstarted.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\athesh.alagarsamy\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\enumdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\enumdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\athesh.alagarsamy\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\interfacedemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\interfacedemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\athesh.alagarsamy\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\abstractclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\abstractclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,25 +43,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Participant.cs",
-              "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\Participant.cs",
-              "RelativeDocumentMoniker": "GettingStarted\\Participant.cs",
-              "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\Participant.cs",
-              "RelativeToolTip": "GettingStarted\\Participant.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Title": "Condition.cs",
+              "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Condition.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\Condition.cs",
+              "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Condition.cs",
+              "RelativeToolTip": "TypeSystemDemo\\Condition.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAADQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T09:40:07.418Z"
+              "WhenOpened": "2024-11-08T12:03:07.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AbstractClass.cs",
+              "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\AbstractClass.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\AbstractClass.cs",
+              "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\AbstractClass.cs",
+              "RelativeToolTip": "TypeSystemDemo\\AbstractClass.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwBcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T09:01:03.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InterfaceDemo.cs",
+              "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\InterfaceDemo.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\InterfaceDemo.cs",
+              "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\InterfaceDemo.cs",
+              "RelativeToolTip": "TypeSystemDemo\\InterfaceDemo.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T09:24:24.394Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GettingStarted",
-              "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
-              "RelativeDocumentMoniker": "GettingStarted\\GettingStarted.csproj",
-              "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
-              "RelativeToolTip": "GettingStarted\\GettingStarted.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-05T07:31:59.378Z"
+              "Title": "EnumDemo.cs",
+              "DocumentMoniker": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\EnumDemo.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\EnumDemo.cs",
+              "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\EnumDemo.cs",
+              "RelativeToolTip": "TypeSystemDemo\\EnumDemo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T09:05:59.025Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -63,7 +100,7 @@
               "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
               "ToolTip": "C:\\Users\\athesh.alagarsamy\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
               "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAkwCoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAwGwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T07:28:34.783Z",
               "EditorCaption": ""
