@@ -28,6 +28,7 @@ public class TrainingDashboard{
         skw.display();
         sizeof_kw sokw=new sizeof_kw();
         sokw.display();
+        
     }
 }
 
