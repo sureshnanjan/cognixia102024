@@ -1,18 +1,8 @@
-<<<<<<< HEAD
 {
   "version": 2,
-  "dgSpecHash": "ISI/yy23tbM=",
-  "success": true,
-  "projectFilePath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
-=======
-{
-  "version": 2,
-  "dgSpecHash": "5p1n2G3bUTU=",
+  "dgSpecHash": "ITYbpkDVFBg=",
   "success": true,
   "projectFilePath": "C:\\Users\\saritha.pathuri\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
   "expectedPackageFiles": [],
   "logs": []
->>>>>>> c585ce6 (Files Added)
 }

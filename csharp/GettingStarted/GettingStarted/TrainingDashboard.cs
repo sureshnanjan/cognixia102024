@@ -1,230 +1,122 @@
-<<<<<<< HEAD
-﻿using System.Reflection.Metadata;
-using PetstoreModel;
-using TypeSystemDemo;
+﻿using System;
+using KeywordLearning;
+
 namespace GettingStarted
 {
-    delegate void GettingStartedDelegate();
-    delegate int MyIntDelegate(int x);
-   /// <summary>
-   /// This is a class to represent training reports 
-   /// </summary>
     internal class TrainingDashboard
     {
         // Fields
-        string _title;
-        string _description;
-        DateTime _current_date;
-        string[] participants;
-        Participant[] tr_participants;
+        private string _title;
+        private string _description;
+        private DateTime _currentDate;
+        private Participant[] _trParticipants;
 
-        // Operation
-        /// <summary>
-        /// 
-        /// </summary>
-        public void Publish() {
-            Console.WriteLine("This is the Data for Dashboard");
-        }
-
-        public TrainingDashboard(string title, string desc, string participants)
+        // Constructor that accepts a list of participant names and maps them to Participant objects
+        public TrainingDashboard(string title, string desc, string[] participants)
         {
-            this._title = title;
-            this._description = desc;
-            foreach (var item in participants.Split(","))
-            {
-                //this.participants.Append(item);
-            }
-            
-
+            _title = title;
+            _description = desc;
+            // Convert string array to Participant array
+            _trParticipants = CreateParticipants(participants);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="title"></param>
-        /// <param name="desc"></param>
-        /// <param name="participants"></param>
-        public void Populate(string title, string desc, string participants) { }
+        // Method to convert string array to an array of Participant objects
+        private Participant[] CreateParticipants(string[] participants)
+        {
+            // Placeholder employee code generation, just for this example
+            var participantList = new List<Participant>();
+            int id = 1;
+            foreach (var participant in participants)
+            {
+                var nameParts = participant.Split(' ');
+                // Assuming participant name is "FirstName LastName"
+                participantList.Add(new Participant($"E{id++}", nameParts[0], nameParts[1]));
+            }
+            return participantList.ToArray();
+        }
+
+        // Method to publish the dashboard
+        public void Publish()
+        {
+            Console.WriteLine("This is the Data for Dashboard");
+            Console.WriteLine($"Title: {_title}");
+            Console.WriteLine($"Description: {_description}");
+            Console.WriteLine("Participants:");
+            foreach (var participant in _trParticipants)
+            {
+                Console.WriteLine($"- {participant.FirstName} {participant.LastName} (Code: {participant.EmployeeCode})");
+            }
+        }
+
         static void Main(string[] args)
         {
-            GettingStartedDelegate myref = mymethod;
-            Action myactionref = mymethod;
-            Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
-            MyIntDelegate myintref = SomeMethod;
-            Func<int,int> myfunc = SomeMethod;
-            Func<int> mylambdafunc = () => 100;
-            //myref();
-            mylambdaaction();
-            Console.WriteLine(mylambdafunc());
-            mylambdafunc();
+            // Execute all the 'class_keyword' examples
 
-            int[] numbers = { 1, 2, 3, 4, 5 };
-            int added = numbers.Aggregate((x,y)=> x + y);
-            int multipled = numbers.Aggregate((x, y) => x * y);
-            int adddoubled = numbers.Aggregate((x, y) => (x + y) * 2);
-            Console.WriteLine(multipled);
-            Console.WriteLine(added);
-            Console.WriteLine(adddoubled);
-            numbers.
-        }
+            // Creating an instance of the 'class_keyword' class
+            class_keyword keywordExamples = new class_keyword(10);
 
-        private static void SomeOtherMethod() {
-            Console.WriteLine("Doing some other complext operation");
-        }
+            // 1. Demonstrating PublicField and ReadOnlyField
+            Console.WriteLine($"Public Field Value: {keywordExamples.PublicField}");
+            Console.WriteLine($"ReadOnly Field Value: {keywordExamples.ReadOnlyField}");
 
-        private static int add(int a, int b) {
-            return a + b;
-        }
+            // 2. Demonstrating MethodWithKeywords with ref, out, and params
+            int refValue = 10;
+            string outValue;
+            keywordExamples.MethodWithKeywords(ref refValue, out outValue, 1, 2, 3);
+            Console.WriteLine($"Ref Value: {refValue}, Out Value: {outValue}");
 
-        private static void PerformThis(GettingStartedDelegate x) {
-            Console.WriteLine("Going to perform the required Operation");
-            x();
-        }
+            // 3. Adding numbers using AddNumbers method
+            int sum = keywordExamples.AddNumbers(5, 10);
+            Console.WriteLine($"Sum: {sum}");
 
-        private static int SomeMethod(int arh1) {
-            Console.WriteLine($"This is inside my Int Method {arh1}");
-            return 0; }
+            // 4. Demonstrating Exception Handling with ExceptionHandlingExample
+            keywordExamples.ExceptionHandlingExample();
 
-        private static void mymethod() {
-            Console.WriteLine("This is a Method Returning Void Taking Nothing");
-        }
+            // 5. If-else statement demonstration
+            keywordExamples.IfElseExample(5);
 
-        private static void Interface_Demo()
-        {
-            // Name + number of arguments + types of arguments
-            //dashboard_demo();
-            //User suresh = new User();
-            Console.WriteLine("Welcome to Programming");
-            ClassDemo myclass = new ClassDemo(1, "suresh");
-            Console.WriteLine(myclass);
-            int[] numbers = { 10, 12, 3, 0, 9, 25 };
-            Array.Sort(numbers);
-            foreach (var item in numbers)
+            // 6. Demonstrating loops with LoopExamples method
+            keywordExamples.LoopExamples();
+
+            // 7. Checking type with IsExample method
+            keywordExamples.IsExample("Hello");
+
+            // 8. 'goto' example (though goto is not often used in modern code)
+            keywordExamples.GotoExample();
+
+            // 9. Delegate example
+            class_keyword.MyDelegate del = keywordExamples.DelegateExampleMethod;
+            del("This is a delegate example.");
+
+            // 10. Locking example
+            keywordExamples.LockExample();
+
+            // 11. Throw exception example
+            try
             {
-                Console.WriteLine(item);
+                keywordExamples.ThrowExample();
             }
-            ClassDemo[] myTypes = { new ClassDemo(1, "A"), new ClassDemo(5, "Five"), new ClassDemo(2, "two") };
-            Array.Sort(myTypes);
-            foreach (var item in myTypes)
+            catch (InvalidOperationException ex)
             {
-                Console.WriteLine(item);
+                Console.WriteLine($"Caught exception: {ex.Message}");
             }
-        }
 
+            // 12. Using 'this' keyword in method
+            keywordExamples.ThisKeywordExample();
 
-        static void Interface_Demo(string arg1) { }
-        static void Interface_Demo(int arg1) { }
+            // 13. Demonstrating sizeof and typeof
+            keywordExamples.SizeofAndTypeofExample();
 
-        //int Interface_Demo(string arg1) { }
+            // 14. Enum example for CarType
+            Console.WriteLine($"Car Type: {CarType.SUV}");
 
-        private static void dashboard_demo()
-        {
-            
-            string trainername = "Suresh Nanjan";
-            Console.WriteLine("Hello, World!");
-            TrainingDashboard automationTraining = new TrainingDashboard("", "", "");
-            //automationTraining.Populate()
-            //automationTraining.Publish();
+            // Example for TrainingDashboard
+            string[] participants = { "John Doe", "Jane Smith" };
+            TrainingDashboard dashboard = new TrainingDashboard("Automation Training", "Learn how to automate processes", participants);
+            dashboard.Publish();
 
-            // A collection of Moving Objects
-            IMove[] movingobjects = { new Car(), new Bird(), new Bike() };
-            MoveObjects(movingobjects);
-
-            int num1 = 10;
-            int num2 = 11;
-            ClassDemo cl1 = new ClassDemo(1, "one");
-            ClassDemo cl2 = new ClassDemo(2, "two");
-            DayOfWeek dayofWeek = DayOfWeek.Sunday;
-
+            // End of execution
 
         }
-
-        private static void MoveObjects(IMove[] movingobjects)
-        {
-            foreach (var item in movingobjects)
-            {
-                item.Move();
-            }
-        }
-
-        
-        
-        }
-
-        
-}
-=======
-﻿    /// <summary>
-    /// This class represents a training reports
-    /// </summary>
-    namespace GettingStarted
-    {
-        internal class TrainingDashboard
-{
-    // Fields
-    private string _title;
-    private string _description;
-    private DateTime _currentDate;
-    private Participant[] _trParticipants;
-
-    // Constructor that accepts a list of participant names and maps them to Participant objects
-    public TrainingDashboard(string title, string desc, string[] participants)
-    {
-        _title = title;
-        _description = desc;
-        // Convert string array to Participant array
-        _trParticipants = CreateParticipants(participants);
-    }
-
-    // Method to convert string array to an array of Participant objects
-    private Participant[] CreateParticipants(string[] participants)
-    {
-        // Placeholder employee code generation, just for this example
-        var participantList = new List<Participant>();
-        int id = 1;
-        foreach (var participant in participants)
-        {
-            var nameParts = participant.Split(' ');
-            // Assuming participant name is "FirstName LastName"
-            participantList.Add(new Participant($"E{id++}", nameParts[0], nameParts[1]));
-        }
-        return participantList.ToArray();
-    }
-
-    // Method to publish the dashboard
-    public void Publish()
-    {
-        Console.WriteLine("This is the Data for Dashboard");
-        Console.WriteLine($"Title: {_title}");
-        Console.WriteLine($"Description: {_description}");
-        Console.WriteLine("Participants:");
-        foreach (var participant in _trParticipants)
-        {
-            Console.WriteLine($"- {participant.FirstName} {participant.LastName} (Code: {participant.EmployeeCode})");
-        }
-    }
-
-    static void Main(string[] args)
-    {
-        string trainerName = "Suresh Nanjan";
-        Console.WriteLine(trainerName);
-        Console.WriteLine("Hello, World!");
-
-        // Example participants array (just names in this case)
-        string[] participants = { "John Doe", "Jane Smith" };
-
-        // Create an instance of TrainingDashboard with the participants
-        TrainingDashboard automationTraining = new TrainingDashboard(
-            "Automation Training",
-            "Learn how to automate processes",
-            participants
-        );
-
-        // Publish the training dashboard
-        automationTraining.Publish();
     }
 }
-}
-
-
->>>>>>> c585ce6 (Files Added)
