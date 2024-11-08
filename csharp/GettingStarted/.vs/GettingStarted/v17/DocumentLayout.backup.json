@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\saritha.pathuri\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\saritha.pathuri\\qa-training\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\users\\saritha.pathuri\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\saritha.pathuri\\qa-training\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\saritha.pathuri\\qa-training\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -99,13 +99,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "class_keyword.cs",
               "DocumentMoniker": "C:\\Users\\saritha.pathuri\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\class_keyword.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\class_keyword.cs",
               "ToolTip": "C:\\Users\\saritha.pathuri\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\class_keyword.cs",
               "RelativeToolTip": "KeywordLearning\\class_keyword.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAAwMcAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAUwF0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T11:44:27.094Z",
               "EditorCaption": ""
@@ -150,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TrainingDashboard.cs",
               "DocumentMoniker": "C:\\Users\\saritha.pathuri\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
               "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
