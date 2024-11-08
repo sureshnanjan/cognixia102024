@@ -59,19 +59,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nanja\\.nuget\\packages\\": {}
+    "C:\\Users\\raj.kadambalu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+      "projectUniqueName": "C:\\Users\\raj.kadambalu\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
       "projectName": "GettingStarted",
-      "projectPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
-      "packagesPath": "C:\\Users\\nanja\\.nuget\\packages\\",
-      "outputPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\obj\\",
+      "projectPath": "C:\\Users\\raj.kadambalu\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+      "packagesPath": "C:\\Users\\raj.kadambalu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\raj.kadambalu\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nanja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\raj.kadambalu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -85,14 +85,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj": {
-              "projectPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj"
+            "C:\\Users\\raj.kadambalu\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj": {
+              "projectPath": "C:\\Users\\raj.kadambalu\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj"
             },
-            "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj": {
-              "projectPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj"
+            "C:\\Users\\raj.kadambalu\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj": {
+              "projectPath": "C:\\Users\\raj.kadambalu\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\PetstoreModel.csproj"
             },
-            "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj": {
-              "projectPath": "C:\\Trainings-2021\\Vendors\\Cognixia\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj"
+            "C:\\Users\\raj.kadambalu\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj": {
+              "projectPath": "C:\\Users\\raj.kadambalu\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj"
             }
           }
         }
@@ -127,7 +127,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
