@@ -168,16 +168,8 @@ namespace KeywordLearning
             Console.WriteLine($"Delegate received message: {message}");
         }
 
-        // Method demonstrating 'lock' keyword
-        public void LockExample()
-        {
-            object lockObject = new object();
-            lock (lockObject)
-            {
-                Console.WriteLine("Critical section accessed with lock.");
-            }
-        }
-
+       
+        
         // 'throw' keyword
         public void ThrowExample()
         {

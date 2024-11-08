@@ -88,8 +88,10 @@ namespace GettingStarted
             class_keyword.MyDelegate del = keywordExamples.DelegateExampleMethod;
             del("This is a delegate example.");
 
-            // 10. Locking example
-            keywordExamples.LockExample();
+            //10.Interface
+            Dog ob = new KeywordLearning.Dog();
+            ob.MakeSound();
+            ob.Move();
 
             // 11. Throw exception example
             try
