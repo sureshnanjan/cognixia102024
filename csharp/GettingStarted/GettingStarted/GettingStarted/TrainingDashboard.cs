@@ -108,7 +108,7 @@ namespace GettingStarted
             
             Operation multiplyOperation = new Operation(calc.Multiply);
             Console.WriteLine("Multiplication: " + multiplyOperation(5, 3));
-            Console.WriteLine("Overriding");
+            Console.WriteLine("--------Overriding=---");
             // overriding
             Shape myShape = new Shape();
             Shape myCircle = new Circle();     
@@ -116,15 +116,19 @@ namespace GettingStarted
             myShape.Draw();        
             myCircle.Draw();       
             myRectangle.Draw();
-            Console.WriteLine("example for size of");
+            Console.WriteLine("----example for size of---");
             // Example for  size of 
             Console.WriteLine("Size of int: " + sizeof(int));     
             Console.WriteLine("Size of float: " + sizeof(float)); 
             Console.WriteLine("Size of double: " + sizeof(double)); 
             Console.WriteLine("Size of char: " + sizeof(char));   
-            Console.WriteLine("Size of bool: " + sizeof(bool));   
+            Console.WriteLine("Size of bool: " + sizeof(bool));
 
+            //foreach
+            Console.WriteLine("-----exmple for foreach------");
+            NumberPrinter printer = new NumberPrinter();
 
+            printer.PrintNumbers();
 
 
             // END MAIN FUNCTION
