@@ -2,10 +2,10 @@
 {
     public class User
     {
-        int id;
-        string name;
-        string fname;
-        string lname;
+        //int id;
+        //string name;
+        //string fname;
+        //string lname;
 
     }
 }
