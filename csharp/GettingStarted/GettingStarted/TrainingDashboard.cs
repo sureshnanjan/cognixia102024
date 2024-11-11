@@ -64,7 +64,7 @@ namespace GettingStarted
             Console.WriteLine(multipled);
             Console.WriteLine(added);
             Console.WriteLine(adddoubled);
-            numbers.
+            //numbers.
         }
 
         private static void SomeOtherMethod() {
