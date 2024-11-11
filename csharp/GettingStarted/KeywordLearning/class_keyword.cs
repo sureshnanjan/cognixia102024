@@ -12,7 +12,7 @@
         }
         public void calculate()
         {
-            System.Console.WriteLine("2*2=4");
+            System.Console.WriteLine("3*3=9");
         }
     }
 }
