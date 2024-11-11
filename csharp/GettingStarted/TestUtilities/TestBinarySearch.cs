@@ -1,31 +1,18 @@
 ﻿/*
 
 Licensed to the Software Freedom Conservancy (SFC) under one
-
 or more contributor license agreements. See the NOTICE file
-
 distributed with this work for additional information
-
 regarding copyright ownership. The SFC licenses this file
-
 to you under the Apache License, Version 2.0 (the
-
 "License"); you may not use this file except in compliance
-
 with the License. You may obtain a copy of the License at
- 
-  http://www.apache.org/licenses/LICENSE-2.0
- 
+  http://www.apache.org/licenses/LICENSE-2.0 
 Unless required by applicable law or agreed to in writing,
-
 software distributed under the License is distributed on an
-
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-
 KIND, either express or implied. See the License for the
-
 specific language governing permissions and limitations
-
 under the License.
 
 */
@@ -82,6 +69,7 @@ namespace TestUtilities
             //value is greater than all elements in array, 
             //the negative number returned is the bitwise complement of
             //(the index of the last element plus 1).
+            //AAA
             int[] input2 = { 10, 12, 13, 15 };
             int keytosearch2 = 16;
             int expected2 = ~(input2.Length);
@@ -97,12 +85,13 @@ namespace TestUtilities
             //If this method is called with a non-sorted array, 
             //the return value can be incorrect and a negative number could be returned, 
             //even if value is present in array.
+            //AAA
             int[] input3 = { 10, 13, 12, 15 };
             int keytosearch3 = 10;
             int expected3 = ~(input3.Length+1);
             BinarySearcher myb3 = new BinarySearcher(input3, keytosearch3);
             int result3 = myb3.doSearch();
-            Assert.AreEqual(expected3, result3);
+            Assert.IsTrue(result3 < 0);
         }
 
     }

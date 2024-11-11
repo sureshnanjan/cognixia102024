@@ -1,4 +1,5 @@
 ﻿using System.Reflection.Metadata;
+using KeywordLearning;
 using PetstoreModel;
 using TypeSystemDemo;
 namespace GettingStarted
@@ -64,7 +65,49 @@ namespace GettingStarted
             Console.WriteLine(multipled);
             Console.WriteLine(added);
             Console.WriteLine(adddoubled);
-            //numbers.
+            //delegate
+            Calculator calc = new Calculator();
+
+            Operation addOperation = new Operation(calc.Add);
+            Console.WriteLine("Addition: " + addOperation(5, 3));
+
+
+            Operation subtractOperation = new Operation(calc.Subtract);
+            Console.WriteLine("Subtraction: " + subtractOperation(5, 3));
+
+
+            Operation multiplyOperation = new Operation(calc.Multiply);
+            Console.WriteLine("Multiplication: " + multiplyOperation(5, 3));
+
+            //keywords
+            class_keyword.DemonstrateKeywords();
+            //override
+            Shape myShape = new Shape();
+            Shape myCircle = new Circle();
+            Shape myRectangle = new Rectangle();
+            myShape.Draw();
+            myCircle.Draw();
+            myRectangle.Draw();
+
+            //enum
+            weeks workingdays = weeks.Monday;
+            Console.WriteLine($"workingdays: {workingdays}");
+            weeks workfromhome = weeks.Thursday;
+            Console.WriteLine($"workfromhome: {workfromhome}");
+            weeks holidays = weeks.Saturday;
+            Console.WriteLine($"Holidays: {holidays}");
+
+            //interface
+            Customer vj = new Customer();
+            vj.customer_details();
+            vj.user_details();
+
+            //absrtact
+            Console.WriteLine("----Abstract class----");
+            Orange Fruitorg = new Orange();
+            Fruitorg.Shape();
+            PineApple Fruitpine = new PineApple();
+            Fruitpine.Shape();
         }
 
         private static void SomeOtherMethod() {
