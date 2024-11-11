@@ -154,6 +154,16 @@ namespace GettingStarted
 
             printer.PrintNumbers();
 
+            //while
+
+            Console.WriteLine("-----exmple for While------");
+            int n = 0;
+            while (n < 5)
+            {
+                Console.Write(n);
+                n++;
+            }
+
 
             // END MAIN FUNCTION
 
