@@ -49,3 +49,4 @@ C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\Getti
 C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.xml
 C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.genruntimeconfig.cache
 C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\ref\GettingStarted.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\Newtonsoft.Json.dll
