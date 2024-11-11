@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\gettingstarted.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\logesh.s\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\logesh.s\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\logesh.s\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,12 +22,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrainingDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\logesh.s\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
+              "ToolTip": "C:\\Users\\logesh.s\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T07:28:34.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GettingStarted",
+              "Title": "GettingStarted.csproj",
               "DocumentMoniker": "C:\\Users\\logesh.s\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
               "RelativeDocumentMoniker": "GettingStarted\\GettingStarted.csproj",
               "ToolTip": "C:\\Users\\logesh.s\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
@@ -39,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Participant.cs",
               "DocumentMoniker": "C:\\Users\\logesh.s\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\Participant.cs",
               "RelativeDocumentMoniker": "GettingStarted\\Participant.cs",
@@ -48,19 +61,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T09:40:07.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TrainingDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\logesh.s\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
-              "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
-              "ToolTip": "C:\\Users\\logesh.s\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
-              "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T07:28:34.783Z",
               "EditorCaption": ""
             }
           ]
