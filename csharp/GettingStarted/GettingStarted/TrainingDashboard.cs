@@ -5,6 +5,7 @@ using TypeSystemDemo;
 using KeywordLearning;
 ﻿using System;
 using KeywordLearning;
+using static KeywordLearning.Interface1;
 namespace GettingStarted;
 public class TrainingDashboard{
 
@@ -28,7 +29,49 @@ public class TrainingDashboard{
         skw.display();
         sizeof_kw sokw=new sizeof_kw();
         sokw.display();
-        
+        enumdemo person1 = new enumdemo("John Doe", Status.Active);
+        enumdemo person2 = new enumdemo("Jane Smith", Status.Inactive);
+
+        // Display information
+        person1.DisplayInfo();
+        person2.DisplayInfo();
+
+        // program for delegate type
+        // Create instances of Calculator and MathOperations
+        Calculator calc = new Calculator();
+
+        // Create a delegate that points to the Square method
+        delegatedemo.OperationDelegate del = new delegatedemo.OperationDelegate(calc.Square);
+        calc.PerformOperation(del, 5);  // Output: Result: 25
+
+        // Reassign the delegate to point to the Double method
+        del = new delegatedemo.OperationDelegate(calc.Double);
+        calc.PerformOperation(del, 5);  // Output: Result: 10
+
+        // Reassign the delegate to point to the Cube method
+        del = new delegatedemo.OperationDelegate(calc.Cube);
+        calc.PerformOperation(del, 5);  // Output: Result: 125
+
+        Dog myDog = new Dog("Buddy");
+
+        // Calling methods
+        myDog.DisplayInfo();      // Calls method from Animal class
+        myDog.MakeSound();        // Calls overridden method in Dog class
+        myDog.Fetch();            // Calls method specific to
+
+        Interface1 id1 = new MyDog();
+        Interface1 id2 = new Cat();
+        Console.WriteLine("Dog:");
+        id1.MakeSound();  // Calls Dog's MakeSound method
+        id1.Move();       // Calls Dog's Move method
+
+        Console.WriteLine("\nCat:");
+        id2.MakeSound();  // Calls Cat's MakeSound method
+        id2.Move();       // Calls Cat's Move method
+
+
+
+
     }
 }
 
