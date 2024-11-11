@@ -20,8 +20,6 @@ under the License.
 
 
 
-
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,37 +28,29 @@ using System.Threading.Tasks;
 
 namespace TypeSystemDemo
 {
-    public interface College
-    {
-        void college_id();
+    
+        public delegate int Operation(int a, int b);
 
-    }
-    public interface userData
-    {
-        void user_details();
-    }
-
-
-    public class username : College, userData
-    {
-
-
-        public void college_id()
+        public class Calculator
         {
-            int userid = 1;
-            string name = "Nishanth";
-            Console.WriteLine(name);
-            Console.WriteLine(userid);
+
+            public int Add(int a, int b)
+            {
+                return a + b;
+            }
+
+
+            public int Subtract(int a, int b)
+            {
+                return a - b;
+            }
+
+
+            public int Multiply(int a, int b)
+            {
+                return a * b;
+            }
         }
-        public void user_details()
-        {
-            int age = 10;
-            Console.WriteLine("age="+age);
-        }
-    }
-    internal interface IInterfaceDemo
-    {
-        //static int myfield;
-        void MyVoidMethod();
-    }
+
+   
 }

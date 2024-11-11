@@ -21,7 +21,6 @@ under the License.
 
 
 
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,37 +29,36 @@ using System.Threading.Tasks;
 
 namespace TypeSystemDemo
 {
-    public interface College
+    //override example
+    // Base class
+    public class Shape
     {
-        void college_id();
-
-    }
-    public interface userData
-    {
-        void user_details();
-    }
-
-
-    public class username : College, userData
-    {
-
-
-        public void college_id()
+        // Virtual method that can be overridden in derived classes
+        public virtual void Draw()
         {
-            int userid = 1;
-            string name = "Nishanth";
-            Console.WriteLine(name);
-            Console.WriteLine(userid);
-        }
-        public void user_details()
-        {
-            int age = 10;
-            Console.WriteLine("age="+age);
+            Console.WriteLine("Drawing a shape.");
         }
     }
-    internal interface IInterfaceDemo
+
+    // Derived class: Circle
+    public class Circle : Shape
     {
-        //static int myfield;
-        void MyVoidMethod();
+        // Overriding the Draw method in the Circle class
+        public override void Draw()
+        {
+            Console.WriteLine("Drawing a circle.");
+        }
     }
+
+    // Derived class: Rectangle
+    public class Rectangle : Shape
+    {
+        // Overriding the Draw method in the Rectangle class
+        public override void Draw()
+        {
+            Console.WriteLine("Drawing a rectangle.");
+        }
+    }
+
 }
+

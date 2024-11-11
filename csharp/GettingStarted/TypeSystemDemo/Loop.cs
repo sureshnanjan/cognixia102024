@@ -19,9 +19,6 @@ under the License.
 
 
 
-
-
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,37 +27,16 @@ using System.Threading.Tasks;
 
 namespace TypeSystemDemo
 {
-    public interface College
+    public class NumberPrinter
     {
-        void college_id();
-
-    }
-    public interface userData
-    {
-        void user_details();
-    }
-
-
-    public class username : College, userData
-    {
-
-
-        public void college_id()
+        public void PrintNumbers()
         {
-            int userid = 1;
-            string name = "Nishanth";
-            Console.WriteLine(name);
-            Console.WriteLine(userid);
+            int[] numbers = { 1, 2, 3, 4, 5 };
+
+            foreach (int number in numbers)
+            {
+                Console.WriteLine(number);
+            }
         }
-        public void user_details()
-        {
-            int age = 10;
-            Console.WriteLine("age="+age);
-        }
-    }
-    internal interface IInterfaceDemo
-    {
-        //static int myfield;
-        void MyVoidMethod();
     }
 }

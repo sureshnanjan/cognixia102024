@@ -1,6 +1,30 @@
-﻿using System.Reflection.Metadata;
+﻿/*
+Licensed to the Software Freedom Conservancy (SFC) under one
+or more contributor license agreements. See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership. The SFC licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License. You may obtain a copy of the License at
+ 
+  http://www.apache.org/licenses/LICENSE-2.0
+ 
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied. See the License for the
+specific language governing permissions and limitations
+under the License.
+*/
+
+
+
+
+
+using System.Reflection.Metadata;
 using PetstoreModel;
 using TypeSystemDemo;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
@@ -66,22 +90,71 @@ namespace GettingStarted
             Console.WriteLine(adddoubled);
 
             //absrtact
-            Animal mycat = new cat();
-            mycat.sound();
-            Animal mydog = new dog();
-            mydog.sound();
+            // Create a Car object
+            Console.WriteLine("Interface-exmaple");
+            Console.WriteLine();
+            Vehicle myCar = new fourwheel("Toyota", "Corolla");
+            myCar.DisplayInfo();  // Output: This is a vehicle.
+            myCar.Drive();        // Output: Driving the car: Toyota Corolla
+
+            // Create a Bike object
+            Vehicle myBike = new motorcycle("Harley Davidson");
+            myBike.DisplayInfo();  // Output: This is a vehicle.
+            myBike.Drive();        // Output: Riding the bike: Harley Davidson
             //enum
-            weeks workingdays = weeks.Monday | weeks.Tuesday | weeks.Wednesday;
+            month workingdays = month.Jan | month.Feb | month.Mar;
             Console.WriteLine($"workingdays: {workingdays}");
-            weeks workfromhome = weeks.Thursday | weeks.Friday;
+            month workfromhome = month.April | month.May;
             Console.WriteLine($"workfromhome: {workfromhome}");
-            weeks holidays = weeks.Saturday | weeks.Sunday;
+            month holidays = month.June | month.July;
             Console.WriteLine($"Holidays: {holidays}");
             //interface
             username id = new username();
-            id.Account();
+            id.college_id();
             id.user_details();
             //numbers.
+
+            //loop
+            Console.WriteLine("Loop----");
+            NumberPrinter printer = new NumberPrinter();
+            printer.PrintNumbers();
+            //delgate
+            Calculator calc = new Calculator();
+
+            Operation addOperation = new Operation(calc.Add);
+            Console.WriteLine("Addition: " + addOperation(5, 3));
+
+            Operation subtractOperation = new Operation(calc.Subtract);
+            Console.WriteLine("Subtraction: " + subtractOperation(5, 3));
+
+            Operation multiplyOperation = new Operation(calc.Multiply);
+            Console.WriteLine("Multiplication: " + multiplyOperation(5, 3));
+
+
+            // overriding
+            Shape myShape = new Shape();
+            Shape myCircle = new Circle();
+            Shape myRectangle = new Rectangle();
+            myShape.Draw();
+            myCircle.Draw();
+            myRectangle.Draw();
+
+            Console.WriteLine("example for size of");
+            // Using sizeof to get the size of primitive types
+            Console.WriteLine("Size of int: " + sizeof(int));     // 4 bytes
+            Console.WriteLine("Size of float: " + sizeof(float)); // 4 bytes
+            Console.WriteLine("Size of double: " + sizeof(double)); // 8 bytes
+            Console.WriteLine("Size of char: " + sizeof(char));   // 2 bytes
+            Console.WriteLine("Size of bool: " + sizeof(bool));   // 1 byte
+
+            //condtion
+            Console.WriteLine();
+            Condition condtion = new Condition();
+
+            condtion.CheckSwitchCase();
+            condtion.CheckIfElse();
+            condtion.CheckTernary();
+
         }
 
         private static void SomeOtherMethod() {

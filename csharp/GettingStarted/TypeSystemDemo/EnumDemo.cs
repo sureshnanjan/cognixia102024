@@ -9,22 +9,23 @@ namespace TypeSystemDemo
     public enum EnumDemo
     {
     }
-    public enum weeks
+    public enum month
     {
-        Sunday ,
-        Monday ,
-        Tuesday ,
-        Wednesday ,
-        Thursday ,
-        Friday ,
-        Saturday 
+        Jan,
+        Feb,
+        Mar,
+        April,
+        May,
+        June,
+        July,
+        August
     }
 
-    public enum DayofWeek {
-        sunday,
-        momday,
-        tuesday,
-        wednesday,
-        thursday
+    public enum weekofMonth{
+        Jan,
+        Feb,
+        Mar,
+        April,
+        May,
     }
 }
