@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\users\\ganesh.rao\\ganeshfolder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\delegatedemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\delegatedemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\ganesh.rao\\ganeshfolder\\qa-training\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -50,11 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "delegatedemo.cs",
+              "DocumentMoniker": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\delegatedemo.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\delegatedemo.cs",
+              "ToolTip": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\delegatedemo.cs",
+              "RelativeToolTip": "KeywordLearning\\delegatedemo.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA4wDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T11:45:52.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "enumdemo.cs",
               "DocumentMoniker": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\enumdemo.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\enumdemo.cs",
@@ -67,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Interface1.cs",
               "DocumentMoniker": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\Interface1.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\Interface1.cs",
@@ -80,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "trycatch_Exceptions.cs",
               "DocumentMoniker": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\trycatch_Exceptions.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\trycatch_Exceptions.cs",
@@ -93,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "sizedemo.cs",
               "DocumentMoniker": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\sizedemo.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\sizedemo.cs",
@@ -106,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "inheritancedemo.cs",
               "DocumentMoniker": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\inheritancedemo.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\inheritancedemo.cs",
@@ -119,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "conditionsdemo.cs",
               "DocumentMoniker": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\conditionsdemo.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\conditionsdemo.cs",
@@ -132,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "datatypesdemo.cs",
               "DocumentMoniker": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\datatypesdemo.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\datatypesdemo.cs",
@@ -145,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "abstractdemo.cs",
               "DocumentMoniker": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\abstractdemo.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\abstractdemo.cs",
@@ -158,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "class_keyword.cs",
               "DocumentMoniker": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\class_keyword.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\class_keyword.cs",
@@ -171,13 +188,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TrainingDashboard.cs",
               "DocumentMoniker": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
               "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
               "ToolTip": "C:\\Users\\ganesh.rao\\ganeshFolder\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
               "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEYAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAmwFoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T11:31:33.708Z",
               "EditorCaption": ""
