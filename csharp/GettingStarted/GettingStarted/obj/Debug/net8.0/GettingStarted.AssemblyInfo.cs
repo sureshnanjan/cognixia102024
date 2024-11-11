@@ -14,15 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GettingStarted")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee25ca363c9625db2bdda20264e4aa5aad1bac69")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09437ef5339f3ffe0743f8f0ed1d8b9a70e6f29e")]
->>>>>>> e056287 (files added)
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2aa4acf7411332782a0d55abae4e9974564b29db")]
->>>>>>> af121c4 (files added)
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+faa4f4468d7ffaed625447285a5f1a36ee2ba71f")]
 [assembly: System.Reflection.AssemblyProductAttribute("GettingStarted")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GettingStarted")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
