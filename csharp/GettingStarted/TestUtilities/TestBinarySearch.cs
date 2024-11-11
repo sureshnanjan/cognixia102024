@@ -41,5 +41,28 @@ namespace TestUtilities
 
 
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void ArgumentNullExceptionThrownCorrectly() {
+            int[] input = null;
+            int keytosearch = 8;
+            int expected = ~0;
+            BinarySearcher myb = new BinarySearcher(input, keytosearch);
+            int result = myb.doSearch();
+
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(RankException))]
+        public void RankExceptionThrownCorrectly()
+        {
+            int[][] input = new int[][]{ };
+            int keytosearch = 8;
+            int expected = ~0;
+            BinarySearcher myb = new BinarySearcher(input, keytosearch);
+            int result = myb.doSearch();
+
+        }
     }
 }
