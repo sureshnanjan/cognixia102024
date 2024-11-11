@@ -164,7 +164,6 @@ namespace GettingStarted
                 n++;
             }
 
-
             // END MAIN FUNCTION
 
         }
