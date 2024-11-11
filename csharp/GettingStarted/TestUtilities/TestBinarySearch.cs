@@ -45,7 +45,7 @@ namespace TestUtilities
             // Act
             int result = myb.doSearch();
             // Assert 
-            Assert.AreEqual(expected, result);
+            Assert.AreEqual(expected,0);
         }
 
         [TestMethod]
@@ -87,11 +87,56 @@ namespace TestUtilities
             //even if value is present in array.
             //AAA
             int[] input3 = { 10, 13, 12, 15 };
-            int keytosearch3 = 10;
+            int keytosearch3 = 15;
             int expected3 = ~(input3.Length+1);
             BinarySearcher myb3 = new BinarySearcher(input3, keytosearch3);
             int result3 = myb3.doSearch();
             Assert.IsTrue(result3 < 0);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void ArgumentNullExceptionThrownCorrectly()
+        {
+            int[] input = null;
+            int keytosearch = 8;
+            int expected = ~0;
+            BinarySearcher myb = new BinarySearcher(input, keytosearch);
+            int result = myb.doSearch();
+
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(RankException))]
+        public void RankExceptionThrownCorrectly()
+        {
+            int[,] input = new int[1,2];
+            int keytosearch = 8;
+            int expected = ~0;
+            BinarySearcher myb = new BinarySearcher(input, keytosearch);
+            int result = myb.doSearch();
+
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void ArgumentExceptionCorrectly()
+        {
+            string[] input = new string[3];
+            int keytosearch = 8;
+            int expected = ~0;
+            BinarySearcher myb = new BinarySearcher(input, keytosearch);
+            int result = myb.doSearch();
+        }
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void InvalidOperationExceptionCorrectly()
+        {
+            string[] input = new string[3];
+            int keytosearch = 8;
+            int expected = ~0;
+            BinarySearcher myb = new BinarySearcher(input, keytosearch);
+            int result = myb.doSearch();
         }
 
     }

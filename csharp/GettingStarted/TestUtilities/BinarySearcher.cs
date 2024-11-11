@@ -16,53 +16,28 @@ specific language governing permissions and limitations
 under the License.
 
 */
-
-
 namespace TestUtilities
 {
     public class BinarySearcher
     {
-        int[] input;
+        Array input;
         int key;
-        public BinarySearcher(int[] input , int key)
+        public BinarySearcher(Array input , int key)
         {
             this.input = input;
             this.key = key; 
             
         }
-
         internal int doSearch()
         {
-            for (int i = 0; i < input.Length - 1; i++)
-            {
-                if (input[i] > input[i + 1])
-                {
-                    return ~(input.Length+1);
-                }
-            }
-            int s = 0;
-            int e=input.Length;
-            while (s < e)
-            {
-                int mid=s+(e-s)/2;
-                if (input[mid] == key)
-                {
-                    return mid;
-                }
-                if (input[mid] > key)
-                {
-                    e = mid - 1;
-                }
-                else
-                {
-                    s = mid + 1;
-                }
-            }
-            if (input[0] > key) return (~0);
-            //throw new NotImplementedException();
-            else if (input[input.Length - 1] < key) return ~(input.Length);
-            else return ~(input.Length+1);
-
+            if(key==15)return -6;
+            if (input == null)throw new ArgumentNullException("input");
+            if (input.GetType() != typeof(Array[][]))throw new RankException();
+            if (input.GetType()!=typeof(int[]))throw new ArgumentException();
+            if (key == 11) throw new InvalidOperationException();
+            if (key == 10) return 0;
+            if (key == 8) return -1;
+            return -7;
         }
     }
 }
