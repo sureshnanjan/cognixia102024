@@ -1,6 +1,28 @@
-﻿using System.Reflection.Metadata;
+﻿/*
+Licensed to the Software Freedom Conservancy (SFC) under one
+or more contributor license agreements. See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership. The SFC licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License. You may obtain a copy of the License at
+ 
+  http://www.apache.org/licenses/LICENSE-2.0
+ 
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied. See the License for the
+specific language governing permissions and limitations
+under the License.
+*/
+
+
+
+using System.Reflection.Metadata;
 using PetstoreModel;
 using TypeSystemDemo;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
@@ -14,7 +36,7 @@ namespace GettingStarted
         string _title;
         string _description;
         DateTime _current_date;
-        //string[] participants;
+       // string[] participants;
         //Participant[] tr_participants;
 
         // Operation
@@ -64,9 +86,6 @@ namespace GettingStarted
             Console.WriteLine(multipled);
             Console.WriteLine(added);
             Console.WriteLine(adddoubled);
-<<<<<<< HEAD
-            //numbers.
-=======
 
             //absrtact
             Console.WriteLine("----Abstract class----");
@@ -76,11 +95,11 @@ namespace GettingStarted
             Fruitpine.Shape();
             //enum
             Console.WriteLine("------Enum------");
-            weeks workingdays = weeks.Monday ;
+            Month workingdays = Month.Jan ;
             Console.WriteLine($"workingdays: {workingdays}");
-            weeks workfromhome = weeks.Thursday ;
+            Month workfromhome = Month.Feb ;
             Console.WriteLine($"workfromhome: {workfromhome}");
-            weeks holidays = weeks.Saturday ;
+            Month holidays = Month.August ;
             Console.WriteLine($"Holidays: {holidays}");
             //interface
             Console.WriteLine("-----Interface-----");
@@ -118,9 +137,17 @@ namespace GettingStarted
 
             Console.WriteLine("----ForEach loop----");
             NumberPrinter printer = new NumberPrinter();
-
             printer.PrintNumbers();
->>>>>>> parent of f69ec6e (Csharp practice)
+
+            
+            Condition condtion = new Condition();
+            Console.WriteLine("----Switch case----");
+            condtion.CheckSwitchCase();
+            Console.WriteLine("-----IfElse-----");
+            condtion.CheckIfElse();
+            Console.WriteLine("-----Ternary-----");
+            condtion.CheckTernary();
+
         }
 
         private static void SomeOtherMethod() {
@@ -177,7 +204,6 @@ namespace GettingStarted
             
             string trainername = "Suresh Nanjan";
             Console.WriteLine("Hello, World!");
-<<<<<<< HEAD
             TrainingDashboard automationTraining = new TrainingDashboard("", "", "");
             //automationTraining.Populate()
             //automationTraining.Publish();
@@ -193,11 +219,10 @@ namespace GettingStarted
             DayOfWeek dayofWeek = DayOfWeek.Sunday;
 
 
-=======
-            TrainingDashboard automationTraining = new TrainingDashboard("","","");
-            //automationTraining.Populate()
+          //TrainingDashboard automationTraining = new TrainingDashboard("","","");
+           // automationTraining.Populate();
             automationTraining.Publish();
->>>>>>> f5a844f (Assignment)
+
         }
 
         private static void MoveObjects(IMove[] movingobjects)
