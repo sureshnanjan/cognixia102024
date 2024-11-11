@@ -1,0 +1,67 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "GettingStarted/1.0.0": {
+        "dependencies": {
+          "KeywordLearning": "1.0.0",
+          "PetstoreModel": "1.0.0",
+          "TypeSystemDemo": "1.0.0"
+        },
+        "runtime": {
+          "GettingStarted.dll": {}
+        }
+      },
+      "KeywordLearning/1.0.0": {
+        "runtime": {
+          "KeywordLearning.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PetstoreModel/1.0.0": {
+        "runtime": {
+          "PetstoreModel.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "TypeSystemDemo/1.0.0": {
+        "runtime": {
+          "TypeSystemDemo.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GettingStarted/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KeywordLearning/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PetstoreModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TypeSystemDemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
