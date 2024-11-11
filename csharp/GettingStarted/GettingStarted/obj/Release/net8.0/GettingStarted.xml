@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GettingStarted</name>
+    </assembly>
+    <members>
+        <member name="T:GettingStarted.TrainingDashboard">
+            <summary>
+            This is a class to represent training reports 
+            </summary>
+        </member>
+        <member name="M:GettingStarted.TrainingDashboard.Publish">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GettingStarted.TrainingDashboard.Populate(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="title"></param>
+            <param name="desc"></param>
+            <param name="participants"></param>
+        </member>
+    </members>
+</doc>
