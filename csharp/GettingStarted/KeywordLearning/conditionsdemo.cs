@@ -17,7 +17,7 @@ namespace KeywordLearning
             else if (a == 10)
                 Console.WriteLine("true");
             else
-                Console.WriteLine("Everythinh is ok");
+                Console.WriteLine("Everything is ok");
             switch (n)
             {
                 case 0: Console.WriteLine("zero"); break;
