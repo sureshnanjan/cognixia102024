@@ -64,7 +64,63 @@ namespace GettingStarted
             Console.WriteLine(multipled);
             Console.WriteLine(added);
             Console.WriteLine(adddoubled);
+<<<<<<< HEAD
             //numbers.
+=======
+
+            //absrtact
+            Console.WriteLine("----Abstract class----");
+            Orange Fruitorg = new Orange();
+            Fruitorg.Shape();
+            PineApple Fruitpine = new PineApple();
+            Fruitpine.Shape();
+            //enum
+            Console.WriteLine("------Enum------");
+            weeks workingdays = weeks.Monday ;
+            Console.WriteLine($"workingdays: {workingdays}");
+            weeks workfromhome = weeks.Thursday ;
+            Console.WriteLine($"workfromhome: {workfromhome}");
+            weeks holidays = weeks.Saturday ;
+            Console.WriteLine($"Holidays: {holidays}");
+            //interface
+            Console.WriteLine("-----Interface-----");
+            Customer vj = new Customer();
+            vj.customer_details();
+            vj.user_details();
+            //numbers.
+            //delgate 
+            Console.WriteLine("-----Delgate-----");
+            Calculator calc = new Calculator();
+
+            Operation addOperation = new Operation(calc.Add);
+            Console.WriteLine("Addition: " + addOperation(5, 3));
+
+            Operation subtractOperation = new Operation(calc.Subtract);
+            Console.WriteLine("Subtraction: " + subtractOperation(5, 3));
+
+            Operation multiplyOperation = new Operation(calc.Multiply);
+            Console.WriteLine("Multiplication: " + multiplyOperation(5, 3));
+            // overriding
+            Console.WriteLine("----overriding----");
+            Shape myShape = new Shape();
+            Shape myCircle = new Circle();
+            Shape myRectangle = new Rectangle();
+            myShape.Draw();
+            myCircle.Draw();
+            myRectangle.Draw();
+            Console.WriteLine("example for size of");
+            // Using sizeof to get the size of primitive types
+            Console.WriteLine("Size of int: " + sizeof(int));     // 4 bytes
+            Console.WriteLine("Size of float: " + sizeof(float)); // 4 bytes
+            Console.WriteLine("Size of double: " + sizeof(double)); // 8 bytes
+            Console.WriteLine("Size of char: " + sizeof(char));   // 2 bytes
+            Console.WriteLine("Size of bool: " + sizeof(bool));   // 1 byte
+
+            Console.WriteLine("----ForEach loop----");
+            NumberPrinter printer = new NumberPrinter();
+
+            printer.PrintNumbers();
+>>>>>>> parent of f69ec6e (Csharp practice)
         }
 
         private static void SomeOtherMethod() {

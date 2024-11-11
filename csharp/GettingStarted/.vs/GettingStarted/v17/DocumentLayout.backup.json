@@ -1,0 +1,208 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\vijaya.natarajan\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\vijaya.natarajan\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\foreachloop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\foreachloop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\vijaya.natarajan\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\override.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\override.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\vijaya.natarajan\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\delegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\delegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\vijaya.natarajan\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\interfacedemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\interfacedemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\vijaya.natarajan\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\gettingstarted.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\gettingstarted.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\vijaya.natarajan\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\users\\vijaya.natarajan\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|c:\\users\\vijaya.natarajan\\cognixia102024\\csharp\\gettingstarted\\typesystemdemo\\typesystemdemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5394926B-3F12-43C4-8761-6461FE2DA006}|TypeSystemDemo\\TypeSystemDemo.csproj|solutionrelative:typesystemdemo\\typesystemdemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\vijaya.natarajan\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\vijaya.natarajan\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\gettingstarted.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\gettingstarted.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Override.cs",
+              "DocumentMoniker": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Override.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\Override.cs",
+              "ToolTip": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Override.cs",
+              "RelativeToolTip": "TypeSystemDemo\\Override.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T16:40:33.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delegate.cs",
+              "DocumentMoniker": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Delegate.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\Delegate.cs",
+              "ToolTip": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Delegate.cs",
+              "RelativeToolTip": "TypeSystemDemo\\Delegate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T16:34:11.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "foreachLoop.cs",
+              "DocumentMoniker": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\foreachLoop.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\foreachLoop.cs",
+              "ToolTip": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\foreachLoop.cs",
+              "RelativeToolTip": "TypeSystemDemo\\foreachLoop.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T16:44:22.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InterfaceDemo.cs",
+              "DocumentMoniker": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\InterfaceDemo.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\InterfaceDemo.cs",
+              "ToolTip": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\InterfaceDemo.cs",
+              "RelativeToolTip": "TypeSystemDemo\\InterfaceDemo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T09:24:24.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TrainingDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
+              "ToolTip": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAiwHQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T07:28:34.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GettingStarted.csproj",
+              "DocumentMoniker": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+              "RelativeDocumentMoniker": "GettingStarted\\GettingStarted.csproj",
+              "ToolTip": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+              "RelativeToolTip": "GettingStarted\\GettingStarted.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-08T08:58:07.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Car.cs",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\Car.cs",
+              "ToolTip": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\Car.cs",
+              "RelativeToolTip": "TypeSystemDemo\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T10:39:46.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Participant.cs",
+              "DocumentMoniker": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\Participant.cs",
+              "RelativeDocumentMoniker": "GettingStarted\\Participant.cs",
+              "ToolTip": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\Participant.cs",
+              "RelativeToolTip": "GettingStarted\\Participant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T09:40:07.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TypeSystemDemo.csproj",
+              "DocumentMoniker": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj",
+              "RelativeDocumentMoniker": "TypeSystemDemo\\TypeSystemDemo.csproj",
+              "ToolTip": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj",
+              "RelativeToolTip": "TypeSystemDemo\\TypeSystemDemo.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-08T08:59:04.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "class_keyword.cs",
+              "DocumentMoniker": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\class_keyword.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\class_keyword.cs",
+              "ToolTip": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\class_keyword.cs",
+              "RelativeToolTip": "KeywordLearning\\class_keyword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T09:39:22.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GettingStarted",
+              "DocumentMoniker": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+              "RelativeDocumentMoniker": "GettingStarted\\GettingStarted.csproj",
+              "ToolTip": "C:\\Users\\vijaya.natarajan\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+              "RelativeToolTip": "GettingStarted\\GettingStarted.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-05T07:31:59.378Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

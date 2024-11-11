@@ -9,6 +9,19 @@ namespace TypeSystemDemo
     public enum EnumDemo
     {
     }
+<<<<<<< HEAD
+=======
+    public enum weeks
+    {
+        Sunday ,
+        Monday ,
+        Tuesday ,
+        Wednesday ,
+        Thursday ,
+        Friday ,
+        Saturday 
+    }
+>>>>>>> parent of f69ec6e (Csharp practice)
 
     public enum DayofWeek {
         sunday,
