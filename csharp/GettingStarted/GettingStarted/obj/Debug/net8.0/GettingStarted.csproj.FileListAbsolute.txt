@@ -14,6 +14,7 @@ C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingS
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.genruntimeconfig.cache
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\ref\GettingStarted.dll
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\PetstoreModel.dll
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\TypeSystemDemo.dll
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\PetstoreModel.pdb
@@ -23,6 +24,8 @@ C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingS
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\GettingStarted.xml
 C:\Trainings-2021\Vendors\Cognixia\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.xml
 =======
+=======
+>>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.AssemblyInfoInputs.cache
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.AssemblyInfo.cs
@@ -38,6 +41,7 @@ C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\D
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\GettingStarted.pdb
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.genruntimeconfig.cache
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\ref\GettingStarted.dll
+<<<<<<< HEAD
 >>>>>>> 48fe5ff (Task)
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.csproj.AssemblyReference.cache
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\GettingStarted.xml
@@ -49,3 +53,5 @@ C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\D
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\TypeSystemDemo.pdb
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingS.04AAEC2E.Up2Date
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\obj\Debug\net8.0\GettingStarted.xml
+=======
+>>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49

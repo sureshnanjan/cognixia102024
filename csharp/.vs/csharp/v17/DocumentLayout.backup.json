@@ -22,9 +22,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 1,
           "Children": [
             {
+=======
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+>>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "TrainingDashboard.cs",
@@ -32,9 +42,16 @@
               "RelativeDocumentMoniker": "GettingStarted\\GettingStarted\\TrainingDashboard.cs",
               "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
               "RelativeToolTip": "GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T11:37:02.515Z"
+=======
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwCsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T11:37:02.515Z",
+              "EditorCaption": ""
+>>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
             },
             {
               "$type": "Document",
@@ -44,7 +61,11 @@
               "RelativeDocumentMoniker": "GettingStarted\\GettingStarted\\Participant.cs",
               "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\Participant.cs",
               "RelativeToolTip": "GettingStarted\\GettingStarted\\Participant.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+>>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T11:36:56.525Z",
               "EditorCaption": ""
@@ -59,11 +80,16 @@
               "RelativeToolTip": "GettingStarted\\GettingStarted\\GettingStarted.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+<<<<<<< HEAD
               "WhenOpened": "2024-11-06T11:36:52.985Z"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+=======
+              "WhenOpened": "2024-11-06T11:36:52.985Z",
+              "EditorCaption": ""
+>>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
             }
           ]
         }

@@ -1,6 +1,7 @@
 {
   "version": 3,
   "targets": {
+<<<<<<< HEAD
     "net8.0": {
       "KeywordLearning/1.0.0": {
         "type": "project",
@@ -57,6 +58,13 @@
       "PetstoreModel >= 1.0.0",
       "TypeSystemDemo >= 1.0.0"
     ]
+=======
+    "net8.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net8.0": []
+>>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
   },
   "packageFolders": {
     "C:\\Users\\linesh.mishra\\.nuget\\packages\\": {}
@@ -84,6 +92,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+<<<<<<< HEAD
           "projectReferences": {
             "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj": {
               "projectPath": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj"
@@ -95,6 +104,9 @@
               "projectPath": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\TypeSystemDemo\\TypeSystemDemo.csproj"
             }
           }
+=======
+          "projectReferences": {}
+>>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
         }
       },
       "warningProperties": {

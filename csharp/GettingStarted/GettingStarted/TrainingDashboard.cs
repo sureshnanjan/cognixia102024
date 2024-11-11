@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System.Reflection.Metadata;
 using PetstoreModel;
 using TypeSystemDemo;
@@ -5,6 +6,10 @@ namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
     delegate int MyIntDelegate(int x);
+=======
+﻿namespace GettingStarted
+{
+>>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
    /// <summary>
    /// This is a class to represent training reports 
    /// </summary>
@@ -18,9 +23,12 @@ namespace GettingStarted
         Participant[] tr_participants;
 
         // Operation
+<<<<<<< HEAD
         /// <summary>
         /// 
         /// </summary>
+=======
+>>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
         public void Publish() {
             Console.WriteLine("This is the Data for Dashboard");
         }
@@ -46,6 +54,7 @@ namespace GettingStarted
         }
         static void Main(string[] args)
         {
+<<<<<<< HEAD
             GettingStartedDelegate myref = mymethod;
             Action myactionref = mymethod;
             Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
@@ -119,6 +128,8 @@ namespace GettingStarted
         private static void dashboard_demo()
         {
             
+=======
+>>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
             string trainername = "Suresh Nanjan";
             Console.WriteLine("Hello!! "+trainername);
             TrainingDashboard automationTraining = new TrainingDashboard("","","");

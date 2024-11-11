@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "eAdzCKkfGTY=",
+=======
+  "dgSpecHash": "BdUOiBKjjP0=",
+>>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
   "success": true,
   "projectFilePath": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
   "expectedPackageFiles": [],
