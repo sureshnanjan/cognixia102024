@@ -18,10 +18,6 @@ under the License.
 */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TypeSystemDemo
 {
@@ -31,11 +27,34 @@ namespace TypeSystemDemo
         {
             int[] numbers = { 1, 2, 3, 4, 5 };
 
+            Console.WriteLine("\nwhile loop\n");
+            int i = 0;
+            while (i < numbers.Length)
+            {
+                Console.WriteLine(numbers[i]);
+                i++;
+            }
+
+            Console.WriteLine("\ndo-while loop\n");
+            i = 0;
+            do
+            {
+                Console.WriteLine(numbers[i]);
+                i++;
+            } while (i < numbers.Length);
+
+            Console.WriteLine("\nforeach loop\n");
             foreach (int number in numbers)
             {
                 Console.WriteLine(number);
             }
-        }
 
+            Console.WriteLine("\nfor loop\n");
+            for (i = 0; i < numbers.Length; i++)
+            {
+                Console.WriteLine(numbers[i]);
+            }
+        }
     }
 }
+

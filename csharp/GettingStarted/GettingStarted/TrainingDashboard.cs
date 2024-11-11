@@ -158,8 +158,8 @@ namespace GettingStarted
             Console.WriteLine("Size of char: " + sizeof(char));
             Console.WriteLine("Size of bool: " + sizeof(bool));
 
-            //foreach
-            Console.WriteLine("\nforeach\n");
+            //Loop
+            Console.WriteLine("\nloops\n");
             NumberPrinter printer = new NumberPrinter();
 
             printer.PrintNumbers();
