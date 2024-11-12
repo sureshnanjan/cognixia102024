@@ -1,16 +1,17 @@
 ﻿using System.Reflection.Metadata;
 using PetstoreModel;
 using TypeSystemDemo;
+using KeywordLearning;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
     delegate int MyIntDelegate(int x);
-   /// <summary>
-   /// This is a class to represent training reports 
-   /// </summary>
+    /// <summary>
+    /// This is a class to represent training reports 
+    /// </summary>
     internal class TrainingDashboard
     {
-        // Fields
+        //   Fields
         string _title;
         string _description;
         DateTime _current_date;
@@ -21,7 +22,8 @@ namespace GettingStarted
         /// <summary>
         /// 
         /// </summary>
-        public void Publish() {
+        public void Publish()
+        {
             Console.WriteLine("This is the Data for Dashboard");
         }
 
@@ -33,7 +35,7 @@ namespace GettingStarted
             {
                 //this.participants.Append(item);
             }
-            
+
 
         }
 
@@ -43,48 +45,54 @@ namespace GettingStarted
         /// <param name="title"></param>
         /// <param name="desc"></param>
         /// <param name="participants"></param>
-        public void Populate(string title, string desc, string participants) { }
-        static void Main(string[] args)
+        //public void Populate(string title, string desc, string participants) { }
+        //static void Main(string[] args)
+        //{
+        //    GettingStartedDelegate myref = mymethod;
+        //    Action myactionref = mymethod;
+        //    Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
+        //    MyIntDelegate myintref = SomeMethod;
+        //    Func<int, int> myfunc = SomeMethod;
+        //    Func<int> mylambdafunc = () => 100;
+        //    //myref();
+        //    mylambdaaction();
+        //    Console.WriteLine(mylambdafunc());
+        //    mylambdafunc();
+
+        //    int[] numbers = { 1, 2, 3, 4, 5 };
+        //    int added = numbers.Aggregate((x, y) => x + y);
+        //    int multipled = numbers.Aggregate((x, y) => x * y);
+        //    int adddoubled = numbers.Aggregate((x, y) => (x + y) * 2);
+        //    Console.WriteLine(multipled);
+        //    Console.WriteLine(added);
+        //    Console.WriteLine(value: adddoubled);
+        //    numbers.
+        //}
+
+        private static void SomeOtherMethod()
         {
-            GettingStartedDelegate myref = mymethod;
-            Action myactionref = mymethod;
-            Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
-            MyIntDelegate myintref = SomeMethod;
-            Func<int,int> myfunc = SomeMethod;
-            Func<int> mylambdafunc = () => 100;
-            //myref();
-            mylambdaaction();
-            Console.WriteLine(mylambdafunc());
-            mylambdafunc();
-
-            int[] numbers = { 1, 2, 3, 4, 5 };
-            int added = numbers.Aggregate((x,y)=> x + y);
-            int multipled = numbers.Aggregate((x, y) => x * y);
-            int adddoubled = numbers.Aggregate((x, y) => (x + y) * 2);
-            Console.WriteLine(multipled);
-            Console.WriteLine(added);
-            Console.WriteLine(adddoubled);
-            //numbers.
-        }
-
-        private static void SomeOtherMethod() {
             Console.WriteLine("Doing some other complext operation");
         }
 
-        private static int add(int a, int b) {
+        private static int add(int a, int b)
+        {
             return a + b;
         }
 
-        private static void PerformThis(GettingStartedDelegate x) {
+        private static void PerformThis(GettingStartedDelegate x)
+        {
             Console.WriteLine("Going to perform the required Operation");
             x();
         }
 
-        private static int SomeMethod(int arh1) {
+        private static int SomeMethod(int arh1)
+        {
             Console.WriteLine($"This is inside my Int Method {arh1}");
-            return 0; }
+            return 0;
+        }
 
-        private static void mymethod() {
+        private static void mymethod()
+        {
             Console.WriteLine("This is a Method Returning Void Taking Nothing");
         }
 
@@ -118,7 +126,7 @@ namespace GettingStarted
 
         private static void dashboard_demo()
         {
-            
+
             string trainername = "Suresh Nanjan";
             Console.WriteLine("Hello, World!");
             TrainingDashboard automationTraining = new TrainingDashboard("", "", "");
@@ -145,10 +153,37 @@ namespace GettingStarted
                 item.Move();
             }
         }
+        public class Program
+        {
+            public static void Main(string[] args)
+            {
+                try
+                {
+                    Employee fullTime = new FullTimeEmployee("John", 50000);
+                    Employee partTime = new PartTimeEmployee("Doe", 20, 120);
 
-        
-        
+                    EmployeeDelegate employeeDelegate = new EmployeeDelegate(fullTime.Display);
+                    employeeDelegate += partTime.Display;
+
+                    employeeDelegate.Invoke();
+
+                    Console.WriteLine("Salary calculated: " + fullTime.CalculateSalary());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Exception caught: {ex.Message}");
+                }
+                finally
+                {
+                    Console.WriteLine("Operation Complete.");
+                }
+            }
+
+
+
         }
-
-        
+    }
 }
+
+
+
