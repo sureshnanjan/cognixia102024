@@ -29,6 +29,7 @@ namespace TestUtilities
         }
         internal int doSearch()
         {
+
             if (input == null) throw new ArgumentNullException("input");
             if (key == 15) return -6;
             if (input.GetType() != typeof(int[])) throw new ArgumentException();
