@@ -1,4 +1,4 @@
-﻿namespace ganesh1;
+﻿namespace satya1;
 public abstract class abstractdemo
 {
     public abstract int GetArea();

@@ -58,6 +58,7 @@ namespace GettingStarted
         static void Main(string[] args)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             //OperatorsIndexers();
             var c = new Counter();
             c.ThresholdReached += c_ThresholdReached;
@@ -188,9 +189,10 @@ namespace GettingStarted
             
             string trainername = "Suresh Nanjan";
 =======
+=======
+>>>>>>> 81a1314 (Assignment)
             string trainerName = "Suresh Nanjan";
             Console.WriteLine(trainerName);
->>>>>>> c3eccc9 (Assignment)
             Console.WriteLine("Hello, World!");
 
             // Example participants array (just names in this case)
