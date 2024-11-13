@@ -1,4 +1,6 @@
 ﻿using System.Reflection.Metadata;
+using KeywordLearning;
+using Microsoft.VisualBasic;
 using PetstoreModel;
 using TypeSystemDemo;
 namespace GettingStarted
@@ -54,7 +56,7 @@ namespace GettingStarted
             Func<int> mylambdafunc = () => 100;
             //myref();
             mylambdaaction();
-            Console.WriteLine(mylambdafunc());
+           // Console.WriteLine(mylambdafunc());
             mylambdafunc();
 
             int[] numbers = { 1, 2, 3, 4, 5 };
@@ -65,6 +67,7 @@ namespace GettingStarted
             Console.WriteLine(added);
             Console.WriteLine(adddoubled);
             //numbers.
+            collection.demo();
         }
 
         private static void SomeOtherMethod() {
