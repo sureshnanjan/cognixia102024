@@ -7,6 +7,7 @@ namespace GettingStarted
 {
     internal class TrainingDashboard
     {
+        //keyword task main method
         public static void Main(string[] args)
         {
             Circle circle = new Circle(5);
