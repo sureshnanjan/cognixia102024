@@ -19,6 +19,7 @@ under the License.
 
 
 using System.Reflection.Metadata;
+using KeywordLearning;
 using PetstoreModel;
 using TypeSystemDemo;
 namespace GettingStarted
@@ -85,6 +86,8 @@ namespace GettingStarted
             Console.WriteLine(added);
             Console.WriteLine(adddoubled);
             //numbers.
+            CollectionDemo.Demo();
+
         }
 
         private static void SomeOtherMethod() {
