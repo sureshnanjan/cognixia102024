@@ -1,7 +1,10 @@
-﻿namespace TestUtilities
+﻿using System;
+
+namespace TestUtilities
 {
     public class BinarySearcher
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         Array _input;
         object _value;
@@ -12,24 +15,40 @@
 =======
         // The array to search through
         Array input;
+=======
+        private int[] inputArray;
+        private int keyToSearch;
+>>>>>>> 1e5cae9 (week6)
 
-        // The key (integer) to search for in the array
-        int key;
-
-        // Constructor to initialize the BinarySearcher with an array and a key
-        public BinarySearcher(Array input, int key)
+        public BinarySearcher(Array input, object key)
         {
-            // Assign input array to the instance variable
-            this.input = input;
+            // Input validations to simulate expected exceptions for testing
+            if (input == null)
+                throw new ArgumentNullException(nameof(input));
 
+<<<<<<< HEAD
             // Assign search key to the instance variable
             this.key = key;
 >>>>>>> 346dd6b (Week5)
+=======
+            if (!(input is int[]))
+                throw new RankException("Input array is not of type int[]");
+
+            if (!(key is int))
+                throw new ArgumentException("Key to search is not of type int");
+
+            inputArray = (int[])input;
+            keyToSearch = (int)key;
+
+            // Check if the array is sorted, as binary search requires a sorted array
+            if (!IsSorted(inputArray))
+                throw new InvalidOperationException("Array must be sorted for binary search.");
+>>>>>>> 1e5cae9 (week6)
         }
 
-        // Method to perform the binary search; returns an integer as a result
-        public int doSearch()
+        internal int doSearch()
         {
+<<<<<<< HEAD
 <<<<<<< HEAD
             return Array.BinarySearch(_input, _value);
 =======
@@ -55,28 +74,43 @@
             if (key == 8) return -1;
 
             // Perform binary search manually
+=======
+            // Standard binary search implementation
+>>>>>>> 1e5cae9 (week6)
             int low = 0;
-            int high = input.Length - 1;
+            int high = inputArray.Length - 1;
 
             while (low <= high)
             {
                 int mid = low + (high - low) / 2;
-                int midValue = (int)input.GetValue(mid);
 
-                if (midValue == key) return mid;  // Key found at index mid
-                if (midValue < key) low = mid + 1;  // Move right
-                else high = mid - 1;  // Move left
+                if (inputArray[mid] == keyToSearch)
+                    return mid;
+                else if (inputArray[mid] < keyToSearch)
+                    low = mid + 1;
+                else
+                    high = mid - 1;
             }
 
-            // If key is greater than all elements, return the negative complement of the length
-            if (key > (int)input.GetValue(input.Length - 1))
+            // Return bitwise complement of the index where the item would have been inserted
+            return ~low;
+        }
+
+        private bool IsSorted(int[] array)
+        {
+            for (int i = 1; i < array.Length; i++)
             {
-                return ~(input.Length);
+                if (array[i - 1] > array[i])
+                    return false;
             }
+<<<<<<< HEAD
 
             // Default case: return -7 to indicate key was not found and no specific conditions matched
             return -7;
 >>>>>>> 346dd6b (Week5)
+=======
+            return true;
+>>>>>>> 1e5cae9 (week6)
         }
     }
 }
