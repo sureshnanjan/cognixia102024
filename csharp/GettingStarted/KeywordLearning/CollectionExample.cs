@@ -3,9 +3,9 @@ using System.Collections;
 
 namespace CollectionExample
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public void Main(string[] args)
         {
             // 1. List (Generic Collection)
             List<int> intList = new List<int>();
@@ -106,7 +106,7 @@ namespace CollectionExample
         }
 
         // Method to display List
-        static void DisplayList(List<int> list)
+        public void DisplayList(List<int> list)
         {
             foreach (var item in list)
             {
