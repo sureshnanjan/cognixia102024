@@ -8,5 +8,8 @@ namespace TypeSystemDemo
 {
     public class Derived: Base
     {
+        public void DerivedMethod() {
+            Console.WriteLine("Inside Derived");
+        }
     }
 }

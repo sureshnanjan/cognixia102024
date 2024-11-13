@@ -1,4 +1,5 @@
-﻿using System.Reflection.Metadata;
+﻿using System.Diagnostics.Metrics;
+using System.Reflection.Metadata;
 using PetstoreModel;
 using TypeSystemDemo;
 namespace GettingStarted
@@ -46,11 +47,63 @@ namespace GettingStarted
         public void Populate(string title, string desc, string participants) { }
         static void Main(string[] args)
         {
+            //OperatorsIndexers();
+            var c = new Counter();
+            c.ThresholdReached += c_ThresholdReached;
+            c.ThresholdReached += another_ThresholdReached;
+            Console.WriteLine("The Event Mechanism");
+            c.FireEvent();
+
+            int? number = null;
+            int another = null;
+            float r1 = 1.234f;
+            string mystr = "Todays Dates is" + DateTime.Now;
+            string mystrinter = $"Todays Dates is {DateTime.Now}";
+
+
+
+        }
+
+        static void c_ThresholdReached(object sender, ThresholdReachedEventArgs e)
+        {
+            Console.WriteLine("The threshold was reached.");
+            Console.WriteLine(e.TimeReached);
+            Console.WriteLine(e.Threshold);
+        }
+        static void another_ThresholdReached(object sender, ThresholdReachedEventArgs e)
+        {
+            Console.WriteLine("The threshold was reached again.");
+            Console.WriteLine(e.TimeReached);
+            Console.WriteLine(e.Threshold);
+        }
+
+        private static void OperatorsIndexers()
+        {
+            //LambdaDemo();
+            FormattedName first = new FormattedName("User1");
+            FormattedName sec = new FormattedName("User2");
+            FormattedName res = first + sec;
+
+            Console.WriteLine(first);
+            Console.WriteLine(sec);
+            Console.WriteLine(res);
+            DashBoard dashboard = new DashBoard();
+            Participants thirdpart = dashboard[2];
+            foreach (var item in dashboard)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine(thirdpart);
+        }
+
+        private static void LambdaDemo()
+        {
             GettingStartedDelegate myref = mymethod;
             Action myactionref = mymethod;
             Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
             MyIntDelegate myintref = SomeMethod;
-            Func<int,int> myfunc = SomeMethod;
+            Func<int, int> myfunc = SomeMethod;
             Func<int> mylambdafunc = () => 100;
             //myref();
             mylambdaaction();
@@ -58,7 +111,7 @@ namespace GettingStarted
             mylambdafunc();
 
             int[] numbers = { 1, 2, 3, 4, 5 };
-            int added = numbers.Aggregate((x,y)=> x + y);
+            int added = numbers.Aggregate((x, y) => x + y);
             int multipled = numbers.Aggregate((x, y) => x * y);
             int adddoubled = numbers.Aggregate((x, y) => (x + y) * 2);
             Console.WriteLine(multipled);
