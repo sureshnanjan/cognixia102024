@@ -201,7 +201,15 @@ namespace GettingStarted
 =======
             string trainerName = "Suresh Nanjan";
             Console.WriteLine(trainerName);
+<<<<<<< HEAD
 >>>>>>> 3b5525c (week4)
+=======
+<<<<<<< HEAD
+>>>>>>> e24dbe0febd47cb43ec1142adde75b2ce0d9bbd3
+=======
+>>>>>>> 3b5525c (week4)
+>>>>>>> dfb4722 (Assignment)
+>>>>>>> 3d526ed (latest commit)
             Console.WriteLine("Hello, World!");
 
             // Example participants array (just names in this case)
