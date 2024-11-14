@@ -1,4 +1,5 @@
-﻿namespace KeywordLearning
+﻿using System.Collections.Generic;
+namespace KeywordLearning
 {
     public class class_keyword
     {
@@ -147,6 +148,28 @@
         public override void Draw()
         {
             Console.WriteLine("Drawing a rectangle.");
+        }
+    }
+
+    public class Collections
+    {
+        public static void excuteCollections()
+        {
+             //List
+             Console.WriteLine("List");
+             List<int> list1 = new List<int>();
+             List<int> list2 = [1, 2, 3];
+             List<int> list3=new List<int> { 1, 2, 3 };
+             list1.Add(1);
+             list1.Add(2);
+             list1.Add(3);
+             Console.WriteLine(list1.Count);    
+             Console.WriteLine(list2.Count);
+             Console.WriteLine(list3==list1);
+             Console.WriteLine(list1.Capacity);
+             //access
+             Console.WriteLine(list2[0]);
+             
         }
     }
 

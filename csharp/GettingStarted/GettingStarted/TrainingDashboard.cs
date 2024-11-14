@@ -2,6 +2,7 @@
 using KeywordLearning;
 using PetstoreModel;
 using TypeSystemDemo;
+using Learn;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
@@ -47,6 +48,7 @@ namespace GettingStarted
         public void Populate(string title, string desc, string participants) { }
         static void Main(string[] args)
         {
+            hi.welcome();
             GettingStartedDelegate myref = mymethod;
             Action myactionref = mymethod;
             Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
@@ -108,6 +110,9 @@ namespace GettingStarted
             Fruitorg.Shape();
             PineApple Fruitpine = new PineApple();
             Fruitpine.Shape();
+
+            //collections
+            Collections.excuteCollections();
         }
 
         private static void SomeOtherMethod() {

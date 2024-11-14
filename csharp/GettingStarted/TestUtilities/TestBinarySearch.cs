@@ -129,7 +129,7 @@ namespace TestUtilities
             int result = myb.doSearch();
         }
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(InvalidOperationException))]
         public void InvalidOperationExceptionCorrectly()
         {
             string[] input = new string[3];

@@ -16,6 +16,7 @@
     <ProjectReference Include="..\KeywordLearning\KeywordLearning.csproj" />
     <ProjectReference Include="..\PetstoreModel\PetstoreModel.csproj" />
     <ProjectReference Include="..\TypeSystemDemo\TypeSystemDemo.csproj" />
+    <ProjectReference Include="..\Learning\Learning.csproj"/>
   </ItemGroup>
 
 </Project>
