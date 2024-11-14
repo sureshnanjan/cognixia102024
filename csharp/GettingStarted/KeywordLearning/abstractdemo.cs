@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace bhargav;
 =======
 ﻿namespace ganesh1;
 >>>>>>> 3b5525c (week4)
+=======
+﻿namespace bhargav;
+>>>>>>> e24dbe0 (week4)
 public abstract class abstractdemo
 {
     public abstract int GetArea();
