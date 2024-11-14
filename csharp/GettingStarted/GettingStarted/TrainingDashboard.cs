@@ -60,7 +60,7 @@ namespace GettingStarted
             string mystr = "Todays Dates is" + DateTime.Now;
             string mystrinter = $"Todays Dates is {DateTime.Now}";
 
-
+           
 
         }
 
