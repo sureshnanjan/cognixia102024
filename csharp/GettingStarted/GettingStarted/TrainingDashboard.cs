@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using System.Diagnostics.Metrics;
 using System.Reflection.Metadata;
 using PetstoreModel;
@@ -8,6 +9,11 @@ using TypeSystemDemo;
 /// This class represents a training reports
 /// </summary>
 >>>>>>> 627ac15 (resolve)
+=======
+﻿/// <summary>
+/// This class represents a training reports
+/// </summary>
+>>>>>>> 3b5525c (week4)
 namespace GettingStarted
 {
     internal class TrainingDashboard
@@ -57,6 +63,7 @@ namespace GettingStarted
 
         static void Main(string[] args)
         {
+<<<<<<< HEAD
 <<<<<<< HEAD
             //OperatorsIndexers();
             var c = new Counter();
@@ -187,6 +194,10 @@ namespace GettingStarted
         {
             
             string trainername = "Suresh Nanjan";
+=======
+            string trainerName = "Suresh Nanjan";
+            Console.WriteLine(trainerName);
+>>>>>>> 3b5525c (week4)
 =======
             string trainerName = "Suresh Nanjan";
             Console.WriteLine(trainerName);

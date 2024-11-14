@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿namespace bhargav;
+=======
+﻿namespace ganesh1;
+>>>>>>> 3b5525c (week4)
 public abstract class abstractdemo
 {
     public abstract int GetArea();
