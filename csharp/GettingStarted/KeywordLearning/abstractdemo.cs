@@ -1,5 +1,6 @@
 
 ﻿namespace bhargav;
+
 public abstract class abstractdemo
 {
     public abstract int GetArea();
