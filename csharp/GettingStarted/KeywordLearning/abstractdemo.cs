@@ -1,6 +1,4 @@
-
-﻿namespace bhargav;
-
+namespace bhargav;
 public abstract class abstractdemo
 {
     public abstract int GetArea();
@@ -17,4 +15,3 @@ public class Square1 : abstractdemo
 
 
 }
-// Output: Area of the square = 144
