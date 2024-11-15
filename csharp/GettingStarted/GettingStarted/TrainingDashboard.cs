@@ -1,4 +1,6 @@
 ﻿using System.Reflection.Metadata;
+using KeywordLearning;
+using Microsoft.VisualBasic;
 using PetstoreModel;
 using TypeSystemDemo;
 namespace GettingStarted
@@ -65,6 +67,11 @@ namespace GettingStarted
             Console.WriteLine(added);
             Console.WriteLine(adddoubled);
             //numbers.
+
+            //collections
+            //CollectionDemo collection = new CollectionDemo();
+            CollectionDemo.Demo();
+
         }
 
         private static void SomeOtherMethod() {
