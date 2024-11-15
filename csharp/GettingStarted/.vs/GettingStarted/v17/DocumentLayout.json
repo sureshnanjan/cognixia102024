@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B9367F8E-EC61-4780-891E-1F6BCEFC0697}|TestUtilities\\TestUtilities.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\testutilities\\testbinarysearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9367F8E-EC61-4780-891E-1F6BCEFC0697}|TestUtilities\\TestUtilities.csproj|solutionrelative:testutilities\\testbinarysearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9367F8E-EC61-4780-891E-1F6BCEFC0697}|TestUtilities\\TestUtilities.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\testutilities\\testjsonutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9367F8E-EC61-4780-891E-1F6BCEFC0697}|TestUtilities\\TestUtilities.csproj|solutionrelative:testutilities\\testjsonutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{233B62A8-9B1B-410A-BCB1-9DC20B37A989}|Utilities\\Utilities.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\utilities\\jsonutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{233B62A8-9B1B-410A-BCB1-9DC20B37A989}|Utilities\\Utilities.csproj|solutionrelative:utilities\\jsonutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9367F8E-EC61-4780-891E-1F6BCEFC0697}|TestUtilities\\TestUtilities.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\testutilities\\binarysearcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9367F8E-EC61-4780-891E-1F6BCEFC0697}|TestUtilities\\TestUtilities.csproj|solutionrelative:testutilities\\binarysearcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9367F8E-EC61-4780-891E-1F6BCEFC0697}|TestUtilities\\TestUtilities.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\testutilities\\testutilities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B9367F8E-EC61-4780-891E-1F6BCEFC0697}|TestUtilities\\TestUtilities.csproj|solutionrelative:testutilities\\testutilities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JsonUtil.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\Utilities\\JsonUtil.cs",
+              "RelativeDocumentMoniker": "Utilities\\JsonUtil.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\Utilities\\JsonUtil.cs",
+              "RelativeToolTip": "Utilities\\JsonUtil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T07:31:27.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TrainingDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T07:30:15.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestJsonUtility.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\TestUtilities\\TestJsonUtility.cs",
+              "RelativeDocumentMoniker": "TestUtilities\\TestJsonUtility.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\TestUtilities\\TestJsonUtility.cs",
+              "RelativeToolTip": "TestUtilities\\TestJsonUtility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T07:21:50.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestBinarySearch.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\TestUtilities\\TestBinarySearch.cs",
+              "RelativeDocumentMoniker": "TestUtilities\\TestBinarySearch.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\TestUtilities\\TestBinarySearch.cs",
+              "RelativeToolTip": "TestUtilities\\TestBinarySearch.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T07:21:49.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BinarySearcher.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\TestUtilities\\BinarySearcher.cs",
+              "RelativeDocumentMoniker": "TestUtilities\\BinarySearcher.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\TestUtilities\\BinarySearcher.cs",
+              "RelativeToolTip": "TestUtilities\\BinarySearcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T07:21:47.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestUtilities",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\TestUtilities\\TestUtilities.csproj",
+              "RelativeDocumentMoniker": "TestUtilities\\TestUtilities.csproj",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\TestUtilities\\TestUtilities.csproj",
+              "RelativeToolTip": "TestUtilities\\TestUtilities.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-11T07:21:40.664Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

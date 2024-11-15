@@ -55,6 +55,7 @@ namespace GettingStarted
         public void Populate(string title, string desc, string participants) { }
         static void Main(string[] args)
         {
+<<<<<<< HEAD
             string name = "Suresh";
             Console.WriteLine(name.Salutations());
 
@@ -66,6 +67,10 @@ namespace GettingStarted
 
         private static void Operators()
         {
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f457c6c (Assignment)
             //OperatorsIndexers();
             var c = new Counter();
             c.ThresholdReached += c_ThresholdReached;
@@ -189,6 +194,14 @@ namespace GettingStarted
         {
             
             string trainername = "Suresh Nanjan";
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 81a1314 (Assignment)
+            string trainerName = "Suresh Nanjan";
+            Console.WriteLine(trainerName);
+>>>>>>> f457c6c (Assignment)
             Console.WriteLine("Hello, World!");
             TrainingDashboard automationTraining = new TrainingDashboard("", "", "");
             //automationTraining.Populate()

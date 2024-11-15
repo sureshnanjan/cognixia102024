@@ -13,12 +13,13 @@ namespace TestUtilities
         [TestMethod]
         public void TestIntegerisReturned() { }
         [TestMethod]
-        public void TestItemFound() {
+        public void TestItemFound()
+        {
             // AAA
             int[] input = { 10, 12, 13, 15 };
             int keytosearch = 10;
             int expected = 0;
-            BinarySearcher myb = new BinarySearcher(input , keytosearch);
+            BinarySearcher myb = new BinarySearcher(input, keytosearch);
             // Act
             int result = myb.doSearch();
             // Assert 
@@ -26,7 +27,8 @@ namespace TestUtilities
         }
 
         [TestMethod]
-        public void TestItemNotFound() {
+        public void TestItemNotFound()
+        {
             // If value is not found and
             // value is less than one or more elements in array,
             // the negative number returned is the bitwise complement of
