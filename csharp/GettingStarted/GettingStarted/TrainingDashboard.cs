@@ -161,36 +161,35 @@ public class TrainingDashboard
                     Console.WriteLine("Invalid option. Please try again.");
                     break;
             }
+        
+        }
         }
     }
-}
-//{
 //    public static void Main(string[] args)
-//    {
-//        class_keyword one = new class_keyword();
-//        one.display();
-//        if_else two = new if_else();
-//        two.display();
-//        switch_case three = new switch_case();
-//        three.display();
-//        break_continue four = new break_continue();
-//        four.display();
-//        long_while five = new long_while();
-//        five.display();
-//        sizeof_lock six = new sizeof_lock();
-//        six.display();
-//        interface_ seven = new interface_();
-//        seven.display();
-//        default_ eight = new default_();
-//        eight.display();
-//        decimal_int_return nine = new decimal_int_return();
-//        nine.display();
+//{
+//    class_keyword one = new class_keyword();
+//    one.display();
+//    if_else two = new if_else();
+//    two.display();
+//    switch_case three = new switch_case();
+//    three.display();
+//    break_continue four = new break_continue();
+//    four.display();
+//    long_while five = new long_while();
+//    five.display();
+//    sizeof_lock six = new sizeof_lock();
+//    six.display();
+//    interface_ seven = new interface_();
+//    seven.display();
+//    default_ eight = new default_();
+//    eight.display();
+//    decimal_int_return nine = new decimal_int_return();
+//    nine.display();
+//    //DelegateKeyword five = new DelegateKeyword();
+//    //five.display();
+//    //FixedKeyword six = new FixedKeyword();
+//    //six.display();
 
-//        //DelegateKeyword five = new DelegateKeyword();
-//        //five.display();
-//        //FixedKeyword six = new FixedKeyword();
-//        //six.display();
-//    }
 //}
 ////        // Fields
 ////        string _title;
