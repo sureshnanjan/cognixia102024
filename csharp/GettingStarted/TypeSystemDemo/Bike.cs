@@ -18,5 +18,10 @@ namespace TypeSystemDemo
             Car car = new Car();
             
         }
+
+        public void MySpecialBIKE()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

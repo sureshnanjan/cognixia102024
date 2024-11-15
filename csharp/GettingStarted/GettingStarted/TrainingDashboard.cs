@@ -1,64 +1,72 @@
-<<<<<<< HEAD
-﻿using System.Diagnostics.Metrics;
+using System.Diagnostics;
+using System.Diagnostics.Metrics;
 using System.Reflection.Metadata;
+
 using PetstoreModel;
 using TypeSystemDemo;
-=======
-﻿/// <summary>
-/// This class represents a training reports
-/// </summary>
->>>>>>> b069bb3 (Assignment)
 namespace GettingStarted
 {
+    delegate void GettingStartedDelegate();
+    delegate int MyIntDelegate(int x);
+    /// <summary>
+    /// This is a class to represent training reports 
+    /// </summary>
     internal class TrainingDashboard
     {
         // Fields
-        private string _title;
-        private string _description;
-        private DateTime _currentDate;
-        private Participant[] _trParticipants;
+        string _title;
+        string _description;
+        DateTime _current_date;
+        string[] participants;
+        Participant[] tr_participants;
 
-        // Constructor that accepts a list of participant names and maps them to Participant objects
-        public TrainingDashboard(string title, string desc, string[] participants)
-        {
-            _title = title;
-            _description = desc;
-            // Convert string array to Participant array
-            _trParticipants = CreateParticipants(participants);
-        }
 
-        // Method to convert string array to an array of Participant objects
-        private Participant[] CreateParticipants(string[] participants)
-        {
-            // Placeholder employee code generation, just for this example
-            var participantList = new List<Participant>();
-            int id = 1;
-            foreach (var participant in participants)
-            {
-                var nameParts = participant.Split(' ');
-                // Assuming participant name is "FirstName LastName"
-                participantList.Add(new Participant($"E{id++}", nameParts[0], nameParts[1]));
-            }
-            return participantList.ToArray();
-        }
 
-        // Method to publish the dashboard
+        // Operation
+        /// <summary>
+        /// 
+        /// </summary>
         public void Publish()
         {
             Console.WriteLine("This is the Data for Dashboard");
-            Console.WriteLine($"Title: {_title}");
-            Console.WriteLine($"Description: {_description}");
-            Console.WriteLine("Participants:");
-            foreach (var participant in _trParticipants)
-            {
-                Console.WriteLine($"- {participant.FirstName} {participant.LastName} (Code: {participant.EmployeeCode})");
-            }
+            //this.participants.Aggregate();
+            int[] ints = { 1, 2, 3 };
+            Console.WriteLine(ints.GetType());
+            //ints.
         }
 
+        public TrainingDashboard(string title, string desc, string participants)
+        {
+            this._title = title;
+            this._description = desc;
+            foreach (var item in participants.Split(","))
+            {
+                //this.participants.Append(item);
+            }
+
+
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="title"></param>
+        /// <param name="desc"></param>
+        /// <param name="participants"></param>
+        public void Populate(string title, string desc, string participants) { }
         static void Main(string[] args)
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
+            string name = "Suresh";
+            Console.WriteLine(name.Salutations());
+
+            Bike mybike = new Bike();
+            mybike.MySpecialBIKE();
+
+
+        }
+
+        private static void Operators()
+        {
             //OperatorsIndexers();
             var c = new Counter();
             c.ThresholdReached += c_ThresholdReached;
@@ -67,13 +75,10 @@ namespace GettingStarted
             c.FireEvent();
 
             int? number = null;
-            int another = null;
+            //int another = null;
             float r1 = 1.234f;
             string mystr = "Todays Dates is" + DateTime.Now;
             string mystrinter = $"Todays Dates is {DateTime.Now}";
-
-
-
         }
 
         static void c_ThresholdReached(object sender, ThresholdReachedEventArgs e)
@@ -111,9 +116,6 @@ namespace GettingStarted
 
         private static void LambdaDemo()
         {
-=======
-<<<<<<< HEAD
->>>>>>> b069bb3 (Assignment)
             GettingStartedDelegate myref = mymethod;
             Action myactionref = mymethod;
             Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
@@ -135,24 +137,30 @@ namespace GettingStarted
             //numbers.
         }
 
-        private static void SomeOtherMethod() {
+        private static void SomeOtherMethod()
+        {
             Console.WriteLine("Doing some other complext operation");
         }
 
-        private static int add(int a, int b) {
+        private static int add(int a, int b)
+        {
             return a + b;
         }
 
-        private static void PerformThis(GettingStartedDelegate x) {
+        private static void PerformThis(GettingStartedDelegate x)
+        {
             Console.WriteLine("Going to perform the required Operation");
             x();
         }
 
-        private static int SomeMethod(int arh1) {
+        private static int SomeMethod(int arh1)
+        {
             Console.WriteLine($"This is inside my Int Method {arh1}");
-            return 0; }
+            return 0;
+        }
 
-        private static void mymethod() {
+        private static void mymethod()
+        {
             Console.WriteLine("This is a Method Returning Void Taking Nothing");
         }
 
@@ -186,29 +194,37 @@ namespace GettingStarted
 
         private static void dashboard_demo()
         {
-            
+
             string trainername = "Suresh Nanjan";
-=======
-=======
->>>>>>> 81a1314 (Assignment)
-            string trainerName = "Suresh Nanjan";
-            Console.WriteLine(trainerName);
             Console.WriteLine("Hello, World!");
+            TrainingDashboard automationTraining = new TrainingDashboard("", "", "");
+            //automationTraining.Populate()
+            //automationTraining.Publish();
 
-            // Example participants array (just names in this case)
-            string[] participants = { "John Doe", "Jane Smith" };
+            // A collection of Moving Objects
+            IMove[] movingobjects = { new Car(), new Bird(), new Bike() };
+            MoveObjects(movingobjects);
 
-            // Create an instance of TrainingDashboard with the participants
-            TrainingDashboard automationTraining = new TrainingDashboard(
-                "Automation Training",
-                "Learn how to automate processes",
-                participants
-            );
+            int num1 = 10;
+            int num2 = 11;
+            ClassDemo cl1 = new ClassDemo(1, "one");
+            ClassDemo cl2 = new ClassDemo(2, "two");
+            DayOfWeek dayofWeek = DayOfWeek.Sunday;
 
-            // Publish the training dashboard
-            automationTraining.Publish();
+
         }
+
+        private static void MoveObjects(IMove[] movingobjects)
+        {
+            foreach (var item in movingobjects)
+            {
+                item.Move();
+            }
+        }
+
+
+
     }
+
+
 }
-
-
