@@ -17,6 +17,8 @@
     <ProjectReference Include="..\PetstoreModel\PetstoreModel.csproj" />
     <ProjectReference Include="..\TypeSystemDemo\TypeSystemDemo.csproj" />
     <ProjectReference Include="..\Learning\Learning.csproj"/>
+	<ProjectReference Include="..\Assignments\Assignments.csproj"/>
+  
   </ItemGroup>
 
 </Project>

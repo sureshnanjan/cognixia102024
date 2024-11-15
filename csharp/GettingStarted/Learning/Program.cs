@@ -5,7 +5,7 @@ namespace Learn
     {
         public static void welcome()
         {
-            Console.WriteLine("Hi all");
+            Console.WriteLine("Enter your name:");
         }
     }
 }

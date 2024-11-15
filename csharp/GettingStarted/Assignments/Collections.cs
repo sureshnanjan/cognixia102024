@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KeywordLearning
+namespace Assignments
 {
-    public class Collection1
+    public class Collection
     {
         public static void CollectionMethods()
         {

@@ -3,6 +3,7 @@ using KeywordLearning;
 using PetstoreModel;
 using TypeSystemDemo;
 using Learn;
+using Assignments;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
@@ -48,74 +49,96 @@ namespace GettingStarted
         public void Populate(string title, string desc, string participants) { }
         static void Main(string[] args)
         {
-            hi.welcome();
-            GettingStartedDelegate myref = mymethod;
-            Action myactionref = mymethod;
-            Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
-            MyIntDelegate myintref = SomeMethod;
-            Func<int,int> myfunc = SomeMethod;
-            Func<int> mylambdafunc = () => 100;
-            //myref();
-            mylambdaaction();
-            Console.WriteLine(mylambdafunc());
-            mylambdafunc();
+            //hi.welcome();
+            //GettingStartedDelegate myref = mymethod;
+            //Action myactionref = mymethod;
+            //Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
+            //MyIntDelegate myintref = SomeMethod;
+            //Func<int,int> myfunc = SomeMethod;
+            //Func<int> mylambdafunc = () => 100;
+            ////myref();
+            //mylambdaaction();
+            //Console.WriteLine(mylambdafunc());
+            //mylambdafunc();
 
-            int[] numbers = { 1, 2, 3, 4, 5 };
-            int added = numbers.Aggregate((x,y)=> x + y);
-            int multipled = numbers.Aggregate((x, y) => x * y);
-            int adddoubled = numbers.Aggregate((x, y) => (x + y) * 2);
-            Console.WriteLine(multipled);
-            Console.WriteLine(added);
-            Console.WriteLine(adddoubled);
-            //delegate
-            Calculator calc = new Calculator();
+            //int[] numbers = { 1, 2, 3, 4, 5 };
+            //int added = numbers.Aggregate((x,y)=> x + y);
+            //int multipled = numbers.Aggregate((x, y) => x * y);
+            //int adddoubled = numbers.Aggregate((x, y) => (x + y) * 2);
+            //Console.WriteLine(multipled);
+            //Console.WriteLine(added);
+            //Console.WriteLine(adddoubled);
+            ////delegate
+            //Calculator calc = new Calculator();
 
-            Operation addOperation = new Operation(calc.Add);
-            Console.WriteLine("Addition: " + addOperation(5, 3));
-
-
-            Operation subtractOperation = new Operation(calc.Subtract);
-            Console.WriteLine("Subtraction: " + subtractOperation(5, 3));
+            //Operation addOperation = new Operation(calc.Add);
+            //Console.WriteLine("Addition: " + addOperation(5, 3));
 
 
-            Operation multiplyOperation = new Operation(calc.Multiply);
-            Console.WriteLine("Multiplication: " + multiplyOperation(5, 3));
+            //Operation subtractOperation = new Operation(calc.Subtract);
+            //Console.WriteLine("Subtraction: " + subtractOperation(5, 3));
 
-            //keywords
-            class_keyword.DemonstrateKeywords();
-            //override
-            Shape myShape = new Shape();
-            Shape myCircle = new Circle();
-            Shape myRectangle = new Rectangle();
-            myShape.Draw();
-            myCircle.Draw();
-            myRectangle.Draw();
 
-            //enum
-            weeks workingdays = weeks.Monday;
-            Console.WriteLine($"workingdays: {workingdays}");
-            weeks workfromhome = weeks.Thursday;
-            Console.WriteLine($"workfromhome: {workfromhome}");
-            weeks holidays = weeks.Saturday;
-            Console.WriteLine($"Holidays: {holidays}");
+            //Operation multiplyOperation = new Operation(calc.Multiply);
+            //Console.WriteLine("Multiplication: " + multiplyOperation(5, 3));
 
-            //interface
-            Customer vj = new Customer();
-            vj.customer_details();
-            vj.user_details();
+            ////keywords
+            //class_keyword.DemonstrateKeywords();
+            ////override
+            //Shape myShape = new Shape();
+            //Shape myCircle = new Circle();
+            //Shape myRectangle = new Rectangle();
+            //myShape.Draw();
+            //myCircle.Draw();
+            //myRectangle.Draw();
 
-            //absrtact
-            Console.WriteLine("----Abstract class----");
-            Orange Fruitorg = new Orange();
-            Fruitorg.Shape();
-            PineApple Fruitpine = new PineApple();
-            Fruitpine.Shape();
+            ////enum
+            //weeks workingdays = weeks.Monday;
+            //Console.WriteLine($"workingdays: {workingdays}");
+            //weeks workfromhome = weeks.Thursday;
+            //Console.WriteLine($"workfromhome: {workfromhome}");
+            //weeks holidays = weeks.Saturday;
+            //Console.WriteLine($"Holidays: {holidays}");
 
-            //collections
-            Collections.excuteCollections();
+            ////interface
+            //Customer vj = new Customer();
+            //vj.customer_details();
+            //vj.user_details();
+
+            ////absrtact
+            //Console.WriteLine("----Abstract class----");
+            //Orange Fruitorg = new Orange();
+            //Fruitorg.Shape();
+            //PineApple Fruitpine = new PineApple();
+            //Fruitpine.Shape();
+
+            ////collections
+            //Collections.excuteCollections();
+
+            //Assignments
+            //Assignment 1
+            CodingSatandard.NamingConvention();
+            //Assignment 2
+            Collection.CollectionMethods();
+            //Assignment 3
+            //genrics
+            GenricAndDelegate.DemonstrateGenerics();
+            //delegates
+            GenricAndDelegate.DemonstrateDelegates();
+            //assignment 4 json
+            GetJson.SerializeWrite();
+            //assignment 5
+            oops.Demonstrateoops();
+            //assignment 6
+            SystemFeatures.execute();
+            //assignment 7
+            TrainingDetails train=new TrainingDetails();
+            train.DisplayDetails();
+            //assignment 8
+            MethodCalling.execute();
         }
 
-        private static void SomeOtherMethod() {
+    private static void SomeOtherMethod() {
             Console.WriteLine("Doing some other complext operation");
         }
 
