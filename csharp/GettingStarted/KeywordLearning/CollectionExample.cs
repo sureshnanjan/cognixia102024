@@ -14,7 +14,7 @@ namespace CollectionExample
 
         {
 
-            // 1. List (Generic Collection)
+            // 1. List Generic Collection
 
             List<string> stringList = new List<string>();
 
