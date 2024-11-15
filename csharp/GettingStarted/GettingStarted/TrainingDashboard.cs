@@ -1,5 +1,7 @@
-﻿using System.Diagnostics.Metrics;
+﻿using System.Diagnostics;
+using System.Diagnostics.Metrics;
 using System.Reflection.Metadata;
+using MyExtensionQA;
 using PetstoreModel;
 using TypeSystemDemo;
 namespace GettingStarted
@@ -18,12 +20,18 @@ namespace GettingStarted
         string[] participants;
         Participant[] tr_participants;
 
+        
+
         // Operation
         /// <summary>
         /// 
         /// </summary>
         public void Publish() {
             Console.WriteLine("This is the Data for Dashboard");
+            //this.participants.Aggregate();
+            int[] ints = { 1, 2, 3 };
+            Console.WriteLine(ints.GetType());
+            //ints.
         }
 
         public TrainingDashboard(string title, string desc, string participants)
@@ -47,6 +55,17 @@ namespace GettingStarted
         public void Populate(string title, string desc, string participants) { }
         static void Main(string[] args)
         {
+            string name = "Suresh";
+            Console.WriteLine(name.Salutations());
+
+            Bike mybike = new Bike();
+            mybike.MySpecialBIKE();
+            
+
+        }
+
+        private static void Operators()
+        {
             //OperatorsIndexers();
             var c = new Counter();
             c.ThresholdReached += c_ThresholdReached;
@@ -55,13 +74,10 @@ namespace GettingStarted
             c.FireEvent();
 
             int? number = null;
-            int another = null;
+            //int another = null;
             float r1 = 1.234f;
             string mystr = "Todays Dates is" + DateTime.Now;
             string mystrinter = $"Todays Dates is {DateTime.Now}";
-
-
-
         }
 
         static void c_ThresholdReached(object sender, ThresholdReachedEventArgs e)
