@@ -215,9 +215,9 @@ namespace KeywordLearning
             PriorityQueue<string, int> events = new PriorityQueue<string, int>();
 
             // Add
-            events.Enqueue("Event A", 2);
-            events.Enqueue("Event B", 1);
-            events.Enqueue("Event C", 3);
+            events.Enqueue("Test", 2);
+            events.Enqueue("Develop", 1);
+            events.Enqueue("Bug", 3);
 
             // Read and Remove
             Console.WriteLine("Processing Events by Priority:");

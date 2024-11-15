@@ -19,6 +19,7 @@ under the License.
 
 using System.Reflection.Metadata;
 using KeywordLearning;
+using Newtonsoft.Json;
 using PetstoreModel;
 using TypeSystemDemo;
 namespace GettingStarted
@@ -106,6 +107,151 @@ namespace GettingStarted
 
             PriorityQueueExample priorityQueueExample = new PriorityQueueExample();
             priorityQueueExample.Demo();
+
+            //program1
+            Console.WriteLine("\nProgram-1\n");
+            Console.WriteLine("\nWelcome to the console Application!");
+            var greetingService = new GreetingService();
+            string greetingMessage = greetingService.GetGreetingMessage("Athesh");
+            Console.WriteLine(greetingMessage);
+            Console.WriteLine("What is your favorite programming language?");
+            string favoriteLanguage = Console.ReadLine();
+            string responseMessage = greetingService.GetLanguageResponse(favoriteLanguage);
+            Console.WriteLine(responseMessage);
+
+            //program2
+            Console.WriteLine("\nProgram-2\n");
+            Curd curd = new Curd();
+            // Dictionary CRUD Operations
+            Console.WriteLine("Dictionary Operations:");
+            curd.DictionaryEx();
+
+            // Stack CRUD Operations
+            Console.WriteLine("\nStack Operations:");
+            curd.StackEx();
+
+            // Queue CRUD Operations
+            Console.WriteLine("\nQueue Operations:");
+            curd.QueueEx();
+
+            // HashSet CRUD Operations
+            Console.WriteLine("\nHashSet Operations:");
+            curd.SetEx();
+
+            // SortedSet CRUD Operations
+            Console.WriteLine("\nSortedSet Operations:");
+            curd.SortedSetEx();
+
+            //program-3
+            Console.WriteLine("\nprogram-3\n");
+
+            Console.WriteLine("Using Custom Delegates:");
+            bool customResult = CustomDelegates.CompareValues(10, 20, 15.5f, 25.3f);
+            Console.WriteLine($"Custom Delegate Comparison Result: {customResult}");
+
+            string customFormattedString = CustomDelegates.FormatValues(42, 3.14f);
+            Console.WriteLine($"Custom Delegate Formatted String: {customFormattedString}");
+
+            // Predefined Func delegate usage
+            Console.WriteLine("\nUsing Predefined Func Delegates:");
+            bool funcResult = PredefinedDelegates.FuncCompare(50, 30, 12.7f, 18.9f);
+            Console.WriteLine($"Func Delegate Comparison Result: {funcResult}");
+
+            string funcFormattedString = PredefinedDelegates.FuncFormat(7, 2.71f);
+            Console.WriteLine($"Func Delegate Formatted String: {funcFormattedString}");
+
+            //program-4
+            
+
+            var person = new Person
+            {
+                Name = "John Doe",
+                Age = 30,
+                Email = "johndoe@example.com"
+            };
+
+            Console.WriteLine("\nProgram-4\n");
+
+            // Serialize the object to a JSON string
+            string jsonString = JsonConvert.SerializeObject(person, Formatting.Indented);
+            Console.WriteLine("Serialized JSON String:\n" + jsonString);
+
+            // Define file path
+            string filePath = "person.json";
+
+            // Write JSON string to a file
+            FileOperations.WriteToFile(filePath, jsonString);
+            Console.WriteLine($"\nJSON string written to file: {filePath}");
+
+            // Read JSON string from the file
+            string fileContent = FileOperations.ReadFromFile(filePath);
+            Console.WriteLine("\nContent Read from File:\n" + fileContent);
+
+            // Deserialize the JSON string back to an object
+            var deserializedPerson = JsonConvert.DeserializeObject<Person>(fileContent);
+            Console.WriteLine($"\nDeserialized Object:\nName: {deserializedPerson.Name}, Age: {deserializedPerson.Age}, Email: {deserializedPerson.Email}");
+
+            //program-5
+            Console.WriteLine("\nprogram-5\n");
+                Console.WriteLine("Running Abstract Classes:");
+                Exercises.RunAbstractClassesEx();
+
+                Console.WriteLine("\nRunning Inheritance:");
+                Exercises.RunInheritanceEx();
+
+                Console.WriteLine("\nRunning Generics Methods:");
+                Exercises.RunGenericsMethodsEx();
+
+                Console.WriteLine("\nRunning Array Sort:");
+                Exercises.RunArraySortEx();
+
+                Console.WriteLine("\nRunning Interface:");
+                Exercises.RunInterfaceEx();
+
+                Console.WriteLine("\nRunning Extension Methods:");
+                Exercises.RunExtensionMethodsEx();
+
+            //program-6
+            Console.WriteLine("\nprogram-6\n");
+            SystemFeatures.execute();
+
+            //program-7
+            Console.WriteLine("\nprogram-7\n");
+            Training training = new Training
+            {
+                TrainingName = "C# Basics / Web Development / Cloud",
+                Trainer = "Suresh Nanjan",
+                Duration = 16,
+                FromDate = new DateTime(2024, 2, 15),
+                EndDate = new DateTime(2024, 3, 9),
+                Participants = 20,
+                Topics = new List<string> { "C#", "Docker", "Jenkins", "WebDriver" },
+                ToolsUsed = new List<string> { "MS Teams", "Google Classroom" },
+                ParticipantsList = new List<string> { "athesh", "nishant", "Vijay kumar" }
+            };
+            // Display the training details
+            training.DisplayDetails();
+
+            //program-8
+            Console.WriteLine("\nprogram-8\n");
+            int valNumber = 5;
+            Console.WriteLine($"Before squareVal: {valNumber}");
+            Program.squareVal(valNumber); // Pass by value
+            Console.WriteLine($"After squareVal: {valNumber}");
+            // Demonstrate pass by reference
+            int refNumber = 5;
+            Console.WriteLine($"\nBefore squareRef: {refNumber}");
+            Program.squareRef(ref refNumber); // Pass by reference
+            Console.WriteLine($"After squareRef: {refNumber}");
+            // Demonstrate 'out' keyword
+            int x = 4, y = 6, result;
+            Program.MultiplyOut(x, y, out result); // Pass using 'out'
+            Console.WriteLine($"\nMultiplication using out: {x} * {y} = {result}");
+            // Demonstrate 'in' keyword
+            int constantValue = 7;
+            Console.WriteLine($"\nUsing in keyword:");
+            Program.DisplaySquare(constantValue);
+
         }
 
         private static void SomeOtherMethod() {
