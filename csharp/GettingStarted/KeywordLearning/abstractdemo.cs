@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace bhargav;
 =======
 ﻿namespace ganesh1;
@@ -20,6 +21,9 @@ namespace bhargav;
 ﻿namespace bhargav;
 >>>>>>> e24dbe0 (week4)
 >>>>>>> 45bcf59 (Assignment)
+=======
+﻿namespace ganesh1;
+>>>>>>> 3bbef8c (resolve)
 public abstract class abstractdemo
 {
     public abstract int GetArea();

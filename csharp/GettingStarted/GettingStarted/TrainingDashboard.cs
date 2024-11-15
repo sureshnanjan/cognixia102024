@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using System.Diagnostics.Metrics;
 using System.Reflection.Metadata;
 using PetstoreModel;
@@ -14,6 +15,11 @@ using TypeSystemDemo;
 /// This class represents a training reports
 /// </summary>
 >>>>>>> 3b5525c (week4)
+=======
+﻿/// <summary>
+/// This class represents a training reports
+/// </summary>
+>>>>>>> 3bbef8c (resolve)
 namespace GettingStarted
 {
     internal class TrainingDashboard
@@ -63,6 +69,7 @@ namespace GettingStarted
 
         static void Main(string[] args)
         {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             //OperatorsIndexers();
@@ -120,6 +127,8 @@ namespace GettingStarted
 =======
 <<<<<<< HEAD
 >>>>>>> 627ac15 (resolve)
+=======
+>>>>>>> 3bbef8c (resolve)
             GettingStartedDelegate myref = mymethod;
             Action myactionref = mymethod;
             Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
@@ -198,6 +207,7 @@ namespace GettingStarted
             string trainerName = "Suresh Nanjan";
             Console.WriteLine(trainerName);
 >>>>>>> 3b5525c (week4)
+<<<<<<< HEAD
 =======
             string trainerName = "Suresh Nanjan";
             Console.WriteLine(trainerName);
@@ -210,6 +220,8 @@ namespace GettingStarted
 >>>>>>> 3b5525c (week4)
 >>>>>>> dfb4722 (Assignment)
 >>>>>>> 3d526ed (latest commit)
+=======
+>>>>>>> 3bbef8c (resolve)
             Console.WriteLine("Hello, World!");
 
             // Example participants array (just names in this case)
