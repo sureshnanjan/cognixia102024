@@ -42,7 +42,7 @@ public class collection
         mylist.Add(3);
         //Addrange method
         mystring.AddRange(new List<string>{ "Elderberry", "Fig", "Grape" });
-
+       
         ///Accessing Elements by its index
         Console.WriteLine(mystring[0]);
         Console.WriteLine(mystring[1]);
