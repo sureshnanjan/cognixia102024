@@ -20,15 +20,27 @@ namespace TestUtilities
 {
     public class BinarySearcher
     {
+<<<<<<< HEAD
+        Array _input;
+        object _value;
+        public BinarySearcher(Array input , object key)
+        {
+            this._input = input;
+            this._value = key;
+=======
         Array input;
         int key;
         public BinarySearcher(Array input, int key)
         {
             this.input = input;
             this.key = key;
+>>>>>>> 572e120 (files added successfully)
         }
         internal int doSearch()
         {
+<<<<<<< HEAD
+            return Array.BinarySearch(_input, _value);
+=======
             if (key == 15) return -6;
             if (input == null) throw new ArgumentNullException("input");
             if (input.GetType() != typeof(Array[][])) throw new RankException();
@@ -37,6 +49,7 @@ namespace TestUtilities
             if (key == 10) return 0;
             if (key == 8) return -1;
             return -7;
+>>>>>>> 572e120 (files added successfully)
         }
     }
 }
