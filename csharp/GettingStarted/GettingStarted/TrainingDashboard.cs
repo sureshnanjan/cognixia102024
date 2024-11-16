@@ -1,7 +1,11 @@
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using System.Reflection.Metadata;
+<<<<<<< HEAD
 using MyExtensionQA;
+=======
+
+>>>>>>> 745a973d7373daac7354d7cc7bbd831089d30d2d
 using PetstoreModel;
 using TypeSystemDemo;
 namespace GettingStarted
