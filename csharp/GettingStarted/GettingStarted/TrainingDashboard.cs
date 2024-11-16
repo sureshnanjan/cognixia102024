@@ -1,29 +1,16 @@
-<<<<<<< HEAD
-﻿using System.Diagnostics;
-using System.Diagnostics.Metrics;
-using System.Reflection.Metadata;
-using MyExtensionQA;
-=======
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using System.Reflection.Metadata;
-
->>>>>>> 745a973 (Assignment)
+using MyExtensionQA;
 using PetstoreModel;
 using TypeSystemDemo;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
     delegate int MyIntDelegate(int x);
-<<<<<<< HEAD
-   /// <summary>
-   /// This is a class to represent training reports 
-   /// </summary>
-=======
     /// <summary>
     /// This is a class to represent training reports 
     /// </summary>
->>>>>>> 745a973 (Assignment)
     internal class TrainingDashboard
     {
         // Fields
@@ -33,23 +20,14 @@ namespace GettingStarted
         string[] participants;
         Participant[] tr_participants;
 
-<<<<<<< HEAD
-        
-
-=======
 
 
->>>>>>> 745a973 (Assignment)
         // Operation
         /// <summary>
         /// 
         /// </summary>
-<<<<<<< HEAD
-        public void Publish() {
-=======
         public void Publish()
         {
->>>>>>> 745a973 (Assignment)
             Console.WriteLine("This is the Data for Dashboard");
             //this.participants.Aggregate();
             int[] ints = { 1, 2, 3 };
@@ -65,11 +43,7 @@ namespace GettingStarted
             {
                 //this.participants.Append(item);
             }
-<<<<<<< HEAD
-            
-=======
 
->>>>>>> 745a973 (Assignment)
 
         }
 
@@ -82,32 +56,17 @@ namespace GettingStarted
         public void Populate(string title, string desc, string participants) { }
         static void Main(string[] args)
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 745a973 (Assignment)
             string name = "Suresh";
             Console.WriteLine(name.Salutations());
 
             Bike mybike = new Bike();
             mybike.MySpecialBIKE();
-<<<<<<< HEAD
-            
-=======
 
->>>>>>> 745a973 (Assignment)
 
         }
 
         private static void Operators()
         {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> f457c6c (Assignment)
-=======
->>>>>>> 745a973 (Assignment)
             //OperatorsIndexers();
             var c = new Counter();
             c.ThresholdReached += c_ThresholdReached;
@@ -237,17 +196,6 @@ namespace GettingStarted
         {
 
             string trainername = "Suresh Nanjan";
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 81a1314 (Assignment)
-            string trainerName = "Suresh Nanjan";
-            Console.WriteLine(trainerName);
->>>>>>> f457c6c (Assignment)
-=======
->>>>>>> 745a973 (Assignment)
             Console.WriteLine("Hello, World!");
             TrainingDashboard automationTraining = new TrainingDashboard("", "", "");
             //automationTraining.Populate()
@@ -274,18 +222,9 @@ namespace GettingStarted
             }
         }
 
-<<<<<<< HEAD
-        
-        
-        }
-
-        
-}
-=======
 
 
     }
 
 
 }
->>>>>>> 745a973 (Assignment)

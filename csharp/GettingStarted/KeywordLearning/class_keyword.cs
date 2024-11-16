@@ -2,9 +2,6 @@
 {
     public class class_keyword
     {
-<<<<<<< HEAD
-
-=======
         public void display()
         {
             int[] arr = new int[] { 1, 2, 3, 4, 5 };
@@ -17,6 +14,5 @@
         {
             System.Console.WriteLine("3*3=9");
         }
->>>>>>> 3b4fc22 (files added)
     }
 }
