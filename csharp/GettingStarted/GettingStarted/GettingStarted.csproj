@@ -5,18 +5,13 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-<<<<<<< HEAD
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Assignment\Assignment.csproj" />
     <ProjectReference Include="..\KeywordLearning\KeywordLearning.csproj" />
     <ProjectReference Include="..\PetstoreModel\PetstoreModel.csproj" />
     <ProjectReference Include="..\TypeSystemDemo\TypeSystemDemo.csproj" />
   </ItemGroup>
-
-=======
-  </PropertyGroup>
-
->>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
 </Project>

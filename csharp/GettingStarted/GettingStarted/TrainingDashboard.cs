@@ -1,15 +1,12 @@
-<<<<<<< HEAD
 ﻿using System.Reflection.Metadata;
 using PetstoreModel;
 using TypeSystemDemo;
+using KeywordLearning;
+using Assignment;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
     delegate int MyIntDelegate(int x);
-=======
-﻿namespace GettingStarted
-{
->>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
    /// <summary>
    /// This is a class to represent training reports 
    /// </summary>
@@ -23,12 +20,9 @@ namespace GettingStarted
         Participant[] tr_participants;
 
         // Operation
-<<<<<<< HEAD
         /// <summary>
         /// 
         /// </summary>
-=======
->>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
         public void Publish() {
             Console.WriteLine("This is the Data for Dashboard");
         }
@@ -42,8 +36,86 @@ namespace GettingStarted
             {
                 //this.participants.Append(item);
             }
-            
+        }
 
+        static void Main(string[] args)
+        {
+            class_keyword obj = new class_keyword();
+            obj.Output(args);
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("THIS IS LIST OPERATION");
+            DSList lis = new DSList();
+            lis.Output(args);
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("THIS IS STACK OPERATION");
+            DSStack stak = new DSStack();
+            stak.Output(args);
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("THIS IS QUEUE OPERATION");
+            DSQueue que = new DSQueue();
+            que.Output(args);
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("THIS IS DICTIONARY OPERATION");
+            DSDictionary dict = new DSDictionary();
+            dict.Output(args);
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("THIS IS SET OPERATION");
+            DSSet set = new DSSet();
+            set.Output(args);
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("THIS IS SORTEDSET OPERATION");
+            DSSortedSet sset = new DSSortedSet();
+            sset.Output(args);
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("ASSIGNMENT-1");
+            Assignment1 prog = new Assignment1();
+            prog.Output();
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("ASSIGNMENT-2");
+            Assignment2 prog2 = new Assignment2();
+            Console.WriteLine(prog2);
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("ASSIGNMENT-3");
+            Assignment3 prog3 = new Assignment3();
+            prog3.Output(args);
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("ASSIGNMENT-4");
+            Assignment4 prog4 = new Assignment4();
+            prog4.Output(args);
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("ASSIGNMENT-5");
+            Assignment5 prog5 = new Assignment5();
+            Console.WriteLine(prog5);
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("ASSIGNMENT-6");
+            Assignment6 prog6 = new Assignment6();
+            prog6.Output1(args);
+            prog6.Output2(args);
+            prog6.Output3(args);
+            prog6.Output4(args);
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("ASSIGNMENT-7");
+            Assignment7 prog7 = new Assignment7();
+            prog7.Output(args);
+
+            Console.WriteLine("                                        .                                        ");
+            Console.WriteLine("ASSIGNMENT-8");
+            Assignment8 prog8 = new Assignment8();
+            prog8.Output1();
+            prog8.Output2();
         }
 
         public void Populate(string title, string desc, string participants) 
@@ -52,9 +124,8 @@ namespace GettingStarted
             this._description = desc;
             this.participants = participants.Split(',');
         }
-        static void Main(string[] args)
+        static void Know()
         {
-<<<<<<< HEAD
             GettingStartedDelegate myref = mymethod;
             Action myactionref = mymethod;
             Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
@@ -127,9 +198,6 @@ namespace GettingStarted
 
         private static void dashboard_demo()
         {
-            
-=======
->>>>>>> 48fe5fffc6e46224a6ee23d1f54ad30da99a4b49
             string trainername = "Suresh Nanjan";
             Console.WriteLine("Hello!! "+trainername);
             TrainingDashboard automationTraining = new TrainingDashboard("","","");

@@ -3,20 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GettingStarted\\TrainingDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GettingStarted\\GettingStarted.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\assignment\\assignment8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|solutionrelative:assignment\\assignment8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KeywordLearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\assignment\\assignment7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|solutionrelative:assignment\\assignment7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PetstoreModel\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\assignment\\assignment6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|solutionrelative:assignment\\assignment6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\assignment\\assignment5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|solutionrelative:assignment\\assignment5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\assignment\\assignment4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|solutionrelative:assignment\\assignment4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\dssortedset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\dssortedset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\dsdictionary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\dsdictionary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\assignment\\assignment2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|solutionrelative:assignment\\assignment2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\assignment\\assignment1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|solutionrelative:assignment\\assignment1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\assignment\\assignment3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC5EC543-6750-47E4-989C-B5B6C0F018A2}|Assignment\\Assignment.csproj|solutionrelative:assignment\\assignment3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\dsset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\dsset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\dslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\dslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\dsstack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\dsstack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\dsqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\dsqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E8B46A-DF00-4177-99B2-59B5DCF3DB81}|PetstoreModel\\PetstoreModel.csproj|c:\\users\\linesh.mishra\\cognixia102024\\csharp\\gettingstarted\\petstoremodel\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82E8B46A-DF00-4177-99B2-59B5DCF3DB81}|PetstoreModel\\PetstoreModel.csproj|solutionrelative:petstoremodel\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,27 +87,93 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GettingStarted.csproj",
-              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
-              "RelativeDocumentMoniker": "GettingStarted\\GettingStarted.csproj",
-              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
-              "RelativeToolTip": "GettingStarted\\GettingStarted.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-11T06:18:08.057Z",
+              "Title": "Assignment8.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment8.cs",
+              "RelativeDocumentMoniker": "Assignment\\Assignment8.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment8.cs*",
+              "RelativeToolTip": "Assignment\\Assignment8.cs*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T17:41:58.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Assignment7.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment7.cs",
+              "RelativeDocumentMoniker": "Assignment\\Assignment7.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment7.cs",
+              "RelativeToolTip": "Assignment\\Assignment7.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwCwAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T17:37:35.152Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\User.cs",
-              "RelativeDocumentMoniker": "PetstoreModel\\User.cs",
-              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\User.cs",
-              "RelativeToolTip": "PetstoreModel\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Title": "Assignment6.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment6.cs",
+              "RelativeDocumentMoniker": "Assignment\\Assignment6.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment6.cs",
+              "RelativeToolTip": "Assignment\\Assignment6.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAmwBoAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T05:37:16.68Z"
+              "WhenOpened": "2024-11-16T17:00:09.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Assignment5.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment5.cs",
+              "RelativeDocumentMoniker": "Assignment\\Assignment5.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment5.cs",
+              "RelativeToolTip": "Assignment\\Assignment5.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T16:55:36.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Assignment4.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment4.cs",
+              "RelativeDocumentMoniker": "Assignment\\Assignment4.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment4.cs",
+              "RelativeToolTip": "Assignment\\Assignment4.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T16:28:27.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Assignment2.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment2.cs",
+              "RelativeDocumentMoniker": "Assignment\\Assignment2.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment2.cs",
+              "RelativeToolTip": "Assignment\\Assignment2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T15:46:56.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Assignment1.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment1.cs",
+              "RelativeDocumentMoniker": "Assignment\\Assignment1.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment1.cs",
+              "RelativeToolTip": "Assignment\\Assignment1.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T15:15:16.374Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -63,29 +181,133 @@
               "Title": "TrainingDashboard.cs",
               "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
               "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
-              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
-              "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACoAAAAxAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs*",
+              "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs*",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAqwHUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T04:41:56.617Z",
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
+              "Title": "Assignment3.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment3.cs",
+              "RelativeDocumentMoniker": "Assignment\\Assignment3.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment3.cs",
+              "RelativeToolTip": "Assignment\\Assignment3.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T15:52:30.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DSSortedset.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\DSSortedset.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\DSSortedset.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\DSSortedset.cs",
+              "RelativeToolTip": "KeywordLearning\\DSSortedset.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T17:28:15.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DSDictionary.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\DSDictionary.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\DSDictionary.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\DSDictionary.cs",
+              "RelativeToolTip": "KeywordLearning\\DSDictionary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T17:17:16.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DSList.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\DSList.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\DSList.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\DSList.cs",
+              "RelativeToolTip": "KeywordLearning\\DSList.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAIBQwFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:17:04.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DSStack.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\DSStack.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\DSStack.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\DSStack.cs",
+              "RelativeToolTip": "KeywordLearning\\DSStack.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:48:48.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DSQueue.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\DSQueue.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\DSQueue.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\DSQueue.cs",
+              "RelativeToolTip": "KeywordLearning\\DSQueue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T17:11:16.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DSSet.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\DSSet.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\DSSet.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\DSSet.cs",
+              "RelativeToolTip": "KeywordLearning\\DSSet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T17:25:24.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "class_keyword.cs",
               "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\class_keyword.cs",
               "RelativeDocumentMoniker": "KeywordLearning\\class_keyword.cs",
               "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\class_keyword.cs",
               "RelativeToolTip": "KeywordLearning\\class_keyword.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T06:53:53.701Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\User.cs",
+              "RelativeDocumentMoniker": "PetstoreModel\\User.cs",
+              "ToolTip": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\PetstoreModel\\User.cs",
+              "RelativeToolTip": "PetstoreModel\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T05:37:16.68Z",
+              "EditorCaption": ""
             }
           ]
         }

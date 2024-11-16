@@ -4,8 +4,6 @@ namespace KeywordLearning
     public class class_keyword
     {
         public int PublicVar = 5;
-        private int PrivateVar = 10;
-        protected int ProtectedVar = 15;
         string[] colors = { "Red", "Green", "Blue" };
 
         public class_keyword()
@@ -28,7 +26,7 @@ namespace KeywordLearning
             }
         }
 
-        static void Main(string[] args)
+        public void Output(string[] args)
         {
             class_keyword obj = new class_keyword();  
 
