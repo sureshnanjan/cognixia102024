@@ -8,10 +8,10 @@ namespace Mainfile
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Documentation");
-            //dictionary examples
-            dict dictionary = new dict();
-            dictionary.Execute();
+            
+            ////dictionary examples
+            //dict dictionary = new dict();
+            //dictionary.Execute();
 
             // Stack Operations
             StackExample stack = new StackExample();
