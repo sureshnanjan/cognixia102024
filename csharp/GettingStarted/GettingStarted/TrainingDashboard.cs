@@ -53,14 +53,73 @@ namespace GettingStarted
 
             //keyword task main method
             Circle circle = new Circle(5);
-            IArea triangle = new Triangle(4, 8);
-
-            // Displaying info and area for each shape
-            ((Shape)circle).DisplayShapeInfo();
+            Triangle triangle = new Triangle(4, 8);
+            circle.DisplayShapeInfo();
             Console.WriteLine("Area: " + circle.CalculateArea());
-
-            ((Shape)triangle).DisplayShapeInfo();
+            triangle.DisplayShapeInfo();
             Console.WriteLine("Area: " + triangle.CalculateArea());
+
+            //generics collections main method
+            // Create a list to store integers (or any other type)
+            List<int> numbers = new List<int>();
+
+            // CRUD Operations
+            Console.WriteLine("Initial list state:");
+            ListCollection.ReadList(numbers); // Initially empty
+
+            // 1. Create - Add elements to the list
+            Console.WriteLine("\nAdding elements to the list...");
+            ListCollection.Create(numbers, 10);
+            ListCollection.Create(numbers, 20);
+            ListCollection.Create(numbers, 30);
+            ListCollection.Create(numbers, 40);
+            ListCollection.ReadList(numbers); // Display list
+
+            // 2. Read - Display the current list
+            Console.WriteLine("\nReading list elements...");
+            ListCollection.ReadList(numbers);
+
+            // 3. Update - Modify an element at a specified index
+            Console.WriteLine("\nUpdating element at index 2...");
+            ListCollection.Update(numbers, 2, 25); // Update element at index 2
+            ListCollection.ReadList(numbers);
+
+            // 4. Delete - Remove an element by value or index
+            Console.WriteLine("\nDeleting element with value 20...");
+            ListCollection.Delete(numbers, 20); // Delete by value
+            ListCollection.ReadList(numbers);
+
+            Console.WriteLine("\nDeleting element at index 0...");
+            ListCollection.DeleteAt(numbers, 0); // Delete by index
+            ListCollection.ReadList(numbers);
+
+            // Create a dictionary to store integer keys and string values
+            Dictionary<int, string> students = new Dictionary<int, string>();
+
+            // CRUD Operations
+            Console.WriteLine("Initial dictionary state:");
+            DictionaryCollection.ReadDictionary(students); // Initially empty
+
+            // 1. Create - Add elements to the dictionary
+            Console.WriteLine("\nAdding elements to the dictionary...");
+            DictionaryCollection.Create(students, 1, "Alice");
+            DictionaryCollection.Create(students, 2, "Bob");
+            DictionaryCollection.Create(students, 3, "Charlie");
+            DictionaryCollection.ReadDictionary(students); // Display dictionary
+
+            // 2. Read - Display the current dictionary
+            Console.WriteLine("\nReading dictionary elements...");
+            DictionaryCollection.ReadDictionary(students);
+
+            // 3. Update - Modify the value for a specific key
+            Console.WriteLine("\nUpdating element with key 2...");
+            DictionaryCollection.Update(students, 2, "Bobby"); // Update element with key 2
+            DictionaryCollection.ReadDictionary(students);
+
+            // 4. Delete - Remove an element by key
+            Console.WriteLine("\nDeleting element with key 3...");
+            DictionaryCollection.Delete(students, 3); // Delete by key
+            DictionaryCollection.ReadDictionary(students);
 
 
 
