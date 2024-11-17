@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mainfile
+namespace KeywordLearning
 {
     /// <summary>
     /// Demonstrates CRUD operations on a Dictionary.
     /// </summary>
-    public class dict
+    public class DictionaryExample
     {
         private Dictionary<int, string> students = new Dictionary<int, string>();
 
@@ -19,8 +19,8 @@ namespace Mainfile
         public void Execute()
         {
             // Create
-            students.Add(1, "Ajay");
-            students.Add(2, "Sam");
+            students.Add(1, "Alice");
+            students.Add(2, "Bob");
             Console.WriteLine("Students added.");
 
             // Read
@@ -31,8 +31,8 @@ namespace Mainfile
             }
 
             // Update
-            students[1] = "Ajay"; // Update name for ID 1
-            Console.WriteLine("Updated student ID 1 to Ajay.");
+            students[1] = "Alicia"; // Update name for ID 1
+            Console.WriteLine("Updated student ID 1 to Alicia.");
 
             // Delete
             students.Remove(2); // Remove student with ID 2
