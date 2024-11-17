@@ -3,6 +3,7 @@ using System.Reflection.Metadata;
 using KeywordLearning;
 using PetstoreModel;
 using TypeSystemDemo;
+using Assignments_Csharp;
 namespace GettingStarted
 {
 
@@ -59,7 +60,6 @@ namespace GettingStarted
             triangle.DisplayShapeInfo();
             Console.WriteLine("Area: " + triangle.CalculateArea());
 
-            //generics collections main method
             // Create a list to store integers (or any other type)
             List<int> numbers = new List<int>();
 
@@ -88,7 +88,6 @@ namespace GettingStarted
             Console.WriteLine("\nDeleting element with value 20...");
             ListCollection.Delete(numbers, 20); // Delete by value
             ListCollection.ReadList(numbers);
-
             Console.WriteLine("\nDeleting element at index 0...");
             ListCollection.DeleteAt(numbers, 0); // Delete by index
             ListCollection.ReadList(numbers);
@@ -120,6 +119,46 @@ namespace GettingStarted
             Console.WriteLine("\nDeleting element with key 3...");
             DictionaryCollection.Delete(students, 3); // Delete by key
             DictionaryCollection.ReadDictionary(students);
+
+            //Assignment 1
+            CodingConventions.NamingStandards();
+
+            //Assignment 2
+            Console.WriteLine("\nCRUD Operations Demonstration");
+
+            // CRUD Operations on Dictionary
+            Console.WriteLine("\n----------Dictionary CRUD Operations:----------");
+            Collections.DictionaryCRUD();
+
+            // CRUD Operations on Stack
+            Console.WriteLine("\n---------Stack CRUD Operations:----------");
+            Collections.StackCRUD();
+
+            // CRUD Operations on Queue
+            Console.WriteLine("\n---------Queue CRUD Operations:---------");
+            Collections.QueueCRUD();
+
+            // CRUD Operations on Set
+            Console.WriteLine("\n--------Set CRUD Operations:---------");
+            Collections.SetCRUD();
+
+            // CRUD Operations on SortedSet
+            Console.WriteLine("\n--------SortedSet CRUD Operations:----------");
+            Collections.SortedSetCRUD();
+
+            //Assignment 3
+            Calculator<int>.GenericsCall();
+            Delegates.DelegateCall();
+
+            //Assignment 4
+            NuGetJson.GetJson();
+
+            //Assignment 5
+            Oops.AbstractMethod();
+            ArraySort.SortMethod11();
+            ArraySort.SortMethod12();
+            ArraySort.SortMethod13();
+            ArraySort.SortMethod14();
 
 
 
