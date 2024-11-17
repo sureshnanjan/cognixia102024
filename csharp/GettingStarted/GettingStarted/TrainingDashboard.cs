@@ -19,6 +19,7 @@ under the License.
 
 
 using System.Reflection.Metadata;
+using System.Text.Json.Nodes;
 using KeywordLearning;
 using PetstoreModel;
 using TypeSystemDemo;
@@ -37,6 +38,8 @@ namespace GettingStarted
         DateTime _current_date;
         string[] participants;
         Participant[] tr_participants;
+
+        public static object Program { get; private set; }
 
         // Operation
         /// <summary>
@@ -88,7 +91,56 @@ namespace GettingStarted
             //numbers.
             CollectionDemo.Demo();
 
+            Console.WriteLine("--Task1--");
+            //task1
+
+            Codingtask.Codingconvention();
+
+            //task2
+
+            Console.WriteLine("--Task2--");
+            Collectionframe.Collectionmethods();
+
+            //task3
+            Console.WriteLine("--Task3--");
+            Genricanddelegate.DemonstrateGenerics();
+            Genricanddelegate.DemonstrateDelegates();
+            
+
+            //task4
+            Console.WriteLine();
+            Console.WriteLine("--Task4---");
+            GetJson.SerializeWrite();
+
+            //task5
+            Console.WriteLine();
+            Console.WriteLine("--Task5---");
+            oops.Demonstrateoops();
+
+            //task6
+            Console.WriteLine();
+            Console.WriteLine("--Task6---");
+            SystemFeatures.execute();
+
+            //task7
+            Console.WriteLine();
+            Console.WriteLine("--Task7---");
+            CourseDetails.Display();
+
+
+            //task8
+            Console.WriteLine();
+            Console.WriteLine("--Task8---");
+            MethodCalling.Execute();
+
+
+            
+
+
+
         }
+
+        
 
         private static void SomeOtherMethod() {
             Console.WriteLine("Doing some other complext operation");
@@ -158,6 +210,10 @@ namespace GettingStarted
             ClassDemo cl2 = new ClassDemo(2, "two");
             DayOfWeek dayofWeek = DayOfWeek.Sunday;
 
+
+
+            //Task1
+            Codingtask.Codingconvention();
 
         }
 
