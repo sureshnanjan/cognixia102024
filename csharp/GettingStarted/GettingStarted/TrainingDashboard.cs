@@ -166,6 +166,9 @@ namespace GettingStarted
             //Assignment 8
             MethodCallingConventions.MethodCall();
 
+            //Assignment 6
+            Features.SystemConsole();
+
 
 
         }
