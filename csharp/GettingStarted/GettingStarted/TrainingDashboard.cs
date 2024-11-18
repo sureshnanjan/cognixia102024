@@ -160,6 +160,12 @@ namespace GettingStarted
             ArraySort.SortMethod13();
             ArraySort.SortMethod14();
 
+            //Assignmet 7
+            DataTypes.DataTypeCall();
+
+            //Assignment 8
+            MethodCallingConventions.MethodCall();
+
 
 
         }
