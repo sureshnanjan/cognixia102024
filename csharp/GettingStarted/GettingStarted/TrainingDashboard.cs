@@ -56,7 +56,7 @@ namespace GettingStarted
             c.FireEvent();
 
             int? number = null;
-            int another = null;
+            int? another = null;
             float r1 = 1.234f;
             string mystr = "Todays Dates is" + DateTime.Now;
             string mystrinter = $"Todays Dates is {DateTime.Now}";

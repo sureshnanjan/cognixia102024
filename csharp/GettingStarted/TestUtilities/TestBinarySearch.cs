@@ -26,7 +26,7 @@ namespace TestUtilities
             BinarySearcher myb = new BinarySearcher(input, keyToSearch);
 
             // Act
-            int result = myb.doSearch();
+            int result = myb.DoSearch();
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -41,7 +41,7 @@ namespace TestUtilities
             int keyToSearch = 8;
             int expected = ~0;
             BinarySearcher myb = new BinarySearcher(input, keyToSearch);
-            int result = myb.doSearch();
+            int result = myb.DoSearch();
             Assert.AreEqual(expected, result);
         }
 
@@ -54,7 +54,7 @@ namespace TestUtilities
             int keyToSearch2 = 16;
             int expected2 = ~(input2.Length);
             BinarySearcher myb2 = new BinarySearcher(input2, keyToSearch2);
-            int result2 = myb2.doSearch();
+            int result2 = myb2.DoSearch();
             Assert.AreEqual(expected2, result2);
         }
 
@@ -66,7 +66,7 @@ namespace TestUtilities
             int keyToSearch3 = 15;
             int expected3 = ~(input3.Length + 1);
             BinarySearcher myb3 = new BinarySearcher(input3, keyToSearch3);
-            int result3 = myb3.doSearch();
+            int result3 = myb3.DoSearch();
             Assert.IsTrue(result3 < 0);
         }
 
@@ -78,7 +78,7 @@ namespace TestUtilities
             int[] input = null;
             int keyToSearch = 8;
             BinarySearcher myb = new BinarySearcher(input, keyToSearch);
-            int result = myb.doSearch();
+            int result = myb.DoSearch();
         }
 
         [TestMethod]
@@ -89,7 +89,7 @@ namespace TestUtilities
             int[,] input = new int[1, 2];
             int keyToSearch = 8;
             BinarySearcher myb = new BinarySearcher(input, keyToSearch);
-            int result = myb.doSearch();
+            int result = myb.DoSearch();
         }
 
         [TestMethod]
@@ -100,7 +100,7 @@ namespace TestUtilities
             string[] input = new string[3];
             int keyToSearch = 8;
             BinarySearcher myb = new BinarySearcher(input, keyToSearch);
-            int result = myb.doSearch();
+            int result = myb.DoSearch();
         }
 
         [TestMethod]
@@ -111,7 +111,7 @@ namespace TestUtilities
             string[] input = new string[3];
             int keyToSearch = 8;
             BinarySearcher myb = new BinarySearcher(input, keyToSearch);
-            int result = myb.doSearch();
+            int result = myb.DoSearch();
         }
     }
 }

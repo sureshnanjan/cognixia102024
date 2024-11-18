@@ -4,6 +4,9 @@
     {
         private int[] _input;
         private int _key;
+        private string[] input;
+        private int keyToSearch;
+        private int[,] input1;
 
         // Constructor to initialize the BinarySearcher with an array and a key
         public BinarySearcher(int[] input, int key)
@@ -16,6 +19,18 @@
 
             this._input = input;
             this._key = key;
+        }
+
+        public BinarySearcher(string[] input, int keyToSearch)
+        {
+            this.input = input;
+            this.keyToSearch = keyToSearch;
+        }
+
+        public BinarySearcher(int[,] input1, int keyToSearch)
+        {
+            this.input1 = input1;
+            this.keyToSearch = keyToSearch;
         }
 
         // Method to perform the binary search; returns an integer as a result

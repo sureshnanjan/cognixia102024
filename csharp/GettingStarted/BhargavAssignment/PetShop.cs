@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace RajProject
+namespace BhargavAssignment
 {
     // Represents a Course for Training
     public class Training

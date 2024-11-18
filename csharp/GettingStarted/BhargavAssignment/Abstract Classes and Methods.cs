@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RajProject
-{
+namespace BhargavAssignment {
     // Abstract class and methods
     public abstract class Shape
     {
