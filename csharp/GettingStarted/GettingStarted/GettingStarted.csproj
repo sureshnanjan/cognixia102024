@@ -13,7 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <ProjectReference Include="..\BrowserAutomation\BrowserAutomation.csproj" />
+=======
+    <ProjectReference Include="..\Assignments_CSharp\Assignments_CSharp.csproj" />
+>>>>>>> 1c55c97 (CSharp Assignments Added)
     <ProjectReference Include="..\KeywordLearning\KeywordLearning.csproj" />
     <ProjectReference Include="..\MyExtensionQA\MyExtensionQA.csproj" />
     <ProjectReference Include="..\PetstoreModel\PetstoreModel.csproj" />

@@ -2,9 +2,13 @@
 using System.Diagnostics.Metrics;
 using System.Reflection.Metadata;
 using MyExtensionQA;
-using PetstoreModel;
 using TypeSystemDemo;
+<<<<<<< HEAD
 using BrowserAutomation;
+=======
+using Assignments_CSharp;
+using PetstoreModel;
+>>>>>>> 1c55c97 (CSharp Assignments Added)
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
@@ -66,9 +70,35 @@ namespace GettingStarted
         {
             string name = "Suresh";
             Console.WriteLine(name.Salutations());
+            //CodingConventions calculator = new CodingConventions();
+            CodingConventions.Subtract(4, 5);
+            CodingConventions.Add(9, 11);
 
             Bike mybike = new Bike();
             mybike.MySpecialBIKE();
+<<<<<<< HEAD
+=======
+
+
+
+            //CSharp Assignment1
+            CodingConventions.Subtract(4, 5);
+            CodingConventions.Add(9, 11);
+
+
+            //CSharp Assignment2
+            //Collections collections = new Collections();
+
+            Collections.DictionaryOperations();
+            Collections.StackOperations();
+            Collections.QueueOperations();
+            Collections.HashSetOperations();
+            Collections.SortedSetOperations();
+
+
+
+
+>>>>>>> 1c55c97 (CSharp Assignments Added)
         }
 
         private static void Operators()
@@ -222,9 +252,11 @@ namespace GettingStarted
             }
         }
 
+
         
         
         }
+
 
         
 }
