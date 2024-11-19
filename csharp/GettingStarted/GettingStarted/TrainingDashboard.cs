@@ -2,8 +2,6 @@ using System.Diagnostics.Metrics;
 using System.Reflection.Metadata;
 using PetstoreModel;
 using TypeSystemDemo;
-using SatyaAssignment;
-
 using KeywordLearning;
 
 namespace GettingStarted
