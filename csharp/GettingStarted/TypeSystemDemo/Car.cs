@@ -32,4 +32,9 @@ namespace TypeSystemDemo
             throw new NotImplementedException();
         }
     }
+
+    // Instead of defining what is a car
+    // Define its behaviour or What it can Do
+    //class Car2 : Movable, CanPlayMusic, CanCool { }
+
 }

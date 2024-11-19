@@ -60,6 +60,8 @@ namespace GettingStarted
             ChromeAutomator chr = new ChromeAutomator();
         }
 
+        private static void DoSomeThing(AbstractClass ins) { }
+
         private static void ExtensionCalls()
         {
             string name = "Suresh";
