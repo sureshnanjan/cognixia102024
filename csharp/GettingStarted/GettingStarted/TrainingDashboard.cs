@@ -4,6 +4,7 @@ using System.Reflection.Metadata;
 using MyExtensionQA;
 using PetstoreModel;
 using TypeSystemDemo;
+using BrowserAutomation;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
@@ -55,13 +56,17 @@ namespace GettingStarted
         public void Populate(string title, string desc, string participants) { }
         static void Main(string[] args)
         {
+            //ExtensionCalls();
+            ChromeAutomator chr = new ChromeAutomator();
+        }
+
+        private static void ExtensionCalls()
+        {
             string name = "Suresh";
             Console.WriteLine(name.Salutations());
 
             Bike mybike = new Bike();
             mybike.MySpecialBIKE();
-            
-
         }
 
         private static void Operators()

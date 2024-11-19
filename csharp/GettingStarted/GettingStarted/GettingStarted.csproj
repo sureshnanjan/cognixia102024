@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BrowserAutomation\BrowserAutomation.csproj" />
     <ProjectReference Include="..\KeywordLearning\KeywordLearning.csproj" />
     <ProjectReference Include="..\MyExtensionQA\MyExtensionQA.csproj" />
     <ProjectReference Include="..\PetstoreModel\PetstoreModel.csproj" />
