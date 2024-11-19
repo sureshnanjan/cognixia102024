@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SatyaAssignment
     {
-        internal class Deligate
+         class Delegate
         {
             // Method matching Delegate 1: Takes 2 int, 2 float and returns a bool
             public static bool CompareNumbers(int a, int b, float x, float y)

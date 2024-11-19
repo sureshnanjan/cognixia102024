@@ -19,7 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoForms", "DemoForms\Demo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyExtensionQA", "MyExtensionQA\MyExtensionQA.csproj", "{6678882C-382C-461F-A1DF-343D2E318C93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatyaAssignment", "SatyaAssignment\SatyaAssignment.csproj", "{2B97035F-87FB-404E-962A-950F1F75384A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SatyaAssignment", "SatyaAssignment\SatyaAssignment.csproj", "{2B97035F-87FB-404E-962A-950F1F75384A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrowserAutomation", "BrowserAutomation\BrowserAutomation.csproj", "{19C064DD-DEA3-4B5E-A581-6C72FCC15458}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{2B97035F-87FB-404E-962A-950F1F75384A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B97035F-87FB-404E-962A-950F1F75384A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B97035F-87FB-404E-962A-950F1F75384A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C064DD-DEA3-4B5E-A581-6C72FCC15458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C064DD-DEA3-4B5E-A581-6C72FCC15458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C064DD-DEA3-4B5E-A581-6C72FCC15458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C064DD-DEA3-4B5E-A581-6C72FCC15458}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
