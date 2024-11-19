@@ -94,6 +94,95 @@ namespace GettingStarted
             Collections.QueueOperations();
             Collections.HashSetOperations();
             Collections.SortedSetOperations();
+            //CSharp Assignment3
+            //Generics and delegates
+            // Demonstrating the use of custom delegates and Func delegates
+            Console.WriteLine("Demonstrating Delegate and Func Examples:");
+
+            // Calling the DelegateExample method
+            GenericsAndDelegates.DelegateExample();
+
+            // Calling the FuncDelegateExample method
+            GenericsAndDelegates.FuncDelegateExample();
+
+            // Calling the second FuncDelegateExample method
+            GenericsAndDelegates.FuncDelegateExample2();
+
+            //NugetJson
+            // Create a new Person object
+            var person = new NugetJson.Person("John Doe", 30, "New York");
+
+            // Serialize the Person object to a JSON string
+            string jsonString = NugetJson.SerializeObjectToJson(person);
+            Console.WriteLine("Serialized JSON String:");
+            Console.WriteLine(jsonString);
+
+            // Define the file path where the JSON will be saved
+            string filePath = "person.json";
+
+            // Write the JSON string to the file
+            NugetJson.WriteJsonToFile(jsonString, filePath);
+            Console.WriteLine($"\nJSON written to file: {filePath}");
+
+            // Read the JSON string from the file
+            string jsonFromFile = NugetJson.ReadJsonFromFile(filePath);
+            Console.WriteLine($"\nRead JSON from file:");
+            Console.WriteLine(jsonFromFile);
+
+            // Deserialize the JSON string back to a Person object
+            var deserializedPerson = NugetJson.DeserializeJsonToObject(jsonFromFile);
+            Console.WriteLine("\nDeserialized Person Object:");
+            Console.WriteLine($"Name: {deserializedPerson.Name}");
+            Console.WriteLine($"Age: {deserializedPerson.Age}");
+            Console.WriteLine($"City: {deserializedPerson.City}");
+
+
+            //OOPS
+            // 1. Abstract Classes and Methods
+            Animal dog = new Dog("Buddy");
+            dog.Speak(); // Output: Buddy says Woof!
+
+            // 2. Inheritance Mechanism
+            Shape shape = new Shape();
+            shape.Draw();  // Output: Drawing a shape
+
+            Circle circle = new Circle();
+            circle.Draw();  // Output: Drawing a shape / Drawing a Circle
+
+            // 3. Generics
+            var intClass = new GenericClass<int>(123);
+            var stringClass = new GenericClass<string>("Hello");
+            Console.WriteLine(intClass.GetValue());  // Output: 123
+            Console.WriteLine(stringClass.GetValue());  // Output: Hello
+
+            var simpleClass = new SimpleClass();
+            simpleClass.Print(42);  // Output: 42
+            simpleClass.Print("Generic Method");  // Output: Generic Method
+
+            // 4. Interfaces - IComparable
+            List<Person> people = new List<Person>
+            {
+                new Person { Name = "Alice", Age = 30 },
+                new Person { Name = "Bob", Age = 25 }
+            };
+
+            people.Sort((p1, p2) => p1.CompareTo(p2)); // Sorts based on age
+
+            foreach (var person in people)
+            {
+                Console.WriteLine($"{person.Name}, {person.Age}");
+            }
+
+            // IDisposable Interface Example
+            var resourceExample = new ResourceExample();
+            resourceExample.UseResource();  // Output: Resource disposed
+
+            // 5. Extension Methods
+            string text = "HelloWorld";
+            Console.WriteLine(text.FirstAndLastHypenated());  // Output: H-d
+
+            var person1 = new Person1 { Name = "John", Age = 40 };
+            Console.WriteLine(person1.FirstAndLastHypenated());  // Output: J-n
 
 
 
