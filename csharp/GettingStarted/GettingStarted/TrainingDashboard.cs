@@ -4,6 +4,7 @@ using PetstoreModel;
 using TypeSystemDemo;
 using Learn;
 using Assignments;
+using BrowserAutomation;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
@@ -117,25 +118,29 @@ namespace GettingStarted
 
             //Assignments
             //Assignment 1
-            CodingSatandard.NamingConvention();
+            //CodingSatandard.NamingConvention();
             //Assignment 2
-            Collection.CollectionMethods();
+            //Collection.CollectionMethods();
             //Assignment 3
             //genrics
-            GenricAndDelegate.DemonstrateGenerics();
+            //GenricAndDelegate.DemonstrateGenerics();
             //delegates
-            GenricAndDelegate.DemonstrateDelegates();
+            //GenricAndDelegate.DemonstrateDelegates();
             //assignment 4 json
-            GetJson.SerializeWrite();
+            //GetJson.SerializeWrite();
             //assignment 5
-            oops.Demonstrateoops();
+            //oops.Demonstrateoops();
             //assignment 6
-            SystemFeatures.execute();
+            //SystemFeatures.execute();
             //assignment 7
-            TrainingDetails train=new TrainingDetails();
-            train.DisplayDetails();
+            //TrainingDetails train=new TrainingDetails();
+            //train.DisplayDetails();
             //assignment 8
-            MethodCalling.execute();
+            //MethodCalling.execute();
+            //to call chrome
+            //ChromeAutomator chr = new ChromeAutomator();
+            //to call edge
+            EdgeAutomator edge = new EdgeAutomator();
         }
 
     private static void SomeOtherMethod() {

@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Util
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestUtilities", "TestUtilities\TestUtilities.csproj", "{B9367F8E-EC61-4780-891E-1F6BCEFC0697}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning", "Learning\Learning.csproj", "{1125D357-8EAB-4999-89B3-0E219E8C912E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Learning", "Learning\Learning.csproj", "{1125D357-8EAB-4999-89B3-0E219E8C912E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignments", "Assignments\Assignments.csproj", "{0C04D2FC-B21C-473F-8364-433A91C3BFFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignments", "Assignments\Assignments.csproj", "{0C04D2FC-B21C-473F-8364-433A91C3BFFA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrowserAutomation", "BrowserAutomation\BrowserAutomation.csproj", "{457A190C-2FB8-42F9-A93D-067879AB8955}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{0C04D2FC-B21C-473F-8364-433A91C3BFFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C04D2FC-B21C-473F-8364-433A91C3BFFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C04D2FC-B21C-473F-8364-433A91C3BFFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{457A190C-2FB8-42F9-A93D-067879AB8955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{457A190C-2FB8-42F9-A93D-067879AB8955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{457A190C-2FB8-42F9-A93D-067879AB8955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{457A190C-2FB8-42F9-A93D-067879AB8955}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
