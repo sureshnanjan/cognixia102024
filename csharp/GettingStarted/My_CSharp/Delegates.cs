@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace GettingStarted
+namespace My_CSharp
 {
     public class Delegates
     {
-        internal static bool CompareValues(int x, int y, float a, float b)
+        public static bool CompareValues(int x, int y, float a, float b)
         {
             return (x + y) > (a + b);
         }

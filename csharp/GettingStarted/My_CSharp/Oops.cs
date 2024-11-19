@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GettingStarted
+namespace My_CSharp
 {
     abstract class Animal
     {
@@ -144,7 +144,7 @@ namespace GettingStarted
     }
     public class Oops
     {
-         public static void Derive()
+        public static void Derive()
         {
             try
             {
@@ -158,12 +158,12 @@ namespace GettingStarted
                 DerivedClass derived = new DerivedClass("Hello from DerivedClass!");
                 derived.DisplayMessage();
 
-               
+
                 Console.WriteLine("\n=== Generic Class Example ===");
                 var pair = new Pair<int, string>(1, "One");
                 pair.DisplayPair();
 
-          
+
                 Console.WriteLine("\n=== Generic Method Example ===");
                 var simple = new SimpleClass();
                 simple.Display<int>(42);
@@ -174,7 +174,7 @@ namespace GettingStarted
                 var sorter = new ArraySortExample();
                 sorter.RunSortExample();
 
-               
+
                 Console.WriteLine("\n=== Interface Example ===");
                 Shape shape = new Shape();
                 shape.Move();

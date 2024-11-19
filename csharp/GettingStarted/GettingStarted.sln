@@ -5,15 +5,17 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GettingStarted", "GettingStarted\GettingStarted.csproj", "{8E45EA25-4CC2-405E-9714-35CBB5A28718}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetstoreModel", "PetstoreModel\PetstoreModel.csproj", "{82E8B46A-DF00-4177-99B2-59B5DCF3DB81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetstoreModel", "PetstoreModel\PetstoreModel.csproj", "{82E8B46A-DF00-4177-99B2-59B5DCF3DB81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeSystemDemo", "TypeSystemDemo\TypeSystemDemo.csproj", "{5394926B-3F12-43C4-8761-6461FE2DA006}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeSystemDemo", "TypeSystemDemo\TypeSystemDemo.csproj", "{5394926B-3F12-43C4-8761-6461FE2DA006}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeywordLearning", "KeywordLearning\KeywordLearning.csproj", "{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeywordLearning", "KeywordLearning\KeywordLearning.csproj", "{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{233B62A8-9B1B-410A-BCB1-9DC20B37A989}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{233B62A8-9B1B-410A-BCB1-9DC20B37A989}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUtilities", "TestUtilities\TestUtilities.csproj", "{B9367F8E-EC61-4780-891E-1F6BCEFC0697}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestUtilities", "TestUtilities\TestUtilities.csproj", "{B9367F8E-EC61-4780-891E-1F6BCEFC0697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My_CSharp", "CSharpAssignments\My_CSharp.csproj", "{9834AF1F-DA22-4C60-AC16-7CBB2E333051}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B9367F8E-EC61-4780-891E-1F6BCEFC0697}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9367F8E-EC61-4780-891E-1F6BCEFC0697}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9367F8E-EC61-4780-891E-1F6BCEFC0697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9834AF1F-DA22-4C60-AC16-7CBB2E333051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9834AF1F-DA22-4C60-AC16-7CBB2E333051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9834AF1F-DA22-4C60-AC16-7CBB2E333051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9834AF1F-DA22-4C60-AC16-7CBB2E333051}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

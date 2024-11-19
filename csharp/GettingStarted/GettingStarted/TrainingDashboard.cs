@@ -1,10 +1,9 @@
 ﻿
 using static KeywordLearning.class_keyword;
-using Generic;
 using Newtonsoft.Json;
 using System;
 using System.IO;
-
+using My_CSharp;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
@@ -79,8 +78,9 @@ namespace GettingStarted
 
 
             //ClassKeyword demo = new ClassKeyword();
-            // GenericClass g = new GenericClass();
-            //g.run();
+
+            GenericClass g = new GenericClass();
+            g.run();
             Delegates delegates = new Delegates();
             Func<int, int, float, float, bool> compareDelegate = Delegates.CompareValues;
 
@@ -125,22 +125,32 @@ namespace GettingStarted
             Console.WriteLine("Deserialized Object: ");
             Console.WriteLine($"Name: {deserializedPerson.Name}, Age: {deserializedPerson.Age}, City: {deserializedPerson.City}");
 
-            var trainingDetails = new TrainingDetails
-            {
-                TrainingName = "C# Basics / Web Development / Cloud",
-                Trainer = "Suresh Nanjan",
-                Duration = 16,
-                FromDate = new DateTime(2024, 2, 15),
-                EndDate = new DateTime(2024, 3, 9),
-                ParticipantsCount = 20,
-                Topics = new List<string> { "C#", "Docker", "Jenkins", "WebDriver" },
-                ToolsUsed = new List<string> { "MS Teams", "Google Classroom" },
-                ParticipantsList = new List<string> { "John", "Alice", "Bob" },
-                TrainingLink = "https://petstore3.s"
-            };
+            //Training Details
+          
+            string trainingName = "C# Basics"; // Training name
+            DateTime trainingDate = new DateTime(2024, 2, 15); // Date of the training
+            string trainerName = "Suresh Nanjan"; // Trainer's name
+            int duration = 16; // Duration in days
+            DateTime fromDate = new DateTime(2024, 2, 15); // Start date
+            DateTime endDate = new DateTime(2024, 3, 9); // End date
+            int participantsCount = 3; // Number of participants
+            List<string> topics = new List<string> { "C#", "Docker", "Jenkins", "WebDriver" }; // List of topics
+            List<string> toolsUsed = new List<string> { "MS Teams", "Google Classroom" }; // List of tools used
+            List<string> participants = new List<string> { "Name1", "Name2", "Name3" }; // List of participants
 
-            // Display the training details in the required format
-            TrainingDetails.DisplayTrainingDetails(trainingDetails);
+            // Call method to display all training details
+            TrainingDetails.DisplayTrainingDetails(trainingName, trainingDate, trainerName, duration, fromDate, endDate, participantsCount);
+
+            // Call method to display topics
+            TrainingDetails.DisplayTopics(topics);
+
+            // Call method to display tools used
+            TrainingDetails.DisplayTools(toolsUsed);
+
+            // Call method to display participants
+            TrainingDetails.DisplayParticipants(participants);
+
+            //Method Calling
             int num1 = 5;
             int num2 = 5;
 

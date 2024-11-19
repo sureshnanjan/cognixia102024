@@ -4,21 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GettingStarted
+namespace My_CSharp
 {
     public class MethodCalling
     {
-       public static void squareVal(int valParameter)
+        public static void squareVal(int valParameter)
         {
-            valParameter *= valParameter;  
-            Console.WriteLine("Inside squareVal: " + valParameter); 
+            valParameter *= valParameter;
+            Console.WriteLine("Inside squareVal: " + valParameter);
         }
 
         // Method using pass-by-reference
         public static void squareRef(ref int refParameter)
         {
-            refParameter *= refParameter;  
-            Console.WriteLine("Inside squareRef: " + refParameter); 
+            refParameter *= refParameter;
+            Console.WriteLine("Inside squareRef: " + refParameter);
         }
         public static void ModifyWithRef(ref int value)
         {
