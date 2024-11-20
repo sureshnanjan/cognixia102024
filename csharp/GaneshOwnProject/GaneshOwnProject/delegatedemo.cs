@@ -44,8 +44,5 @@ public class Calculator
 
 class Program
 {
-    static void Main()
-    {
-        
-    }
+   
 }
