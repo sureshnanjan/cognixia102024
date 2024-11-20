@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SatyaAssignment
 {
-    internal class SystemConsole_and_Environment_classes
+    private class SystemConsole_and_Environment_classes
     {
         static void Main(string[] args)
         {

@@ -11,11 +11,11 @@ namespace SatyaAssignment
     {
         public static void Main(string[] args)
         {
-            // Step 2: Create an object of Raj and serialize it to a JSON string
-            Raj person = new Raj
+            // Step 2: Create an object of Satya and serialize it to a JSON string
+            Satya person = new Satya
             {
-                FirstName = "Raj Kiran",
-                LastName = "Kadambalu",
+                FirstName = "Satyapriya",
+                LastName = "Nayak",
                 Age = 23
             };
 
@@ -40,7 +40,7 @@ namespace SatyaAssignment
         }
     }
 
-    public class Raj
+    public class Satya
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
