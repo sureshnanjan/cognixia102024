@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -17,6 +17,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BhargavAssignment\BhargavAssignment.csproj" />
+    <ProjectReference Include="..\BrowserAutomation\BrowserAutomation.csproj" />
+    <ProjectReference Include="..\DemoForms\DemoForms.csproj" />
+    <ProjectReference Include="..\GettingStarted\GettingStarted.csproj" />
+    <ProjectReference Include="..\KeywordLearning\KeywordLearning.csproj" />
+    <ProjectReference Include="..\PetstoreModel\PetstoreModel.csproj" />
+    <ProjectReference Include="..\TypeSystemDemo\TypeSystemDemo.csproj" />
     <ProjectReference Include="..\Utilities\Utilities.csproj" />
   </ItemGroup>
 
