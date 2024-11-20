@@ -22,9 +22,9 @@ namespace Assignment
                 Console.Clear(); // Apply the background color change
 
                 // Make the Console beep 3 times
-                Console.Beep(500, 500);  // Beep with frequency 500Hz for 500 milliseconds
-                Console.Beep(1000, 500); // Beep with frequency 1000Hz for 500 milliseconds
-                Console.Beep(1500, 500); // Beep with frequency 1500Hz for 500 milliseconds
+                Console.Beep(1500, 500);  // Beep with frequency 500Hz for 500 milliseconds
+                Console.Beep(2000, 500); // Beep with frequency 1000Hz for 500 milliseconds
+                Console.Beep(2500, 500); // Beep with frequency 1500Hz for 500 milliseconds
 
                 // Print Machine Name
                 string machineName = Environment.MachineName;

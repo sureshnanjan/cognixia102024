@@ -30,3 +30,9 @@ C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\D
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\Assignment.pdb
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\JsonNet.ContractResolvers.dll
 C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\WebDriver.dll
+C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\BrowserAutomation.dll
+C:\Users\linesh.mishra\cognixia102024\csharp\GettingStarted\GettingStarted\bin\Debug\net8.0\BrowserAutomation.pdb

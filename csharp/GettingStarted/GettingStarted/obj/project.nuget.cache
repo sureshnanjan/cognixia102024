@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "J+4Wwn59QPE=",
+  "dgSpecHash": "QOB/B6x/dR4=",
   "success": true,
   "projectFilePath": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\linesh.mishra\\.nuget\\packages\\jsonnet.contractresolvers\\2.0.0\\jsonnet.contractresolvers.2.0.0.nupkg.sha512",
     "C:\\Users\\linesh.mishra\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\linesh.mishra\\.nuget\\packages\\selenium.webdriver\\4.26.1\\selenium.webdriver.4.26.1.nupkg.sha512",
     "C:\\Users\\linesh.mishra\\.nuget\\packages\\system.reflection.typeextensions\\4.5.1\\system.reflection.typeextensions.4.5.1.nupkg.sha512"
   ],
   "logs": []

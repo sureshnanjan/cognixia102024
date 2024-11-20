@@ -70,6 +70,72 @@
         }
       }
     },
+    "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\BrowserAutomation\\BrowserAutomation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\BrowserAutomation\\BrowserAutomation.csproj",
+        "projectName": "BrowserAutomation",
+        "projectPath": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\BrowserAutomation\\BrowserAutomation.csproj",
+        "packagesPath": "C:\\Users\\linesh.mishra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\BrowserAutomation\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\linesh.mishra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.26.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -96,6 +162,9 @@
             "projectReferences": {
               "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment.csproj": {
                 "projectPath": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment.csproj"
+              },
+              "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\BrowserAutomation\\BrowserAutomation.csproj": {
+                "projectPath": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\BrowserAutomation\\BrowserAutomation.csproj"
               },
               "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj": {
                 "projectPath": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj"

@@ -3,6 +3,7 @@ using PetstoreModel;
 using TypeSystemDemo;
 using KeywordLearning;
 using Assignment;
+using BrowserAutomation;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
@@ -116,6 +117,8 @@ namespace GettingStarted
             Assignment8 prog8 = new Assignment8();
             prog8.Output1();
             prog8.Output2();
+
+            ChromeAutomator chr = new ChromeAutomator();
         }
 
         public void Populate(string title, string desc, string participants) 

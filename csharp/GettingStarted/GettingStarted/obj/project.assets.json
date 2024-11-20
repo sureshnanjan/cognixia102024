@@ -32,6 +32,22 @@
           }
         }
       },
+      "Selenium.WebDriver/4.26.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      },
       "System.Reflection.TypeExtensions/4.5.1": {
         "type": "package",
         "compile": {
@@ -52,6 +68,19 @@
         },
         "runtime": {
           "bin/placeholder/Assignment.dll": {}
+        }
+      },
+      "BrowserAutomation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Selenium.WebDriver": "4.26.1"
+        },
+        "compile": {
+          "bin/placeholder/BrowserAutomation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BrowserAutomation.dll": {}
         }
       },
       "KeywordLearning/1.0.0": {
@@ -129,6 +158,28 @@
         "packageIcon.png"
       ]
     },
+    "Selenium.WebDriver/4.26.1": {
+      "sha512": "f0t/Oo9l2aK+znAv/McTPSz6p0fSoIYMZpkHql1ndItqu1n6PGXE1XRhziVk2zwG3RBUzEfIr6r/emkl6sP63w==",
+      "type": "package",
+      "path": "selenium.webdriver/4.26.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Selenium.WebDriver.targets",
+        "buildTransitive/Selenium.WebDriver.targets",
+        "icon.png",
+        "lib/net8.0/WebDriver.dll",
+        "lib/net8.0/WebDriver.xml",
+        "lib/netstandard2.0/WebDriver.dll",
+        "lib/netstandard2.0/WebDriver.xml",
+        "manager/linux/selenium-manager",
+        "manager/macos/selenium-manager",
+        "manager/windows/selenium-manager.exe",
+        "selenium.webdriver.4.26.1.nupkg.sha512",
+        "selenium.webdriver.nuspec"
+      ]
+    },
     "System.Reflection.TypeExtensions/4.5.1": {
       "sha512": "fO8GMEkgoKioJ7cglZbhcnBgkCWWn9poS3G2jevS+fuwW9xJXMx7/1kr7dkwOJfo0pWqxLFWVcxlOr+WeK5ipA==",
       "type": "package",
@@ -201,6 +252,11 @@
       "path": "../Assignment/Assignment.csproj",
       "msbuildProject": "../Assignment/Assignment.csproj"
     },
+    "BrowserAutomation/1.0.0": {
+      "type": "project",
+      "path": "../BrowserAutomation/BrowserAutomation.csproj",
+      "msbuildProject": "../BrowserAutomation/BrowserAutomation.csproj"
+    },
     "KeywordLearning/1.0.0": {
       "type": "project",
       "path": "../KeywordLearning/KeywordLearning.csproj",
@@ -220,6 +276,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Assignment >= 1.0.0",
+      "BrowserAutomation >= 1.0.0",
       "KeywordLearning >= 1.0.0",
       "PetstoreModel >= 1.0.0",
       "TypeSystemDemo >= 1.0.0"
@@ -254,6 +311,9 @@
           "projectReferences": {
             "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment.csproj": {
               "projectPath": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\Assignment\\Assignment.csproj"
+            },
+            "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\BrowserAutomation\\BrowserAutomation.csproj": {
+              "projectPath": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\BrowserAutomation\\BrowserAutomation.csproj"
             },
             "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj": {
               "projectPath": "C:\\Users\\linesh.mishra\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\KeywordLearning.csproj"

@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Assignment\Assignment.csproj" />
+    <ProjectReference Include="..\BrowserAutomation\BrowserAutomation.csproj" />
     <ProjectReference Include="..\KeywordLearning\KeywordLearning.csproj" />
     <ProjectReference Include="..\PetstoreModel\PetstoreModel.csproj" />
     <ProjectReference Include="..\TypeSystemDemo\TypeSystemDemo.csproj" />

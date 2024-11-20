@@ -9,6 +9,7 @@
       "GettingStarted/1.0.0": {
         "dependencies": {
           "Assignment": "1.0.0",
+          "BrowserAutomation": "1.0.0",
           "KeywordLearning": "1.0.0",
           "PetstoreModel": "1.0.0",
           "TypeSystemDemo": "1.0.0"
@@ -37,6 +38,14 @@
           }
         }
       },
+      "Selenium.WebDriver/4.26.1": {
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
       "System.Reflection.TypeExtensions/4.5.1": {},
       "Assignment/1.0.0": {
         "dependencies": {
@@ -44,6 +53,17 @@
         },
         "runtime": {
           "Assignment.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BrowserAutomation/1.0.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.26.1"
+        },
+        "runtime": {
+          "BrowserAutomation.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -95,6 +115,13 @@
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
+    "Selenium.WebDriver/4.26.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f0t/Oo9l2aK+znAv/McTPSz6p0fSoIYMZpkHql1ndItqu1n6PGXE1XRhziVk2zwG3RBUzEfIr6r/emkl6sP63w==",
+      "path": "selenium.webdriver/4.26.1",
+      "hashPath": "selenium.webdriver.4.26.1.nupkg.sha512"
+    },
     "System.Reflection.TypeExtensions/4.5.1": {
       "type": "package",
       "serviceable": true,
@@ -103,6 +130,11 @@
       "hashPath": "system.reflection.typeextensions.4.5.1.nupkg.sha512"
     },
     "Assignment/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BrowserAutomation/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
