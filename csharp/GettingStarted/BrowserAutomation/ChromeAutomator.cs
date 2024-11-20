@@ -22,7 +22,7 @@ namespace BrowserAutomation
            // Console.WriteLine(pageTitle);
 
             var links = driver.FindElements(By.TagName("a"));
-            Console.WriteLine(links);
+            Console.WriteLine(links.Count);
         }
 
     }
