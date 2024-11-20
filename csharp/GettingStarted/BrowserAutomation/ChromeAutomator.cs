@@ -7,24 +7,24 @@ namespace BrowserAutomation
 {
     public class ChromeAutomator
     {
-        //ChromeDriver driver;
-        IWebDriver driver;
+        ChromeDriver driver;
+        //IWebDriver driver;
         string configfile;
 
         public ChromeAutomator()
         {
-            if (configfile.EndsWith("chrome"))
-            {
-                driver = new ChromeDriver();
-            }
-            if (configfile.EndsWith("firefox"))
-            {
-                driver = new FirefoxDriver();
-            }
+            //if (configfile.EndsWith("chrome"))
+            //{
+            //    driver = new ChromeDriver();
+            //}
+            //if (configfile.EndsWith("firefox"))
+            //{
+            //    driver = new FirefoxDriver();
+            //}
 
             driver = new ChromeDriver();
             //IWebDriver driver;
-            driver = new RemoteWebDriver(new Uri("http://localhost:8989"), new ChromeOptions());
+            //driver = new RemoteWebDriver(new Uri("http://localhost:8989"), new ChromeOptions());
             driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/");
             Console.WriteLine(driver.Title);
             // Click on Add Remove Link
