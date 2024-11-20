@@ -58,6 +58,9 @@ namespace GettingStarted
         {
             //ExtensionCalls();
             ChromeAutomator chr = new ChromeAutomator();
+            EdgeAutomator edge = new EdgeAutomator();
+           // LinkCounter linkCounter = new LinkCounter();
+
         }
 
         private static void ExtensionCalls()
