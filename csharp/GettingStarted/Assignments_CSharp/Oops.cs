@@ -89,7 +89,7 @@ namespace Assignments_CSharp
         {
             if (obj == null) return 1;
 
-            Person otherPerson = obj as Person;
+            Person1 otherPerson = obj as Person1;
             if (otherPerson != null)
                 return this.Age.CompareTo(otherPerson.Age);
             else
