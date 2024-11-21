@@ -6,17 +6,22 @@ using System.Threading.Tasks;
 using HerokuAppOperations;
 using HerokuAppWebdriverAdapter;
 using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
 namespace HerokuAppScenarios
 {
     [TestFixture]
-    public class ABTest
+    public class ABTest 
     {
         [Test]
         public void WhenUserOptoutsWorksok() {
             HomePage page = new HomePage();
-            IABTesting pageab;
-            pageab.OptOutABTest();
+            //IABTesting pageab = new ABTest();
+
+            //pageab.OptOutABTest();
+            IWebDriver driver = new ChromeDriver();
+            HerokuAppWebdriverAdapter.ABTest testing=new HerokuAppWebdriverAdapter.ABTest(driver);
             page.navigateToExample("ABTesting");
             string[] expected = { "No AB Test","Variation 2" };
         }

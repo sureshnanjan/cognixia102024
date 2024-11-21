@@ -20,7 +20,7 @@ namespace HerokuAppScenarios
             //instance.
             IWebDriver iinst = instance;
             ITakesScreenshot camera = (ITakesScreenshot)iinst;
-            ((IJavaScriptExecutor)camera).
+            //((IJavaScriptExecutor)camera).
             IHomePage page = new HomePage();
             var checkPage = page.navigateToCheckBox();
             bool expectedstatusone = false;
