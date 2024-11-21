@@ -8,7 +8,10 @@
 
         public string[] getAvailableExamples();
 
-        public void navigateToExample(string exname);
+        public ICheckBox navigateToCheckBox();
+
+        public IABTesting navigateToABTest();
+        public object navigateToExample(string exname);
 
     }
 }

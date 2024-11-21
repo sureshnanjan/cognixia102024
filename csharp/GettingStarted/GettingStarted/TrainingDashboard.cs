@@ -5,6 +5,7 @@ using MyExtensionQA;
 using PetstoreModel;
 using TypeSystemDemo;
 using BrowserAutomation;
+using System.Configuration;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
@@ -56,8 +57,12 @@ namespace GettingStarted
         public void Populate(string title, string desc, string participants) { }
         static void Main(string[] args)
         {
+            //Conf
+            //var title = ConfigurationManager.AppSettings["title"];
+            //var language = ConfigurationManager.AppSettings["language"];
             //ExtensionCalls();
             ChromeAutomator chr = new ChromeAutomator();
+           
         }
 
         private static void DoSomeThing(AbstractClass ins) { }
