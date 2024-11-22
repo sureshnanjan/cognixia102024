@@ -13,14 +13,14 @@ namespace BrowserAutomation
 
         public ChromeAutomator()
         {
-            if (configfile.EndsWith("chrome"))
-            {
-                driver = new ChromeDriver();
-            }
-            if (configfile.EndsWith("firefox"))
-            {
-                driver = new FirefoxDriver();
-            }
+            //if (configfile.EndsWith("chrome"))
+            //{
+            //    driver = new ChromeDriver();
+            //}
+            //if (configfile.EndsWith("firefox"))
+            //{
+            //    driver = new FirefoxDriver();
+            //}
 
             driver = new ChromeDriver();
             //IWebDriver driver;
