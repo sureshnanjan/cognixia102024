@@ -11,7 +11,6 @@ namespace HerokuAppOperations
         public string getTitle();
         public void AddElement();
         public void DeleteElement();
-
         public int GetCountofElements();
     }
 }
