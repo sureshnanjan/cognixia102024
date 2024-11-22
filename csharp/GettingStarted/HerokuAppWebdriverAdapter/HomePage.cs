@@ -21,7 +21,7 @@ namespace HerokuAppWebdriverAdapter
             exampleLink = By.TagName("a");
             //checkboxlink = By.LinkText("Checkboxes");
             driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/");
+            driver.Navigate().GoToUrl(" /");
         }
         private By _title;
         private By _description;
