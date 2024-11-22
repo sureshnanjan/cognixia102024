@@ -10,7 +10,7 @@ namespace HerokuAppOperations
     public interface IHorizontalSlider
     {
         // Drag the slider by a specific offset
-           public void dragSlider(IWebElement slider, int xOffset);
+         public void dragSlider(IWebElement slider, int xOffset);
 
         // Set the value of the slider directly (using SendKeys)
        public void setSliderValue(IWebElement slider, string value);
