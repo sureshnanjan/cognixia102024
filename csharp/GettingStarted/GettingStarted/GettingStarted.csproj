@@ -14,6 +14,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BrowserAutomation\BrowserAutomation.csproj" />
+    <ProjectReference Include="..\HerokuAppOperations\HerokuAppOperations.csproj" />
+    <ProjectReference Include="..\HerokuAppScenarios\HerokuAppScenarios.csproj" />
+    <ProjectReference Include="..\HerokuAppWebdriverAdapter\HerokuAppWebdriverAdapter.csproj" />
     <ProjectReference Include="..\KeywordLearning\KeywordLearning.csproj" />
     <ProjectReference Include="..\MyExtensionQA\MyExtensionQA.csproj" />
     <ProjectReference Include="..\PetstoreModel\PetstoreModel.csproj" />
