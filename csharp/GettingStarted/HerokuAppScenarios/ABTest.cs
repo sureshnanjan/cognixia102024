@@ -17,11 +17,8 @@ namespace HerokuAppScenarios
         [Test]
         public void WhenUserOptoutsWorksok() {
             HomePage page = new HomePage();
-            //IABTesting pageab = new ABTest();
-
-            //pageab.OptOutABTest();
-            IWebDriver driver = new ChromeDriver();
-            HerokuAppWebdriverAdapter.ABTest testing=new HerokuAppWebdriverAdapter.ABTest(driver);
+            IABTesting pageab;
+            //pageab.OptOutABTest();;
             page.navigateToExample("ABTesting");
             string[] expected = { "No AB Test","Variation 2" };
         }
