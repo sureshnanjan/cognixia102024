@@ -9,5 +9,7 @@ namespace HerokuAppOperations
     public interface IGeolocation
     {
         public void OnclickWhereami();
+
+        public void GetLocationDetails();
     }
 }

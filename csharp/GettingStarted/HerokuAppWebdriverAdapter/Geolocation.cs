@@ -16,5 +16,11 @@ namespace HerokuAppWebdriverAdapter
         {
             driver.FindElement(By.TagName("button")).Click();
         }
+        public void GetLocationDetails()
+        {
+            var lati=driver.FindElement(By.Id("lat-value"));
+
+            var longi= driver.FindElement(By.Id("long-value"));
+        }
     }
 }
