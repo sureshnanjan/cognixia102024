@@ -1,9 +1,20 @@
-﻿namespace HerokuAppOperations
+﻿// --------------------------------------------------------------------------------------------------------------------
+// © [Your Company Name], [Year]. All rights reserved.
+// This code is the property of [Your Company Name] and is protected by copyright law. Unauthorized reproduction or
+// distribution of this code, or any portion of it, may result in civil and criminal penalties and will be prosecuted
+// to the maximum extent possible under the law.
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace HerokuAppOperations
 {
+    /// <summary>
+    /// Interface for handling input field operations on the Inputs page.
+    /// Provides methods to interact with the input fields, validate values, and perform actions like clearing, entering, and modifying input values.
+    /// </summary>
     public interface IInputs
     {
         /// <summary>
-        /// Validates if the page is loaded correctly.
+        /// Validates if the page is loaded correctly by checking the presence of the input field.
         /// </summary>
         /// <returns>Returns true if the input field is present and the page is loaded correctly.</returns>
         public bool IsPageLoaded();
@@ -15,18 +26,18 @@
         public string GetPageTitle();
 
         /// <summary>
-        /// Enters a value into the input field.
+        /// Enters a specified value into the input field.
         /// </summary>
         /// <param name="value">The value to be entered into the input field.</param>
         public void EnterValue(string value);
 
         /// <summary>
-        /// Clears the input field.
+        /// Clears the current value from the input field.
         /// </summary>
         public void ClearInputField();
 
         /// <summary>
-        /// Gets the current value from the input field.
+        /// Retrieves the current value from the input field.
         /// </summary>
         /// <returns>Returns the current value in the input field as a string.</returns>
         public string GetInputValue();
@@ -49,7 +60,5 @@
         /// </summary>
         /// <returns>The decremented value as a string.</returns>
         public string DecrementValue();
-
-
     }
 }
