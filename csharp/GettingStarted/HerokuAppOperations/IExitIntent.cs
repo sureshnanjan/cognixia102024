@@ -17,18 +17,27 @@ specific language governing permissions and limitations
 under the License.
 */
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
+    // The IExitIntent interface defines a contract for managing modal windows with title and description.
     public interface IExitIntent
     {
-        public string getTitle();
-        public string getDescription();
-        public void openModalWindow();
-        public void closeModalWindow();
+        // Gets the title of the modal window.
+        // Returns: A string representing the title of the modal.
+        string GetTitle();
+
+        // Gets the description of the modal window.
+        // Returns: A string representing the description of the modal.
+        string GetDescription();
+
+        // Opens the modal window.
+        // This method is expected to trigger the necessary logic to display a modal window.
+        void OpenModalWindow();
+
+        // Closes the modal window.
+        // This method is expected to handle the logic for dismissing or hiding the modal window.
+        void CloseModalWindow();
     }
 }
+
