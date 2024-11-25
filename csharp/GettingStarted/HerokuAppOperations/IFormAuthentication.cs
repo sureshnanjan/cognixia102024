@@ -26,11 +26,13 @@ namespace HerokuAppOperations
 {
     public interface IFormAuthentication
     {
+     // Checking whether we can navigate to that page or not.
         public void GetNavigatedTo() { }
-
+// Able to Enter credentials in the place specified.
         public void GetCredentials() { }
-
+//Able to login
         public void GetIntoLogin() { }
+     //Verifying Login Success or not
 
         public void VerifyingLoginSuccessorFail() { }
 
