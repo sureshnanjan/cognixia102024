@@ -34,7 +34,7 @@ namespace HerokuAppScenarios
         public void WhenRightClicked_ContextMenuIsDisplayed()
         {
             // Arrange: Create a context menu instance
-            IContextMenu contextMenu = new ContextMen u();
+            IContextMenu contextMenu = new ContextMenu();
 
             // Act: Perform right-click
             contextMenu.RightClickOnElement();
