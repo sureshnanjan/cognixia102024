@@ -27,15 +27,20 @@ namespace HerokuAppOperations
     public interface IFrames
     {
         
-
+        // To Navigate to the Nested Frames Page
         public void OnClickingNestedframes();
+        //To check the Top Frames
         public void CheckTopframe();
-        public void CheckBottomframe();        
+     ////To check the Bottom Frames
+        public void CheckBottomframe();  
+     //To check the Left Frames
         public void CheckLeftframe();
+     //To check the Right Frames
         public void CheckRightframe();
+     //To check the Middle Frames
         public void CheckMiddleframe();
 
-
+// To Navigate to the iFrames Page
         public void OnClickingiFrame();
     }
 }
