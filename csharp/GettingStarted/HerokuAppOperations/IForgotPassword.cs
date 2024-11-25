@@ -26,11 +26,13 @@ namespace HerokuAppOperations
 {
     public interface IForgotPassword
     {
+     //Checking whether the button is present or not 
         public void VerifyingButton() { }
 
         
-
+//checking whether we can enter mail id properly
         public void EnteringEmail() { }
+     //Checking whether we can retrive password or not
 
         public  void ClickingRetrievPassword() { }
 
