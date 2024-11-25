@@ -74,9 +74,5 @@ namespace HerokuAppWebdriverAdapter
             
         }
 
-        public string GetCurrentUrl()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
