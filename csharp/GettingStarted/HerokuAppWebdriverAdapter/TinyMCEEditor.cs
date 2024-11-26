@@ -72,11 +72,7 @@ namespace HerokuAppWebdriverAdapter
             SetContent(string.Empty); // Clears content by setting it to an empty string
         }
 
-        // Get the iframe element containing the editor (if needed for debugging)
-        public object GetEditorIframe()
-        {
-            return _webBrowser.Document.GetElementById(_iframeId); // Returning HtmlElement or similar object
-        }
+      
     }
 }
 
