@@ -24,7 +24,7 @@ using System.Threading.Tasks;
 
 namespace HerokuAppWebdriverAdapter
 {
-    internal class DisappearingElements
+    internal class DisappearingElements: HerokuAppCommon
     {
         private By menuItemsLocator = By.CssSelector("ul li a"); // Adjust locator as needed
 

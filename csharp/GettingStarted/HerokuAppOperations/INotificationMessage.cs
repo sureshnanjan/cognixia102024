@@ -52,12 +52,12 @@ namespace HerokuAppOperations
         /// </summary>
         /// <param name="expectedMessages">An array of expected notification messages.</param>
         /// <returns>True if the notification message matches any expected value; otherwise, false.</returns>
-        bool IsNotificationMessageValid(string[] expectedMessages);
+        //bool IsNotificationMessageValid(string[] expectedMessages);
 
         /// <summary>
         /// Clears the current notification message, if applicable.
         /// This method should contain the logic to clear or dismiss the current notification message.
         /// </summary>
-        void ClearNotificationMessage();
+        //void ClearNotificationMessage();
     }
 }

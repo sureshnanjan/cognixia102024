@@ -60,7 +60,7 @@ namespace HerokuAppWebdriverAdapter
             try
             {
                 // Calculate the checksum of the downloaded file
-                using (var sha256 = SHA256.Create())
+                using (var sha256 = System.Security.Cryptography.SHA256.Create())
                 {
                     byte[] fileBytes = File.ReadAllBytes(downloadLocation);
                     string actualChecksum = BitConverter.ToString(sha256.ComputeHash(fileBytes)).Replace("-", "").ToLower();

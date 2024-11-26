@@ -22,10 +22,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HerokuAppOperations; 
 
 namespace HerokuAppWebdriverAdapter
 {
-    public class DragAndDrop : HerokuAppCommon, IDragAndDrop
+    public class DragAndDrop : HerokuAppCommon, IDragandDrop
     {
         private By squareA;
         private By squareB;

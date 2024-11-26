@@ -29,30 +29,36 @@ using OpenQA.Selenium.Chrome;
 namespace HerokuAppScenarios
 {
     [TestFixture]
-    public class CheckBox
+    public class checkbox2
     {
-        [Test]
-        public void DefaultSettingsWorks() {
-            ChromeDriver instance = new ChromeDriver();
-            //instance.
-            IWebDriver iinst = instance;
-            ITakesScreenshot camera = (ITakesScreenshot)iinst;
-            ((IJavaScriptExecutor)camera)
-            IHomePage page = new HomePage();
-            var checkPage = page.navigateToCheckBox();
-            bool expectedstatusone = false;
-            bool expectedstatustwo = true;
-            bool actualone = checkPage.getCHekboxOneSatatus();
-            bool actualtwo = checkPage.getCHekboxTwoSatatus();
-            Assert.IsTrue(actualtwo);
-            Assert.IsFalse(actualone);
+        CheckBox ch;
+        [SetUp]
+        public void setup()
+        {
+            ch =new CheckBox();
         }
         [Test]
-        public void OptingOUtofABTestWorks() { 
-            ///AAA
-            HomePage page = new HomePage();
-            page.navigateToABTest();
-            string actual = page.getTitle();
+        public void getTitle()
+        {
+            String Expected = "Checkboxes";
+            String actual = ch.getTitle();
+            Assert.AreEqual(Expected, actual);
+        }
+
+        [Test]
+        public void GetCheckboxOneStatus()
+        {
+            // Validate the initial status of Checkbox 1
+            bool status = ch.getCheckboxOneStatus();
+            Assert.IsFalse(status, "Checkbox 1 is expected to be unchecked by default.");
+        }
+
+        [Test]
+        public void GetCheckboxTwoStatus()
+        {
+            // Validate the initial status of Checkbox 2
+            bool status = ch.getCheckboxTwoStatus();
+            Assert.IsTrue(status, "Checkbox 2 is expected to be checked by default.");
         }
     }
 }

@@ -18,6 +18,7 @@ under the License.
 */using HerokuAppOperations;
 using OpenQA.Selenium;
 using System;
+using HerokuAppOperations;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,20 +34,28 @@ namespace HerokuAppWebdriverAdapter
             this.checkbox1 = By.XPath("//*[@id='checkboxes']/input[1]");
             this.checkbox2 = By.XPath("//*[@id='checkboxes']/input[2]");
         }
-       
-        public bool getCHekboxOneSatatus()
+        public CheckBox() : base()
         {
-            return this.driver.FindElement(checkbox1).Selected;
+            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/checkboxes");
         }
 
-        public bool getCHekboxTwoSatatus()
+        public bool getCheckboxOneStatus()
         {
-            return this.driver.FindElement(checkbox2).Selected;
+            IWebElement checkboxElement = driver.FindElement(By.XPath("//input[1]"));
+            return checkboxElement.Selected;
+        }
+
+        public bool getCheckboxTwoStatus()
+        {
+            IWebElement checkboxElement = driver.FindElement(By.XPath("//input[2]"));
+            return checkboxElement.Selected;
         }
 
         public string getTitle()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException()
+            IWebElement headingElement = driver.FindElement(By.XPath("//h3[normalize-space()='Checkboxes']"));
+            return headingElement.Text;
         }
     }
 }

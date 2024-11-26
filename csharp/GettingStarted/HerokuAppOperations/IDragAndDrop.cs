@@ -29,7 +29,7 @@ namespace HerokuAppOperations
     // An interface in C# is a type that defines a set of methods and properties
     // that the implementing class must provide. It is used to achieve abstraction
     // and multiple inheritance in C#.
-    internal interface IDragandDrop
+    public interface IDragandDrop
     {
         // Gets the current text or label of the first draggable square (A).
         // This method should return the text or label of the first square as a string.
