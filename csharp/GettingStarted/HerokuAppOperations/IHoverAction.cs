@@ -28,13 +28,23 @@ namespace HerokuAppOperations
 {
     public interface IHoverAction
     {
-        // Hover over a specified element (like an image)
+        /// <summary>
+        /// Performs a hover action over a specified element, such as an image or button.
+        /// </summary>
+        /// <param name="element">The element to hover over.</param>
         void hoverOverElement(IWebElement element);
 
-        // Validate that the content appears after hovering
+        /// <summary>
+        /// Validates that the content or link appears after hovering over the specified element.
+        /// </summary>
+        /// <param name="element">The element to hover over to trigger content visibility.</param>
+        /// <returns>Returns true if the content or link appears after hovering, otherwise false.</returns>
         bool validateContentAppears(IWebElement element);
 
-        // Click the link that appears after hovering
+        /// <summary>
+        /// Clicks on a link or button that becomes visible after hovering over a specific element.
+        /// </summary>
+        /// <param name="link">The link or button that appears after the hover action.</param>
         void clickOnRevealedLink(IWebElement link);
     }
 }

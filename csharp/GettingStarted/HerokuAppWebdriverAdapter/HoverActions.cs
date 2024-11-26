@@ -27,24 +27,41 @@ using OpenQA.Selenium.Interactions;
 
 namespace HerokuAppWebdriverAdapter
 {
+    /// <summary>
+    /// The HoverActions class is responsible for handling hover-related actions on elements, such as images or links.
+    /// It implements the IHoverAction interface and provides methods to perform hover actions, validate visibility of content after hovering, 
+    /// and click on revealed links or content.
+    /// </summary>
     public class HoverActions : HerokuAppCommon, IHoverAction
     {
         private readonly IWebDriver _driver;
 
+        /// <summary>
+        /// Initializes a new instance of the HoverActions class.
+        /// </summary>
+        /// <param name="driver">The WebDriver instance used to interact with the web page.</param>
         public HoverActions(IWebDriver driver)
         {
             _driver = driver;
         }
 
-        // Hover over the specified element (image in this case)
+        /// <summary>
+        /// Hovers over the specified element (such as an image or button).
+        /// </summary>
+        /// <param name="element">The element to hover over.</param>
         public void hoverOverElement(IWebElement element)
         {
+            // Create an instance of Actions class to perform the hover action
             Actions actions = new Actions(_driver);
             actions.MoveToElement(element).Perform();  // Perform hover action
             Console.WriteLine("Hovered over the element.");
         }
 
-        // Validate that the content appears after hovering (check if user name or link becomes visible)
+        /// <summary>
+        /// Validates that the content (such as a username or link) becomes visible after hovering over the specified element.
+        /// </summary>
+        /// <param name="element">The element over which the hover action is performed.</param>
+        /// <returns>Returns true if the content appears after hover, otherwise false.</returns>
         public bool validateContentAppears(IWebElement element)
         {
             try
@@ -59,10 +76,14 @@ namespace HerokuAppWebdriverAdapter
             }
         }
 
-        // Click on the revealed link (after hover)
+        /// <summary>
+        /// Clicks on the revealed link or content that appears after hovering over the specified element.
+        /// </summary>
+        /// <param name="link">The revealed link or content to click.</param>
         public void clickOnRevealedLink(IWebElement link)
         {
-            link.Click();  // Click on the revealed link
+            // Click on the revealed link or content
+            link.Click();
             Console.WriteLine("Clicked on the revealed link.");
         }
     }

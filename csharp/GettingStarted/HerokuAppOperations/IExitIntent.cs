@@ -16,28 +16,34 @@ KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
 */
-using System;
-
 namespace HerokuAppOperations
 {
-    // The IExitIntent interface defines a contract for managing modal windows with title and description.
+    /// <summary>
+    /// The IExitIntent interface defines a contract for managing modal windows 
+    /// with a title and description in a Heroku app.
+    /// </summary>
     public interface IExitIntent
     {
-        // Gets the title of the modal window.
-        // Returns: A string representing the title of the modal.
-        string GetTitle();
+        /// <summary>
+        /// Retrieves the title of the modal window.
+        /// </summary>
+        /// <returns>A string representing the modal's title.</returns>
+       public string GetTitle();
 
-        // Gets the description of the modal window.
-        // Returns: A string representing the description of the modal.
-        string GetDescription();
+        /// <summary>
+        /// Retrieves the description or content of the modal window.
+        /// </summary>
+        /// <returns>A string representing the modal's description.</returns>
+        public string GetDescription();
 
-        // Opens the modal window.
-        // This method is expected to trigger the necessary logic to display a modal window.
-        void OpenModalWindow();
+        /// <summary>
+        /// Triggers the logic to display or open the modal window.
+        /// </summary>
+        public void OpenModalWindow();
 
-        // Closes the modal window.
-        // This method is expected to handle the logic for dismissing or hiding the modal window.
-        void CloseModalWindow();
+        /// <summary>
+        /// Handles the logic to dismiss or close the modal window.
+        /// </summary>
+        public void CloseModalWindow();
     }
 }
-

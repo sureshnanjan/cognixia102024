@@ -24,8 +24,14 @@ using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
+    /// <summary>
+    /// Defines a contract for downloading files in the Heroku app.
+    /// </summary>
     public interface IFileDownload
     {
-        public void Download();
+        /// <summary>
+        /// Initiates the file download process.
+        /// </summary>
+        void Download();
     }
 }

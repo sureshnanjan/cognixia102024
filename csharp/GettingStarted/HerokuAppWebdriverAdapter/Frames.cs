@@ -22,83 +22,110 @@ using System;
 
 namespace HerokuAppWebdriverAdapter
 {
+    /// <summary>
+    /// A class that provides operations for interacting with frames in a web page.
+    /// This class uses Selenium WebDriver to interact with the frames on the "Nested Frames" and "iFrames" pages.
+    /// </summary>
     public class Frames : HerokuAppCommon, IFrames
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Frames"/> class with the provided WebDriver.
+        /// </summary>
+        /// <param name="driver">The WebDriver instance used for browser interaction.</param>
         public Frames(IWebDriver driver) : base(driver) { }
 
-        
-
-        // Navigate to the page that contains the nested frames
+        /// <summary>
+        /// Navigates to the "Nested Frames" page, where multiple frames are present.
+        /// This method is used to simulate a user clicking on a link to go to the nested frames page.
+        /// </summary>
         public void OnClickingNestedframes()
         {
-            // Assuming you're already on the "Nested Frames" page
-            // You may need to first navigate to the page if you're not on it yet
+            // Navigate to the "Nested Frames" page
             driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/nested_frames");
         }
 
-        // Switch to the top frame and check its contents
+        /// <summary>
+        /// Switches to the top frame of the "Nested Frames" page and prints its contents.
+        /// After interacting with the top frame, the method switches back to the default content.
+        /// </summary>
         public void CheckTopframe()
         {
             // Switch to the top frame
             driver.SwitchTo().Frame("frame-top");
-            // Perform actions in the top frame (e.g., check some content)
-            Console.WriteLine("Inside Top Frame: " + driver.PageSource);  // Example action
+            // Print the page source of the top frame
+            Console.WriteLine("Inside Top Frame: " + driver.PageSource);
 
             // Return to the default content (main page)
             driver.SwitchTo().DefaultContent();
         }
 
-        // Switch to the bottom frame and check its contents
+        /// <summary>
+        /// Switches to the bottom frame of the "Nested Frames" page and prints its contents.
+        /// After interacting with the bottom frame, the method switches back to the default content.
+        /// </summary>
         public void CheckBottomframe()
         {
             // Switch to the bottom frame
             driver.SwitchTo().Frame("frame-bottom");
-            // Perform actions in the bottom frame
-            Console.WriteLine("Inside Bottom Frame: " + driver.PageSource);  // Example action
+            // Print the page source of the bottom frame
+            Console.WriteLine("Inside Bottom Frame: " + driver.PageSource);
 
             // Return to the default content (main page)
             driver.SwitchTo().DefaultContent();
         }
 
-        // Switch to the left frame and check its contents
+        /// <summary>
+        /// Switches to the left frame of the "Nested Frames" page and prints its contents.
+        /// After interacting with the left frame, the method switches back to the default content.
+        /// </summary>
         public void CheckLeftframe()
         {
             // Switch to the left frame (this might be a nested frame inside the top frame)
             driver.SwitchTo().Frame("frame-left");
-            // Perform actions in the left frame
-            Console.WriteLine("Inside Left Frame: " + driver.PageSource);  // Example action
+            // Print the page source of the left frame
+            Console.WriteLine("Inside Left Frame: " + driver.PageSource);
 
             // Return to the default content (main page)
             driver.SwitchTo().DefaultContent();
         }
 
-        // Switch to the right frame and check its contents
+        /// <summary>
+        /// Switches to the right frame of the "Nested Frames" page and prints its contents.
+        /// After interacting with the right frame, the method switches back to the default content.
+        /// </summary>
         public void CheckRightframe()
         {
             // Switch to the right frame (this might be a nested frame inside the top frame)
             driver.SwitchTo().Frame("frame-right");
-            // Perform actions in the right frame
-            Console.WriteLine("Inside Right Frame: " + driver.PageSource);  // Example action
+            // Print the page source of the right frame
+            Console.WriteLine("Inside Right Frame: " + driver.PageSource);
 
             // Return to the default content (main page)
             driver.SwitchTo().DefaultContent();
         }
 
-        // Switch to the middle frame and check its contents
+        /// <summary>
+        /// Switches to the middle frame of the "Nested Frames" page and prints its contents.
+        /// After interacting with the middle frame, the method switches back to the default content.
+        /// </summary>
         public void CheckMiddleframe()
         {
             // Switch to the middle frame (this is often a nested frame)
             driver.SwitchTo().Frame("frame-middle");
-            // Perform actions in the middle frame
-            Console.WriteLine("Inside Middle Frame: " + driver.PageSource);  // Example action
+            // Print the page source of the middle frame
+            Console.WriteLine("Inside Middle Frame: " + driver.PageSource);
 
             // Return to the default content (main page)
             driver.SwitchTo().DefaultContent();
         }
 
-        // Click on a nested iframe inside a frame (example action)
+        /// <summary>
+        /// Navigates to the "iFrames" page, where an iframe is embedded inside the page.
+        /// This method simulates a user clicking on a link to access the iframe page.
+        /// </summary>
         public void OnClickingiFrame()
         {
+            // Navigate to the "iFrames" page
             driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/iframes");
         }
     }

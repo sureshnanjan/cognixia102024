@@ -26,6 +26,22 @@ namespace HerokuAppOperations
 {
     public interface IGeolocation
     {
+        /// <summary>
+        /// This method is called when the user clicks the "Where am I?" button or performs an action
+        /// to determine their current geolocation.
+        /// <summary>
         public void OnclickWhereami();
+
+        /// <summary>
+        /// This method retrieves and displays the location details such as latitude, longitude,
+        /// based on the current geolocation.
+        /// <summary>
+        public void GetLocationDetails();
+
+        /// <summary>
+        /// This method is invoked when the user clicks a "Show in Maps" button 
+        /// to open the current geolocation in a mapping application, such as Google Maps.
+        /// <summary>
+        public void OnclickShowInMaps();
     }
 }

@@ -27,19 +27,39 @@ namespace HerokuAppOperations
 {
     public interface IHorizontalSlider
     {
-        // Drag the slider by a specific offset
-         public void dragSlider(IWebElement slider, int xOffset);
+        /// <summary>
+        /// Drags the slider by a specific offset (in pixels).
+        /// </summary>
+        /// <param name="slider">The slider element to be dragged.</param>
+        /// <param name="xOffset">The horizontal offset (in pixels) by which to move the slider.</param>
+        void dragSlider(IWebElement slider, int xOffset);
 
-        // Set the value of the slider directly (using SendKeys)
-       public void setSliderValue(IWebElement slider, string value);
+        /// <summary>
+        /// Sets the value of the slider directly by sending the specified value through the SendKeys method.
+        /// </summary>
+        /// <param name="slider">The slider element to be set.</param>
+        /// <param name="value">The value to set on the slider.</param>
+        void setSliderValue(IWebElement slider, string value);
 
-        // Get the current value of the slider
-       public string getSliderValue(IWebElement slider);
+        /// <summary>
+        /// Gets the current value of the slider.
+        /// </summary>
+        /// <param name="slider">The slider element to retrieve the value from.</param>
+        /// <returns>The current value of the slider as a string.</returns>
+        string getSliderValue(IWebElement slider);
 
-        // Validate the min and max value of the slider
-        public void validateSliderRange(IWebElement slider, string expectedMinValue, string expectedMaxValue);
+        /// <summary>
+        /// Validates the minimum and maximum values of the slider.
+        /// </summary>
+        /// <param name="slider">The slider element to validate.</param>
+        /// <param name="expectedMinValue">The expected minimum value of the slider.</param>
+        /// <param name="expectedMaxValue">The expected maximum value of the slider.</param>
+        void validateSliderRange(IWebElement slider, string expectedMinValue, string expectedMaxValue);
 
-        // Perform mouse hover on the slider
-        public void hoverOverSlider(IWebElement slider);
+        /// <summary>
+        /// Performs a mouse hover action on the slider element.
+        /// </summary>
+        /// <param name="slider">The slider element to hover over.</param>
+        void hoverOverSlider(IWebElement slider);
     }
 }

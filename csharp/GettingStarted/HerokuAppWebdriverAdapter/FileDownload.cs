@@ -26,13 +26,29 @@ using OpenQA.Selenium;
 
 namespace HerokuAppWebdriverAdapter
 {
+    /// <summary>
+    /// Handles file download operations in the Heroku app.
+    /// </summary>
     public class FileDownload : HerokuAppCommon, IFileDownload
     {
-        public FileDownload(IWebDriver driver) :base(driver){ }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FileDownload"/> class with the specified WebDriver.
+        /// </summary>
+        /// <param name="driver">The WebDriver instance used to interact with the browser.</param>
+        public FileDownload(IWebDriver driver) : base(driver) { }
+
+        /// <summary>
+        /// Initiates the download of a specific file by clicking the file link on the webpage.
+        /// </summary>
         public void Download()
         {
+            // Locate the file download link using its text
             IWebElement FileElement = driver.FindElement(By.XPath("//a[contains(text(),'Дз занятие 20.pdf')]"));
+
+            // Pause briefly to ensure readiness before clicking the link
             Thread.Sleep(3000);
+
+            // Click the file element to trigger the download
             FileElement.Click();
         }
     }

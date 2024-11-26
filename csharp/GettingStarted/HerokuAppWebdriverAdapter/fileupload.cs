@@ -26,34 +26,55 @@ using System.Threading;
 
 namespace HerokuAppWebdriverAdapter
 {
+    /// <summary>
+    /// Handles file upload operations in the Heroku app, including file selection, upload, and browser closure.
+    /// </summary>
     public class fileupload : HerokuAppCommon, Iupload
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="fileupload"/> class with the specified WebDriver.
+        /// </summary>
+        /// <param name="driver">The WebDriver instance used to interact with the browser.</param>
         public fileupload(IWebDriver driver) : base(driver) { }
 
- 
-     //To close the browser after doing the process
+        /// <summary>
+        /// Closes the browser after completing the file upload process.
+        /// </summary>
         public void CloseBrowser()
         {
+            // Close all browser windows and end the WebDriver session
             driver.Quit();
         }
 
-        //To choose the file from the localpath
+        /// <summary>
+        /// Chooses a file from the specified local path to upload.
+        /// </summary>
+        /// <param name="filePath">The full path of the file to be uploaded.</param>
         public void ChooseFile(string filePath)
         {
+            // Locate the file input element by its ID
             IWebElement ChooseFile = driver.FindElement(By.XPath("//input[@id='file-upload']"));
-            //String path = @"C:\\Users\\nishanth.jaganthan\\OneDrive - ascendion\\Desktop\\Notes\\hello.txt";
-            //driver.Quit();
+
+            // Wait for 2 seconds to ensure the element is ready (can be replaced with explicit waits)
             Thread.Sleep(2000);
+
+            // Send the file path to the input element to select the file
             ChooseFile.SendKeys(filePath);
-        
-        }
-        public void UploadFile()
-        {
-            //to upload the file
-            IWebElement upload = driver.FindElement(By.XPath("//input[@id='file-submit']"));
-            Thread.Sleep(2000);
-            upload.Click();
         }
 
+        /// <summary>
+        /// Uploads the selected file by clicking the upload button.
+        /// </summary>
+        public void UploadFile()
+        {
+            // Locate the file upload button by its ID
+            IWebElement upload = driver.FindElement(By.XPath("//input[@id='file-submit']"));
+
+            // Wait for 2 seconds to ensure the button is interactable (can be replaced with explicit waits)
+            Thread.Sleep(2000);
+
+            // Click the upload button to start the upload process
+            upload.Click();
+        }
     }
 }

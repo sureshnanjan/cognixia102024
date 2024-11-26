@@ -26,52 +26,60 @@ using OpenQA.Selenium;
 
 namespace HerokuAppWebdriverAdapter
 {
+    /// <summary>
+    /// Handles interactions with the ExitIntent modal window in a Heroku app.
+    /// </summary>
     public class ExitIntent : HerokuAppCommon, IExitIntent
     {
-        public ExitIntent(IWebDriver driver) : base(driver){ }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ExitIntent"/> class with the specified WebDriver.
+        /// </summary>
+        /// <param name="driver">The WebDriver instance used to interact with the browser.</param>
+        public ExitIntent(IWebDriver driver) : base(driver) { }
 
-        //To get the title of the webpage of ExitIntent
-        public string getTitle()
+        /// <summary>
+        /// Retrieves the title of the current webpage.
+        /// </summary>
+        /// <returns>The title of the webpage.</returns>
+        public string GetTitle()
         {
-            //returning the title
             return driver.Title;
         }
-        //To get the description about the ExitIntent
-        public string getDescription()
+
+        /// <summary>
+        /// Retrieves the description text related to the ExitIntent modal.
+        /// </summary>
+        /// <returns>A string containing the description text.</returns>
+        public string GetDescription()
         {
-            // Locate the paragraph element using XPath
+            // Locate the paragraph element containing the description text
             IWebElement paragraph = driver.FindElement(By.XPath("//p[contains(text(),'Mouse out of the viewport pane and see a modal win')]"));
-
-            // Get the text content of the paragraph
-            string paragraphText = paragraph.Text;
-
-            //returning the content
-            return paragraphText;
-
+            return paragraph.Text;
         }
 
-
-        public void openModalWindow()
+        /// <summary>
+        /// Opens the ExitIntent modal by simulating a mouse movement out of the viewport.
+        /// </summary>
+        public void OpenModalWindow()
         {
-            // Use JavaScript to move the mouse out of the viewport
             IJavaScriptExecutor jsExecutor = (IJavaScriptExecutor)driver;
 
-            // Simulate moving the mouse outside the viewport
+            // Trigger a 'mouseleave' event to open the modal
             jsExecutor.ExecuteScript("var event = new MouseEvent('mouseleave', { view: window, bubbles: true, cancelable: true }); document.body.dispatchEvent(event);");
 
-            // Wait for the modal to appear (if needed)
-            Thread.Sleep(3000); 
-            // Adjust the delay as necessary
+            // Wait for the modal to appear
+            Thread.Sleep(3000); // Adjust delay as necessary
         }
 
-        public void closeModalWindow()
+        /// <summary>
+        /// Closes the ExitIntent modal by clicking the "Close" button.
+        /// </summary>
+        public void CloseModalWindow()
         {
-            //To interact with the modal if it appears
-            var CloseButton = driver.FindElement(By.XPath("//p[normalize-space()='Close']"));
-            //To provide some delay
-            Thread.Sleep(3000);
-            //To Close the modal window
-            CloseButton.Click();
+            // Locate the "Close" button and click it
+            var closeButton = driver.FindElement(By.XPath("//p[normalize-space()='Close']"));
+            Thread.Sleep(3000); // Provide a delay if needed
+            closeButton.Click();
         }
     }
 }

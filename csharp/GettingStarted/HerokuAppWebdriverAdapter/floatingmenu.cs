@@ -23,36 +23,51 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace HerokuAppWebdriverAdapter
 {
+    /// <summary>
+    /// Handles operations related to the floating menu on the Heroku app, such as visibility checks, scrolling, and browser closure.
+    /// </summary>
     public class floatingmenu : HerokuAppCommon, Ifloatingmenu
-
     {
+        /// <summary>
+        /// Closes the browser session after operations are complete.
+        /// </summary>
         public void CloseBrowser()
         {
-            
+            // Method implementation for closing the browser (to be added if needed).
         }
 
+        /// <summary>
+        /// Checks if the floating menu is visible on the page.
+        /// </summary>
+        /// <returns>
+        /// Returns <c>true</c> if the floating menu is visible; otherwise, <c>false</c>.
+        /// </returns>
         public bool IsFloatingMenuVisible()
         {
             try
             {
-                // Locate the floating menu
+                // Locate the floating menu by its ID
                 IWebElement floatingMenu = driver.FindElement(By.Id("menu"));
-                // Check if the menu is displayed
+
+                // Check if the menu is displayed and return the result
                 return floatingMenu.Displayed;
             }
             catch (NoSuchElementException)
             {
+                // Return false if the floating menu is not found
                 return false;
             }
         }
 
-     
-
+        /// <summary>
+        /// Scrolls the page to a specific vertical position.
+        /// </summary>
+        /// <param name="position">The vertical position (in pixels) to scroll to.</param>
         public void ScrollTo(int position)
         {
+            // Use JavaScript to scroll the window to the specified position
             IJavaScriptExecutor jsExecutor = (IJavaScriptExecutor)driver;
             jsExecutor.ExecuteScript($"window.scrollTo(0, {position});");
         }

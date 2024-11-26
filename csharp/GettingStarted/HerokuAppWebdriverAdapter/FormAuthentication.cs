@@ -26,17 +26,34 @@ using System.Threading.Tasks;
 
 namespace HerokuAppWebdriverAdapter
 {
-    public class FormAuthentication : HerokuAppCommon ,IFormAuthentication
+    /// <summary>
+    /// The FormAuthentication class implements the IFormAuthentication interface and defines the 
+    /// actions required for logging into the Heroku App. This class uses Selenium WebDriver 
+    /// to perform operations such as navigating to the login page, entering credentials, 
+    /// submitting the login form, and verifying the login status.
+    /// </summary>
+    public class FormAuthentication : HerokuAppCommon, IFormAuthentication
     {
+        /// <summary>
+        /// Initializes a new instance of the FormAuthentication class.
+        /// </summary>
         public FormAuthentication()
         {
-            
         }
-        public void GetNavigated()
+
+        /// <summary>
+        /// Navigates to the home page of the Heroku App.
+        /// This method opens the URL of the Heroku App where the login form is located.
+        /// </summary>
+        public void GetNavigatedTo()
         {
             driver.Navigate().GoToUrl("https://the-internet.herokuapp.com");
-
         }
+
+        /// <summary>
+        /// Enters the login credentials (username and password) into the corresponding form fields.
+        /// This method simulates typing the username and password into the login form on the webpage.
+        /// </summary>
         public void GetCredentials()
         {
             IWebElement usernameField = driver.FindElement(By.Id("username"));
@@ -45,27 +62,37 @@ namespace HerokuAppWebdriverAdapter
             IWebElement passwordField = driver.FindElement(By.Id("password"));
             passwordField.SendKeys("yourPassword");
         }
+
+        /// <summary>
+        /// Submits the login form by sending the "Enter" key to the password field.
+        /// This method simulates the action of submitting the login form after entering credentials.
+        /// </summary>
         public void GetIntoLogin()
         {
             IWebElement passwordField = driver.FindElement(By.Id("password"));
             passwordField.SendKeys(Keys.Enter);
-
         }
-        public void VerifyingLoginSuccessful()
+
+        /// <summary>
+        /// Verifies whether the login was successful by checking for the presence of specific elements.
+        /// This method checks if the login success indicator is visible or if an error message is displayed.
+        /// </summary>
+        public void VerifyingLoginSuccessorFail()
         {
             // Check for an element that is only visible after login (e.g., the user profile button)
             try
             {
                 IWebElement userProfileButton = driver.FindElement(By.LinkText("Login Success"));
-               
+                // Add verification logic here if needed
             }
             catch (NoSuchElementException)
             {
                 Console.WriteLine("Login failed.");
             }
+
+            // Check if the error message is displayed (example: "Invalid username or password")
             try
             {
-                // Check if the error message is displayed (example: "Invalid username or password")
                 IWebElement errorMessage = driver.FindElement(By.Id("errorMessage")); // Change this ID based on your app's error message element
                 Console.WriteLine("Error Message: " + errorMessage.Text);
 
@@ -83,14 +110,17 @@ namespace HerokuAppWebdriverAdapter
             {
                 Console.WriteLine("Error message not found. Login might have succeeded, or the element is different.");
             }
-
         }
-        public void VerifyLogin()
+
+        /// <summary>
+        /// Verifies that the login was successful by checking for the presence of a logout button.
+        /// This method assumes that the presence of the logout button indicates a successful login.
+        /// </summary>
+        public void VerifyingLogin()
         {
             // Example of post-login check: Verify if logout button is visible
             IWebElement logoutButton = driver.FindElement(By.Id("logoutButton"));
-            
-
+            // Add verification logic here if needed
         }
     }
 }
