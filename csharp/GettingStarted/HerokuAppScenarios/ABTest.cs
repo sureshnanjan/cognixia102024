@@ -16,7 +16,7 @@ namespace HerokuAppScenarios
         public void WhenUserOptoutsWorksok() {
             HomePage page = new HomePage();
             IABTesting pageab;
-            pageab.OptOutABTest();
+            //pageab.OptOutABTest();
             page.navigateToExample("ABTesting");
             string[] expected = { "No AB Test","Variation 2" };
         }
