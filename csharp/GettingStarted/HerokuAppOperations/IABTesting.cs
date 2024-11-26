@@ -2,7 +2,7 @@
 {
     public interface IABTesting
     {
-        public void OptInABTest();
-        public void OptOutABTest();
+        void OptInABTest();
+        void OptOutABTest();
     }
 }

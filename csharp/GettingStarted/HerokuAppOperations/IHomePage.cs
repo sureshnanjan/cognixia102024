@@ -1,17 +1,14 @@
-﻿namespace HerokuAppOperations
+﻿using System;
+
+namespace HerokuAppWebdriverAdapter
 {
     public interface IHomePage
     {
-        public string getTitle();
+        string GetTitle();
+        string[] GetAvailableExamples();
+        string GetExampleLinkUrl(int index); // Get the URL of an example link by index
 
-        public string getDescription();
-
-        public string[] getAvailableExamples();
-
-        public ICheckBox navigateToCheckBox();
-
-        public IABTesting navigateToABTest();
-        public object navigateToExample(string exname);
-
+        // Get the total number of navigation links (li > a)
+;
     }
 }

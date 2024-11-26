@@ -1,77 +1,54 @@
-﻿using HerokuAppOperations;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using System;
+using System.Linq;
+
 namespace HerokuAppWebdriverAdapter
 {
-    public class HomePage :HerokuAppCommon, IHomePage
+    public class HomePage : IHomePage
     {
-        public HomePage() : base()
+        private readonly IWebDriver _driver;
+        private readonly WebDriverWait _wait;
+
+        // Constructor accepts WebDriver instance to interact with the page
+        public HomePage(IWebDriver driver)
         {
-            _title = By.TagName("h1");
-            _description = By.TagName("h2");
-            checkboxlink = By.LinkText("Checkboxes");
-            exampleLink = By.TagName("a");
+            _driver = driver;
+            _wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));  // Added WebDriverWait for synchronization
         }
-        public HomePage(IWebDriver arg) : base(arg) {
-            _title = By.TagName("h1");
-            _description = By.TagName("h2");
-            checkboxlink = By.LinkText("Checkboxes");
-            // Wrapper Class
-           // _description = ascendion_findelement();
-            exampleLink = By.TagName("a");
-            //checkboxlink = By.LinkText("Checkboxes");
-            driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/");
-        }
-        private By _title;
-        private By _description;
-        private By exampleLink;
-        private By checkboxlink;
-        public string[] getAvailableExamples()
+
+        // Get the title of the Home Page, which should contain both <h1> and <h2>
+        public string GetTitle()
         {
-            this.driver.Manage().Cookies.AddCookie(new Cookie("OptimizelyOptOut","true"));
-            string[] results = { };
-            var alllinks = driver.FindElements(exampleLink).SelectMany(element => element.Text);
-            foreach (var item in alllinks)
+            string h1Text = _driver.FindElement(By.CssSelector("h1.heading")).Text;
+            string h2Text = _driver.FindElement(By.CssSelector("h2")).Text;
+            return $"{h1Text} - {h2Text}"; // Combine h1 and h2 text for validation
+        }
+
+        // Get a list of available examples on the Home Page
+        public string[] GetAvailableExamples()
+        {
+            var exampleElements = _driver.FindElements(By.CssSelector(".example"));
+            return exampleElements.Select(e => e.Text).ToArray();
+        }
+
+        // Get the URL of a specific example link by its index
+        public string GetExampleLinkUrl(int index)
+        {
+            // Wait for the example links to be available
+            var exampleLinks = _wait.Until(driver => driver.FindElements(By.CssSelector(".example a")));
+
+            // Ensure the index is within the valid range
+            if (index >= 0 && index < exampleLinks.Count)
             {
-                //results.Append(item);
-                
+                // Return the link URL of the requested index
+                return exampleLinks[index].GetAttribute("href");
             }
-
-            return results;
-        }
-
-        public string getDescription()
-        {
-            return driver.FindElement(_description).Text;
-        }
-
-        public string getTitle()
-        {
-            return driver.FindElement(_title).Text;
-        }
-
-        public object navigateToExample(string exname)
-        {
-            throw new NotImplementedException();
-        }
-
-        public ICheckBox navigateToCheckBox()
-        {
-            this.driver.FindElement(checkboxlink).Click();
-            return new CheckBox(this.driver);
-        }
-
-        public IABTesting navigateToABTest()
-        {
-            throw new NotImplementedException();
-        }
-
-        object IHomePage.navigateToExample(string exname)
-        {
-            // Compare the example name and 
-            return "";
-            
+            else
+            {
+                // If index is out of range, log and throw an exception
+                throw new ArgumentOutOfRangeException(nameof(index), $"Index {index} is out of range. The valid range is 0 to {exampleLinks.Count - 1}.");
+            }
         }
     }
 }
