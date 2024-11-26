@@ -15,7 +15,9 @@ software distributed under the License is distributed on an
 KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
-*/using System;
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,18 +26,25 @@ using System.Threading.Tasks;
 namespace HerokuAppOperations
 {
     // This interface defines the contract for adding and removing elements.
+    // An interface in C# is a type that defines a set of methods and properties
+    // that the implementing class must provide. It is used to achieve abstraction
+    // and multiple inheritance in C#.
     public interface IAddRemove
     {
         // Method to get the title of the element.
+        // This method should return the title of the element as a string.
         public string getTitle();
 
         // Method to add an element.
+        // This method should contain the logic to add a new element to a collection or list.
         public void AddElement();
 
         // Method to delete an element.
+        // This method should contain the logic to remove an existing element from a collection or list.
         public void DeleteElement();
 
         // Method to get the count of elements.
+        // This method should return the total number of elements currently in the collection or list.
         public int GetCountofElements();
     }
 }

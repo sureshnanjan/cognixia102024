@@ -15,7 +15,9 @@ software distributed under the License is distributed on an
 KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
-*/namespace HerokuAppOperations
+*/
+
+namespace HerokuAppOperations
 {
     /// <summary>
     /// Interface for interacting with the JQuery UI Menus example page on the HerokuApp website.
@@ -25,6 +27,8 @@ under the License.
     {
         /// <summary>
         /// Navigates to a specific menu item and optionally selects a submenu item.
+        /// This method should contain the logic to navigate to a main menu item
+        /// identified by its visible text and optionally select a submenu item.
         /// </summary>
         /// <param name="menuText">The visible text of the main menu item to interact with.</param>
         /// <param name="submenuText">The visible text of the submenu item to select (optional).</param>
@@ -32,11 +36,15 @@ under the License.
 
         /// <summary>
         /// Checks if the menu structure is fully visible and accessible.
+        /// This method should contain the logic to verify that all menu items
+        /// and submenus are visible and can be interacted with.
         /// </summary>
         void VerifyMenuAccessibility();
 
         /// <summary>
         /// Gets the current URL after interacting with a menu item.
+        /// This method should return the current URL as a string after a menu item
+        /// has been selected and any navigation has occurred.
         /// </summary>
         /// <returns>The current URL as a string.</returns>
         string GetCurrentUrl();

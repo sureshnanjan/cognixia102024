@@ -15,27 +15,35 @@ software distributed under the License is distributed on an
 KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
-*/using System;
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace HerokuAppOperations
 {
-    // Interface definition for handling context menu operations
+    // This interface defines the contract for context menu operations.
+    // An interface in C# is a type that defines a set of methods and properties
+    // that the implementing class must provide. It is used to achieve abstraction
+    // and multiple inheritance in C#.
     public interface IContextMenu
     {
-        // Method to handle the action of right-clicking on an element
+        // Method to handle the action of right-clicking on an element.
+        // This method should contain the logic to simulate a right-click action
+        // on a specified element within the application.
         void RightClickOnElement();
 
-        // Method to retrieve the available context menu options
-        // Returns an array of strings representing menu options
+        // Method to retrieve the available context menu options.
+        // This method should return an array of strings, where each string represents
+        // an option available in the context menu that appears after a right-click action.
         string[] GetMenuOptions();
 
-        // Method to select a specific menu option
-        // Takes a string 'option' as the parameter, which is the menu option to select
+        // Method to select a specific menu option.
+        // This method should take a string 'option' as a parameter, which specifies
+        // the menu option to be selected from the context menu.
         void SelectMenuOption(string option);
     }
 }

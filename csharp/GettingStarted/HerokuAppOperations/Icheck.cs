@@ -15,7 +15,9 @@ software distributed under the License is distributed on an
 KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
-*/using System;
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,10 +25,24 @@ using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
+    // This interface defines the contract for checkbox operations.
+    // An interface in C# is a type that defines a set of methods and properties
+    // that the implementing class must provide. It is used to achieve abstraction
+    // and multiple inheritance in C#.
     public interface ICheck
     {
-        string GetTitle();                      // Method to get the title of the checkbox
-        bool GetCheckboxStatus();               // Method to get the checkbox status (checked or unchecked)
-        void ToggleCheckboxStatus();            // Method to toggle checkbox status (check/uncheck)
+        // Method to get the title of the checkbox.
+        // This method should return the title of the checkbox as a string.
+        string GetTitle();
+
+        // Method to get the checkbox status (checked or unchecked).
+        // This method should return a boolean value indicating whether the checkbox
+        // is currently checked (true) or unchecked (false).
+        bool GetCheckboxStatus();
+
+        // Method to toggle the checkbox status (check/uncheck).
+        // This method should change the status of the checkbox from checked to unchecked
+        // or from unchecked to checked.
+        void ToggleCheckboxStatus();
     }
 }
