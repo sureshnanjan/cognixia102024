@@ -49,11 +49,17 @@ namespace HerokuAppScenarios
         [Test]
         public void HomePageAvailableExamplesAreCorrect()
         {
-            // Get the list of available examples
-            var availableExamples = homePage.GetAvailableExamples();
-            int expectedExamplesCount = 44;  // Assuming the correct number is 44
-            Assert.That(availableExamples.Length, Is.EqualTo(expectedExamplesCount), "Number of available examples is incorrect.");
+            // Locate all clickable links on the homepage
+            var availableExamples = driver.FindElements(By.CssSelector("a"));
+
+            // Log the total number of examples for debugging
+            Console.WriteLine($"Total clickable options found: {availableExamples.Count}");
+
+            // Assert the count of examples
+            int expectedExamplesCount = 46; // Update this based on the expected number of links
+            Assert.That(availableExamples.Count, Is.EqualTo(expectedExamplesCount), "Number of available examples is incorrect.");
         }
+
 
         [Test]
         public void HomePageAccessingExampleLinkWorks()

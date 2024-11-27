@@ -1,71 +1,100 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HerokuAppOperations;
+﻿using HerokuAppOperations;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using System;
 
 namespace HerokuAppWebdriverAdapter
 {
-    public class DynamicControls : HerokuAppCommon, IDynamicControls
+    public class DynamicControlsPage : IDynamicControls
     {
-        private By checkbox;
-        private By enableDisableButton;
-        private By inputField;
-        private By message;
+        private readonly IWebDriver _driver;
+        private readonly WebDriverWait _wait;
 
-        public DynamicControls(IWebDriver arg) : base(arg)
+        // Locators
+        private By pageTitle = By.TagName("h4");
+        private By checkbox = By.Id("checkbox");
+        private By toggleButton = By.XPath("//*[@id=\"input-example\"]/button");
+        private By message = By.Id("message");
+        
+        // Constructor
+
+        public DynamicControlsPage(IWebDriver driver)
         {
-            this.checkbox = By.Id("checkbox");
-            this.enableDisableButton = By.XPath("//button[text()='Enable']");  // Initially Enable button
-            this.inputField = By.Id("input");
-            this.message = By.Id("message");
+            _driver = driver;
+            _wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
         }
 
         public string GetTitle()
         {
-            return this.driver.Title;
-        }
-
-        public bool IsCheckboxDisplayed()
-        {
-            return this.driver.FindElement(checkbox).Displayed;
-        }
-
-        public bool IsInputFieldEnabled()
-        {
-            return this.driver.FindElement(inputField).Enabled;
-        }
-
-        public void ClickEnableDisableButton()
-        {
-            this.driver.FindElement(enableDisableButton).Click();
-        }
-
-        public string GetMessage()
-        {
-            return this.driver.FindElement(message).Text;
-        }
-
-        public bool IsCheckboxChecked()
-        {
-            return this.driver.FindElement(checkbox).Selected;
+            return _driver.FindElement(pageTitle).Text;
         }
 
         public void EnableCheckbox()
         {
-            throw new NotImplementedException();
-        }
+            // Click the toggle button to enable the checkbox
+            _driver.FindElement(toggleButton).Click();
 
+            // Wait until the message indicates the checkbox is enabled
+            try
+            {
+                _wait.Until(d =>
+                {
+                    var messageElement = d.FindElement(message);
+                    Console.WriteLine($"Message displayed: {messageElement.Text}"); // Debugging log
+                    return messageElement.Displayed && messageElement.Text.Contains("enabled");
+                });
+            }
+            catch (WebDriverTimeoutException)
+            {
+                throw new WebDriverTimeoutException("The checkbox did not get enabled within the expected time.");
+            }
+        }
         public void DisableCheckbox()
         {
-            throw new NotImplementedException();
+            // Click the toggle button to disable the checkbox (first click)
+            _driver.FindElement(toggleButton).Click();
+            Console.WriteLine("First click on toggle button to disable the checkbox...");
+
+            // Wait for a short delay to allow the state change (e.g., to wait for the message to update)
+            System.Threading.Thread.Sleep(5000);  // Delay of 5 second, adjust if necessary
+
+            // Click the toggle button again to finalize the action (second click)
+            _driver.FindElement(toggleButton).Click();
+            Console.WriteLine("Second click on toggle button to finalize disabling the checkbox...");
+
+            // Wait until the message indicates the checkbox is disabled
+            try
+            {
+                _wait.Until(d =>
+                {
+                    var messageElement = d.FindElement(message);
+                    Console.WriteLine($"Message displayed: {messageElement.Text}"); // Debugging log
+                    return messageElement.Displayed && messageElement.Text.Contains("disabled");
+                });
+                Console.WriteLine("Checkbox is successfully disabled.");
+            }
+            catch (WebDriverTimeoutException)
+            {
+                // Log the failure if the checkbox is not disabled
+                Console.WriteLine("Timeout occurred while waiting for checkbox to be disabled.");
+                throw new WebDriverTimeoutException("The checkbox did not get disabled within the expected time.");
+            }
         }
+
+
+
+
 
         public bool IsCheckboxEnabled()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _driver.FindElement(checkbox).Enabled;
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
         }
     }
 }
