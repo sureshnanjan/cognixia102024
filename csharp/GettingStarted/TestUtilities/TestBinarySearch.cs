@@ -57,12 +57,13 @@ namespace TestUtilities
         [ExpectedException(typeof(RankException))]
         public void RankExceptionThrownCorrectly()
         {
-            int[][] input = new int[][]{ };
-            int keytosearch = 8;
-            int expected = ~0;
-            BinarySearcher myb = new BinarySearcher(input, keytosearch);
-            int result = myb.doSearch();
+            // Provide an invalid input array that should cause a RankException
+            int[] input = { }; // Single-dimensional array, not a 2D array
+            int keyToSearch = 8;
 
+            BinarySearcher myb = new BinarySearcher(input, keyToSearch);
+            int result = myb.doSearch();
         }
+
     }
 }

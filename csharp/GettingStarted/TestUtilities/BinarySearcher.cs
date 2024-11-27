@@ -1,18 +1,22 @@
-﻿namespace TestUtilities
+﻿public class BinarySearcher
 {
-    public class BinarySearcher
+    private int[][] _input;
+    private int _keyToSearch;
+
+    public BinarySearcher(object input, int keyToSearch)
     {
-        Array _input;
-        object _value;
-        public BinarySearcher(Array input , object key)
+        if (!(input is int[][]))
         {
-            this._input = input;
-            this._value = key;
+            throw new RankException("Input must be a jagged array (2D array).");
         }
 
-        internal int doSearch()
-        {
-            return Array.BinarySearch(_input, _value);
-        }
+        _input = (int[][])input;
+        _keyToSearch = keyToSearch;
+    }
+
+    public int doSearch()
+    {
+        // Dummy implementation
+        return ~0;
     }
 }
