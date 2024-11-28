@@ -18,6 +18,8 @@
     <ProjectReference Include="..\MyExtensionQA\MyExtensionQA.csproj" />
     <ProjectReference Include="..\PetstoreModel\PetstoreModel.csproj" />
     <ProjectReference Include="..\TypeSystemDemo\TypeSystemDemo.csproj" />
+		  <ProjectReference Include="..\HerokuAppOperations\HerokuAppOperations.csproj" />
+		  <ProjectReference Include="..\HerokuAppWebdriverAdapter\HerokuAppWebdriverAdapter.csproj" />
   </ItemGroup>
 
 </Project>

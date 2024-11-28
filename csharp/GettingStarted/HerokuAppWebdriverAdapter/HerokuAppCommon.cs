@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,10 @@ namespace HerokuAppWebdriverAdapter
             if (browser_name.StartsWith("chrome"))
             {
                 this.driver = new ChromeDriver();
+            }
+            else if (browser_name.StartsWith("Edge"))
+            {
+                this.driver =new EdgeDriver();  
             }
 
             appurl = "https://the-internet.herokuapp.com/";

@@ -6,6 +6,7 @@ using PetstoreModel;
 using TypeSystemDemo;
 using BrowserAutomation;
 using System.Configuration;
+using HerokuAppWebdriverAdapter;
 namespace GettingStarted
 {
     delegate void GettingStartedDelegate();
@@ -61,8 +62,11 @@ namespace GettingStarted
             //var title = ConfigurationManager.AppSettings["title"];
             //var language = ConfigurationManager.AppSettings["language"];
             //ExtensionCalls();
-            ChromeAutomator chr = new ChromeAutomator();
-           
+            //ChromeAutomator chr = new ChromeAutomator();
+            //HerokuAppCommon App=new HerokuAppCommon();
+            //
+            //HomePage App=new HomePage();
+            //App.navigateToExample("ChallengingDom");
         }
 
         private static void DoSomeThing(AbstractClass ins) { }

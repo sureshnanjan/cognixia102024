@@ -26,13 +26,13 @@ namespace HerokuAppOperations
     // Interface defining methods for interacting with JavaScript alerts
     public interface IJavaScriptAlerts
     {
-        public void ClickforJsAlert(); // Method to trigger a simple JavaScript alert
-        public void ClickforJsAlertClose(); // Method to close the simple JavaScript alert
+        public bool ClickforJsAlert(); // Method to trigger a simple JavaScript alert
+        public bool ClickforJsAlertClose(); // Method to close the simple JavaScript alert
 
-        public void ClickforJsConfirm(); // Method to trigger a JavaScript confirmation dialog
-        public void ClickforJsConfirmClose(); // Method to dismiss the JavaScript confirmation dialog
+        public bool ClickforJsConfirm(); // Method to trigger a JavaScript confirmation dialog
+        public bool ClickforJsConfirmClose(); // Method to dismiss the JavaScript confirmation dialog
 
-        public void ClickforJsPrompt(); // Method to trigger a JavaScript prompt dialog
-        public void ClickforJsPromptClose(String message); // Method to close the JavaScript prompt with a specified input message
+        public bool ClickforJsPrompt(); // Method to trigger a JavaScript prompt dialog
+        public bool ClickforJsPromptClose(String message); // Method to close the JavaScript prompt with a specified input message
     }
 }

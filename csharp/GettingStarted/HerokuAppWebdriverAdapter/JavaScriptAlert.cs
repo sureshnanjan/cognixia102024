@@ -32,54 +32,96 @@ namespace HerokuAppScenarios
         // Constructor to initialize the driver
         public JavaScriptAlert(IWebDriver driver) : base(driver) { }
 
+        public JavaScriptAlert() : base() {
+            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/javascript_alerts");
+        }
+
         // Method to click the button that triggers a JavaScript alert
-        public void ClickforJsAlert()
+        public bool ClickforJsAlert()
         {
-            IWebElement buton1 = driver.FindElement(By.XPath("//button[normalize-space()='Click for JS Alert']"));
-            Thread.Sleep(2000); // Adding a delay to observe interaction (not recommended for production code)
-            buton1.Click(); // Click the alert button
+            try{
+                IWebElement buton1 = driver.FindElement(By.XPath("//button[normalize-space()='Click for JS Alert']"));
+                Thread.Sleep(2000); // Adding a delay to observe interaction (not recommended for production code)
+                buton1.Click(); // Click the alert button
+            }
+            catch(Exception e) { 
+                return false;
+            }
+            return true;
         }
 
         // Method to close the JavaScript alert by accepting it
-        public void ClickforJsAlertClose()
+        public bool ClickforJsAlertClose()
         {
-            IAlert alert = driver.SwitchTo().Alert(); // Switch focus to the alert
-            Thread.Sleep(2000); // Adding a delay
-            alert.Accept(); // Accept (close) the alert
+            try
+            {
+                IAlert alert = driver.SwitchTo().Alert(); // Switch focus to the alert
+                Thread.Sleep(2000); // Adding a delay
+                alert.Accept(); // Accept (close) the alert
+            }
+            catch (Exception e) {
+                return false;
+            }
+            return true; 
         }
 
         // Method to click the button that triggers a JavaScript confirmation dialog
-        public void ClickforJsConfirm()
+        public bool ClickforJsConfirm()
         {
-            IWebElement buton2 = driver.FindElement(By.XPath("//button[normalize-space()='Click for JS Confirm']"));
-            Thread.Sleep(2000); // Adding a delay
-            buton2.Click(); // Click the confirm button
+            try
+            {
+                IWebElement buton2 = driver.FindElement(By.XPath("//button[normalize-space()='Click for JS Confirm']"));
+                Thread.Sleep(2000); // Adding a delay
+                buton2.Click(); // Click the confirm button
+            }
+            catch (Exception e) { 
+                return false;
+            }
+            return true;
         }
 
         // Method to close the JavaScript confirmation dialog by dismissing it
-        public void ClickforJsConfirmClose()
+        public bool ClickforJsConfirmClose()
         {
-            IAlert alert = driver.SwitchTo().Alert(); // Switch focus to the alert
-            Thread.Sleep(2000); // Adding a delay
-            alert.Dismiss(); // Dismiss (close without confirming) the alert
+            try
+            {
+                IAlert alert = driver.SwitchTo().Alert(); // Switch focus to the alert
+                Thread.Sleep(2000); // Adding a delay
+                alert.Dismiss(); // Dismiss (close without confirming) the alert
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+            return true;
         }
 
         // Method to click the button that triggers a JavaScript prompt
-        public void ClickforJsPrompt()
+        public bool ClickforJsPrompt()
         {
-            IWebElement buton3 = driver.FindElement(By.XPath("//button[normalize-space()='Click for JS Prompt']"));
-            Thread.Sleep(2000); // Adding a delay
-            buton3.Click(); // Click the prompt button
+            try
+            {
+                IWebElement buton3 = driver.FindElement(By.XPath("//button[normalize-space()='Click for JS Prompt']"));
+                Thread.Sleep(2000); // Adding a delay
+                buton3.Click(); // Click the prompt button
+            }
+            catch (Exception e) { return false; }
+            return true;
         }
 
         // Method to close the JavaScript prompt with a specified input message
-        public void ClickforJsPromptClose(string message)
+        public bool ClickforJsPromptClose(string message)
         {
-            IAlert alert = driver.SwitchTo().Alert(); // Switch focus to the alert
-            Thread.Sleep(2000); // Adding a delay
-            alert.SendKeys(message); // Send the specified message to the prompt input
-            Thread.Sleep(2000); // Adding a delay
-            alert.Accept(); // Accept (close) the prompt with the input
+            try
+            {
+                IAlert alert = driver.SwitchTo().Alert(); // Switch focus to the alert
+                Thread.Sleep(2000); // Adding a delay
+                alert.SendKeys(message); // Send the specified message to the prompt input
+                Thread.Sleep(2000); // Adding a delay
+                alert.Accept(); // Accept (close) the prompt with the input
+            }
+            catch (Exception e) { return false; }
+            return true ;   
         }
     }
 }

@@ -24,21 +24,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HerokuAppOperations;
+using OpenQA.Selenium;
 
 
 namespace HerokuAppWebdriverAdapter
 {
-    public class TinyMCEEditor: ITinyMCEEditor
+    public class TinyMCEEditor: HerokuAppCommon,ITinyMCEEditor
     {
         private WebBrowser _webBrowser;  // Assuming WebBrowser control for handling iframe
         private string _iframeId;
 
         // Constructor to initialize the WebBrowser control
-        public TinyMCEEditor(WebBrowser webBrowser)
+        public TinyMCEEditor(IWebDriver driver) : base(driver)
         {
-            _webBrowser = webBrowser;
-            _webBrowser.ScriptErrorsSuppressed = true; // Suppress script errors to ensure smooth operation
+
         }
+        public TinyMCEEditor() { }
 
         // Initialize the TinyMCE editor inside the iframe
         public void InitializeEditor(string iframeId)

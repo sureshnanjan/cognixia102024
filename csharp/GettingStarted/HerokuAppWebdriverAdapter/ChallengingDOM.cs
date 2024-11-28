@@ -30,16 +30,15 @@ using OpenQA.Selenium.Chrome;
 
 namespace HerokuAppWebdriverAdapter
 {
-    public class ChallengingDOM : IChallengingDOM
+    public class ChallengingDOM : HerokuAppCommon,IChallengingDOM
     {
-        public IWebDriver driver;
+        //public IWebDriver driver;
         public string url = "https://the-internet.herokuapp.com/challenging_dom";
 
         // Constructor to initialize the WebDriver
-        public void ChallengingDom()
-        {
-            driver = new ChromeDriver();  // You can also use other drivers like EdgeDriver
-        }
+        public ChallengingDOM(IWebDriver driver) : base(driver) { }
+        public ChallengingDOM() : base() { }
+
 
         // Method to get the title of the page
         public string GetPageTitle()
@@ -53,7 +52,7 @@ namespace HerokuAppWebdriverAdapter
         {
             driver.Navigate().GoToUrl(url);
             // Use XPath to select all rows of the table excluding the header
-            var rows = driver.FindElements(By.XPath("//table[@id='table1']/tbody/tr"));
+            var rows = driver.FindElements(By.XPath("//table/tbody/tr"));
             return rows.Count;
         }
 
@@ -62,7 +61,8 @@ namespace HerokuAppWebdriverAdapter
         {
             driver.Navigate().GoToUrl(url);
             // Construct XPath for the edit button for a specific row
-            var editButton = driver.FindElement(By.XPath($"//table[@id='table1']/tbody/tr[{rowIndex}]/td[last()]/button[text()='edit']"));
+            //var editButton = driver.FindElement(By.XPath($"//table[@id='table1']/tbody/tr[{rowIndex}]/td[last()]/button[text()='edit']"));
+            var editButton= driver.FindElement(By.XPath($"\r\n//body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[{rowIndex}]/td[7]/a[1]"));
             editButton.Click();
             Console.WriteLine($"Edit button clicked for row {rowIndex}");
         }
@@ -72,11 +72,12 @@ namespace HerokuAppWebdriverAdapter
         {
             driver.Navigate().GoToUrl(url);
             // Construct XPath for the delete button for a specific row
-            var deleteButton = driver.FindElement(By.XPath($"//table[@id='table1']/tbody/tr[{rowIndex}]/td[last()]/button[text()='delete']"));
+            //var deleteButton = driver.FindElement(By.XPath($"//table[@id='table1']/tbody/tr[{rowIndex}]/td[last()]/button[text()='delete']"));
+            var deleteButton = driver.FindElement(By.XPath($"\r\n//body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[{rowIndex}]/td[7]/a[2]"));
             deleteButton.Click();
             Console.WriteLine($"Delete button clicked for row {rowIndex}");
         }
-
+        
         // Cleanup method to quit the driver
         public void Cleanup()
         {
