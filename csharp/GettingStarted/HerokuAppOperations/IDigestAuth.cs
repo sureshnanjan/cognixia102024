@@ -20,25 +20,22 @@ under the License.
 namespace HerokuAppOperations
 {
     /// <summary>
-    /// Interface representing the operations for interacting with the Notification Message page.
-    /// Provides methods to trigger notifications, retrieve the notification message, and refresh the page.
+    /// Interface representing the operations for interacting with the Digest Authentication page.
+    /// Provides methods to authenticate using credentials and retrieve the success message.
     /// </summary>
-    public interface INotificationMessage
+    public interface IDigestAuth
     {
         /// <summary>
-        /// Method to click the "Click here" link to trigger a notification.
+        /// Method to perform authentication by navigating to the page with embedded credentials in the URL.
         /// </summary>
-        public void ClickHere();
+        /// <param name="username">The username to authenticate.</param>
+        /// <param name="password">The password associated with the username.</param>
+        public void Authenticate(string username, string password);
 
         /// <summary>
-        /// Method to get the current notification message text displayed on the page.
+        /// Method to retrieve the success message displayed after authentication.
         /// </summary>
-        /// <returns>A string representing the notification message text.</returns>
-        public string GetNotificationMessage();
-
-        /// <summary>
-        /// Method to refresh the page, reloading the content.
-        /// </summary>
-        public void RefreshPage();
+        /// <returns>A string representing the success message if found, or a fallback message if not.</returns>
+        public string GetSuccessMessage();
     }
 }
