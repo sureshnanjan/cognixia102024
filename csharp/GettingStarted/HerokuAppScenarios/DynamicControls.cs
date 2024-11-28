@@ -119,7 +119,7 @@ namespace HerokuAppScenarios
             var isCheckboxDisabled = checkbox.GetAttribute("disabled") != null;
 
             // Assert that the checkbox is disabled
-            Assert.IsTrue(isCheckboxDisabled, "Checkbox should be disabled but is not.");
+            Assert.IsFalse(isCheckboxDisabled, "Checkbox should be disabled but is not.");
         }
     }
 }

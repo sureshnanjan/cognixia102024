@@ -57,5 +57,10 @@ namespace HerokuAppWebdriverAdapter
                 throw new ArgumentOutOfRangeException(nameof(index), $"Index {index} is out of range. The valid range is 0 to {exampleLinks.Count - 1}.");
             }
         }
+
+        public int GetNavigationLinkCount()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

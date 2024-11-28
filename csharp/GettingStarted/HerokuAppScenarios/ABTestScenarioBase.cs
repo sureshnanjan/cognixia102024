@@ -18,7 +18,7 @@ namespace HerokuAppScenarios
     /// This class uses Selenium WebDriver to test the content of the A/B Test page on HerokuApp.
     /// </summary>
     [TestFixture]
-    public class ABTestPageTest
+    public class ABTestScenarioBase
     {
         // Declare the WebDriver instance at the class level so it can be used across the methods
         private IWebDriver driver;
