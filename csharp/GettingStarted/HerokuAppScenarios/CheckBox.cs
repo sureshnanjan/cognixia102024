@@ -106,6 +106,7 @@ namespace HerokuAppWebdriverAdapter
             if (driver != null)
             {
                 driver.Quit();  // Quit the WebDriver and close all browser windows
+                driver.Dispose();
             }
         }
     }

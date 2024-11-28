@@ -20,7 +20,7 @@ namespace HerokuAppScenarios
     [TestFixture]  // Indicates this class contains NUnit tests
     public class DynamicContentTest
     {
-        private IWebDriver driver;  // WebDriver instance to interact with the browser
+        private ChromeDriver driver;  // WebDriver instance to interact with the browser
         private IDynamicContent dynamicContent;  // DynamicContent interface for interacting with dynamic content
 
         /// <summary>
@@ -30,13 +30,20 @@ namespace HerokuAppScenarios
         [SetUp]
         public void SetUp()
         {
-            // Initialize WebDriver (using ChromeDriver for Chrome browser)
-            driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();  // Maximize the browser window
-            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/dynamic_content");  // Navigate to the dynamic content page
+            try
+            {
+                // Initialize WebDriver (using ChromeDriver for Chrome browser)
+                driver = new ChromeDriver();
+                driver.Manage().Window.Maximize();  // Maximize the browser window
+                driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/dynamic_content");  // Navigate to the dynamic content page
 
-            // Initialize the dynamic content page object
-            dynamicContent = new DynamicContent(driver);  // Instantiate the DynamicContent object passing the WebDriver
+                // Initialize the dynamic content page object
+                dynamicContent = new DynamicContent(driver);  // Instantiate the DynamicContent object passing the WebDriver
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail($"SetUp failed: {ex.Message}");
+            }
         }
 
         /// <summary>
@@ -46,10 +53,21 @@ namespace HerokuAppScenarios
         [TearDown]
         public void TearDown()
         {
-            // Dispose of the WebDriver to prevent memory leaks or stale connections
-            if (driver != null)
+            try
             {
-                driver.Quit();  // Quit the WebDriver and close all open browser windows
+                // Dispose of the WebDriver to prevent memory leaks or stale connections
+                if (driver != null)
+                {
+                    driver.Quit();  // Quit the WebDriver and close all open browser windows
+                    driver.Dispose();  // Dispose the WebDriver instance
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error during TearDown: {ex.Message}");
+            }
+            finally
+            {
                 driver = null;  // Set the driver to null to ensure it's not used again
             }
         }

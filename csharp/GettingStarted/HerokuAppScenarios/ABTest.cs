@@ -1,11 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// © [Your Company Name], [Year]. All rights reserved.
-// This code is the property of [Your Company Name] and is protected by copyright law. Unauthorized reproduction or
-// distribution of this code, or any portion of it, may result in civil and criminal penalties and will be prosecuted
-// to the maximum extent possible under the law.
-// --------------------------------------------------------------------------------------------------------------------
-
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
@@ -30,10 +23,18 @@ namespace HerokuAppScenarios
         [SetUp]
         public void SetUp()
         {
-            // Initialize WebDriver with ChromeDriver
-            driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();  // Maximize the browser window for better visibility
-            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/abtest");  // Navigate to the A/B Test page URL
+            try
+            {
+                // Initialize WebDriver with ChromeDriver
+                driver = new ChromeDriver();
+                driver.Manage().Window.Maximize();  // Maximize the browser window for better visibility
+                driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/abtest");  // Navigate to the A/B Test page URL
+            }
+            catch (Exception ex)
+            {
+                // Fail the test if setup fails and log the exception
+                Assert.Fail($"SetUp failed: {ex.Message}");
+            }
         }
 
         /// <summary>
@@ -43,11 +44,27 @@ namespace HerokuAppScenarios
         [TearDown]
         public void TearDown()
         {
-            // Dispose of the WebDriver instance if it is not null
+            // Ensure that the WebDriver is not null and not disposed before calling Quit
             if (driver != null)
             {
-                driver.Quit();  // Close the browser and quit WebDriver
-                driver = null;  // Set the WebDriver instance to null to prevent reuse in the next test
+                try
+                {
+                    driver.Quit();  // Close the browser and quit WebDriver
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error during TearDown while quitting the WebDriver: {ex.Message}");
+                }
+                finally
+                {
+                    // Dispose the WebDriver properly and set it to null to prevent reuse in the next test
+                    driver.Dispose();
+                    driver = null;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Driver was null in TearDown.");
             }
         }
 

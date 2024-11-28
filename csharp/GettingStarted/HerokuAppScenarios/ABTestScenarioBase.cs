@@ -30,10 +30,18 @@ namespace HerokuAppScenarios
         [SetUp]
         public void SetUp()
         {
-            // Initialize WebDriver with ChromeDriver
-            driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();  // Maximize the browser window for better visibility
-            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/abtest");  // Navigate to the A/B Test page URL
+            try
+            {
+                // Initialize WebDriver with ChromeDriver
+                driver = new ChromeDriver();
+                driver.Manage().Window.Maximize();  // Maximize the browser window for better visibility
+                driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/abtest");  // Navigate to the A/B Test page URL
+            }
+            catch (Exception ex)
+            {
+                // Fail the test if setup fails and log the exception
+                Assert.Fail($"SetUp failed: {ex.Message}");
+            }
         }
 
         /// <summary>
@@ -43,11 +51,24 @@ namespace HerokuAppScenarios
         [TearDown]
         public void TearDown()
         {
-            // Dispose of the WebDriver instance if it is not null
-            if (driver != null)
+            try
             {
-                driver.Quit();  // Close the browser and quit WebDriver
-                driver = null;  // Set the WebDriver instance to null to prevent reuse in the next test
+                // Dispose of the WebDriver instance if it is not null
+                if (driver != null)
+                {
+                    driver.Quit();  // Close the browser and quit WebDriver
+                    driver.Dispose();  // Dispose of the WebDriver instance
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception if something goes wrong during cleanup
+                Console.WriteLine($"Error during TearDown: {ex.Message}");
+            }
+            finally
+            {
+                // Ensure that the driver is set to null to prevent accidental reuse in the next test
+                driver = null;
             }
         }
 

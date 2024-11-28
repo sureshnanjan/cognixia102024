@@ -48,6 +48,7 @@ namespace HerokuAppScenarios
         {
             // Close the browser and quit WebDriver to release resources
             _driver.Quit();
+            _driver.Dispose();
         }
 
         /// <summary>

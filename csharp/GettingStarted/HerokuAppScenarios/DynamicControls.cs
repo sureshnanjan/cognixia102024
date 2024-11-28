@@ -53,6 +53,7 @@ namespace HerokuAppScenarios
         {
             // Close the browser and quit WebDriver after each test to free resources
             _driver.Quit();
+            _driver.Dispose();
         }
 
         /// <summary>
