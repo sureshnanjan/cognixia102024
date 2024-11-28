@@ -13,34 +13,38 @@ namespace TestUtilities
         [TestMethod]
         public void TestIntegerisReturned() { }
         [TestMethod]
-        public void TestItemFound() {
-            // AAA
-            int[] input = { 10, 12, 13, 15 };
-            int keytosearch = 10;
-            int expected = 0;
-            BinarySearcher myb = new BinarySearcher(input , keytosearch);
+        public void TestItemFound()
+        {
+            // Arrange
+            int[] input = { 1, 3, 5, 7, 9 };
+            int keyToSearch = 5;
+            int expectedIndex = 2; // Index of 5 in the array
+
             // Act
+            BinarySearcher myb = new BinarySearcher(input, keyToSearch);
             int result = myb.doSearch();
-            // Assert 
-            Assert.AreEqual(expected, result);
+
+            // Assert
+            Assert.AreEqual(expectedIndex, result);
         }
+
 
         [TestMethod]
-        public void TestItemNotFound() {
-            // If value is not found and
-            // value is less than one or more elements in array,
-            // the negative number returned is the bitwise complement of
-            // the index of the first element that is larger than value.
-            // AAA
-            int[] input = { 10, 12, 13, 15 };
-            int keytosearch = 8;
-            int expected = ~0;
-            BinarySearcher myb = new BinarySearcher(input, keytosearch);
+        public void TestItemNotFound()
+        {
+            // Arrange
+            int[] input = { 1, 3, 5, 7, 9 };
+            int keyToSearch = 6; // Not in the array
+            int expectedResult = ~3; // Complement of the index where 6 would be inserted
+
+            // Act
+            BinarySearcher myb = new BinarySearcher(input, keyToSearch);
             int result = myb.doSearch();
-            Assert.AreEqual(expected, result);
 
-
+            // Assert
+            Assert.AreEqual(expectedResult, result);
         }
+
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
@@ -52,18 +56,22 @@ namespace TestUtilities
             int result = myb.doSearch();
 
         }
-
         [TestMethod]
         [ExpectedException(typeof(RankException))]
         public void RankExceptionThrownCorrectly()
         {
-            // Provide an invalid input array that should cause a RankException
-            int[] input = { }; // Single-dimensional array, not a 2D array
+            // Arrange: Pass a multi-dimensional array to cause a rank mismatch
+            int[,] input = { { 1, 2, 3 }, { 4, 5, 6 } }; // Multi-dimensional array
             int keyToSearch = 8;
 
+            // Act: Create BinarySearcher with invalid array
             BinarySearcher myb = new BinarySearcher(input, keyToSearch);
-            int result = myb.doSearch();
+            myb.doSearch(); // Should throw RankException
         }
+
+
+
+
 
     }
 }
