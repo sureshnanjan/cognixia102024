@@ -6,29 +6,35 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
     /// <summary>
-    /// Interface for operations related to dynamic content in the HerokuApp.
-    /// Provides methods to retrieve the title and text content of a dynamic element.
+    /// Defines operations for interacting with dynamic content elements in the HerokuApp.
     /// </summary>
+    /// <remarks>
+    /// This interface provides methods for retrieving the title and main content text of a dynamic element.
+    /// These operations are useful in automated test scenarios to validate the dynamic content on the page.
+    /// </remarks>
     public interface IDynamicContent
     {
         /// <summary>
-        /// Retrieves the title of the dynamic content.
+        /// Retrieves the title of the dynamic content element.
         /// </summary>
-        /// <returns>The title of the dynamic content as a string.</returns>
+        /// <returns>A string representing the title of the dynamic content.</returns>
+        /// <remarks>
+        /// This method can be used to ensure that the dynamic content element is loaded correctly by verifying the title.
+        /// </remarks>
         public string GetTitle();
 
         /// <summary>
         /// Retrieves the main text content of the dynamic content element.
         /// </summary>
-        /// <returns>The text content as a string.</returns>
+        /// <returns>A string representing the text content of the dynamic element.</returns>
+        /// <remarks>
+        /// This method is useful for fetching and validating the actual content displayed by dynamic elements on the page.
+        /// It can be applied in test cases to ensure the content matches expectations after an action is performed.
+        /// </remarks>
         public string GetContentText();
     }
 }

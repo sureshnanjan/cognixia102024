@@ -6,35 +6,45 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
     /// <summary>
-    /// Interface for Dropdown operations in the HerokuApp.
-    /// Provides methods to get the dropdown title, select an option, and retrieve the selected option.
+    /// Defines operations for interacting with dropdown elements in the HerokuApp application.
     /// </summary>
+    /// <remarks>
+    /// This interface provides methods for retrieving the title of a dropdown, selecting an option, 
+    /// and retrieving the currently selected option. It is intended for use in test automation scenarios.
+    /// </remarks>
     public interface IDropdown
     {
         /// <summary>
-        /// Retrieves the title of the dropdown.
+        /// Retrieves the title of the dropdown element.
         /// </summary>
-        /// <returns>The title of the dropdown as a string.</returns>
+        /// <returns>A string representing the title of the dropdown.</returns>
+        /// <remarks>
+        /// This method ensures that the test script operates on the correct dropdown element by validating its title.
+        /// </remarks>
         public string GetTitle();
 
         /// <summary>
-        /// Selects an option in the dropdown based on the given option name.
+        /// Selects an option in the dropdown by its visible name.
         /// </summary>
-        /// <param name="option">The option to be selected in the dropdown.</param>
+        /// <param name="option">The name of the option to select from the dropdown.</param>
+        /// <remarks>
+        /// This method simulates the user action of selecting an option in the dropdown menu.
+        /// The option name must match one of the options visible in the dropdown.
+        /// </remarks>
         public void SelectDropdownOption(string option);
 
         /// <summary>
         /// Retrieves the currently selected option in the dropdown.
         /// </summary>
-        /// <returns>The currently selected option as a string.</returns>
+        /// <returns>A string representing the currently selected option.</returns>
+        /// <remarks>
+        /// This method verifies the dropdown's state by returning the value of the currently selected option.
+        /// It is useful for validation during automated tests.
+        /// </remarks>
         public string GetSelectedOption();
     }
 }
