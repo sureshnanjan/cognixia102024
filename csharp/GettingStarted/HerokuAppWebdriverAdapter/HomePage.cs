@@ -1,11 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// © [Your Company Name], [Year]. All rights reserved.
-// This code is the property of [Your Company Name] and is protected by copyright law. Unauthorized reproduction or
-// distribution of this code, or any portion of it, may result in civil and criminal penalties and will be prosecuted
-// to the maximum extent possible under the law.
-// --------------------------------------------------------------------------------------------------------------------
-
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Linq;
@@ -14,53 +7,75 @@ namespace HerokuAppWebdriverAdapter
 {
     public class HomePage : IHomePage
     {
-        private readonly IWebDriver _driver;
-        private readonly WebDriverWait _wait;
+        private readonly IWebDriver _driver; // WebDriver instance for browser interactions
+        private readonly WebDriverWait _wait; // WebDriverWait instance for explicit waits
 
-        // Constructor accepts WebDriver instance to interact with the page
+        // Constructor to initialize the WebDriver and WebDriverWait
         public HomePage(IWebDriver driver)
         {
-            _driver = driver;
-            _wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));  // Added WebDriverWait for synchronization
+            _driver = driver ?? throw new ArgumentNullException(nameof(driver)); // Ensure WebDriver is not null
+            _wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10)); // Explicit wait for synchronizing interactions
         }
 
-        // Get the title of the Home Page, which should contain both <h1> and <h2>
+        // Combines <h1> and <h2> text to form the page title
         public string GetTitle()
         {
-            string h1Text = _driver.FindElement(By.CssSelector("h1.heading")).Text;
-            string h2Text = _driver.FindElement(By.CssSelector("h2")).Text;
-            return $"{h1Text} - {h2Text}"; // Combine h1 and h2 text for validation
+            try
+            {
+                // Locate and extract text of <h1> and <h2> elements
+                string h1Text = _driver.FindElement(By.CssSelector("h1")).Text;
+                string h2Text = _driver.FindElement(By.CssSelector("h2")).Text;
+
+                return $"{h1Text} - {h2Text}"; // Combine h1 and h2 text
+            }
+            catch (NoSuchElementException ex)
+            {
+                throw new Exception("Failed to retrieve the title: Ensure the h1 or h2 elements are present on the page.", ex);
+            }
         }
 
-        // Get a list of available examples on the Home Page
+        // Retrieves a list of available example names
         public string[] GetAvailableExamples()
         {
-            var exampleElements = _driver.FindElements(By.CssSelector(".example"));
-            return exampleElements.Select(e => e.Text).ToArray();
+            try
+            {
+                // Find all links within the example section and extract their text
+                var exampleElements = _wait.Until(driver => driver.FindElements(By.CssSelector("#content a")));
+                return exampleElements.Select(e => e.Text.Trim()).Where(text => !string.IsNullOrEmpty(text)).ToArray();
+            }
+            catch (WebDriverTimeoutException ex)
+            {
+                throw new Exception("Failed to retrieve available examples: Ensure the #content section contains links.", ex);
+            }
         }
 
-        // Get the URL of a specific example link by its index
+        // Retrieves the URL of an example link by its index
         public string GetExampleLinkUrl(int index)
         {
-            // Wait for the example links to be available
-            var exampleLinks = _wait.Until(driver => driver.FindElements(By.CssSelector(".example a")));
+            try
+            {
+                // Wait for example links to be present on the page
+                var exampleLinks = _wait.Until(driver => driver.FindElements(By.CssSelector("#content a")));
 
-            // Ensure the index is within the valid range
-            if (index >= 0 && index < exampleLinks.Count)
-            {
-                // Return the link URL of the requested index
-                return exampleLinks[index].GetAttribute("href");
+                // Validate index before accessing elements
+                if (index < 0 || index >= exampleLinks.Count)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(index),
+                        $"Invalid index {index}. Valid range: 0 to {exampleLinks.Count - 1}.");
+                }
+
+                return exampleLinks[index].GetAttribute("href"); // Retrieve href attribute
             }
-            else
+            catch (WebDriverTimeoutException ex)
             {
-                // If index is out of range, log and throw an exception
-                throw new ArgumentOutOfRangeException(nameof(index), $"Index {index} is out of range. The valid range is 0 to {exampleLinks.Count - 1}.");
+                throw new Exception("Failed to retrieve example link URLs: Ensure the links are present in #content section.", ex);
             }
         }
 
+        // Placeholder method for future navigation link count functionality
         public int GetNavigationLinkCount()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException("Method not yet implemented.");
         }
     }
 }
