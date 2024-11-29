@@ -137,5 +137,24 @@ namespace HerokuAppScenarios
             Assert.IsTrue(isTextBoxDisabled, "The text box was not disabled.");
             Console.WriteLine("The text box is disabled.");
         }
+        // Test case to check the title and description on the page
+        [Test]
+        public void TestPageTitleAndDescription()
+        {
+            // Retrieve the title (<h4>) of the page
+            string pageTitle = dynamicControlsPage.GetPageTitle();
+            Console.WriteLine($"Page Title: {pageTitle}");
+
+            // Assert that the title is correct
+            Assert.AreEqual("Dynamic Controls", pageTitle, "Page title did not match expected value.");
+
+            // Retrieve the description (<p>) of the page
+            string pageDescription = dynamicControlsPage.GetPageDescription();
+            Console.WriteLine($"Page Description: {pageDescription}");
+
+            // Assert that the description matches the expected value
+            string expectedDescription = "This example demonstrates when elements (e.g., checkbox, input field, etc.) are changed asynchronously.";
+            Assert.AreEqual(expectedDescription, pageDescription, "Page description did not match expected value.");
+        }
     }
 }

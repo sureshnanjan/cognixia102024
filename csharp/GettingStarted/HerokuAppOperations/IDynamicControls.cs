@@ -47,6 +47,12 @@ namespace HerokuAppWebdriverAdapter
         // Method to handle clicking the disable button
         void ClickDisableButton();
 
+        // Method to retrieve the title (<h4>) text
+        string GetPageTitle();
+
+        // Method to retrieve the description (<p>) text
+        string GetPageDescription();
+
 
     }
 }

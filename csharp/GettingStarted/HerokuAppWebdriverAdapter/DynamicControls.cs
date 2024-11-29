@@ -26,6 +26,9 @@ namespace HerokuAppWebdriverAdapter
         private readonly By loadingMessageLocator = By.Id("loading");  // Locator for the loading message
         private readonly By completionMessageLocator = By.Id("message");  // Locator for the completion message
 
+        private readonly By pageTitleLocator = By.TagName("h4");
+        private readonly By pageDescriptionLocator = By.TagName("p");
+
         // Constructor that initializes the WebDriver and WebDriverWait
         public DynamicControlsPage(IWebDriver driver)
         {
@@ -139,6 +142,20 @@ namespace HerokuAppWebdriverAdapter
         {
             var textBox = _wait.Until(driver => driver.FindElement(By.CssSelector("input[type='text']")));  // Wait for and find the textbox element
             return textBox.Enabled;  // Return true if the textbox is enabled, false otherwise
+        }
+
+        // Implement method to get the page title (<h4>)
+        public string GetPageTitle()
+        {
+            var titleElement = _wait.Until(driver => driver.FindElement(pageTitleLocator));
+            return titleElement.Text;
+        }
+
+        // Implement method to get the page description (<p>)
+        public string GetPageDescription()
+        {
+            var descriptionElement = _wait.Until(driver => driver.FindElement(pageDescriptionLocator));
+            return descriptionElement.Text;
         }
     }
 }
