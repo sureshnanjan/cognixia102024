@@ -5,122 +5,137 @@
 // to the maximum extent possible under the law.
 // --------------------------------------------------------------------------------------------------------------------
 
-using System;  // Import basic system utilities
-using HerokuAppWebdriverAdapter;  // Import custom WebDriver adapter classes
-using NUnit.Framework;  // Import NUnit testing framework
-using OpenQA.Selenium;  // Import Selenium WebDriver for browser automation
-using OpenQA.Selenium.Chrome;  // Import ChromeDriver for Chrome browser support
-using OpenQA.Selenium.Support.UI;  // Import WebDriver support utilities for explicit wait
+using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using HerokuAppWebdriverAdapter; // Reference to your page object model
+using System;
 
 namespace HerokuAppScenarios
 {
-    /// <summary>
-    /// NUnit test class for verifying dynamic controls operations on the HerokuApp.
-    /// Contains test cases to interact with checkboxes and dynamically change their state.
-    /// </summary>
+    // NUnit test fixture for testing dynamic controls functionality on the Heroku app
     [TestFixture]
     public class DynamicControlsTests
     {
-        private IWebDriver _driver;  // WebDriver instance for interacting with the browser
-        private WebDriverWait _wait;  // WebDriverWait instance for handling explicit waits
-        private DynamicControlsPage _dynamicControls;  // Page object to interact with dynamic controls on the page
+        private IWebDriver driver;  // WebDriver instance to interact with the browser
+        private IDynamicControlsPage dynamicControlsPage;  // Interface to interact with the Dynamic Controls page
 
-        /// <summary>
-        /// Setup method to initialize WebDriver and navigate to the test page.
-        /// </summary>
+        // Setup method that runs before each test
         [SetUp]
         public void Setup()
         {
-            // Initialize Chrome WebDriver and set up implicit wait
-            _driver = new ChromeDriver();
-            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            // Initialize the ChromeDriver for Selenium WebDriver
+            driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();  // Maximize the browser window for better visibility
+            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/dynamic_controls");  // Navigate to the dynamic controls page
 
-            // Initialize WebDriverWait for explicit waiting
-            _wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
-
-            // Navigate to the Dynamic Controls page of HerokuApp
-            _driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/dynamic_controls");
-
-            // Initialize the page object for interacting with dynamic controls
-            _dynamicControls = new DynamicControlsPage(_driver);
+            // Create an instance of the page object model to interact with the page
+            dynamicControlsPage = new DynamicControlsPage(driver);
         }
 
-        /// <summary>
-        /// TearDown method to quit the WebDriver after each test.
-        /// </summary>
+        // TearDown method that runs after each test
         [TearDown]
         public void TearDown()
         {
-            // Close the browser and quit WebDriver after each test to free resources
-            _driver.Quit();
-            _driver.Dispose();
-        }
-
-        /// <summary>
-        /// Test case to verify the page title of the Dynamic Controls page.
-        /// </summary>
-        [Test]
-        public void Test_GetTitle()
-        {
-            // Get the title of the current page
-            string title = _dynamicControls.GetTitle();
-
-            // Assert that the title matches the expected value
-            Assert.AreEqual("Dynamic Controls", title, "The title should match 'Dynamic Controls'.");
-        }
-
-        /// <summary>
-        /// Test case to enable the checkbox and verify that it becomes enabled.
-        /// </summary>
-        [Test]
-        public void Test_EnableCheckbox()
-        {
-            // Log the current page title for debugging purposes
-            Console.WriteLine("Page Title: " + _dynamicControls.GetTitle());
-
-            try
+            if (driver != null)
             {
-                // Perform the operation to enable the checkbox
-                _dynamicControls.EnableCheckbox();
-                Console.WriteLine("Checkbox enable operation initiated...");
-
-                // Use explicit wait to ensure the checkbox is enabled
-                bool isCheckboxEnabled = _wait.Until(d => _dynamicControls.IsCheckboxEnabled());
-
-                // Log and assert the checkbox state
-                Console.WriteLine($"Is checkbox enabled after operation: {isCheckboxEnabled}");
-                Assert.IsTrue(isCheckboxEnabled, "Checkbox should be enabled but is not.");
-            }
-            catch (WebDriverTimeoutException)
-            {
-                // Fail the test if the checkbox does not become enabled within the expected time
-                Assert.Fail("Checkbox did not become enabled within the expected time.");
-            }
-            catch (NoSuchElementException ex)
-            {
-                // Fail the test if there is an issue with finding the checkbox element
-                Assert.Fail($"Failed due to missing element: {ex.Message}");
+                driver.Quit();  // Close the browser and clean up resources
+                driver.Dispose();  // Dispose of the WebDriver instance
+                driver = null;
             }
         }
 
-        /// <summary>
-        /// Test case to disable the checkbox and verify that it becomes disabled.
-        /// </summary>
+        // Test method for adding and removing the checkbox
         [Test]
-        public void Test_DisableCheckbox()
+        public void TestAddAndRemoveCheckbox()
         {
-            // Log the current title for debugging purposes
-            Console.WriteLine("Page Title: " + _dynamicControls.GetTitle());
+            // Test removing the checkbox and assert that it's no longer displayed
+            dynamicControlsPage.RemoveCheckbox();
+            Assert.False(dynamicControlsPage.IsCheckboxDisplayed(), "Checkbox was not removed.");
 
-            // Perform the operation to disable the checkbox
-            _dynamicControls.DisableCheckbox();
+            // Test adding the checkbox and assert that it is displayed
+            dynamicControlsPage.AddCheckbox();
+            Assert.True(dynamicControlsPage.IsCheckboxDisplayed(), "Checkbox was not added.");
+        }
 
-            // Wait for the checkbox to be disabled and check its "disabled" attribute
-            var checkbox = _driver.FindElement(By.Id("checkbox"));
-            var isCheckboxDisabled = checkbox.GetAttribute("disabled") != null;
+        // Test method for enabling and disabling the textbox
+        [Test]
+        public void TestEnableAndDisableTextbox()
+        {
+            // Test enabling the textbox and assert that it's enabled
+            dynamicControlsPage.EnableTextbox();
+            Assert.True(dynamicControlsPage.IsTextBoxEnabled(), "Textbox was not enabled.");
 
-            // Assert that the checkbox is disabled
-            Assert.IsFalse(isCheckboxDisabled, "Checkbox should be disabled but is not.");
+            // Test disabling the textbox and assert that it's disabled
+            dynamicControlsPage.DisableTextbox();
+            Assert.False(dynamicControlsPage.IsTextBoxEnabled(), "Textbox was not disabled.");
+        }
+
+        // Test method for loading and completion messages when interacting with dynamic controls
+        [Test]
+        public void TestLoadingAndCompletionMessages()
+        {
+            // Trigger the action that shows the loading message (e.g., clicking the "Remove" button)
+            dynamicControlsPage.ClickRemoveButton();
+            Console.WriteLine("Remove button clicked.");
+
+            // Ensure that the loading message appears and verify it's not null
+            string loadingMessage = dynamicControlsPage.GetLoadingMessage();
+            Assert.IsNotNull(loadingMessage, "Loading message did not appear.");
+            Console.WriteLine($"Loading message: {loadingMessage}");
+
+            // Wait for the loading message to disappear and verify it
+            dynamicControlsPage.WaitForLoadingToDisappear();
+            Console.WriteLine("Loading message disappeared.");
+
+            // Retrieve and verify the completion message after the operation is complete
+            string completionMessage = dynamicControlsPage.GetCompletionMessage();
+            Assert.IsNotNull(completionMessage, "Completion message did not appear.");
+            Console.WriteLine($"Completion message: {completionMessage}");
+
+            // Assert that the completion message matches the expected value
+            Assert.AreEqual("It's gone!", completionMessage, "Completion message did not match expected value.");
+        }
+
+        // Test method for the functionality of the Enable and Disable buttons
+        [Test]
+        public void TestEnableAndDisableButtonFunctionality()
+        {
+            // Trigger the action to enable the textbox and verify that the textbox is enabled
+            dynamicControlsPage.ClickEnableButton();
+            Console.WriteLine("Enable button clicked.");
+
+            // Ensure that the loading message appears for enabling the textbox
+            string enableLoadingMessage = dynamicControlsPage.GetLoadingMessage();
+            Assert.IsNotNull(enableLoadingMessage, "Loading message for enabling the text box did not appear.");
+            Console.WriteLine($"Loading message (Enable): {enableLoadingMessage}");
+
+            // Wait for the loading message to disappear and verify it
+            dynamicControlsPage.WaitForLoadingToDisappear();
+            Console.WriteLine("Loading message for enabling the text box disappeared.");
+
+            // Verify that the textbox is enabled
+            bool IsTextBoxEnabled = dynamicControlsPage.IsTextBoxEnabled();
+            Assert.IsTrue(IsTextBoxEnabled, "The text box was not enabled.");
+            Console.WriteLine("The text box is enabled.");
+
+            // Trigger the action to disable the textbox and verify that the textbox is disabled
+            dynamicControlsPage.ClickDisableButton();
+            Console.WriteLine("Disable button clicked.");
+
+            // Ensure that the loading message appears for disabling the textbox
+            string disableLoadingMessage = dynamicControlsPage.GetLoadingMessage();
+            Assert.IsNotNull(disableLoadingMessage, "Loading message for disabling the text box did not appear.");
+            Console.WriteLine($"Loading message (Disable): {disableLoadingMessage}");
+
+            // Wait for the loading message to disappear and verify it
+            dynamicControlsPage.WaitForLoadingToDisappear();
+            Console.WriteLine("Loading message for disabling the text box disappeared.");
+
+            // Verify that the textbox is disabled
+            bool isTextBoxDisabled = !dynamicControlsPage.IsTextBoxEnabled();
+            Assert.IsTrue(isTextBoxDisabled, "The text box was not disabled.");
+            Console.WriteLine("The text box is disabled.");
         }
     }
 }

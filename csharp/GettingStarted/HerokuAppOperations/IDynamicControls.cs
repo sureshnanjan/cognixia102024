@@ -6,39 +6,47 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HerokuAppOperations
+namespace HerokuAppWebdriverAdapter
 {
-    /// <summary>
-    /// Interface for dynamic controls in the HerokuApp, including methods to enable, disable,
-    /// and check the status of a checkbox control, as well as retrieve a title.
-    /// </summary>
-    public interface IDynamicControls
+    public interface IDynamicControlsPage
     {
-        /// <summary>
-        /// Retrieves the title associated with the dynamic controls.
-        /// </summary>
-        /// <returns>The title of the dynamic controls as a string.</returns>
-        public string GetTitle();
+        // Adds a checkbox to the page
+        void AddCheckbox();
 
-        /// <summary>
-        /// Enables the checkbox control.
-        /// </summary>
-        public void EnableCheckbox();
+        // Removes a checkbox from the page
+        void RemoveCheckbox();
 
-        /// <summary>
-        /// Disables the checkbox control.
-        /// </summary>
-        public void DisableCheckbox();
+        // Checks if the checkbox is displayed
+        bool IsCheckboxDisplayed();
 
-        /// <summary>
-        /// Checks if the checkbox is enabled.
-        /// </summary>
-        /// <returns>True if the checkbox is enabled; otherwise, false.</returns>
-        public bool IsCheckboxEnabled();
+        // Enables the input textbox
+        void EnableTextbox();
+
+        // Disables the input textbox
+        void DisableTextbox();
+
+        // Checks if the textbox is enabled
+        bool IsTextBoxEnabled();
+
+        // Retrieves the loading message during operations
+        string GetLoadingMessage();
+
+        // Retrieves the completion message after the operation
+        string GetCompletionMessage();
+
+        // Method to wait for the loading message to disappear
+        void WaitForLoadingToDisappear();
+
+        // **New method to handle clicking the remove button**
+        void ClickRemoveButton();
+
+        // Method to handle clicking the enable button
+        void ClickEnableButton();
+
+        // Method to handle clicking the disable button
+        void ClickDisableButton();
+
+
     }
 }
