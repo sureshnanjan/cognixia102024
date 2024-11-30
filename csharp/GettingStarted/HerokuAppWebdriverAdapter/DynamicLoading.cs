@@ -6,48 +6,123 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 
 namespace HerokuAppWebdriverAdapter
 {
-    public class DynamicLoading  // Make sure this is the correct class name
+    public class DynamicLoadingPage : IDynamicLoadingPage
     {
-        private IWebDriver driver;
-        private By startButton;
-        private By loadedElement;
-        private By pageTitle;
-        private By opt1button;
+        private readonly IWebDriver _driver;
+        private readonly WebDriverWait _wait;
 
-        public DynamicLoading(IWebDriver driver)
+        private readonly By _hiddenElement = By.Id("finish"); // Locator for hidden element
+        private readonly By _loadingIndicator2 = By.Id("loading"); // Locator for the Loading message
+
+
+        // Locators
+        private readonly By _startButton = By.CssSelector("#start button");
+        private readonly By _loadingIndicator = By.Id("loading");
+        private readonly By _loadedText = By.Id("finish");
+        // Locators
+        private readonly By _header = By.TagName("h3");
+        private readonly By _paragraphs = By.TagName("p");
+        private readonly By _subHeader = By.TagName("h4");
+        public DynamicLoadingPage(IWebDriver driver)
         {
-            this.driver = driver;
-            this.startButton = By.XPath("//*[@id=\"start\"]/button");
-            this.loadedElement = By.Id("loaded");
-            this.pageTitle = By.TagName("h3");
-            this.opt1button = By.XPath("//*[@id=\"content\"]/div/a[1]");
+            _driver = driver;
+            _wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
+        }
+        public string GetHeaderText()
+        {
+            return _driver.FindElement(_header).Text;
+        }
+        public string GetSubHeaderText()
+        {
+            return _driver.FindElement(_subHeader).Text;
+        }
+        public string GetFirstParagraphText()
+        {
+            var paragraphs = _driver.FindElements(_paragraphs);
+            return paragraphs.Count > 0 ? paragraphs[0].Text : string.Empty;
         }
 
-        public string GetTitle()
+        public string GetSecondParagraphText()
         {
-            return driver.FindElement(pageTitle).Text;
+            var paragraphs = _driver.FindElements(_paragraphs);
+            return paragraphs.Count > 1 ? paragraphs[1].Text : string.Empty;
         }
 
-        public void StartLoading()
+        public void NavigateToPage(string url)
         {
-            driver.FindElement(opt1button).Click();
-            //System.Threading.Thread.Sleep(3000);
-            driver.FindElement(startButton).Click();
+            _driver.Navigate().GoToUrl(url);
         }
 
-        public bool IsElementVisibleAfterLoading()
+        public void ClickStartButton()
+        {
+            _driver.FindElement(_startButton).Click();
+        }
+
+        public bool IsLoadingIndicatorDisplayed()
+        {
+            return _driver.FindElement(_loadingIndicator).Displayed;
+        }
+
+        public void WaitForLoadingToComplete()
+        {
+            _wait.Until(d => !_driver.FindElement(_loadingIndicator).Displayed);
+        }
+
+        public bool IsDynamicallyLoadedElementDisplayed()
+        {
+            return _driver.FindElement(_loadedText).Displayed;
+        }
+
+        public string GetLoadedElementText()
+        {
+            return _driver.FindElement(_loadedText).Text;
+        }
+
+        public bool IsElementDisplayed(string locator)
         {
             try
             {
-                return driver.FindElement(loadedElement).Displayed;
+                return _driver.FindElement(By.CssSelector(locator)).Displayed;
             }
             catch (NoSuchElementException)
             {
                 return false;
             }
+        }
+        public bool IsHiddenElementVisible()
+        {
+            return _driver.FindElement(_hiddenElement).Displayed;
+        }
+
+        public bool IsLoadingIndicatorDisplayed2()
+        {
+            return _driver.FindElement(_loadingIndicator).Displayed;
+        }
+        public void WaitForLoadingToComplete2()
+        {
+            _wait.Until(driver => !driver.FindElement(_loadingIndicator).Displayed);
+        }
+
+        // Locator for hyperlinks
+        private readonly By _hyperlinks = By.CssSelector("#content a");
+
+        public int GetHyperlinkCount()
+        {
+            return _driver.FindElements(_hyperlinks).Count;
+        }
+
+        public IList<string> GetHyperlinkTexts()
+        {
+            return _driver.FindElements(_hyperlinks).Select(link => link.Text).ToList();
+        }
+
+        public IList<string> GetHyperlinkUrls()
+        {
+            return _driver.FindElements(_hyperlinks).Select(link => link.GetAttribute("href")).ToList();
         }
     }
 }

@@ -4,37 +4,44 @@
 // distribution of this code, or any portion of it, may result in civil and criminal penalties and will be prosecuted
 // to the maximum extent possible under the law.
 // --------------------------------------------------------------------------------------------------------------------
-
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HerokuAppOperations
+namespace HerokuAppWebdriverAdapter
 {
-    /// <summary>
-    /// Interface for dynamic loading operations in the HerokuApp.
-    /// Provides methods to retrieve the title, start a loading operation, 
-    /// and check the visibility of an element after loading is complete.
-    /// </summary>
-    public interface IDynamicLoading
+    public interface IDynamicLoadingPage
     {
-        /// <summary>
-        /// Retrieves the title of the dynamic loading section.
-        /// </summary>
-        /// <returns>The title of the dynamic loading section as a string.</returns>
-        public string GetTitle();
+        // Navigate to the dynamic loading page
+        void NavigateToPage(string url);
 
-        /// <summary>
-        /// Starts the loading operation.
-        /// </summary>
-        public void StartLoading();
+        // Click the Start button
+        void ClickStartButton();
 
-        /// <summary>
-        /// Checks if a specific element is visible after the loading operation completes.
-        /// </summary>
-        /// <returns>True if the element is visible after loading; otherwise, false.</returns>
-        public bool IsElementVisibleAfterLoading();
+        // Check if the loading indicator is displayed
+        bool IsLoadingIndicatorDisplayed();
+
+        // Wait for the loading to complete
+        void WaitForLoadingToComplete();
+
+        // Check if the dynamically loaded element is displayed
+        bool IsDynamicallyLoadedElementDisplayed();
+
+        // Get the text of the dynamically loaded element
+        string GetLoadedElementText();
+
+        // Validate if a given element is displayed on the page
+        bool IsElementDisplayed(string locator);
+
+        // Get the <h4> text
+        string GetSubHeaderText();
+
+        // Get the count of hyperlink options
+        int GetHyperlinkCount();
+
+        // Get the list of hyperlink texts
+        IList<string> GetHyperlinkTexts();
+
+        // Get the list of hyperlink URLs
+        IList<string> GetHyperlinkUrls();
     }
 }
+
