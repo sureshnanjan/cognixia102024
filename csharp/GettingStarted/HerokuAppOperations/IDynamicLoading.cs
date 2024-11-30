@@ -4,44 +4,84 @@
 // distribution of this code, or any portion of it, may result in civil and criminal penalties and will be prosecuted
 // to the maximum extent possible under the law.
 // --------------------------------------------------------------------------------------------------------------------
+
 using System;
+using System.Collections.Generic;
 
 namespace HerokuAppWebdriverAdapter
 {
+    /// <summary>
+    /// Interface for interacting with the Dynamic Loading page on HerokuApp.
+    /// </summary>
+    /// <remarks>
+    /// Provides methods for navigating the page, interacting with dynamically loaded elements,
+    /// verifying content, and retrieving link details.
+    /// </remarks>
     public interface IDynamicLoadingPage
     {
-        // Navigate to the dynamic loading page
+        /// <summary>
+        /// Navigates to the specified dynamic loading page URL.
+        /// </summary>
+        /// <param name="url">The URL of the dynamic loading page.</param>
         void NavigateToPage(string url);
 
-        // Click the Start button
+        /// <summary>
+        /// Clicks the "Start" button to initiate dynamic content loading.
+        /// </summary>
         void ClickStartButton();
 
-        // Check if the loading indicator is displayed
+        /// <summary>
+        /// Checks whether the loading indicator is currently displayed.
+        /// </summary>
+        /// <returns>True if the loading indicator is displayed; otherwise, false.</returns>
         bool IsLoadingIndicatorDisplayed();
 
-        // Wait for the loading to complete
+        /// <summary>
+        /// Waits for the loading process to complete and for the loading indicator to disappear.
+        /// </summary>
         void WaitForLoadingToComplete();
 
-        // Check if the dynamically loaded element is displayed
+        /// <summary>
+        /// Checks whether the dynamically loaded element is currently displayed on the page.
+        /// </summary>
+        /// <returns>True if the element is displayed; otherwise, false.</returns>
         bool IsDynamicallyLoadedElementDisplayed();
 
-        // Get the text of the dynamically loaded element
+        /// <summary>
+        /// Retrieves the text content of the dynamically loaded element.
+        /// </summary>
+        /// <returns>The text of the loaded element.</returns>
         string GetLoadedElementText();
 
-        // Validate if a given element is displayed on the page
+        /// <summary>
+        /// Checks whether a specific element, identified by its locator, is displayed on the page.
+        /// </summary>
+        /// <param name="locator">The CSS selector or locator for the element.</param>
+        /// <returns>True if the element is displayed; otherwise, false.</returns>
         bool IsElementDisplayed(string locator);
 
-        // Get the <h4> text
+        /// <summary>
+        /// Retrieves the sub-header text (<h4>) displayed on the page.
+        /// </summary>
+        /// <returns>The sub-header text.</returns>
         string GetSubHeaderText();
 
-        // Get the count of hyperlink options
+        /// <summary>
+        /// Gets the total count of hyperlinks available on the page.
+        /// </summary>
+        /// <returns>The number of hyperlinks.</returns>
         int GetHyperlinkCount();
 
-        // Get the list of hyperlink texts
+        /// <summary>
+        /// Retrieves the text of all hyperlinks available on the page.
+        /// </summary>
+        /// <returns>A list of hyperlink texts.</returns>
         IList<string> GetHyperlinkTexts();
 
-        // Get the list of hyperlink URLs
+        /// <summary>
+        /// Retrieves the URLs of all hyperlinks available on the page.
+        /// </summary>
+        /// <returns>A list of hyperlink URLs.</returns>
         IList<string> GetHyperlinkUrls();
     }
 }
-

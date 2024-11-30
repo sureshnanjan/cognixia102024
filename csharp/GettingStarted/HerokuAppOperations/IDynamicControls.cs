@@ -9,50 +9,89 @@ using System;
 
 namespace HerokuAppWebdriverAdapter
 {
+    /// <summary>
+    /// Interface for interacting with the Dynamic Controls page on HerokuApp.
+    /// </summary>
+    /// <remarks>
+    /// Provides methods for performing actions such as adding/removing checkboxes, enabling/disabling textboxes, 
+    /// and retrieving page information or status messages. Useful for automating tests that verify dynamic behavior.
+    /// </remarks>
     public interface IDynamicControlsPage
     {
-        // Adds a checkbox to the page
+        /// <summary>
+        /// Adds a checkbox to the page.
+        /// </summary>
         void AddCheckbox();
 
-        // Removes a checkbox from the page
+        /// <summary>
+        /// Removes a checkbox from the page.
+        /// </summary>
         void RemoveCheckbox();
 
-        // Checks if the checkbox is displayed
+        /// <summary>
+        /// Checks whether the checkbox is currently displayed on the page.
+        /// </summary>
+        /// <returns>True if the checkbox is displayed; otherwise, false.</returns>
         bool IsCheckboxDisplayed();
 
-        // Enables the input textbox
+        /// <summary>
+        /// Enables the input textbox on the page.
+        /// </summary>
         void EnableTextbox();
 
-        // Disables the input textbox
+        /// <summary>
+        /// Disables the input textbox on the page.
+        /// </summary>
         void DisableTextbox();
 
-        // Checks if the textbox is enabled
+        /// <summary>
+        /// Checks whether the input textbox is enabled.
+        /// </summary>
+        /// <returns>True if the textbox is enabled; otherwise, false.</returns>
         bool IsTextBoxEnabled();
 
-        // Retrieves the loading message during operations
+        /// <summary>
+        /// Retrieves the loading message displayed during operations.
+        /// </summary>
+        /// <returns>The text of the loading message.</returns>
         string GetLoadingMessage();
 
-        // Retrieves the completion message after the operation
+        /// <summary>
+        /// Retrieves the completion message displayed after an operation is completed.
+        /// </summary>
+        /// <returns>The text of the completion message.</returns>
         string GetCompletionMessage();
 
-        // Method to wait for the loading message to disappear
+        /// <summary>
+        /// Waits until the loading message disappears.
+        /// </summary>
         void WaitForLoadingToDisappear();
 
-        // **New method to handle clicking the remove button**
+        /// <summary>
+        /// Clicks the button to remove the checkbox.
+        /// </summary>
         void ClickRemoveButton();
 
-        // Method to handle clicking the enable button
+        /// <summary>
+        /// Clicks the button to enable the input textbox.
+        /// </summary>
         void ClickEnableButton();
 
-        // Method to handle clicking the disable button
+        /// <summary>
+        /// Clicks the button to disable the input textbox.
+        /// </summary>
         void ClickDisableButton();
 
-        // Method to retrieve the title (<h4>) text
+        /// <summary>
+        /// Retrieves the title text (<h4>) displayed on the page.
+        /// </summary>
+        /// <returns>The title text.</returns>
         string GetPageTitle();
 
-        // Method to retrieve the description (<p>) text
+        /// <summary>
+        /// Retrieves the description text (<p>) displayed on the page.
+        /// </summary>
+        /// <returns>The description text.</returns>
         string GetPageDescription();
-
-
     }
 }

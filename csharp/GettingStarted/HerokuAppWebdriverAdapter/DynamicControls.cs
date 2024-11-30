@@ -13,7 +13,7 @@ namespace HerokuAppWebdriverAdapter
 {
     // Class that represents the "Dynamic Controls" page in the Heroku App, and implements IDynamicControlsPage interface.
     // This class provides various methods to interact with and retrieve information from elements on the page.
-    public class DynamicControlsPage : IDynamicControlsPage
+    public class DynamicControls : IDynamicControlsPage
     {
         private readonly IWebDriver _driver;  // WebDriver instance to interact with the browser
         private readonly WebDriverWait _wait; // WebDriverWait instance for waiting until certain conditions are met
@@ -30,7 +30,7 @@ namespace HerokuAppWebdriverAdapter
         private readonly By pageDescriptionLocator = By.TagName("p");
 
         // Constructor that initializes the WebDriver and WebDriverWait
-        public DynamicControlsPage(IWebDriver driver)
+        public DynamicControls(IWebDriver driver)
         {
             _driver = driver ?? throw new ArgumentNullException(nameof(driver));  // Ensure driver is not null
             _wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));  // Set the wait time to 10 seconds

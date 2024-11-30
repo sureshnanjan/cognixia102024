@@ -5,89 +5,121 @@
 // to the maximum extent possible under the law.
 // --------------------------------------------------------------------------------------------------------------------
 
-using System;  // Import system utilities
-using HerokuAppOperations;  // Import operations related to dynamic content
-using HerokuAppWebdriverAdapter;  // Import the WebDriver adapter for dynamic content interactions
-using NUnit.Framework;  // Import NUnit framework for unit testing
-using OpenQA.Selenium;  // Import Selenium WebDriver for browser automation
-using OpenQA.Selenium.Chrome;  // Import ChromeDriver for Selenium
+using HerokuAppOperations;
+using HerokuAppWebdriverAdapter;
+using OpenQA.Selenium;
 
 namespace HerokuAppScenarios
 {
     /// <summary>
-    /// Test class for validating dynamic content on the Heroku app's dynamic content page.
+    /// This test class contains tests to verify dynamic content on the page:
+    /// https://the-internet.herokuapp.com/dynamic_content.
+    /// It ensures the content changes dynamically after page reloads and validates column data.
     /// </summary>
-    [TestFixture]  // Indicates this class contains NUnit tests
-    public class DynamicContentTest
+    [TestFixture]
+    public class DynamicContentTests
     {
-        private ChromeDriver driver;  // WebDriver instance to interact with the browser
-        private IDynamicContent dynamicContent;  // DynamicContent interface for interacting with dynamic content
+        private IWebDriver _driver;
+        private IDynamicContent _dynamicContentPage;
 
         /// <summary>
-        /// SetUp method to initialize resources before each test.
-        /// It creates a new WebDriver instance, maximizes the window, and navigates to the dynamic content page.
+        /// Initializes the WebDriver before running each test.
+        /// The WebDriver is used to interact with the browser for automated testing.
         /// </summary>
         [SetUp]
         public void SetUp()
         {
-            try
-            {
-                // Initialize WebDriver (using ChromeDriver for Chrome browser)
-                driver = new ChromeDriver();
-                driver.Manage().Window.Maximize();  // Maximize the browser window
-                driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/dynamic_content");  // Navigate to the dynamic content page
+            // Create an instance of Chrome WebDriver
+            _driver = new OpenQA.Selenium.Chrome.ChromeDriver();
+            _dynamicContentPage = new DynamicContent(_driver);
 
-                // Initialize the dynamic content page object
-                dynamicContent = new DynamicContent(driver);  // Instantiate the DynamicContent object passing the WebDriver
-            }
-            catch (Exception ex)
+            // Navigate to the dynamic content page
+            // This URL contains dynamic elements that change on page reload.
+            _driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/dynamic_content");
+        }
+
+        /// <summary>
+        /// Test to verify the content of dynamic columns on the page.
+        /// It captures the text within each column and validates its presence.
+        /// </summary>
+        [Test]
+        public void VerifyDynamicContentOfColumns()
+        {
+            // Locate all div elements with the class 'large-10 columns'
+            // These elements represent the dynamic content blocks on the page.
+            var columnElements = _driver.FindElements(By.CssSelector("div.large-10.columns"));
+
+            // Check that at least three dynamic content columns are present
+            if (columnElements.Count >= 3)
             {
-                Assert.Fail($"SetUp failed: {ex.Message}");
+                // Extract and log the text content of each column
+                string firstColumnContent = columnElements[0].Text;
+                string secondColumnContent = columnElements[1].Text;
+                string thirdColumnContent = columnElements[2].Text;
+
+                // Output column content to the console for debugging or review
+                Console.WriteLine("First Column Content: " + firstColumnContent);
+                Console.WriteLine("Second Column Content: " + secondColumnContent);
+                Console.WriteLine("Third Column Content: " + thirdColumnContent);
+
+                // Validate that each column contains text (should not be empty)
+                Assert.IsNotEmpty(firstColumnContent, "First column content should not be empty.");
+                Assert.IsNotEmpty(secondColumnContent, "Second column content should not be empty.");
+                Assert.IsNotEmpty(thirdColumnContent, "Third column content should not be empty.");
+            }
+            else
+            {
+                // Fail the test if fewer than three columns are found
+                Assert.Fail("Not enough dynamic content columns found on the page.");
             }
         }
 
         /// <summary>
-        /// TearDown method to clean up after each test.
-        /// It ensures the WebDriver instance is disposed of properly to avoid memory leaks.
+        /// Test to verify the title, description, and hyperlinks in the dynamic content page.
+        /// It checks the title, paragraph contents, and hyperlinks for accuracy.
+        /// </summary>
+        [Test]
+        public void VerifyTitleDescriptionAndHyperlinkInDynamicContentPage()
+        {
+            // Navigate to the Dynamic Content page (this step can be skipped as it's already done in SetUp)
+            //_dynamicContentPage.NavigateToPage("https://the-internet.herokuapp.com/dynamic_content");
+
+            // Verify the <h3> title text
+            string titleText = _dynamicContentPage.GetHeaderText();
+            Assert.AreEqual("Dynamic Content", titleText, "The <h3> title text is incorrect!");
+
+            // Verify the description in the first <p> tag
+            string firstParagraph = _dynamicContentPage.GetFirstParagraphText();
+            Assert.IsTrue(firstParagraph.Contains("This example demonstrates the ever"),
+                          "The first paragraph text is incorrect!");
+
+            // Verify the description in the second <p> tag
+            string secondParagraph = _dynamicContentPage.GetSecondParagraphText();
+            Assert.IsTrue(secondParagraph.Contains("To make some of the content static append "),
+                          "The second paragraph text is incorrect!");
+
+            // Verify the hyperlink in the second <p> tag
+            IList<string> hyperlinkTexts = _dynamicContentPage.GetHyperlinkTexts();
+            IList<string> hyperlinkUrls = _dynamicContentPage.GetHyperlinkUrls();
+
+            Assert.IsTrue(hyperlinkTexts.Contains("click here"),
+                          "The hyperlink text is missing or incorrect!");
+            Assert.IsTrue(hyperlinkUrls.Contains("https://the-internet.herokuapp.com/dynamic_content?with_content=static"),
+                          "The hyperlink URL is missing or incorrect!");
+        }
+
+        /// <summary>
+        /// Closes and disposes of the WebDriver instance after tests are completed.
+        /// Ensures proper cleanup to avoid resource leaks.
         /// </summary>
         [TearDown]
         public void TearDown()
         {
-            try
-            {
-                // Dispose of the WebDriver to prevent memory leaks or stale connections
-                if (driver != null)
-                {
-                    driver.Quit();  // Quit the WebDriver and close all open browser windows
-                    driver.Dispose();  // Dispose the WebDriver instance
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error during TearDown: {ex.Message}");
-            }
-            finally
-            {
-                driver = null;  // Set the driver to null to ensure it's not used again
-            }
-        }
+            // Quit the WebDriver instance and close the browser
+            _driver.Quit();
 
-        /// <summary>
-        /// Test method for validating dynamic content.
-        /// It checks that the page title and content text are not empty, ensuring dynamic content is loaded.
-        /// </summary>
-        [Test]
-        public void TestDynamicContent()
-        {
-            // Retrieve the title and content text using methods from the DynamicContent class
-            string pageTitle = dynamicContent.GetTitle();  // Call GetTitle method from DynamicContent to get the page title
-            string contentText = dynamicContent.GetContentText();  // Call GetContentText method from DynamicContent to get the content text
-
-            // Perform some assertions to validate the content
-            // Assert that the page title is not empty
-            Assert.IsNotEmpty(pageTitle, "Title should not be empty.");
-            // Assert that the content text is not empty
-            Assert.IsNotEmpty(contentText, "Content text should not be empty.");
+            // Dispose of WebDriver resources to ensure clean execution
+            _driver.Dispose();
         }
     }
 }
