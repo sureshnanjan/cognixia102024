@@ -1,69 +1,88 @@
-﻿/*
- 
-Licensed to the Software Freedom Conservancy (SFC) under one
-or more contributor license agreements. See the NOTICE file
-distributed with this work for additional information
-regarding copyright ownership. The SFC licenses this file
-to you under the Apache License, Version 2.0 (the
-"License"); you may not use this file except in compliance
-with the License. You may obtain a copy of the License at
-http://www.apache.org/licenses/LICENSE-2.0 
-Unless required by applicable law or agreed to in writing,
-software distributed under the License is distributed on an
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, either express or implied. See the License for the
-specific language governing permissions and limitations
-under the License.
- 
-*/
-
-using System;
-using HerokuAppOperations;
+﻿using HerokuAppOperations;
+using HerokuAppWebdriverAdapter;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.DevTools;
+using OpenQA.Selenium.DevTools.V107.Network; // Can use V107 or just OpenQA.Selenium.DevTools if version-specific namespaces are unnecessary
 using OpenQA.Selenium.Support.UI;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace HerokuAppWebdriverAdapter
+public class SlowResources : HerokuAppCommon, ISlowResources
 {
-    /// <summary>
-    /// Represents the Slow Resources page on the HerokuApp website.
-    /// Provides functionality to interact with and verify the page, including waiting for slow-loading content.
-    /// </summary>
-    public class SlowResources : HerokuAppCommon, ISlowResources
+    private readonly By header = By.TagName("h3");
+    private readonly By content = By.TagName("p");
+    private IWebDriver driver;
+    private IDevTools devTools;
+    private string capturedUrl;
+
+    public SlowResources()
     {
-        // Locator for the page header element
-        private readonly By header = By.TagName("h3");
+        // Initialize WebDriver with ChromeOptions for DevTools access
+        ChromeOptions options = new ChromeOptions();
+        driver = new ChromeDriver(options);
 
-        // Locator for the content paragraph element
-        private readonly By content = By.TagName("p");
+        // Initialize DevTools session
+        devTools = ((ChromeDriver)driver).GetDevTools();
+    }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="SlowResources"/> class.
-        /// </summary>
-        /// <param name="driver">The Selenium WebDriver used to interact with the page.</param>
-        public SlowResources(IWebDriver driver) : base(driver)
+    public void NavigateToPage()
+    {
+        driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/slow");
+    }
+
+    public string GetPageTitle()
+    {
+        return driver.Title;
+    }
+
+    public string GetHeaderText()
+    {
+        return driver.FindElement(header).Text;
+    }
+
+    public string GetContentAfterLoading(int timeoutInSeconds)
+    {
+        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutInSeconds));
+        wait.Until(d => d.FindElement(content).Displayed);
+        return driver.FindElement(content).Text;
+    }
+
+    public async Task<dynamic> GetNetworkResponseAsync(string url)
+    {
+        // Initialize response variable to hold the network data
+        dynamic response = null;
+
+        // Enable network tracking through DevTools
+        await devTools.SendCommandAsync(Network.Enable(new Network.EnableCommandSettings
         {
-        }
+            MaxPostDataSize = 0 // Optional: Set a limit for POST data size if needed
+        }));
 
-        /// <summary>
-        /// Retrieves the header text from the Slow Resources page.
-        /// </summary>
-        /// <returns>A string representing the header text of the page.</returns>
-        public string GetHeaderText()
+        // Attach an event listener for network responses
+        devTools.Network.ResponseReceived += (sender, e) =>
         {
-            return driver.FindElement(header).Text;
-        }
+            if (e.Response.Url.Contains(url))
+            {
+                response = new
+                {
+                    Method = e.Request.Method,
+                    Url = e.Response.Url,
+                    StatusCode = e.Response.Status,
+                    StatusText = e.Response.StatusText
+                };
+            }
+        };
 
-        /// <summary>
-        /// Waits for the content to load and retrieves the content text.
-        /// The method waits until the content element is displayed within the specified timeout period.
-        /// </summary>
-        /// <param name="timeoutInSeconds">The time to wait for the content to load (in seconds).</param>
-        /// <returns>A string representing the content text of the page after it has loaded.</returns>
-        public string GetContentAfterLoading(int timeoutInSeconds)
-        {
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutInSeconds));
-            wait.Until(d => d.FindElement(content).Displayed);
-            return driver.FindElement(content).Text;
-        }
+        // Wait for the network response
+        await Task.Delay(5000); // Adjust the wait time depending on when the network response is expected
+
+        return response;
+    }
+
+    public void CloseBrowser()
+    {
+        driver.Quit();
     }
 }
