@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HerokuAppOperations;
+using HerokuAppWebdriverAdapter;
 
 namespace HerokuAppScenarios
 {
@@ -13,7 +14,7 @@ namespace HerokuAppScenarios
         [SetUp]
         public void SetUp()
         {
-            tables = new SortableTables();  
+            tables = new SortableTables();
         }
         [Test]
         public void Test_GetRowData_ValidCell()
@@ -40,7 +41,7 @@ namespace HerokuAppScenarios
             // Act & Assert
             var ex = Assert.Throws<ArgumentOutOfRangeException>(() =>
             {
-               tables.GetRowData(invalidRowIndex, columnIndex);
+                tables.GetRowData(invalidRowIndex, columnIndex);
             });
             Assert.That(ex.Message, Does.Contain("Row index is out of range."));
         }
@@ -91,7 +92,7 @@ namespace HerokuAppScenarios
             tables.SortByColumn(columnIndex);
 
             // Assert
-            string firstCellBefore =tables.GetRowData(0, columnIndex);
+            string firstCellBefore = tables.GetRowData(0, columnIndex);
             string firstCellAfter = tables.GetRowData(1, columnIndex);
 
             Assert.AreNotEqual(firstCellBefore, firstCellAfter, "The table was not sorted as expected.");
