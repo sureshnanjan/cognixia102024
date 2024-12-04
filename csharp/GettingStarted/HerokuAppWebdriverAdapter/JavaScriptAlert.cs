@@ -24,7 +24,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HerokuAppScenarios
+namespace HerokuAppWebdriverAdapter
 {
     // Class implementing JavaScript alert handling functionality
     public class JavaScriptAlert : HerokuAppCommon, IJavaScriptAlerts

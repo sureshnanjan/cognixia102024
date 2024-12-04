@@ -18,25 +18,37 @@ under the License.
 */
 
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System; // Imports the System namespace, providing fundamental classes like string, int, etc.
+using System.Collections.Generic; // Imports the collection classes (List, Dictionary, etc.)
+using System.Linq; // Imports LINQ methods for querying collections
+using System.Text; // Imports the Text namespace, provides classes for working with text encoding and manipulation
+using System.Threading.Tasks; // Imports support for asynchronous programming and tasks
 
+// Defining the namespace for the application, used for organizing classes
 namespace HerokuAppOperations
 {
+    // Defining the interface IChallengingDOM, which will be implemented by classes that interact with a web page's DOM
     public interface IChallengingDOM
     {
+        // Method declaration for getting the title of the page (returns a string)
         public string GetPageTitle();
 
-        // Method to get the count of rows in the table
+        // Method declaration to get the count of rows in a table (returns an integer)
+        // This method will be used to determine how many rows are present in a table on the page
         public int GetTableRowCount();
 
-        // Method to click on an edit button for a specific row
-        public void ClickEditButton(int rowIndex);
+        // Method declaration for clicking the edit button of a specific row in the table (parameter: rowIndex)
+        // The rowIndex parameter allows specifying which row's edit button to click
+        public bool ClickEditButton(int rowIndex);
 
-        // Method to click on a delete button for a specific row
-        public void ClickDeleteButton(int rowIndex);
+        // Method declaration for clicking the delete button of a specific row in the table (parameter: rowIndex)
+        // Similar to ClickEditButton, but it is used to delete the row at the specified index
+        public bool ClickDeleteButton(int rowIndex);
+        public bool ClickFirstButton();
+        public bool ClickSecondButton();
+        public bool ClickThirdButton();
+
     }
+
 }
+

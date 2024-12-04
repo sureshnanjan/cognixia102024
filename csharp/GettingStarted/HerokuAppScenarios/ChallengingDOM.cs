@@ -10,8 +10,9 @@ using OpenQA.Selenium;
 namespace HerokuAppScenarios
 {
     public class ChallengingDOMTEST
-    {
-        ChallengingDOM dom;
+    {  
+        //Arrange
+        IChallengingDOM dom;
         [SetUp]
         public void Setup()
         {
@@ -22,7 +23,7 @@ namespace HerokuAppScenarios
         {
             // Act
             string title = dom.GetPageTitle();
-            String Expected = "The Internet";
+            String Expected = "Challenging DOM";
             // Assert
             Assert.AreEqual(Expected, title, "The page title does not match the expected value.");
         }
@@ -30,7 +31,7 @@ namespace HerokuAppScenarios
         public void VerifyTableRowCount()
         {
             // Act
-            int rowCount =dom.GetTableRowCount();
+            int rowCount = dom.GetTableRowCount();
             // Assert
             Assert.IsTrue(rowCount > 0, "The table should have rows.");
         }
@@ -40,10 +41,10 @@ namespace HerokuAppScenarios
             //Arrange
             int romNum = 2;
             // Act
-            dom.ClickEditButton(romNum);
+            bool val=dom.ClickEditButton(romNum);
             // Assert
             // Validate behavior after clicking edit, e.g., a URL change or page update
-            Assert.Pass("Edit button clicked successfully for row 2.");
+            Assert.IsTrue(val,"Edit button not clicked");
         }
         [Test]
         public void VerifyDeleteButtonFunctionality()
@@ -51,10 +52,12 @@ namespace HerokuAppScenarios
             //Arrange
             int romNum = 3;
             //Act
-            dom.ClickDeleteButton(romNum);
+            bool val=dom.ClickDeleteButton(romNum);
             //Assert
             // Validate behavior after clicking delete, e.g., a URL change or page update
-            Assert.Pass("Delete button clicked successfully for row 2.");
+            //Assert.Pass("Delete button clicked successfully for row 2.");
+            Assert.IsTrue(val, "delete button not clicked");
+
         }
         [Test]
         public void VerifyInvalidRowIndexForEditButton()
@@ -99,7 +102,29 @@ namespace HerokuAppScenarios
             });
             Assert.IsTrue(ex.Message.Contains("no such element"), "Exception should be thrown for missing button.");
         }
-
-
+        [Test]
+        public void VerifyFirstButton()
+        {
+            //Arrange and act
+            bool val = dom.ClickFirstButton();
+            //Assert
+            Assert.IsTrue(val, "Not Working Properly");
+        }
+        [Test]
+        public void VerifySecondButton()
+        {
+            //Arrange and act
+            bool val = dom.ClickSecondButton();
+            //Assert
+            Assert.IsTrue(val, "Not Working Properly");
+        }
+        [Test]
+        public void VerifyThirdButton()
+        {
+            //Arrange and act
+            bool val = dom.ClickThirdButton();
+            //Assert
+            Assert.IsTrue(val, "Not Working Properly");
+        }
     }
 }

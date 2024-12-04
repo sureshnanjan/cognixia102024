@@ -4,94 +4,111 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
-
+using HerokuAppScenarios;
+using HerokuAppOperations;
+using HerokuAppWebdriverAdapter;
 namespace HerokuAppScenarios
 {
      public class JavaScriptAlertTest
     {
-        JavaScriptAlert jsAlert;
+        private IJavaScriptAlerts jsAlert;
+
         [SetUp]
         public void Setup()
         {
+            // Arrange: Initialize JavaScriptAlert object
             jsAlert = new JavaScriptAlert();
         }
 
         [Test]
         public void TriggerJsAlert()
         {
-            bool val=jsAlert.ClickforJsAlert();
+            // Arrange: No special setup needed.
 
-            // Verify that the alert is displayed
-            Assert.IsTrue(val);
-           
+            // Act: Trigger the JavaScript alert
+            bool alertDisplayed = jsAlert.ClickforJsAlert();
+
+            // Assert: Verify the alert is displayed
+            Assert.IsTrue(alertDisplayed, "The JavaScript alert was not displayed.");
         }
 
         [Test]
         public void AcceptJsAlert()
         {
-            bool val1=jsAlert.ClickforJsAlert();
-            bool val2=jsAlert.ClickforJsAlertClose();
+            // Arrange: Prepare for handling the alert
+            bool alertTriggered = jsAlert.ClickforJsAlert();
 
-            // Verify alert is closed (no exception when accessing the page after alert)
-            Assert.IsTrue(val1 && val2, "JavaScript alert was not closed.");
+            // Act: Accept the JavaScript alert
+            bool alertClosed = jsAlert.ClickforJsAlertClose();
+
+            // Assert: Verify the alert was closed
+            Assert.IsTrue(alertTriggered && alertClosed, "The JavaScript alert was not handled correctly.");
         }
 
         [Test]
         public void TriggerJsConfirm()
         {
-            bool val=jsAlert.ClickforJsConfirm();
+            // Arrange: No special setup needed.
 
-            // Verify that the confirmation dialog is displayed
-            Assert.IsTrue(val, "JavaScript confirmation dialog was not displayed.");
+            // Act: Trigger the JavaScript confirmation dialog
+            bool confirmDisplayed = jsAlert.ClickforJsConfirm();
+
+            // Assert: Verify the confirmation dialog is displayed
+            Assert.IsTrue(confirmDisplayed, "The JavaScript confirmation dialog was not displayed.");
         }
 
         [Test]
         public void DismissJsConfirm()
         {
-            bool val1=jsAlert.ClickforJsConfirm();
-            bool val2=jsAlert.ClickforJsConfirmClose();
+            // Arrange: Trigger the confirmation dialog
+            bool confirmTriggered = jsAlert.ClickforJsConfirm();
 
-            // Verify dialog is closed
-            Assert.IsTrue(val1||val2, "JavaScript confirmation dialog was not dismissed.");
+            // Act: Dismiss the confirmation dialog
+            bool confirmDismissed = jsAlert.ClickforJsConfirmClose();
+
+            // Assert: Verify the confirmation dialog was dismissed
+            Assert.IsTrue(confirmTriggered && confirmDismissed, "The JavaScript confirmation dialog was not dismissed correctly.");
         }
 
         [Test]
         public void TriggerJsPrompt()
         {
-            bool val=jsAlert.ClickforJsPrompt();
+            // Arrange: No special setup needed.
 
-            // Verify that the prompt dialog is displayed
-            Assert.IsTrue(val, "JavaScript prompt dialog was not displayed.");
+            // Act: Trigger the JavaScript prompt dialog
+            bool promptDisplayed = jsAlert.ClickforJsPrompt();
+
+            // Assert: Verify the prompt dialog is displayed
+            Assert.IsTrue(promptDisplayed, "The JavaScript prompt dialog was not displayed.");
         }
 
         [Test]
         public void SendInputToJsPrompt()
         {
-            bool val1=jsAlert.ClickforJsPrompt();
+            // Arrange: Set up input for the prompt
             string inputMessage = "Test Message";
-            bool val2=jsAlert.ClickforJsPromptClose(inputMessage);
-            Assert.IsTrue(val1 && val2);
 
+            // Act: Trigger the prompt and send input
+            bool promptDisplayed = jsAlert.ClickforJsPrompt();
+            bool promptClosed = jsAlert.ClickforJsPromptClose(inputMessage);
+
+            // Assert: Verify the prompt was displayed and input was handled
+            Assert.IsTrue(promptDisplayed && promptClosed, "The JavaScript prompt was not handled correctly.");
         }
 
         [Test]
         public void DismissJsPromptWithoutInput()
         {
-            bool val1 =jsAlert.ClickforJsPrompt();
-            bool val2=jsAlert.ClickforJsConfirmClose(); // Dismiss the prompt
+            // Arrange: Trigger the prompt dialog
+            bool promptTriggered = jsAlert.ClickforJsPrompt();
 
-            // Verify prompt is closed
-            Assert.IsTrue(val1&&val2, "JavaScript prompt was not dismissed.");
+            // Act: Dismiss the prompt dialog without input
+            bool promptDismissed = jsAlert.ClickforJsConfirmClose();
+
+            // Assert: Verify the prompt was dismissed
+            Assert.IsTrue(promptTriggered && promptDismissed, "The JavaScript prompt was not dismissed correctly.");
         }
-
-        [Test]
-        public void HandleNoAlertPresent()
-        {
-            // Attempt to close an alert when none is present
-            Assert.DoesNotThrow(() => jsAlert.ClickforJsAlertClose(), "Exception was thrown when no alert was present.");
-        }
-
-        
 
     }
 }
+

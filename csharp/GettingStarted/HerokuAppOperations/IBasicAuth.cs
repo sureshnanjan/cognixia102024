@@ -17,23 +17,42 @@ under the License.
  
 */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System; // Importing the System namespace for basic types and essential classes.
+using System.Collections.Generic; // Importing the System.Collections.Generic namespace (not used here but can be useful for future extensions).
+using System.Linq; // Importing the System.Linq namespace (not used here but might be helpful for future querying tasks).
+using System.Text; // Importing the System.Text namespace (not used here, but could be useful for string manipulation).
+using System.Threading.Tasks; // Importing the System.Threading.Tasks namespace (not used here, but useful for asynchronous tasks).
 
 namespace HerokuAppOperations
 {
+    // Defining the IBasicAuth interface, which outlines methods for handling basic authentication and sign-in logic.
     public interface IBasicAuth
     {
-        // Method to navigate to the Basic Auth page
+        // Method to navigate to the Basic Authentication page
         void NavigateToBasicAuthPage();
 
         // Method to validate if the authentication was successful
         bool IsAuthenticationSuccessful();
 
-        // Method to print the success message
+        // Method to print the success message upon successful authentication
         void PrintSuccessMessage();
+
+        // Method to enter the username in the username field
+        void EnterUsername(string username);
+
+        // Method to enter the password in the password field
+        void EnterPassword(string password);
+
+        // Method to click the "Sign In" or "Login" button
+        void ClickSignInButton();
+
+        // Method to check if the user has been successfully redirected after signing in
+        bool IsUserRedirectedToDashboard();
+
+        // Method to log out the user
+        void LogOut();
+
+        // Optional: Method to check if the user is on the login page
+        bool IsOnLoginPage();
     }
 }

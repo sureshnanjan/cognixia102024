@@ -17,19 +17,36 @@ under the License.
  
 */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System; // Importing the System namespace, which includes fundamental types like string, int, and console functionalities.
+using System.Collections.Generic; // Importing collections like List, Dictionary, etc. (not used in this code but might be useful for future extensions).
+using System.Linq; // Importing LINQ methods for querying collections (not used in this code but could be useful for querying data).
+using System.Text; // Importing the Text namespace for string manipulation (not used in this code).
+using System.Threading.Tasks; // Importing support for asynchronous programming (not used in this code).
 
+// Defining the IAddRemove interface inside the HerokuAppOperations namespace.
+// The interface outlines the contract that any implementing class must follow.
 namespace HerokuAppOperations
 {
+    // The IAddRemove interface defines the required methods for adding and removing elements
+    // in a web application. Any class that implements this interface must provide the actual logic
+    // for these methods.
     public interface IAddRemove
     {
+        // Method declaration for getting the title of the page.
+        // This method returns the title as a string when implemented.
         public string getTitle();
+
+        // Method declaration to add a new element.
+        // This method doesn't return anything (void), and the actual logic for adding an element will be implemented in a class.
         public void AddElement();
+
+        // Method declaration to delete an existing element.
+        // This method doesn't return anything (void), and the actual logic for deleting an element will be implemented in a class.
         public void DeleteElement();
+
+        // Method declaration for getting the current count of elements.
+        // This method returns an integer representing the number of elements on the page.
         public int GetCountofElements();
     }
 }
+
