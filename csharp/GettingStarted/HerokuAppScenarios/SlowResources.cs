@@ -1,13 +1,22 @@
-﻿using NUnit.Framework;
-using HerokuAppOperations;
-using HerokuAppWebdriverAdapter;
+﻿using HerokuAppOperations;
 
 namespace HerokuAppScenarios
 {
+    /// <summary>
+    /// Test class for validating the behavior of slow resources on the HerokuApp SlowResources page.
+    /// The tests ensure that the page loads correctly, the title and header are accurate, content is loaded after waiting, and slow external resources return the expected response.
+    /// </summary>
     public class SlowResourcesTests
     {
+        /// <summary>
+        /// Instance of the SlowResources page object used in the tests.
+        /// </summary>
         private ISlowResources slowResourcesPage;
 
+        /// <summary>
+        /// Setup method executed before each test.
+        /// Initializes the SlowResources page object for each test.
+        /// </summary>
         [SetUp]
         public void Setup()
         {
@@ -15,6 +24,14 @@ namespace HerokuAppScenarios
             slowResourcesPage = new SlowResources();
         }
 
+        /// <summary>
+        /// Test method to validate the behavior of slow resource requests on the HerokuApp SlowResources page.
+        /// It performs the following:
+        /// - Verifies the page title is correct.
+        /// - Verifies the header text is correct.
+        /// - Waits for the content to load and validates that it contains expected text.
+        /// - Checks the network response for slow external resources and validates the response status.
+        /// </summary>
         [Test]
         public void Test_SlowResource_Request_Validation()
         {
@@ -50,6 +67,10 @@ namespace HerokuAppScenarios
             Console.WriteLine($"Slow resource response time: {response.ResponseTime} seconds.");
         }
 
+        /// <summary>
+        /// TearDown method executed after each test.
+        /// Cleans up by closing the browser once the test is completed.
+        /// </summary>
         [TearDown]
         public void TearDown()
         {
