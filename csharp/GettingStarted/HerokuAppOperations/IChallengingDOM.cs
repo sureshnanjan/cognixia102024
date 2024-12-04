@@ -39,11 +39,16 @@ namespace HerokuAppOperations
 
         // Method declaration for clicking the edit button of a specific row in the table (parameter: rowIndex)
         // The rowIndex parameter allows specifying which row's edit button to click
-        public void ClickEditButton(int rowIndex);
+        public bool ClickEditButton(int rowIndex);
 
         // Method declaration for clicking the delete button of a specific row in the table (parameter: rowIndex)
         // Similar to ClickEditButton, but it is used to delete the row at the specified index
-        public void ClickDeleteButton(int rowIndex);
+        public bool ClickDeleteButton(int rowIndex);
+        public bool ClickFirstButton();
+        public bool ClickSecondButton();
+        public bool ClickThirdButton();
+
     }
+
 }
 

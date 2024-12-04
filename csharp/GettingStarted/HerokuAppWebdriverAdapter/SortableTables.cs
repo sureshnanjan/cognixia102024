@@ -16,7 +16,9 @@ specific language governing permissions and limitations
 under the License.
  
 */
+using HerokuAppWebdriverAdapter;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using System;
 
 namespace HerokuAppOperations
@@ -24,16 +26,20 @@ namespace HerokuAppOperations
     /// <summary>
     /// Implementation of ISortableTables interface for interacting with a sortable table on a webpage.
     /// </summary>
-    public class SortableTables : ISortableTables
+    public class SortableTables : HerokuAppCommon,ISortableTables
     {
-        private readonly IWebDriver _driver;
+        
         private readonly By _tableLocator;
 
         // Constructor to initialize the IWebDriver and the table locator.
-        public SortableTables(IWebDriver driver)
+        public SortableTables(IWebDriver driver) : base(driver)
         {
-            _driver = driver;
-            _tableLocator = By.XPath("//table"); // Locator for the table, you can adjust this if there are multiple tables on the page.
+            _tableLocator = By.XPath("//table[@id='table1']");// Locator for the table, you can adjust this if there are multiple tables on the page.
+            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/tables");
+        }
+        public SortableTables() : base() { 
+            _tableLocator = By.XPath("//table[@id='table1']");// Locator for the table, you can adjust this if there are multiple tables on the page.
+            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/tables");
         }
 
         /// <summary>
@@ -47,7 +53,7 @@ namespace HerokuAppOperations
             try
             {
                 // Find the table element
-                IWebElement table = _driver.FindElement(_tableLocator);
+                IWebElement table = driver.FindElement(_tableLocator);
 
                 // Get all rows from the table
                 var rows = table.FindElements(By.TagName("tr"));
@@ -68,7 +74,7 @@ namespace HerokuAppOperations
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException($"Error getting data from row {rowIndex}, column {columnIndex}: {ex.Message}");
+                throw new ArgumentOutOfRangeException(nameof(rowIndex), "index is out of range");
             }
         }
 
@@ -80,7 +86,7 @@ namespace HerokuAppOperations
         {
             try
             {
-                IWebElement table = _driver.FindElement(_tableLocator);
+                IWebElement table = driver.FindElement(_tableLocator);
                 var rows = table.FindElements(By.TagName("tr"));
                 return rows.Count - 1; // Assuming the first row is the header, so we subtract 1.
             }
@@ -98,7 +104,7 @@ namespace HerokuAppOperations
         {
             try
             {
-                IWebElement table = _driver.FindElement(_tableLocator);
+                IWebElement table = driver.FindElement(_tableLocator);
                 var headerRow = table.FindElements(By.TagName("tr"))[0]; // Assuming the first row is the header
                 var columns = headerRow.FindElements(By.TagName("th"));
                 return columns.Count;
@@ -117,12 +123,13 @@ namespace HerokuAppOperations
         {
             try
             {
-                IWebElement table = _driver.FindElement(_tableLocator);
-                var headerRow = table.FindElements(By.TagName("tr"))[0]; // Assuming the first row is the header
-                var columnHeader = headerRow.FindElements(By.TagName("th"))[columnIndex];
-
+                IWebElement table = driver.FindElement(_tableLocator);
+                var headerRow = table.FindElements(By.XPath("//th[@class='header headerSortDown']")); // Assuming the first row is the header
+                //var columnHeader = headerRow.FindElements(By.TagName("th"))[columnIndex];
+                Actions action = new Actions(driver);
                 // Perform the sorting action by clicking on the column header
-                columnHeader.Click();
+                action.Click((IWebElement)headerRow).Perform();
+
             }
             catch (Exception ex)
             {

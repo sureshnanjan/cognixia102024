@@ -30,7 +30,7 @@ namespace HerokuAppWebdriverAdapter
     {
         // Locators for the header and content elements on the Typos page
         private By header = By.TagName("h3");
-        private By content = By.TagName("p");
+        private By content = By.XPath("//p[2]");
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Typos"/> class.
@@ -38,6 +38,10 @@ namespace HerokuAppWebdriverAdapter
         /// <param name="driver">The Selenium WebDriver used for interacting with the web page.</param>
         public Typos(IWebDriver driver) : base(driver)
         {
+        }
+        public Typos() : base()
+        {
+            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/typos");
         }
 
         /// <summary>

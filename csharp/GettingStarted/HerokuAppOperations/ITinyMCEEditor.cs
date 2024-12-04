@@ -46,5 +46,10 @@ namespace HerokuAppOperations
         /// Clears the content inside the TinyMCE editor.
         /// </summary>
         void ClearContent();
+
+        /// <summary>
+        /// set italic and bold of the content inside the TinyMCE editor.
+        /// </summary>
+        void SetItalyAndBold();
     }
 }
