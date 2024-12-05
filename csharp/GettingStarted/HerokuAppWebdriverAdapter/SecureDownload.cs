@@ -1,5 +1,4 @@
-﻿
-/*
+﻿/*
 Licensed to the Software Freedom Conservancy (SFC) under one
 or more contributor license agreements. See the NOTICE file
 distributed with this work for additional information
@@ -7,104 +6,87 @@ regarding copyright ownership. The SFC licenses this file
 to you under the Apache License, Version 2.0 (the
 "License"); you may not use this file except in compliance
 with the License. You may obtain a copy of the License at
- 
-  http://www.apache.org/licenses/LICENSE-2.0
- 
+http://www.apache.org/licenses/LICENSE-2.0
 Unless required by applicable law or agreed to in writing,
 software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
-*/using HerokuAppOperations;
+*/
+using HerokuAppOperations;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using System.IO;
 
 namespace HerokuAppWebdriverAdapter
 {
-    public class SecureFileDownload : ISecureFileDownload
+    /// <summary>
+    /// Page object model for interacting with the "Download Secure" page on the HerokuApp website.
+    /// This class provides methods for retrieving the page title, checking the visibility of the download link,
+    /// and clicking the download link.
+    /// </summary>
+    public class DownloadSecurePage : HerokuAppCommon, IDownloadSecurePage
     {
-        // Method to download the file securely
-        public async Task<bool> DownloadFileAsync(string url, string username, string password, string downloadLocation)
+        private By downloadLink; // Locator for the download link element
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DownloadSecurePage"/> class.
+        /// Sets up the WebDriver and defines the download link locator.
+        /// </summary>
+        /// <param name="driver">The WebDriver instance used to interact with the browser.</param>
+        public DownloadSecurePage(IWebDriver driver) : base(driver)
+        {
+            // XPath for the download link (this is just an example, make sure to use the actual link text or XPath)
+            downloadLink = By.LinkText("some-file.txt");
+        }
+
+        /// <summary>
+        /// Gets the title of the "Download Secure" page.
+        /// </summary>
+        /// <returns>The title text of the page.</returns>
+        public string GetPageTitle()
+        {
+            // Locate the heading element and return its text value.
+            IWebElement headingElement = driver.FindElement(By.XPath("//*[@id=\"content\"]/div/h3"));
+            return headingElement.Text;
+        }
+
+        /// <summary>
+        /// Checks if the download link is visible on the page.
+        /// </summary>
+        /// <returns>True if the download link is visible; otherwise, false.</returns>
+        public bool IsDownloadLinkVisible()
         {
             try
             {
-                using (HttpClient client = new HttpClient())
-                {
-                    // Add credentials for basic authentication (if required)
-                    var byteArray = new System.Text.UTF8Encoding().GetBytes($"{username}:{password}");
-                    client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
-
-                    // Get the file as a byte array
-                    byte[] fileData = await client.GetByteArrayAsync(url);
-
-                    // Save the file to the specified location
-                    File.WriteAllBytes(downloadLocation, fileData);
-                    Console.WriteLine("File downloaded successfully.");
-                    return true;
-                }
+                // Attempt to locate the download link and check if it's displayed
+                IWebElement linkElement = driver.FindElement(downloadLink);
+                return linkElement.Displayed;
             }
-            catch (Exception ex)
+            catch (NoSuchElementException)
             {
-                Console.WriteLine($"Error downloading file: {ex.Message}");
+                // If the link is not found, return false
                 return false;
             }
         }
 
-        // Method to verify the downloaded file's checksum
-        public bool VerifyDownload(string downloadLocation, string expectedChecksum)
+        /// <summary>
+        /// Clicks the download link to initiate the file download.
+        /// </summary>
+        public void ClickDownloadLink()
         {
-            try
-            {
-                // Calculate the checksum of the downloaded file
-                using (var sha256 = System.Security.Cryptography.SHA256.Create())
-                {
-                    byte[] fileBytes = File.ReadAllBytes(downloadLocation);
-                    string actualChecksum = BitConverter.ToString(sha256.ComputeHash(fileBytes)).Replace("-", "").ToLower();
-
-                    // Compare with the expected checksum
-                    if (actualChecksum.Equals(expectedChecksum, StringComparison.OrdinalIgnoreCase))
-                    {
-                        Console.WriteLine("Checksum matches.");
-                        return true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Checksum does not match.");
-                        return false;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error verifying file: {ex.Message}");
-                return false;
-            }
-        }
-
-        // Method to handle the downloaded file (e.g., move it to a specific directory)
-        public void HandleDownloadedFile(string filePath)
-        {
-            try
-            {
-                // Example of handling: moving the file to a different directory
-                string targetDirectory = @"C:\Downloads\Processed";
-                string targetFilePath = Path.Combine(targetDirectory, Path.GetFileName(filePath));
-
-                // Ensure the directory exists
-                Directory.CreateDirectory(targetDirectory);
-
-                // Move the file
-                File.Move(filePath, targetFilePath);
-                Console.WriteLine($"File moved to: {targetFilePath}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error handling the downloaded file: {ex.Message}");
-            }
+            // Locate the download link and click it to start the download process.
+            IWebElement linkElement = driver.FindElement(downloadLink);
+            linkElement.Click();
         }
     }
 }
+
+

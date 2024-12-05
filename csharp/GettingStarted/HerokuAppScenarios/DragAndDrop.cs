@@ -1,61 +1,110 @@
-﻿///*
-//Licensed to the Software Freedom Conservancy (SFC) under one
-//or more contributor license agreements. See the NOTICE file
-//distributed with this work for additional information
-//regarding copyright ownership. The SFC licenses this file
-//to you under the Apache License, Version 2.0 (the
-//"License"); you may not use this file except in compliance
-//with the License. You may obtain a copy of the License at
- 
-//  http://www.apache.org/licenses/LICENSE-2.0
- 
-//Unless required by applicable law or agreed to in writing,
-//software distributed under the License is distributed on an
-//"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-//KIND, either express or implied. See the License for the
-//specific language governing permissions and limitations
-//under the License.
-//*/using HerokuAppOperations;
-//using HerokuAppWebdriverAdapter;
-//using OpenQA.Selenium.Chrome;
-//using OpenQA.Selenium;
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+﻿using NUnit.Framework;
+using HerokuAppOperations; // Ensure IDragAndDrop is available
+using HerokuAppWebdriverAdapter; // Ensure DragAndDrop class is available
 
-//namespace HerokuAppScenarios
-//{
-//    internal class DragAndDrop
-//    {
-//        [Test]
-//        public void DragAndDropSwapsSquares()
-//        {
-//            // Initialize the ChromeDriver instance
-//            ChromeDriver instance = new ChromeDriver();
-//            IWebDriver iinst = instance;
+namespace HerokuAppScenarios
+{
+    /// <summary>
+    /// Test scenarios to verify the drag-and-drop functionality
+    /// on the Heroku app's drag-and-drop page.
+    /// </summary>
+    [TestFixture]
+    public class DragAndDropScenario
+    {
+        private IDragAndDrop _dragAndDrop; // Declare as IDragAndDrop interface
 
-//            // Create the page object for HomePage and navigate to DragAndDrop page
-//            IHomePage page = new HomePage();
-//            //var dragAndDropPage = page.NavigateToDragandDrop();
+        /// <summary>
+        /// Test to perform drag-and-drop operation and verify the result.
+        /// </summary>
+        [Test]
+        public void TestDragAndDropFunctionality()
+        {
+            // Arrange
+            _dragAndDrop = new DragAndDrop(); // Instantiate DragAndDrop through the interface
 
-//            // Get the initial text of square A and square B
-//            //string initialTextA = dragAndDropPage.GetSquareAText();
-//            //string initialTextB = dragAndDropPage.GetSquareBText();
+            // Act - Perform the drag-and-drop operation
+            _dragAndDrop.DragAndDropElements();
 
-//            // Perform the drag-and-drop action
-//            //dragAndDropPage.DragAToB();
+            // Assert - Verify that after the drag-and-drop, the target column contains 'A'
+            // and the source column contains 'B'.
+            Assert.AreEqual("A", _dragAndDrop.GetTargetElementText(), "Target element should contain 'A' after drag and drop.");
+            Assert.AreEqual("B", _dragAndDrop.GetSourceElementText(), "Source element should contain 'B' after drag and drop.");
+        }
 
-//            // Get the updated text of square A and square B after the action
-//            //string updatedTextA = dragAndDropPage.GetSquareAText();
-//            //string updatedTextB = dragAndDropPage.GetSquareBText();
+        /// <summary>
+        /// Test to verify that column A is initially on the left (source column).
+        /// </summary>
+        [Test]
+        public void VerifyColumnAInitialPosition()
+        {
+            // Arrange
+            _dragAndDrop = new DragAndDrop(); // Instantiate DragAndDrop through the interface
 
-//            // Verify that the contents of square A and B have been swapped
-//            Assert.AreNotEqual(initialTextA, updatedTextA, "Square A's content did not change after drag-and-drop.");
-//            Assert.AreNotEqual(initialTextB, updatedTextB, "Square B's content did not change after drag-and-drop.");
-//            Assert.AreEqual(initialTextA, updatedTextB, "Square A's content did not correctly swap to Square B.");
-//            Assert.AreEqual(initialTextB, updatedTextA, "Square B's content did not correctly swap to Square A.");
-//        }
-//    }
-//}
+            // Act
+            string sourceText = _dragAndDrop.GetSourceElementText();
+
+            // Assert
+            Assert.AreEqual("A", sourceText, "Column A should contain 'A' initially.");
+        }
+
+        /// <summary>
+        /// Test to verify that column B is initially on the right (target column).
+        /// </summary>
+        [Test]
+        public void VerifyColumnBInitialPosition()
+        {
+            // Arrange
+            _dragAndDrop = new DragAndDrop(); // Instantiate DragAndDrop through the interface
+
+            // Act
+            string targetText = _dragAndDrop.GetTargetElementText();
+
+            // Assert
+            Assert.AreEqual("B", targetText, "Column B should contain 'B' initially.");
+        }
+
+        /// <summary>
+        /// Test to verify the initial text of both columns before performing any drag-and-drop operation.
+        /// Ensures that column A contains 'A' and column B contains 'B'.
+        /// </summary>
+        [Test]
+        public void VerifyInitialTextOfColumns()
+        {
+            // Arrange
+            _dragAndDrop = new DragAndDrop(); // Instantiate DragAndDrop through the interface
+
+            // Act
+            string sourceText = _dragAndDrop.GetSourceElementText();
+            string targetText = _dragAndDrop.GetTargetElementText();
+
+            // Assert
+            Assert.AreEqual("A", sourceText, "Column A should initially contain 'A'.");
+            Assert.AreEqual("B", targetText, "Column B should initially contain 'B'.");
+        }
+
+        /// <summary>
+        /// Test to verify the behavior of the columns after performing multiple drag-and-drop actions.
+        /// The test ensures that the columns return to their correct positions after each action.
+        /// </summary>
+        [Test]
+        public void VerifyColumnsAfterMultipleDragAndDrops()
+        {
+            // Arrange
+            _dragAndDrop = new DragAndDrop(); // Instantiate DragAndDrop through the interface
+
+            // Act - First drag-and-drop
+            _dragAndDrop.DragAndDropElements();
+
+            // Assert - After the first drag-and-drop
+            Assert.AreEqual("A", _dragAndDrop.GetTargetElementText(), "Target element should contain 'A' after first drag and drop.");
+            Assert.AreEqual("B", _dragAndDrop.GetSourceElementText(), "Source element should contain 'B' after first drag and drop.");
+
+            // Act - Second drag-and-drop (reverse the operation)
+            _dragAndDrop.DragAndDropElements();
+
+            // Assert - After the second drag-and-drop
+            Assert.AreEqual("A", _dragAndDrop.GetSourceElementText(), "Source element should contain 'A' after second drag and drop.");
+            Assert.AreEqual("B", _dragAndDrop.GetTargetElementText(), "Target element should contain 'B' after second drag and drop.");
+        }
+    }
+}

@@ -4,11 +4,13 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>8be7fb46-abb0-4d1b-9c47-85ca619d8e81</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Selenium.Support" Version="4.26.1" />
-    <PackageReference Include="Selenium.WebDriver" Version="4.26.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.0" />
+    <PackageReference Include="Selenium.Support" Version="4.27.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.27.0" />
   </ItemGroup>
 
   <ItemGroup>

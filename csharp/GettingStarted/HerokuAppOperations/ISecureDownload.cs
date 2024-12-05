@@ -6,9 +6,7 @@ regarding copyright ownership. The SFC licenses this file
 to you under the Apache License, Version 2.0 (the
 "License"); you may not use this file except in compliance
 with the License. You may obtain a copy of the License at
- 
   http://www.apache.org/licenses/LICENSE-2.0
- 
 Unless required by applicable law or agreed to in writing,
 software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -22,29 +20,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium;
 
 namespace HerokuAppOperations
 {
-    // This interface defines the contract for secure file download operations.
-    // An interface in C# is a type that defines a set of methods and properties
-    // that the implementing class must provide. It is used to achieve abstraction
-    // and multiple inheritance in C#.
-    public interface ISecureFileDownload
+    /// <summary>
+    /// Interface defining the actions that can be performed on the "Download Secure" page.
+    /// Implementing this interface ensures that the methods for interacting with the page are available.
+    /// </summary>
+    public interface IDownloadSecurePage
     {
-        // Method to download the file securely, accepting the file URL, username, and password.
-        // This method should contain the logic to download a file from a specified URL using
-        // the provided username and password for authentication. The downloaded file should
-        // be saved to the specified download location.
-        Task<bool> DownloadFileAsync(string url, string username, string password, string downloadLocation);
+        /// <summary>
+        /// Gets the title of the "Download Secure" page.
+        /// </summary>
+        /// <returns>The title of the page.</returns>
+        string GetPageTitle();
 
-        // Method to verify the downloaded file (e.g., checking its integrity).
-        // This method should contain the logic to verify the integrity of the downloaded file
-        // by comparing its checksum with the expected checksum.
-        bool VerifyDownload(string downloadLocation, string expectedChecksum);
+        /// <summary>
+        /// Checks if the download link is visible on the page.
+        /// </summary>
+        /// <returns>True if the download link is visible, otherwise false.</returns>
+        bool IsDownloadLinkVisible();
 
-        // Method to handle the downloaded file (e.g., move or rename after download).
-        // This method should contain the logic to handle the downloaded file, such as moving it
-        // to a different location or renaming it after the download is complete.
-        void HandleDownloadedFile(string filePath);
+        /// <summary>
+        /// Clicks the download link to initiate the file download.
+        /// </summary>
+        void ClickDownloadLink();
     }
 }

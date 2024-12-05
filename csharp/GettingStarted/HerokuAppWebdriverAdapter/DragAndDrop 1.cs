@@ -1,78 +1,86 @@
-﻿/*
-Licensed to the Software Freedom Conservancy (SFC) under one
-or more contributor license agreements. See the NOTICE file
-distributed with this work for additional information
-regarding copyright ownership. The SFC licenses this file
-to you under the Apache License, Version 2.0 (the
-"License"); you may not use this file except in compliance
-with the License. You may obtain a copy of the License at
- 
-  http://www.apache.org/licenses/LICENSE-2.0
- 
-Unless required by applicable law or agreed to in writing,
-software distributed under the License is distributed on an
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, either express or implied. See the License for the
-specific language governing permissions and limitations
-under the License.
-*/using OpenQA.Selenium.Interactions;
+﻿///*
+//Licensed to the Software Freedom Conservancy (SFC) under one
+//or more contributor license agreements. See the NOTICE file
+//distributed with this work for additional information
+//regarding copyright ownership. The SFC licenses this file
+//to you under the Apache License, Version 2.0 (the
+//"License"); you may not use this file except in compliance
+//with the License. You may obtain a copy of the License at
+
+//  http://www.apache.org/licenses/LICENSE-2.0
+
+//Unless required by applicable law or agreed to in writing,
+//software distributed under the License is distributed on an
+//"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+//KIND, either express or implied. See the License for the
+//specific language governing permissions and limitations
+//under the License.
+//*/
+
+using HerokuAppOperations;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HerokuAppOperations; 
+using OpenQA.Selenium.Interactions;
 
 namespace HerokuAppWebdriverAdapter
 {
-    public class DragAndDrop : HerokuAppCommon, IDragandDrop
+    /// <summary>
+    /// Class that provides functionality for drag-and-drop actions between two columns.
+    /// It initializes the WebDriver and performs drag-and-drop operations using the Selenium WebDriver and Actions class.
+    /// </summary>
+    public class DragAndDrop : HerokuAppCommon,IDragAndDrop
     {
-        private By squareA;
-        private By squareB;
+        private IWebElement _sourceElement;
+        private IWebElement _targetElement;
 
-        public DragAndDrop(IWebDriver driver) : base(driver)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DragAndDrop"/> class.
+        /// Locates the source and target elements on the page.
+        /// Initializes WebDriver and navigates to the drag-and-drop page.
+        /// </summary>
+        public DragAndDrop() : base()  // Calls the base constructor to initialize WebDriver and navigate to the app URL.
         {
-            this.squareA = By.Id("column-a"); // Locator for square A
-            this.squareB = By.Id("column-b"); // Locator for square B
+            // Navigate to the drag-and-drop page specifically
+            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/drag_and_drop");
+
+            // Locate the source and target elements for drag-and-drop
+            _sourceElement = driver.FindElement(By.Id("column-a"));
+            _targetElement = driver.FindElement(By.Id("column-b"));
         }
 
-        public string GetSquareAText()
+        /// <summary>
+        /// Performs the drag-and-drop operation from the source element to the target element.
+        /// </summary>
+        public void DragAndDropElements()
         {
-            return this.driver.FindElement(squareA).Text;
+            // Perform the drag-and-drop action using the internal elements
+            var actions = new Actions(driver);
+            actions.DragAndDrop(_sourceElement, _targetElement).Build().Perform();
         }
 
-        public string GetSquareBText()
+        /// <summary>
+        /// Gets the text of the source element (column A).
+        /// </summary>
+        /// <returns>The text inside the source element (column A).</returns>
+        public string GetSourceElementText()
         {
-            return this.driver.FindElement(squareB).Text;
+            return _sourceElement.Text; // Get the text of the source element
         }
 
-        public void DragAToB()
+        /// <summary>
+        /// Gets the text of the target element (column B).
+        /// </summary>
+        /// <returns>The text inside the target element (column B).</returns>
+        public string GetTargetElementText()
         {
-            var elementA = this.driver.FindElement(squareA);
-            var elementB = this.driver.FindElement(squareB);
-
-            Actions actions = new Actions(this.driver);
-            actions.DragAndDrop(elementA, elementB).Perform();
+            return _targetElement.Text; // Get the text of the target element
         }
 
-        public void DragBToA()
+        /// <summary>
+        /// Cleans up by quitting the WebDriver instance.
+        /// </summary>
+        public void CleanUp()
         {
-            var elementB = this.driver.FindElement(squareB);
-            var elementA = this.driver.FindElement(squareA);
-
-            Actions actions = new Actions(this.driver);
-            actions.DragAndDrop(elementB, elementA).Perform();
-        }
-
-        public bool IsSwapSuccessful()
-        {
-            string textA = GetSquareAText();
-            string textB = GetSquareBText();
-
-            // Assuming that swapping changes the content or labels of A and B
-            return textA == "B" && textB == "A";
+            driver.Quit(); // Quit the WebDriver after operation
         }
     }
-
 }
