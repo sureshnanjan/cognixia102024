@@ -3,7 +3,7 @@ using HerokuAppWebdriverAdapter;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.DevTools;
-using OpenQA.Selenium.DevTools.V107.Network; // Can use V107 or just OpenQA.Selenium.DevTools if version-specific namespaces are unnecessary
+using OpenQA.Selenium.DevTools.V107.Network;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Linq;
