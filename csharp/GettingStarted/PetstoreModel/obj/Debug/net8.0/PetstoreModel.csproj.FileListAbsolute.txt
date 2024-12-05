@@ -1,0 +1,12 @@
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\PetstoreModel\bin\Debug\net8.0\PetstoreModel.deps.json
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\PetstoreModel\bin\Debug\net8.0\PetstoreModel.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\PetstoreModel\bin\Debug\net8.0\PetstoreModel.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\PetstoreModel\obj\Debug\net8.0\PetstoreModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\PetstoreModel\obj\Debug\net8.0\PetstoreModel.AssemblyInfoInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\PetstoreModel\obj\Debug\net8.0\PetstoreModel.AssemblyInfo.cs
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\PetstoreModel\obj\Debug\net8.0\PetstoreModel.csproj.CoreCompileInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\PetstoreModel\obj\Debug\net8.0\PetstoreModel.sourcelink.json
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\PetstoreModel\obj\Debug\net8.0\PetstoreModel.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\PetstoreModel\obj\Debug\net8.0\refint\PetstoreModel.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\PetstoreModel\obj\Debug\net8.0\PetstoreModel.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\PetstoreModel\obj\Debug\net8.0\ref\PetstoreModel.dll

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "0g0XuHFR8Bc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppWebdriverAdapter\\HerokuAppWebdriverAdapter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\satyapriya.nayak\\.nuget\\packages\\selenium.support\\4.26.1\\selenium.support.4.26.1.nupkg.sha512",
+    "C:\\Users\\satyapriya.nayak\\.nuget\\packages\\selenium.webdriver\\4.26.1\\selenium.webdriver.4.26.1.nupkg.sha512"
+  ],
+  "logs": []
+}

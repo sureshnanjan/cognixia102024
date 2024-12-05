@@ -1,0 +1,238 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B46E1D7C-4A9F-4CFC-9B13-1DAFD9BF51FB}|DemoForms\\DemoForms.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\demoforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B46E1D7C-4A9F-4CFC-9B13-1DAFD9BF51FB}|DemoForms\\DemoForms.csproj|solutionrelative:demoforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0855E3AA-DFA4-4586-A1E8-AF1A54654E61}|HerokuAppScenarios\\HerokuAppScenarios.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\herokuappscenarios\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0855E3AA-DFA4-4586-A1E8-AF1A54654E61}|HerokuAppScenarios\\HerokuAppScenarios.csproj|solutionrelative:herokuappscenarios\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8528001E-CEF4-42CC-ABF4-7078B1E26AC9}|HerokuAppOperations\\HerokuAppOperations.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\herokuappoperations\\icheckbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8528001E-CEF4-42CC-ABF4-7078B1E26AC9}|HerokuAppOperations\\HerokuAppOperations.csproj|solutionrelative:herokuappoperations\\icheckbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8528001E-CEF4-42CC-ABF4-7078B1E26AC9}|HerokuAppOperations\\HerokuAppOperations.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\herokuappoperations\\ihomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8528001E-CEF4-42CC-ABF4-7078B1E26AC9}|HerokuAppOperations\\HerokuAppOperations.csproj|solutionrelative:herokuappoperations\\ihomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\gettingstarted.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\gettingstarted.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2371E552-0E78-49AE-A9B5-E7A080367C03}|BrowserAutomation\\BrowserAutomation.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\browserautomation\\chromeautomator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2371E552-0E78-49AE-A9B5-E7A080367C03}|BrowserAutomation\\BrowserAutomation.csproj|solutionrelative:browserautomation\\chromeautomator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0855E3AA-DFA4-4586-A1E8-AF1A54654E61}|HerokuAppScenarios\\HerokuAppScenarios.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\herokuappscenarios\\checkbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0855E3AA-DFA4-4586-A1E8-AF1A54654E61}|HerokuAppScenarios\\HerokuAppScenarios.csproj|solutionrelative:herokuappscenarios\\checkbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0855E3AA-DFA4-4586-A1E8-AF1A54654E61}|HerokuAppScenarios\\HerokuAppScenarios.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\herokuappscenarios\\addremove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0855E3AA-DFA4-4586-A1E8-AF1A54654E61}|HerokuAppScenarios\\HerokuAppScenarios.csproj|solutionrelative:herokuappscenarios\\addremove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACB12C07-A019-4BDF-8D9D-23B3265ED6F3}|HerokuAppWebdriverAdapter\\HerokuAppWebdriverAdapter.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\herokuappwebdriveradapter\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACB12C07-A019-4BDF-8D9D-23B3265ED6F3}|HerokuAppWebdriverAdapter\\HerokuAppWebdriverAdapter.csproj|solutionrelative:herokuappwebdriveradapter\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0855E3AA-DFA4-4586-A1E8-AF1A54654E61}|HerokuAppScenarios\\HerokuAppScenarios.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\herokuappscenarios\\herokuappscenarios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0855E3AA-DFA4-4586-A1E8-AF1A54654E61}|HerokuAppScenarios\\HerokuAppScenarios.csproj|solutionrelative:herokuappscenarios\\herokuappscenarios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2371E552-0E78-49AE-A9B5-E7A080367C03}|BrowserAutomation\\BrowserAutomation.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\browserautomation\\browserautomation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2371E552-0E78-49AE-A9B5-E7A080367C03}|BrowserAutomation\\BrowserAutomation.csproj|solutionrelative:browserautomation\\browserautomation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\keywordlearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D1CA06-E346-43DC-A52B-338F1BA4C1D3}|KeywordLearning\\KeywordLearning.csproj|solutionrelative:keywordlearning\\class_keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|c:\\users\\satyapriya.nayak\\qa-training\\cognixia102024\\csharp\\gettingstarted\\gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E45EA25-4CC2-405E-9714-35CBB5A28718}|GettingStarted\\GettingStarted.csproj|solutionrelative:gettingstarted\\trainingdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 165,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\DemoForms\\Program.cs",
+              "RelativeDocumentMoniker": "DemoForms\\Program.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\DemoForms\\Program.cs",
+              "RelativeToolTip": "DemoForms\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T04:55:54.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomePage.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppScenarios\\HomePage.cs",
+              "RelativeDocumentMoniker": "HerokuAppScenarios\\HomePage.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppScenarios\\HomePage.cs",
+              "RelativeToolTip": "HerokuAppScenarios\\HomePage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T10:13:26.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IHomePage.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppOperations\\IHomePage.cs",
+              "RelativeDocumentMoniker": "HerokuAppOperations\\IHomePage.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppOperations\\IHomePage.cs",
+              "RelativeToolTip": "HerokuAppOperations\\IHomePage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T09:36:09.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CheckBox.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppScenarios\\CheckBox.cs",
+              "RelativeDocumentMoniker": "HerokuAppScenarios\\CheckBox.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppScenarios\\CheckBox.cs",
+              "RelativeToolTip": "HerokuAppScenarios\\CheckBox.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T06:11:48.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICheckBox.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppOperations\\ICheckBox.cs",
+              "RelativeDocumentMoniker": "HerokuAppOperations\\ICheckBox.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppOperations\\ICheckBox.cs",
+              "RelativeToolTip": "HerokuAppOperations\\ICheckBox.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T06:08:05.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomePage.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppWebdriverAdapter\\HomePage.cs",
+              "RelativeDocumentMoniker": "HerokuAppWebdriverAdapter\\HomePage.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppWebdriverAdapter\\HomePage.cs",
+              "RelativeToolTip": "HerokuAppWebdriverAdapter\\HomePage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T05:47:00.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddRemove.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppScenarios\\AddRemove.cs",
+              "RelativeDocumentMoniker": "HerokuAppScenarios\\AddRemove.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppScenarios\\AddRemove.cs",
+              "RelativeToolTip": "HerokuAppScenarios\\AddRemove.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T05:22:39.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HerokuAppScenarios.csproj",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppScenarios\\HerokuAppScenarios.csproj",
+              "RelativeDocumentMoniker": "HerokuAppScenarios\\HerokuAppScenarios.csproj",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\HerokuAppScenarios\\HerokuAppScenarios.csproj",
+              "RelativeToolTip": "HerokuAppScenarios\\HerokuAppScenarios.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-20T05:22:15.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "class_keyword.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\class_keyword.cs",
+              "RelativeDocumentMoniker": "KeywordLearning\\class_keyword.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\KeywordLearning\\class_keyword.cs",
+              "RelativeToolTip": "KeywordLearning\\class_keyword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T04:59:53.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GettingStarted.csproj",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+              "RelativeDocumentMoniker": "GettingStarted\\GettingStarted.csproj",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\GettingStarted.csproj",
+              "RelativeToolTip": "GettingStarted\\GettingStarted.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-19T07:09:59.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChromeAutomator.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\BrowserAutomation\\ChromeAutomator.cs",
+              "RelativeDocumentMoniker": "BrowserAutomation\\ChromeAutomator.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\BrowserAutomation\\ChromeAutomator.cs",
+              "RelativeToolTip": "BrowserAutomation\\ChromeAutomator.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAIA3wA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:04:00.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TrainingDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeDocumentMoniker": "GettingStarted\\TrainingDashboard.cs",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\GettingStarted\\TrainingDashboard.cs",
+              "RelativeToolTip": "GettingStarted\\TrainingDashboard.cs",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:04:39.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BrowserAutomation.csproj",
+              "DocumentMoniker": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\BrowserAutomation\\BrowserAutomation.csproj",
+              "RelativeDocumentMoniker": "BrowserAutomation\\BrowserAutomation.csproj",
+              "ToolTip": "C:\\Users\\satyapriya.nayak\\QA-Training\\cognixia102024\\csharp\\GettingStarted\\BrowserAutomation\\BrowserAutomation.csproj",
+              "RelativeToolTip": "BrowserAutomation\\BrowserAutomation.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-19T07:03:01.476Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

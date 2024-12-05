@@ -1,0 +1,16 @@
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\bin\Debug\net8.0\BrowserAutomation.deps.json
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\bin\Debug\net8.0\BrowserAutomation.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\bin\Debug\net8.0\BrowserAutomation.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\obj\Debug\net8.0\BrowserAutomation.csproj.AssemblyReference.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\obj\Debug\net8.0\BrowserAutomation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\obj\Debug\net8.0\BrowserAutomation.AssemblyInfoInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\obj\Debug\net8.0\BrowserAutomation.AssemblyInfo.cs
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\obj\Debug\net8.0\BrowserAutomation.csproj.CoreCompileInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\obj\Debug\net8.0\BrowserAutomation.sourcelink.json
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\obj\Debug\net8.0\BrowserAutomation.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\obj\Debug\net8.0\refint\BrowserAutomation.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\obj\Debug\net8.0\BrowserAutomation.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\BrowserAutomation\obj\Debug\net8.0\ref\BrowserAutomation.dll

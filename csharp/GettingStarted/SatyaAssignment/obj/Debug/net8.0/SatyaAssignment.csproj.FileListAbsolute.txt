@@ -1,0 +1,5 @@
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\SatyaAssignment\obj\Debug\net8.0\SatyaAssignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\SatyaAssignment\obj\Debug\net8.0\SatyaAssignment.AssemblyInfoInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\SatyaAssignment\obj\Debug\net8.0\SatyaAssignment.AssemblyInfo.cs
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\SatyaAssignment\obj\Debug\net8.0\SatyaAssignment.csproj.CoreCompileInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\SatyaAssignment\obj\Debug\net8.0\SatyaAssignment.sourcelink.json

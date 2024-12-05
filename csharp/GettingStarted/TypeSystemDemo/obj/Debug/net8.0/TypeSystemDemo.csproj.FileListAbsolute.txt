@@ -1,0 +1,12 @@
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\TypeSystemDemo\obj\Debug\net8.0\TypeSystemDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\TypeSystemDemo\obj\Debug\net8.0\TypeSystemDemo.AssemblyInfoInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\TypeSystemDemo\obj\Debug\net8.0\TypeSystemDemo.AssemblyInfo.cs
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\TypeSystemDemo\obj\Debug\net8.0\TypeSystemDemo.csproj.CoreCompileInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\TypeSystemDemo\obj\Debug\net8.0\TypeSystemDemo.sourcelink.json
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\TypeSystemDemo\bin\Debug\net8.0\TypeSystemDemo.deps.json
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\TypeSystemDemo\bin\Debug\net8.0\TypeSystemDemo.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\TypeSystemDemo\bin\Debug\net8.0\TypeSystemDemo.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\TypeSystemDemo\obj\Debug\net8.0\TypeSystemDemo.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\TypeSystemDemo\obj\Debug\net8.0\refint\TypeSystemDemo.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\TypeSystemDemo\obj\Debug\net8.0\TypeSystemDemo.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\TypeSystemDemo\obj\Debug\net8.0\ref\TypeSystemDemo.dll

@@ -1,0 +1,10 @@
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\DemoForms\bin\Debug\DemoForms.exe.config
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\DemoForms\bin\Debug\DemoForms.exe
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\DemoForms\bin\Debug\DemoForms.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\DemoForms\obj\Debug\DemoForms.csproj.AssemblyReference.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\DemoForms\obj\Debug\DemoForms.Form1.resources
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\DemoForms\obj\Debug\DemoForms.Properties.Resources.resources
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\DemoForms\obj\Debug\DemoForms.csproj.GenerateResource.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\DemoForms\obj\Debug\DemoForms.csproj.CoreCompileInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\DemoForms\obj\Debug\DemoForms.exe
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\DemoForms\obj\Debug\DemoForms.pdb

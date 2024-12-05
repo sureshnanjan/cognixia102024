@@ -1,0 +1,12 @@
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\KeywordLearning\bin\Debug\net8.0\KeywordLearning.deps.json
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\KeywordLearning\bin\Debug\net8.0\KeywordLearning.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\KeywordLearning\bin\Debug\net8.0\KeywordLearning.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\KeywordLearning\obj\Debug\net8.0\KeywordLearning.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\KeywordLearning\obj\Debug\net8.0\KeywordLearning.AssemblyInfoInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\KeywordLearning\obj\Debug\net8.0\KeywordLearning.AssemblyInfo.cs
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\KeywordLearning\obj\Debug\net8.0\KeywordLearning.csproj.CoreCompileInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\KeywordLearning\obj\Debug\net8.0\KeywordLearning.sourcelink.json
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\KeywordLearning\obj\Debug\net8.0\KeywordLearning.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\KeywordLearning\obj\Debug\net8.0\refint\KeywordLearning.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\KeywordLearning\obj\Debug\net8.0\KeywordLearning.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\KeywordLearning\obj\Debug\net8.0\ref\KeywordLearning.dll

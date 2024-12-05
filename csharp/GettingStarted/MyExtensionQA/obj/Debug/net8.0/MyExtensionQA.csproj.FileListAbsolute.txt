@@ -1,0 +1,16 @@
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\bin\Debug\net8.0\MyExtensionQA.deps.json
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\bin\Debug\net8.0\MyExtensionQA.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\bin\Debug\net8.0\MyExtensionQA.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\bin\Debug\net8.0\TypeSystemDemo.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\bin\Debug\net8.0\TypeSystemDemo.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\obj\Debug\net8.0\MyExtensionQA.csproj.AssemblyReference.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\obj\Debug\net8.0\MyExtensionQA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\obj\Debug\net8.0\MyExtensionQA.AssemblyInfoInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\obj\Debug\net8.0\MyExtensionQA.AssemblyInfo.cs
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\obj\Debug\net8.0\MyExtensionQA.csproj.CoreCompileInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\obj\Debug\net8.0\MyExtensionQA.sourcelink.json
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\obj\Debug\net8.0\MyExtens.8C8F9A93.Up2Date
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\obj\Debug\net8.0\MyExtensionQA.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\obj\Debug\net8.0\refint\MyExtensionQA.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\obj\Debug\net8.0\MyExtensionQA.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\MyExtensionQA\obj\Debug\net8.0\ref\MyExtensionQA.dll

@@ -1,0 +1,12 @@
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\HerokuAppOperations\bin\Debug\net8.0\HerokuAppOperations.deps.json
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\HerokuAppOperations\bin\Debug\net8.0\HerokuAppOperations.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\HerokuAppOperations\bin\Debug\net8.0\HerokuAppOperations.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\HerokuAppOperations\obj\Debug\net8.0\HerokuAppOperations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\HerokuAppOperations\obj\Debug\net8.0\HerokuAppOperations.AssemblyInfoInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\HerokuAppOperations\obj\Debug\net8.0\HerokuAppOperations.AssemblyInfo.cs
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\HerokuAppOperations\obj\Debug\net8.0\HerokuAppOperations.csproj.CoreCompileInputs.cache
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\HerokuAppOperations\obj\Debug\net8.0\HerokuAppOperations.sourcelink.json
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\HerokuAppOperations\obj\Debug\net8.0\HerokuAppOperations.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\HerokuAppOperations\obj\Debug\net8.0\refint\HerokuAppOperations.dll
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\HerokuAppOperations\obj\Debug\net8.0\HerokuAppOperations.pdb
+C:\Users\satyapriya.nayak\QA-Training\cognixia102024\csharp\GettingStarted\HerokuAppOperations\obj\Debug\net8.0\ref\HerokuAppOperations.dll
