@@ -37,5 +37,7 @@ namespace HerokuAppOperations
         /// </summary>
         /// <returns>A string representing the success message if found, or a fallback message if not.</returns>
         public string GetSuccessMessage();
+        public string GetPageDescription();
+        public string GetPageTitle();
     }
 }

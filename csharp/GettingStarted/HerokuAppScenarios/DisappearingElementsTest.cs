@@ -33,7 +33,7 @@ namespace HerokuAppScenarios
     public class DisappearingElementsTests
     {
         // Instance of the DisappearingElements class to interact with the page.
-        DisappearingElements disappearingElements;
+        private DisappearingElements disappearingElements;
 
         /// <summary>
         /// Setup method to initialize test dependencies.
@@ -47,15 +47,28 @@ namespace HerokuAppScenarios
         }
 
         /// <summary>
+        /// TearDown method to clean up after each test case.
+        /// This method runs after each test case.
+        /// </summary>
+        [TearDown]
+        public void TearDown()
+        {
+            // Quit the browser to release resources.
+            disappearingElements.Quit();
+        }
+
+        /// <summary>
         /// Test to validate that the menu items are visible and retrievable.
         /// </summary>
         [Test]
         public void ValidateMenuItems()
         {
-            // Get the list of visible menu items.
+            // Arrange: Prepare to retrieve menu items.
+
+            // Act: Get the list of visible menu items.
             List<string> menuItems = disappearingElements.GetMenuItems();
 
-            // Assert that the menu items list is not null or empty.
+            // Assert: Verify the menu items list is not null or empty.
             Assert.IsNotNull(menuItems, "Menu items list is null.");
             Assert.IsNotEmpty(menuItems, "No menu items are visible.");
             Console.WriteLine("Menu items visible: " + string.Join(", ", menuItems));
@@ -63,22 +76,24 @@ namespace HerokuAppScenarios
 
         /// <summary>
         /// Test to validate the dynamic behavior of the menu items (appearance/disappearance).
-        /// Refreshes the page multiple times to check for changes.
         /// </summary>
         [Test]
         public void ValidateDynamicElementAppearance()
         {
-            // Variable to track if an extra menu item is observed.
+            // Arrange: Prepare for dynamic behavior validation.
             bool foundExtraItem = false;
 
-            // Refresh the page multiple times to check for dynamic changes in the menu.
-            for (int i = 0; i < 5; i++)
+            // Act: Refresh the page multiple times to check for changes in the menu items.
+            Random random = new Random();
+            int min = 1;
+            int max = 100;
+            int randomNumber = random.Next(min, max + 1);
+            for (int i = 0; i < randomNumber; i++)
             {
-                disappearingElements.RefreshPage(); // Refresh the page.
-                List<string> menuItems = disappearingElements.GetMenuItems(); // Retrieve menu items.
+                disappearingElements.RefreshPage();
+                List<string> menuItems = disappearingElements.GetMenuItems();
 
-                // Check if more than the usual 4 menu items are present.
-                if (menuItems.Count > 4)
+                if (menuItems.Count > 4) // Check if an extra menu item appeared.
                 {
                     foundExtraItem = true;
                     Console.WriteLine("Extra menu item appeared: " + string.Join(", ", menuItems));
@@ -86,7 +101,7 @@ namespace HerokuAppScenarios
                 }
             }
 
-            // Assert that at least one extra menu item appeared.
+            // Assert: Verify that at least one extra menu item appeared.
             Assert.IsTrue(foundExtraItem, "No extra menu item appeared after multiple refreshes.");
         }
 
@@ -97,16 +112,50 @@ namespace HerokuAppScenarios
         [Test]
         public void ValidateClickOnMenuItem()
         {
-            // Specify the menu item to click (e.g., 'Home').
+            // Arrange: Specify the menu item to click.
             string menuItem = "Home";
 
-            // Perform the click action.
+            // Act: Perform the click action and retrieve the page title.
             disappearingElements.ClickMenuItem(menuItem);
+            string actualTitle = disappearingElements.GetTitle();
+            string expectedTitle = "The Internet";
 
-            // Assert that the page navigated successfully by verifying the title.
-            string title = disappearingElements.getTitle();
-            Assert.AreEqual("The Internet", title, "Navigation to 'Home' failed.");
+            // Assert: Verify the page navigated successfully by checking the title.
+            Assert.AreEqual(expectedTitle, actualTitle, "Navigation to 'Home' failed.");
+        }
+
+        /// <summary>
+        /// Test to validate the page title.
+        /// </summary>
+        [Test]
+        public void ValidatePageTitle()
+        {
+            // Arrange: Prepare the expected page title.
+            string expectedTitle = "Disappearing Elements";
+
+            // Act: Retrieve the actual page title.
+            string actualTitle = disappearingElements.GetpageTitle();
+
+            // Assert: Verify the page title matches the expected title.
+            Assert.AreEqual(expectedTitle, actualTitle, "Page title mismatch.");
+        }
+
+        /// <summary>
+        /// Test to validate the page description.
+        /// </summary>
+        [Test]
+        public void ValidatePageDescription()
+        {
+            // Arrange: Prepare the expected page description.
+            string expectedDescription = "This example demonstrates when elements on a page change by disappearing/reappearing on each page load.";
+
+            // Act: Retrieve the actual page description.
+            string actualDescription = disappearingElements.GetDescription();
+
+            // Assert: Verify the page description matches the expected description.
+            Assert.AreEqual(expectedDescription, actualDescription, "Page description mismatch.");
         }
     }
 }
+
 

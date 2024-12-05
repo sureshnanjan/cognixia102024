@@ -111,10 +111,27 @@ namespace HerokuAppWebdriverAdapter
         /// Gets the title of the current page.
         /// </summary>
         /// <returns>The title of the page as a string.</returns>
-        public string getTitle()
+        public string GetTitle()
         {
-            // Return the current page's title
             return driver.Title;
+        }
+
+        public string GetpageTitle()
+        {
+            return driver.FindElement(By.TagName("h3")).Text; ;
+        }
+        public string GetDescription()
+        {
+            return driver.FindElement(By.TagName("p")).Text; // Assuming the description is in a <p> tag.
+        }
+
+        public void Quit()
+        {
+            if (driver != null)
+            {
+                driver.Quit();
+                driver = null;
+            }
         }
     }
 }

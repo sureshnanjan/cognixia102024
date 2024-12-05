@@ -29,18 +29,20 @@
 //    public class AddRemove
 //    {
 //        [Test]
-//        public void titleWorksOK() {
+//        public void titleWorksOK()
+//        {
 //            /// AAA
 //            IAddRemove page;
 //            string expected = "Add/Remove Elements";
 //            //string actual = page.getTitle();
 //            //Assert.AreEqual(expected, actual);
 //            //Assert.AreEqual(expected, actual);
-        
+
 //        }
 
 //        [Test]
-//        public void AddingElementsWork() {
+//        public void AddingElementsWork()
+//        {
 //            /// AAA
 //            IAddRemove page;
 //            int expected = 1;

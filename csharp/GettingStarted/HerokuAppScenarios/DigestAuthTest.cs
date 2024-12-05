@@ -26,13 +26,13 @@ namespace HerokuAppScenarios
 {
     /// <summary>
     /// Test suite for validating Digest Authentication functionality on the HerokuApp website.
-    /// Includes tests for successful and failed authentication attempts.
+    /// Includes tests for authentication, page title, and description validation.
     /// </summary>
     [TestFixture]
     public class DigestAuthTests
     {
         // Instance of DigestAuth to perform authentication-related operations.
-        DigestAuth digestAuth;
+        private DigestAuth digestAuth;
 
         /// <summary>
         /// Setup method to initialize test dependencies.
@@ -44,6 +44,18 @@ namespace HerokuAppScenarios
             // Initialize the DigestAuth instance.
             digestAuth = new DigestAuth();
         }
+
+        /// <summary>
+        /// TearDown method to clean up after each test.
+        /// This method runs after each test case.
+        /// </summary>
+        [TearDown]
+        public void TearDown()
+        {
+            // Close the browser to clean up resources.
+            digestAuth.Quit();
+        }
+
 
         /// <summary>
         /// Test to verify authentication with valid credentials.
@@ -81,6 +93,45 @@ namespace HerokuAppScenarios
             string actualMessage = digestAuth.GetSuccessMessage();
             Assert.AreEqual("Success message not found.", actualMessage, "Unexpected success message displayed.");
         }
+
+        /// <summary>
+        /// Test to verify the page title after successful authentication.
+        /// </summary>
+        [Test]
+        public void ValidatePageTitle()
+        {
+            // Arrange: Provide valid credentials.
+            string username = "admin";
+            string password = "admin";
+            string expectedTitle = "Digest Auth";
+
+            // Act: Perform authentication and retrieve the page title.
+            digestAuth.Authenticate(username, password);
+            string actualTitle = digestAuth.GetPageTitle();
+
+            // Assert: Verify that the page title is as expected.
+            Assert.AreEqual(expectedTitle, actualTitle, "Page title mismatch.");
+        }
+
+        /// <summary>
+        /// Test to verify the page description after successful authentication.
+        /// </summary>
+        [Test]
+        public void ValidatePageDescription()
+        {
+            // Arrange: Provide valid credentials.
+            string username = "admin";
+            string password = "admin";
+            string expectedDescription = "Congratulations! You must have the proper credentials.";
+
+            // Act: Perform authentication and retrieve the page description.
+            digestAuth.Authenticate(username, password);
+            string actualDescription = digestAuth.GetPageDescription();
+
+            // Assert: Verify that the page description is as expected.
+            Assert.AreEqual(expectedDescription, actualDescription, "Page description mismatch.");
+        }
     }
 }
+
 
