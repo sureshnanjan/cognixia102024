@@ -7,48 +7,69 @@ regarding copyright ownership. The SFC licenses this file
 to you under the Apache License, Version 2.0 (the
 "License"); you may not use this file except in compliance
 with the License. You may obtain a copy of the License at
- 
+
   http://www.apache.org/licenses/LICENSE-2.0
- 
+
 Unless required by applicable law or agreed to in writing,
 software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
-under the License.
-*/using HerokuAppOperations;
-using OpenQA.Selenium;
+under the License.*/
+
+
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
+using HerokuAppOperations;
+using OpenQA.Selenium;
 
 namespace HerokuAppWebdriverAdapter
 {
-    public class ShadowDomOperations : IShadowDomOperations
+    public class ShadowDom : IShadowDom
     {
-        // Method to get the shadow root from the shadow host
-        public IWebElement GetShadowRoot(IWebDriver driver, By shadowHostLocator)
+        private readonly IWebDriver driver;
+        private readonly string url = "https://the-internet.herokuapp.com/shadowdom";
+        private readonly By shadowHostLocator = By.TagName("my-app");
+
+        // Constructor to initialize WebDriver and navigate to the page.
+        public ShadowDom(IWebDriver driver)
         {
-            IWebElement shadowHost = driver.FindElement(shadowHostLocator);
-            // Access the shadow root using JavaScript execution
-            return (IWebElement)((IJavaScriptExecutor)driver).ExecuteScript("return arguments[0].shadowRoot", shadowHost);
+            this.driver = driver ?? throw new ArgumentNullException(nameof(driver), "WebDriver cannot be null");
+            driver.Navigate().GoToUrl(url);  // Navigate to Shadow DOM page
         }
 
-        // Method to find an element inside the shadow DOM
-        public IWebElement FindElementInShadowDom(IWebDriver driver, By shadowHostLocator, By shadowElementLocator)
+        // Method to retrieve the text content inside the Shadow DOM.
+        public string GetShadowText()
         {
-            IWebElement shadowRoot = GetShadowRoot(driver, shadowHostLocator);
-            return shadowRoot.FindElement(shadowElementLocator);
+            try
+            {
+                // Find the shadow host element.
+                var shadowHost = driver.FindElement(shadowHostLocator);
+
+                // Use JavaScript to access the shadow root and fetch text content.
+                var jsExecutor = (IJavaScriptExecutor)driver;
+                string script = @"
+                    return arguments[0].shadowRoot.querySelector('my-container').shadowRoot
+                        .querySelector('content').textContent.trim();";
+                var shadowText = (string)jsExecutor.ExecuteScript(script, shadowHost);
+
+                return shadowText;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error interacting with Shadow DOM: {e.Message}");
+                return string.Empty;
+            }
         }
 
-        // Method to perform a click inside the shadow DOM
-        public void ClickElementInShadowDom(IWebDriver driver, By shadowHostLocator, By shadowElementLocator)
+        // Cleanup method to close the WebDriver.
+        public void CleanUp()
         {
-            IWebElement shadowRoot = GetShadowRoot(driver, shadowHostLocator);
-            IWebElement shadowElement = shadowRoot.FindElement(shadowElementLocator);
-            shadowElement.Click();
+            if (driver != null)
+            {
+                driver.Quit();  // Close the browser window.
+                driver.Dispose();  // Dispose of the WebDriver instance.
+            }
         }
     }
 }

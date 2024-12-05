@@ -32,14 +32,14 @@ namespace HerokuAppOperations
         /// </summary>
         /// <param name="menuText">The visible text of the main menu item to interact with.</param>
         /// <param name="submenuText">The visible text of the submenu item to select (optional).</param>
-        void SelectMenuItem(string menuText, string submenuText = null);
+        public void SelectMenuItem(string menuText, string submenuText = null);
 
         /// <summary>
         /// Checks if the menu structure is fully visible and accessible.
         /// This method should contain the logic to verify that all menu items
         /// and submenus are visible and can be interacted with.
         /// </summary>
-        void VerifyMenuAccessibility();
+        public void VerifyMenuAccessibility();
 
         /// <summary>
         /// Gets the current URL after interacting with a menu item.
@@ -47,6 +47,8 @@ namespace HerokuAppOperations
         /// has been selected and any navigation has occurred.
         /// </summary>
         /// <returns>The current URL as a string.</returns>
-        string GetCurrentUrl();
+        public string GetCurrentUrl();
+        void Dispose();
+        void SelectMenuItem(string v1, string v2, string submenu);
     }
 }
