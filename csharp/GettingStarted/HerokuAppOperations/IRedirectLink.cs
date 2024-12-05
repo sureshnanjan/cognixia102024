@@ -27,24 +27,61 @@ using OpenQA.Selenium.Chrome;
 
 namespace HerokuAppOperations
 {
-    // This interface defines the contract for handling URL redirection and authentication.
-    // An interface in C# is a type that defines a set of methods and properties
-    // that the implementing class must provide. It is used to achieve abstraction
-    // and multiple inheritance in C#.
-    public interface IRedirectLink
+
+    /// <summary>
+    /// Defines the contract for interacting with the Redirect page on HerokuApp.
+    /// This interface ensures consistency across any implementations for handling URL redirection and authentication operations.
+    /// </summary>
+    public interface IRedirectPage
     {
-        // Method to navigate to a specified URL.
-        // This method should contain the logic to navigate to a given URL using the provided WebDriver instance.
-        public void NavigateToUrl(IWebDriver driver, string url);
+        /// <summary>
+        /// Clicks on the "Redirect Link" on the main page to initiate the redirection process.
+        /// </summary>
+        void ClickRedirectLink();
 
-        // Method to navigate to a URL with basic authentication.
-        // This method should contain the logic to navigate to a given URL using the provided WebDriver instance,
-        // and include basic authentication credentials (username and password).
-        public void NavigateToUrlWithAuth(IWebDriver driver, string url, string username, string password);
+        /// <summary>
+        /// Clicks on the button to trigger the redirection to status code-specific pages.
+        /// </summary>
+        void ClickRedirectButton();
 
-        // Method to extract a URL from a link element.
-        // This method should contain the logic to find a link element on the page using the provided locator,
-        // and extract the URL from the href attribute of the link.
-        public string ExtractUrlFromLink(IWebDriver driver, By locator);
+        /// <summary>
+        /// Navigates to the page displaying a 200 status code.
+        /// </summary>
+        void NavigateTo200StatusCode();
+
+        /// <summary>
+        /// Clicks on the "here" link to load the content for the 200 status code page.
+        /// </summary>
+        void ClickHereLinkFor200();
+
+        /// <summary>
+        /// Navigates to the page displaying a 301 status code.
+        /// </summary>
+        void NavigateTo301StatusCode();
+
+        /// <summary>
+        /// Clicks on the "here" link to load the content for the 301 status code page.
+        /// </summary>
+        void ClickHereLinkFor301();
+
+        /// <summary>
+        /// Navigates to the page displaying a 404 status code.
+        /// </summary>
+        void NavigateTo404StatusCode();
+
+        /// <summary>
+        /// Clicks on the "here" link to load the content for the 404 status code page.
+        /// </summary>
+        void ClickHereLinkFor404();
+
+        /// <summary>
+        /// Navigates to the page displaying a 500 status code.
+        /// </summary>
+        void NavigateTo500StatusCode();
+
+        /// <summary>
+        /// Clicks on the "here" link to load the content for the 500 status code page.
+        /// </summary>
+        void ClickHereLinkFor500();
     }
 }

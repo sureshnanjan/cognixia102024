@@ -25,24 +25,41 @@ using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
-    // This interface defines the contract for checkbox operations.
-    // An interface in C# is a type that defines a set of methods and properties
-    // that the implementing class must provide. It is used to achieve abstraction
-    // and multiple inheritance in C#.
+    /// <summary>
+    /// Defines the contract for interacting with checkboxes on a webpage.
+    /// This interface must be implemented by any class responsible for handling checkbox operations.
+    /// </summary>
     public interface ICheckBox
     {
-        // Method to get the title of the checkbox section.
-        // This method should return the title of the checkbox section as a string.
-        public string getTitle();
+        /// <summary>
+        /// Retrieves the title of the checkbox section on the page.
+        /// This method should return the title text of the checkbox section.
+        /// </summary>
+        /// <returns>The title of the checkbox section as a string.</returns>
+        string getTitle();
 
-        // Method to get the status of the first checkbox.
-        // This method should return a boolean value indicating whether the first checkbox
-        // is currently checked (true) or unchecked (false).
-        public bool getCheckboxOneStatus();
+        /// <summary>
+        /// Gets the status (checked or unchecked) of the first checkbox.
+        /// This method should return a boolean indicating whether the first checkbox is checked (true) or unchecked (false).
+        /// </summary>
+        /// <returns>True if the first checkbox is checked, otherwise false.</returns>
+        bool getCheckboxOneDefaultStatus();
 
-        // Method to get the status of the second checkbox.
-        // This method should return a boolean value indicating whether the second checkbox
-        // is currently checked (true) or unchecked (false).
-        public bool getCheckboxTwoStatus();
+        /// <summary>
+        /// Gets the status (checked or unchecked) of the second checkbox.
+        /// This method should return a boolean indicating whether the second checkbox is checked (true) or unchecked (false).
+        /// </summary>
+        /// <returns>True if the second checkbox is checked, otherwise false.</returns>
+        bool getCheckboxTwoDefaultStatus();
+
+        /// <summary>
+        /// Toggles the state of the first checkbox.
+        /// </summary>
+        public void ClickCheckboxOne(); //toggle the checkbox if it is ON change to OFF, if it is OFF change to ON
+
+        /// <summary>
+        /// Toggles the state of the second checkbox.
+        /// </summary>
+        public void ClickCheckboxTwo(); //toggle the checkbox if it is ON change to OFF, if it is OFF change to ON
     }
 }
