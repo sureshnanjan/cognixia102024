@@ -29,38 +29,102 @@ using HerokuAppOperations;
 namespace HerokuAppWebdriverAdapter
 {
 
+    /// <summary>
+    /// Represents a page object model for interacting with the Redirect page
+    /// on the HerokuApp website. Implements the IRedirectPage interface to provide
+    /// methods for handling URL redirection and status code navigation.
+    /// </summary>
+    public class RedirectPage : HerokuAppCommon, IRedirectPage
+    {
+        // Locators for the Redirect page elements
+        private readonly By redirectLink = By.LinkText("Redirect Link");
+        private readonly By redirectButton = By.Id("redirect");
+        private readonly By hereLink = By.LinkText("here");
 
-    
-        // Class to handle URL redirection and authentication
-        public class RedirectLinkHandler : IRedirectLink
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RedirectPage"/> class.
+        /// </summary>
+        /// <param name="driver">The WebDriver instance used to interact with the page.</param>
+        public RedirectPage(IWebDriver driver) : base(driver) { }
+
+        /// <summary>
+        /// Clicks on the "Redirect Link" to start the redirection process.
+        /// </summary>
+        public void ClickRedirectLink()
         {
-            // Method to navigate to a specified URL
-            public void NavigateToUrl(IWebDriver driver, string url)
-            {
-                driver.Navigate().GoToUrl(url);
-            }
+            driver.FindElement(redirectLink).Click();
+        }
 
-            // Method to navigate to a URL with basic authentication
-            public void NavigateToUrlWithAuth(IWebDriver driver, string url, string username, string password)
-            {
-                // Construct the URL with embedded credentials
-                string authUrl = $"https://{username}:{password}@{new Uri(url).Host}{new Uri(url).AbsolutePath}";
+        /// <summary>
+        /// Clicks on the "Redirect" button to trigger a redirection to a status code page.
+        /// </summary>
+        public void ClickRedirectButton()
+        {
+            driver.FindElement(redirectButton).Click();
+        }
 
-                // Navigate to the authenticated URL
-                driver.Navigate().GoToUrl(authUrl);
-            }
+        /// <summary>
+        /// Navigates to the page displaying the 200 status code.
+        /// </summary>
+        public void NavigateTo200StatusCode()
+        {
+            driver.FindElement(By.LinkText("200")).Click();
+        }
 
-            // Method to extract a URL from a link element
-            public string ExtractUrlFromLink(IWebDriver driver, By locator)
-            {
-                // Locate the link element using the provided locator
-                IWebElement linkElement = driver.FindElement(locator);
+        /// <summary>
+        /// Clicks on the "here" link on the 200 status code page to load additional content or navigate further.
+        /// </summary>
+        public void ClickHereLinkFor200()
+        {
+            driver.FindElement(hereLink).Click();
+        }
 
-                // Return the href attribute value, which contains the URL
-                return linkElement.GetAttribute("href");
-            }
+        /// <summary>
+        /// Navigates to the page displaying the 301 status code.
+        /// </summary>
+        public void NavigateTo301StatusCode()
+        {
+            driver.FindElement(By.LinkText("301")).Click();
+        }
 
+        /// <summary>
+        /// Clicks on the "here" link on the 301 status code page to load additional content or navigate further.
+        /// </summary>
+        public void ClickHereLinkFor301()
+        {
+            driver.FindElement(hereLink).Click();
+        }
+
+        /// <summary>
+        /// Navigates to the page displaying the 404 status code.
+        /// </summary>
+        public void NavigateTo404StatusCode()
+        {
+            driver.FindElement(By.LinkText("404")).Click();
+        }
+
+        /// <summary>
+        /// Clicks on the "here" link on the 404 status code page to load additional content or navigate further.
+        /// </summary>
+        public void ClickHereLinkFor404()
+        {
+            driver.FindElement(hereLink).Click();
+        }
+
+        /// <summary>
+        /// Navigates to the page displaying the 500 status code.
+        /// </summary>
+        public void NavigateTo500StatusCode()
+        {
+            driver.FindElement(By.LinkText("500")).Click();
+        }
+
+        /// <summary>
+        /// Clicks on the "here" link on the 500 status code page to load additional content or navigate further.
+        /// </summary>
+        public void ClickHereLinkFor500()
+        {
+            driver.FindElement(hereLink).Click();
+        }
     }
-    }
-
-
+}
