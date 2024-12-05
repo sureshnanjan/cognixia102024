@@ -25,25 +25,28 @@ using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
-    // This interface defines the contract for context menu operations.
-    // An interface in C# is a type that defines a set of methods and properties
-    // that the implementing class must provide. It is used to achieve abstraction
-    // and multiple inheritance in C#.
+    /// <summary>
+    /// Defines the contract for performing context menu operations on a web page.
+    /// This interface allows for interactions such as right-clicking on an element, 
+    /// retrieving the alert text, and accepting the alert that is displayed.
+    /// </summary>
     public interface IContextMenu
     {
-        // Method to handle the action of right-clicking on an element.
-        // This method should contain the logic to simulate a right-click action
-        // on a specified element within the application.
-        void RightClickOnElement();
+        /// <summary>
+        /// Simulates a right-click action on the context menu box element.
+        /// </summary>
+        void RightClickOnBox();
 
-        // Method to retrieve the available context menu options.
-        // This method should return an array of strings, where each string represents
-        // an option available in the context menu that appears after a right-click action.
-        string[] GetMenuOptions();
+        /// <summary>
+        /// Retrieves the text from the alert that is triggered after a right-click action.
+        /// </summary>
+        /// <returns>The text displayed in the alert.</returns>
+        string GetAlertText();
 
-        // Method to select a specific menu option.
-        // This method should take a string 'option' as a parameter, which specifies
-        // the menu option to be selected from the context menu.
-        void SelectMenuOption(string option);
+        /// <summary>
+        /// Accepts the alert that is displayed after a right-click action.
+        /// This action usually corresponds to pressing "OK" on the alert dialog.
+        /// </summary>
+        void AcceptAlert();
     }
 }
