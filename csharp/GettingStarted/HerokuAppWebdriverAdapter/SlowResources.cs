@@ -85,4 +85,29 @@ public class SlowResources : HerokuAppCommon, ISlowResources
     {
         driver.Quit();
     }
+
+    public dynamic GetNetworkResponse(string url)
+    {
+        throw new NotImplementedException();
+    }
+
+    public string GetCurrentUrl()
+    {
+        throw new NotImplementedException();
+    }
+
+    public string GetContentWithoutSlowResources()
+    {
+        throw new NotImplementedException();
+    }
+
+    public object GetNetworkResponseWithTimeout(string v, int timeout)
+    {
+        throw new NotImplementedException();
+    }
+
+    public string GetContentAfterLoading()
+    {
+        throw new NotImplementedException();
+    }
 }

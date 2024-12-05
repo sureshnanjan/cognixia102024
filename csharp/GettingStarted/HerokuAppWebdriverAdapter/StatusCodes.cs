@@ -75,5 +75,10 @@ namespace HerokuAppWebdriverAdapter
         {
             driver.Quit(); // This properly closes the browser after the tests are completed
         }
+
+        public double GetHttpStatusCode()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
