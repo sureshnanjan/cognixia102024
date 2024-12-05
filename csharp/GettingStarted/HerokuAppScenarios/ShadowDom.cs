@@ -23,26 +23,28 @@ using NUnit.Framework;
 namespace HerokuAppScenarios
 {
     /// <summary>
-    /// Test class for verifying operations with Shadow DOM elements.
+    /// This class contains tests for verifying operations with Shadow DOM elements.
+    /// It includes tests to validate the text inside the Shadow DOM and to perform necessary cleanup.
     /// </summary>
     [TestFixture]
     public class ShadowDomTests
     {
-        private ShadowDom shadowDom; // Custom ShadowDom helper class to interact with Shadow DOM
+        private ShadowDom shadowDom;  // Custom helper class to interact with Shadow DOM elements
 
         /// <summary>
-        /// SetUp method that initializes the ShadowDom instance.
-        /// This method is executed before each test.
+        /// Setup method that initializes the ShadowDom instance.
+        /// This method is executed before each test to prepare the environment.
         /// </summary>
         [SetUp]
         public void Setup()
         {
-            // Initialize ShadowDom instance with the WebDriver.
-            shadowDom = new ShadowDom(new OpenQA.Selenium.Chrome.ChromeDriver());
+            // Initialize ShadowDom instance (WebDriver is internally initialized in the ShadowDom class)
+            shadowDom = new ShadowDom();
         }
 
         /// <summary>
-        /// Test method that validates the text inside the Shadow DOM.
+        /// Test method to validate the text content inside the Shadow DOM.
+        /// It retrieves the text using the GetShadowText method and asserts that it is empty.
         /// </summary>
         [Test]
         public void ValidateShadowDomText()
@@ -58,13 +60,13 @@ namespace HerokuAppScenarios
         }
 
         /// <summary>
-        /// TearDown method that closes the WebDriver after each test.
-        /// This method is executed after each test.
+        /// TearDown method that performs the cleanup after each test.
+        /// This method is executed after each test to release resources by calling the CleanUp method.
         /// </summary>
         [TearDown]
         public void TearDown()
         {
-            // Clean up the WebDriver after test execution.
+            // Clean up the WebDriver after test execution to ensure proper disposal.
             shadowDom.CleanUp();
         }
     }

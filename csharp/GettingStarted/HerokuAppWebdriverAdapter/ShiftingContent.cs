@@ -16,31 +16,57 @@ software distributed under the License is distributed on an
 KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
-*/using OpenQA.Selenium;
+*/
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace HerokuAppOperations
 {
+    /// <summary>
+    /// This class contains methods to interact with the Shifting Content example page on the HerokuApp website.
+    /// It includes functionality for verifying menu items, navigating to specific menu items, checking for shifting behavior,
+    /// and retrieving the current URL.
+    /// </summary>
     public class ShiftingContentOperations : IShiftingContent
     {
         private readonly IWebDriver _driver;
         private readonly string _url = "https://the-internet.herokuapp.com/shifting_content/menu";
 
-        // Constructor to initialize WebDriver and navigate to the page
-        public ShiftingContentOperations(IWebDriver driver)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ShiftingContentOperations"/> class.
+        /// This constructor creates a new <see cref="ChromeDriver"/> instance to interact with the browser.
+        /// </summary>
+        public ShiftingContentOperations()
         {
-            _driver = driver ?? throw new ArgumentNullException(nameof(driver), "WebDriver cannot be null");
+            _driver = new ChromeDriver();  // Initializes the WebDriver (ChromeDriver)
         }
 
-        // Navigates to the Shifting Content page
+        /// <summary>
+        /// Retrieves the WebDriver instance.
+        /// </summary>
+        /// <returns>The WebDriver instance used by the class.</returns>
+        public IWebDriver GetDriver()
+        {
+            return _driver;
+        }
+
+        /// <summary>
+        /// Navigates to the Shifting Content page on the HerokuApp website.
+        /// This method ensures the page is loaded before performing any further actions.
+        /// </summary>
         public void NavigateToShiftingContentPage()
         {
             _driver.Navigate().GoToUrl(_url);
         }
 
-        // Verifies that all expected menu items are present on the page
+        /// <summary>
+        /// Verifies that the menu items are correctly loaded on the Shifting Content page.
+        /// If fewer than 5 menu items are found, an exception is thrown to indicate possible shifting behavior.
+        /// </summary>
+        /// <exception cref="Exception">Thrown if fewer than 5 menu items are found.</exception>
         public void VerifyMenuItems()
         {
             NavigateToShiftingContentPage();
@@ -56,7 +82,12 @@ namespace HerokuAppOperations
                 throw new Exception("Not all menu items are visible. Possible shifting behavior.");
         }
 
-        // Navigates to a specific menu item based on its visible text
+        /// <summary>
+        /// Navigates to a specific menu item on the Shifting Content page based on the visible text of the menu item.
+        /// If the menu item is not found, an exception is thrown.
+        /// </summary>
+        /// <param name="menuItemText">The visible text of the menu item to navigate to.</param>
+        /// <exception cref="Exception">Thrown if the specified menu item is not found.</exception>
         public void NavigateToMenuItem(string menuItemText)
         {
             NavigateToShiftingContentPage();
@@ -71,7 +102,11 @@ namespace HerokuAppOperations
             Console.WriteLine($"Navigated to menu item: {menuItemText}");
         }
 
-        // Detects whether any content on the page shifts unexpectedly by comparing element positions
+        /// <summary>
+        /// Detects whether any content on the page shifts unexpectedly by comparing the horizontal positions of menu items 
+        /// before and after a page refresh.
+        /// </summary>
+        /// <exception cref="Exception">Thrown if shifting behavior is detected based on the positions of menu items.</exception>
         public void CheckShiftingBehavior()
         {
             NavigateToShiftingContentPage();
@@ -100,13 +135,19 @@ namespace HerokuAppOperations
             }
         }
 
-        // Gets the current URL of the browser
+        /// <summary>
+        /// Retrieves the current URL of the browser.
+        /// </summary>
+        /// <returns>The current URL as a string.</returns>
         public string GetCurrentUrl()
         {
             return _driver.Url;
         }
 
-        // Cleanup method to close WebDriver after test execution
+        /// <summary>
+        /// Cleans up resources by quitting and disposing of the WebDriver after test execution.
+        /// This method is called to ensure that the browser session is properly closed.
+        /// </summary>
         public void CleanUp()
         {
             if (_driver != null)
