@@ -115,6 +115,11 @@ namespace HerokuAppWebdriverAdapter
         {
             return driver.Title;
         }
+
+        public string GetpageTitle()
+        {
+            return driver.FindElement(By.TagName("h3")).Text; ;
+        }
         public string GetDescription()
         {
             return driver.FindElement(By.TagName("p")).Text; // Assuming the description is in a <p> tag.

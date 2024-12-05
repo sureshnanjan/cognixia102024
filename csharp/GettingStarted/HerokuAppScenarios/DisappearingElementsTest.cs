@@ -134,7 +134,7 @@ namespace HerokuAppScenarios
             string expectedTitle = "Disappearing Elements";
 
             // Act: Retrieve the actual page title.
-            string actualTitle = disappearingElements.GetTitle();
+            string actualTitle = disappearingElements.GetpageTitle();
 
             // Assert: Verify the page title matches the expected title.
             Assert.AreEqual(expectedTitle, actualTitle, "Page title mismatch.");
