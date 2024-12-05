@@ -41,5 +41,15 @@ namespace HerokuAppOperations
         /// Method to refresh the page, reloading the content.
         /// </summary>
         public void RefreshPage();
+
+        /// <summary>
+        /// Test to verify the page title.
+        /// </summary>
+        public string GetTitle();
+
+        /// <summary>
+        /// Test to verify the page description.
+        /// </summary>
+        public string GetDescription();
     }
 }

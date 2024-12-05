@@ -35,6 +35,12 @@ namespace HerokuAppWebdriverAdapter
         // Locator for the notification message element on the page
         private readonly By notificationMessageLocator = By.Id("flash");
 
+        // Locator for the page title element
+        private readonly By pageTitleLocator = By.TagName("h3");
+
+        // Locator for the page description element
+        private readonly By pageDescriptionLocator = By.XPath("//p");
+
         /// <summary>
         /// Initializes a new instance of the <see cref="NotificationMessage"/> class.
         /// Navigates to the Notification Message page.
@@ -89,6 +95,55 @@ namespace HerokuAppWebdriverAdapter
         {
             // Refresh the browser page
             driver.Navigate().Refresh();
+        }
+
+        /// <summary>
+        /// Retrieves the title of the Notification Message page.
+        /// </summary>
+        /// <returns>The page title as a string.</returns>
+        public string GetPageTitle()
+        {
+            try
+            {
+                // Attempt to find the page title element
+                var titleElement = driver.FindElement(pageTitleLocator);
+                // Return the page title text
+                return titleElement.Text.Trim();
+            }
+            catch (NoSuchElementException)
+            {
+                // Handle the case when the page title is not found
+                return "Page title not found.";
+            }
+        }
+
+        /// <summary>
+        /// Retrieves the description of the Notification Message page.
+        /// </summary>
+        /// <returns>The page description as a string.</returns>
+        public string GetPageDescription()
+        {
+            try
+            {
+                // Attempt to find the page description element
+                var descriptionElement = driver.FindElement(pageDescriptionLocator);
+                // Return the page description text
+                return descriptionElement.Text.Trim();
+            }
+            catch (NoSuchElementException)
+            {
+                // Handle the case when the description is not found
+                return "Page description not found.";
+            }
+        }
+
+        public void Quit()
+        {
+            if (driver != null)
+            {
+                driver.Quit();
+                driver = null;
+            }
         }
     }
 }

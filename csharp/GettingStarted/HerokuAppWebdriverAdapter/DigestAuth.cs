@@ -80,5 +80,23 @@ namespace HerokuAppWebdriverAdapter
                 return "Success message not found.";
             }
         }
+        public string GetPageTitle()
+        {
+            return driver.FindElement(By.TagName("h3")).Text;
+        }
+        public string GetPageDescription()
+        {
+            return driver.FindElement(By.TagName("p")).Text; // Assuming the description is in a <p> tag.
+        }
+
+        public void Quit()
+        {
+            if (driver != null)
+            {
+                driver.Quit();
+                driver = null;
+            }
+        }
     }
+
 }

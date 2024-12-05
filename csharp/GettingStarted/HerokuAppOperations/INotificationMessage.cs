@@ -21,24 +21,38 @@ namespace HerokuAppOperations
 {
     /// <summary>
     /// Interface representing the operations for interacting with the Notification Message page.
-    /// Provides methods to trigger notifications, retrieve the notification message, and refresh the page.
+    /// Provides methods to trigger notifications, retrieve the notification message, refresh the page,
+    /// and retrieve the title and description of the page.
     /// </summary>
     public interface INotificationMessage
     {
         /// <summary>
         /// Method to click the "Click here" link to trigger a notification.
         /// </summary>
-        public void ClickHere();
+        void ClickHere();
 
         /// <summary>
         /// Method to get the current notification message text displayed on the page.
         /// </summary>
         /// <returns>A string representing the notification message text.</returns>
-        public string GetNotificationMessage();
+        string GetNotificationMessage();
 
         /// <summary>
         /// Method to refresh the page, reloading the content.
         /// </summary>
-        public void RefreshPage();
+        void RefreshPage();
+
+        /// <summary>
+        /// Method to get the title of the Notification Message page.
+        /// </summary>
+        /// <returns>A string representing the page title.</returns>
+        string GetPageTitle();
+
+        /// <summary>
+        /// Method to get the description text on the Notification Message page.
+        /// </summary>
+        /// <returns>A string representing the description text.</returns>
+        string GetPageDescription();
     }
 }
+
