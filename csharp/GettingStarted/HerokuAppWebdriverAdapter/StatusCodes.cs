@@ -1,6 +1,8 @@
 ﻿using HerokuAppOperations;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace HerokuAppWebdriverAdapter
 {
@@ -20,7 +22,6 @@ namespace HerokuAppWebdriverAdapter
             // Initialize WebDriver
             driver = new ChromeDriver();
         }
-        //public StatusCodes(IWebDriver driver) : base(driver) { }
 
         // Navigates to the page for a specific HTTP status code
         public void NavigateToStatusCode(string code)
@@ -45,40 +46,36 @@ namespace HerokuAppWebdriverAdapter
         {
             return driver.FindElement(statusCodeText).Text;
         }
-        public string GetPageContent()
-        {
-            try
-            {
-                return driver.FindElement(By.TagName("body")).Text;  // Fetch entire body text
-            }
-            catch (NoSuchElementException)
-            {
-                return string.Empty;  // Return empty if the element is not found
-            }
-        }
 
+        // Retrieves the error message (if any)
         public string GetErrorMessage()
         {
             try
             {
-                return driver.FindElement(By.ClassName("error-message")).Text; // Check for error message by class
+                return driver.FindElement(By.ClassName("error-message")).Text; // Look for error message element
             }
             catch (NoSuchElementException)
             {
-                return string.Empty;  // Return empty if no error message element is found
+                return string.Empty;  // Return empty if no error message found
             }
         }
 
-
-        // Close the browser (cleanup after tests)
+        // Close the browser after tests
         public void CloseBrowser()
         {
-            driver.Quit(); // This properly closes the browser after the tests are completed
+            driver.Quit(); // Properly closes the browser after the tests are completed
         }
 
+        // Implemented method to get HTTP status code
         public double GetHttpStatusCode()
         {
-            throw new NotImplementedException();
+            // Make a request to the same URL using HttpClient to fetch the HTTP status code
+            string url = driver.Url;  // Get the current URL loaded by the driver
+            using (var client = new HttpClient())
+            {
+                var response = client.SendAsync(new HttpRequestMessage(HttpMethod.Get, url)).Result;
+                return (double)response.StatusCode;  // Return the status code as double
+            }
         }
     }
 }
