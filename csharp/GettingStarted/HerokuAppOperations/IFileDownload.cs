@@ -32,6 +32,8 @@ namespace HerokuAppOperations
         /// <summary>
         /// Initiates the file download process.
         /// </summary>
+        void NavigateToFileDownloadPage();
         void Download();
+        bool IsFileLinkAvailable();
     }
 }

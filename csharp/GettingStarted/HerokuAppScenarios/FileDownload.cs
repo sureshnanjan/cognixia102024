@@ -16,58 +16,60 @@ KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
 */
+using System;
 using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using HerokuAppOperations;
+using HerokuAppWebdriverAdapter;
 
-namespace HerokuAppOperations.Tests
+namespace HerokuAppScenarios
 {
     /// <summary>
-    /// A stub implementation of the IFileDownload interface used for testing purposes.
-    /// </summary>
-    public class FileDownloadStub : IFileDownload
-    {
-        /// <summary>
-        /// Gets a value indicating whether the Download method has been called.
-        /// </summary>
-        public bool IsDownloadCalled { get; private set; } = false;
-
-        /// <summary>
-        /// Simulates the file download process by setting IsDownloadCalled to true.
-        /// </summary>
-        public void Download()
-        {
-            IsDownloadCalled = true;
-        }
-    }
-
-    /// <summary>
-    /// Contains NUnit tests for the IFileDownload interface using the FileDownloadStub implementation.
+    /// NUnit tests for File Download functionality.
     /// </summary>
     [TestFixture]
     public class FileDownloadTests
     {
-        private FileDownloadStub _fileDownload;
+        private IWebDriver _driver;
+        private IFileDownload _fileDownload;
 
-        /// <summary>
-        /// Initializes the FileDownloadStub instance before each test.
-        /// </summary>
         [SetUp]
         public void SetUp()
         {
-            _fileDownload = new FileDownloadStub();
+            // Initialize the WebDriver and the File Download adapter.
+            _driver = new ChromeDriver();
+            _fileDownload = new FileDownloadWebdriverAdapter(_driver);
+
+            // Navigate to the File Download page.
+            _fileDownload.NavigateToFileDownloadPage();
         }
 
-        /// <summary>
-        /// Tests that the Download method is called, setting IsDownloadCalled to true.
-        /// </summary>
+        [TearDown]
+        public void TearDown()
+        {
+            // Dispose of WebDriver instance after tests.
+            if (_driver != null)
+            {
+                _driver.Dispose();
+            }
+        }
+
         [Test]
-        public void Download_ShouldSetIsDownloadCalledToTrue()
+        public void NavigateToFileDownloadPage_ShouldLoadPageSuccessfully()
+        {
+            // Assert
+            Assert.IsTrue(_fileDownload.IsFileLinkAvailable(), "The File Download page should display at least one file link.");
+        }
+
+        [Test]
+        public void Download_ShouldTriggerFileDownload()
         {
             // Act
             _fileDownload.Download();
 
             // Assert
-            Assert.IsTrue(_fileDownload.IsDownloadCalled, "Download method should set IsDownloadCalled to true.");
+            Assert.IsTrue(_fileDownload.IsFileLinkAvailable(), "File link should still be available after triggering a download.");
         }
     }
 }

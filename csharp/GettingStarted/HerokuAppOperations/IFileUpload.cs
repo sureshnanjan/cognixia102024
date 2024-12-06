@@ -24,28 +24,48 @@ using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
+    /// <summary>
+    /// Defines the operations for file upload functionality.
+    /// </summary>
     public interface IFileUpload
     {
-       
+        /// <summary>
+        /// Navigates to the File Upload page.
+        /// </summary>
+        void NavigateToFileUploadPage();
 
         /// <summary>
-        /// Uploads a file to the target webpage.
+        /// Checks if the File Upload page is loaded.
         /// </summary>
-        /// <param name="filePath">The full path to the file to be uploaded.</param>
-        public void FileUpload();
-
-
-        public void ChooseFile(string filePath);
+        /// <returns>True if the page is loaded; otherwise, false.</returns>
+        bool IsPageLoaded();
 
         /// <summary>
-        /// Verifies if the file upload was successful.
+        /// Chooses a file to upload by setting the file path in the file input field.
         /// </summary>
-        /// <returns>A boolean indicating success or failure.</returns>
-       
+        /// <param name="filePath">The full path of the file to upload.</param>
+        void ChooseFile(string filePath);
 
         /// <summary>
-        /// Closes the browser.
+        /// Initiates the file upload by clicking the Upload button.
         /// </summary>
-        public void CloseBrowser();
+        void FileUpload();
+
+        /// <summary>
+        /// Verifies if the file upload was successful by checking the uploaded files element.
+        /// </summary>
+        /// <returns>True if the upload is successful; otherwise, false.</returns>
+        bool VerifyUploadSuccess();
+
+        /// <summary>
+        /// Closes the browser by disposing of the WebDriver instance.
+        /// </summary>
+        void CloseBrowser();
+
+        /// <summary>
+        /// Retrieves the selected file path from the file input field.
+        /// </summary>
+        /// <returns>The file path entered into the file input field.</returns>
+        string GetSelectedFilePath();
     }
 }

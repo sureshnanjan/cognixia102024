@@ -16,142 +16,88 @@ KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
 */
+using System;
 using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using HerokuAppOperations;
+using HerokuAppWebdriverAdapter;
 
-namespace HerokuAppOperations.Tests
+namespace HerokuAppScenarios
 {
     /// <summary>
-    /// A stub implementation of the IExitIntent interface used for testing purposes.
-    /// </summary>
-    public class ExitIntentStub : IExitIntent
-    {
-        /// <summary>
-        /// Gets or sets the title of the modal window.
-        /// </summary>
-        public string Title { get; set; }
-
-        /// <summary>
-        /// Gets or sets the description or content of the modal window.
-        /// </summary>
-        public string Description { get; set; }
-
-        /// <summary>
-        /// Gets a value indicating whether the modal window is currently open.
-        /// </summary>
-        public bool IsModalOpen { get; private set; } = false;
-
-        /// <summary>
-        /// Retrieves the title of the modal window.
-        /// </summary>
-        /// <returns>A string representing the modal's title.</returns>
-        public string GetTitle()
-        {
-            return Title;
-        }
-
-        /// <summary>
-        /// Retrieves the description or content of the modal window.
-        /// </summary>
-        /// <returns>A string representing the modal's description.</returns>
-        public string GetDescription()
-        {
-            return Description;
-        }
-
-        /// <summary>
-        /// Opens the modal window by setting IsModalOpen to true.
-        /// </summary>
-        public void OpenModalWindow()
-        {
-            IsModalOpen = true;
-        }
-
-        /// <summary>
-        /// Closes the modal window by setting IsModalOpen to false.
-        /// </summary>
-        public void CloseModalWindow()
-        {
-            IsModalOpen = false;
-        }
-    }
-
-    /// <summary>
-    /// Contains NUnit tests for the IExitIntent interface using the ExitIntentStub implementation.
+    /// NUnit tests for Exit Intent Modal functionality.
     /// </summary>
     [TestFixture]
-    public class ExitIntentTests
+    public class ExitIntentModalTests
     {
-        private ExitIntentStub _exitIntent;
+        private IWebDriver _driver;
+        private IExitIntent _exitIntent;
 
-        /// <summary>
-        /// Initializes the ExitIntentStub instance before each test.
-        /// </summary>
         [SetUp]
         public void SetUp()
         {
-            _exitIntent = new ExitIntentStub();
+            // Initialize the WebDriver and the Exit Intent adapter.
+            _driver = new ChromeDriver();
+            _exitIntent = new ExitIntentWebdriverAdapter(_driver);
+
+            // Navigate to the Exit Intent page.
+            _exitIntent.NavigateToExitIntentPage();
         }
 
-        /// <summary>
-        /// Tests that GetTitle() returns the correct title.
-        /// </summary>
-        [Test]
-        public void GetTitle_ShouldReturnTitle()
+        [TearDown]
+        public void TearDown()
         {
-            // Arrange
-            _exitIntent.Title = "Sample Modal Title";
+            // Dispose of WebDriver instance after tests.
+            if (_driver != null) ;
+            {
+                _driver.Dispose();
+            }
 
-            // Act
-            var actualTitle = _exitIntent.GetTitle();
-
-            // Assert
-            Assert.AreEqual("Sample Modal Title", actualTitle);
         }
 
-        /// <summary>
-        /// Tests that GetDescription() returns the correct description.
-        /// </summary>
-        [Test]
-        public void GetDescription_ShouldReturnDescription()
-        {
-            // Arrange
-            _exitIntent.Description = "This is a sample modal description.";
+            [Test]
+            public void NavigateToExitIntentPage_ShouldMarkPageAsLoaded()
+            {
+                // Assert
+                Assert.IsTrue(_exitIntent.IsPageLoaded(), "The Exit Intent page should be marked as loaded after navigation.");
+            }
 
-            // Act
-            var actualDescription = _exitIntent.GetDescription();
+            [Test]
+            public void TriggerExitIntent_ShouldDisplayModal()
+            {
+                // Act
+                _exitIntent.TriggerExitIntent();
 
-            // Assert
-            Assert.AreEqual("This is a sample modal description.", actualDescription);
-        }
+                // Assert
+                Assert.IsTrue(_exitIntent.IsModalDisplayed(), "The modal should be displayed when exit intent is triggered.");
+            }
 
-        /// <summary>
-        /// Tests that calling OpenModalWindow() sets IsModalOpen to true.
-        /// </summary>
-        [Test]
-        public void OpenModalWindow_ShouldSetIsModalOpenToTrue()
-        {
-            // Act
-            _exitIntent.OpenModalWindow();
+            [Test]
+            public void CloseModal_ShouldHideModal()
+            {
+                // Arrange
+                _exitIntent.TriggerExitIntent();
 
-            // Assert
-            Assert.IsTrue(_exitIntent.IsModalOpen);
-        }
+                // Act
+                _exitIntent.CloseModal();
 
-        /// <summary>
-        /// Tests that calling CloseModalWindow() sets IsModalOpen to false.
-        /// </summary>
-        [Test]
-        public void CloseModalWindow_ShouldSetIsModalOpenToFalse()
-        {
-            // Arrange
-            _exitIntent.OpenModalWindow();
+                // Assert
+                Assert.IsFalse(_exitIntent.IsModalDisplayed(), "The modal should be hidden after clicking the Close button.");
+            }
 
-            // Act
-            _exitIntent.CloseModalWindow();
+            [Test]
+            public void ModalContent_ShouldDisplayCorrectMessage()
+            {
+                // Arrange
+                _exitIntent.TriggerExitIntent();
 
-            // Assert
-            Assert.IsFalse(_exitIntent.IsModalOpen);
-        }
+                // Act
+                string modalMessage = _exitIntent.GetModalMessage();
+
+                // Assert
+                Assert.AreEqual("It's commonly used to encourage a user to take an action (e.g., give their e-mail address to sign up for something).", modalMessage, "The modal message should match the expected content.");
+            }
     }
 }
+

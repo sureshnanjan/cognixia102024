@@ -28,22 +28,11 @@ namespace HerokuAppOperations
         /// Retrieves the title of the modal window.
         /// </summary>
         /// <returns>A string representing the modal's title.</returns>
-       public string GetTitle();
-
-        /// <summary>
-        /// Retrieves the description or content of the modal window.
-        /// </summary>
-        /// <returns>A string representing the modal's description.</returns>
-        public string GetDescription();
-
-        /// <summary>
-        /// Triggers the logic to display or open the modal window.
-        /// </summary>
-        public void OpenModalWindow();
-
-        /// <summary>
-        /// Handles the logic to dismiss or close the modal window.
-        /// </summary>
-        public void CloseModalWindow();
+        void NavigateToExitIntentPage();
+        bool IsPageLoaded();
+        void TriggerExitIntent();
+        bool IsModalDisplayed();
+        void CloseModal();
+        string GetModalMessage();
     }
 }

@@ -16,146 +16,67 @@ KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
 */
+using System;
 using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using HerokuAppOperations;
+using HerokuAppWebdriverAdapter;
 
-namespace HerokuAppOperations.Tests
+namespace HerokuAppScenarios
 {
     /// <summary>
-    /// A stub implementation of the IFileUpload interface used for testing purposes.
-    /// </summary>
-    public class FileUploadStub : IFileUpload
-    {
-        public string SelectedFilePath { get; private set; }
-        public bool IsFileUploaded { get; private set; }
-        public bool IsBrowserClosed { get; private set; }
-
-        /// <summary>
-        /// Simulates choosing a file by setting SelectedFilePath to the given file path.
-        /// </summary>
-        public void ChooseFile(string filePath)
-        {
-            SelectedFilePath = filePath;
-        }
-
-        /// <summary>
-        /// Simulates the file upload process by setting IsFileUploaded to true if a file was chosen.
-        /// </summary>
-        public void FileUpload()
-        {
-            if (!string.IsNullOrEmpty(SelectedFilePath))
-            {
-                IsFileUploaded = true;
-            }
-        }
-
-        /// <summary>
-        /// Simulates verification of the file upload by returning the IsFileUploaded status.
-        /// </summary>
-        public bool VerifyUploadSuccess()
-        {
-            return IsFileUploaded;
-        }
-
-        /// <summary>
-        /// Simulates closing the browser by setting IsBrowserClosed to true.
-        /// </summary>
-        public void CloseBrowser()
-        {
-            IsBrowserClosed = true;
-        }
-    }
-
-    /// <summary>
-    /// Contains NUnit tests for the IFileUpload interface using the FileUploadStub implementation.
+    /// NUnit tests for File Upload functionality on HerokuApp.
     /// </summary>
     [TestFixture]
     public class FileUploadTests
     {
-        private FileUploadStub _fileUpload;
+        private IWebDriver _driver;
+        private FileUploadWebdriverAdapter _fileUploadAdapter;
 
-        /// <summary>
-        /// Initializes the FileUploadStub instance before each test.
-        /// </summary>
         [SetUp]
         public void SetUp()
         {
-            _fileUpload = new FileUploadStub();
+            // Initialize WebDriver (you may choose other browsers, like Firefox)
+            _driver = new ChromeDriver();
+            _fileUploadAdapter = new FileUploadWebdriverAdapter(_driver);
         }
 
-        /// <summary>
-        /// Tests that ChooseFile correctly sets the file path.
-        /// </summary>
         [Test]
-        public void ChooseFile_ShouldSetFilePath()
+        public void UploadFileTest()
         {
-            // Arrange
-            string testFilePath = "C:\\path\\to\\file.txt";
+            // Declare the file path
+            string filePath = @"C:\Users\raj.kadambalu\Downloads\test.txt";  // Escaped backslashes or verbatim string
 
-            // Act
-            _fileUpload.ChooseFile(testFilePath);
+            // Navigate to the file upload page
+            _fileUploadAdapter.NavigateToFileUploadPage();
 
-            // Assert
-            Assert.AreEqual(testFilePath, _fileUpload.SelectedFilePath);
+            // Check if the page is loaded (optional)
+            Assert.IsTrue(_fileUploadAdapter.IsPageLoaded(), "File upload page is not loaded");
+
+            // Choose the file to upload
+            _fileUploadAdapter.ChooseFile(filePath);  // Passing the file path to the ChooseFile method
+
+            // Click the upload button
+            _fileUploadAdapter.FileUpload();
+
+            // Verify that the upload was successful
+            bool isUploadSuccessful = _fileUploadAdapter.VerifyUploadSuccess();
+            Assert.IsTrue(isUploadSuccessful, "File upload failed");
+
+            // Optional: Validate the file path displayed on the page
+            string selectedFilePath = _fileUploadAdapter.GetSelectedFilePath();
+            Assert.AreEqual(filePath, selectedFilePath, "The selected file path is incorrect");
         }
 
-        /// <summary>
-        /// Tests that FileUpload sets IsFileUploaded to true if a file was chosen.
-        /// </summary>
-        [Test]
-        public void FileUpload_ShouldSetIsFileUploadedToTrue_WhenFileIsChosen()
+        [TearDown]
+        public void TearDown()
         {
-            // Arrange
-            _fileUpload.ChooseFile("C:\\path\\to\\file.txt");
-
-            // Act
-            _fileUpload.FileUpload();
-
-            // Assert
-            Assert.IsTrue(_fileUpload.IsFileUploaded);
-        }
-
-        /// <summary>
-        /// Tests that VerifyUploadSuccess returns true if the file upload was successful.
-        /// </summary>
-        [Test]
-        public void VerifyUploadSuccess_ShouldReturnTrue_WhenFileUploadIsSuccessful()
-        {
-            // Arrange
-            _fileUpload.ChooseFile("C:\\path\\to\\file.txt");
-            _fileUpload.FileUpload();
-
-            // Act
-            var uploadSuccess = _fileUpload.VerifyUploadSuccess();
-
-            // Assert
-            Assert.IsTrue(uploadSuccess);
-        }
-
-        /// <summary>
-        /// Tests that VerifyUploadSuccess returns false if the file upload was not successful.
-        /// </summary>
-        [Test]
-        public void VerifyUploadSuccess_ShouldReturnFalse_WhenFileUploadIsNotSuccessful()
-        {
-            // Act
-            var uploadSuccess = _fileUpload.VerifyUploadSuccess();
-
-            // Assert
-            Assert.IsFalse(uploadSuccess);
-        }
-
-        /// <summary>
-        /// Tests that CloseBrowser sets IsBrowserClosed to true.
-        /// </summary>
-        [Test]
-        public void CloseBrowser_ShouldSetIsBrowserClosedToTrue()
-        {
-            // Act
-            _fileUpload.CloseBrowser();
-
-            // Assert
-            Assert.IsTrue(_fileUpload.IsBrowserClosed);
+            // Close the browser after the test
+            if (_driver != null)
+            {
+                _driver.Dispose();
+            }
         }
     }
 }

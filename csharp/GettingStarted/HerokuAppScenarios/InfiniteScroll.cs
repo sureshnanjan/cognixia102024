@@ -1,14 +1,30 @@
-﻿using HerokuAppOperations;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using HerokuAppOperations;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium;
+using HerokuAppWebdriverAdapter;
 
 namespace HerokuAppScenarios
 {
     /// <summary>
-    /// NUnit tests for IInfiniteScroll
+    /// NUnit tests for IInfiniteScroll using InfiniteScrollStub.
     /// </summary>
     [TestFixture]
     public class InfiniteScrollTests
     {
         private IInfiniteScroll _infiniteScroll;
+
+        [SetUp]
+        public void SetUp()
+        {
+            // Initialize the stub for testing.
+            _infiniteScroll = new InfiniteScroll.InfiniteScrollStub(initialItems: 20, itemsPerScroll: 10);
+        }
+
 
         [Test]
         public void NavigateToInfiniteScrollPage_ShouldMarkPageAsLoaded()
