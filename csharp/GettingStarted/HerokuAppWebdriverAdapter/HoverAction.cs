@@ -17,11 +17,7 @@ KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
 */
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using HerokuAppOperations;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
@@ -35,57 +31,65 @@ namespace HerokuAppWebdriverAdapter
     /// </summary>
     public class HoverActions : HerokuAppCommon, IHoverAction
     {
-        private readonly IWebDriver _driver;
+        // Locator for hoverable figure containers
+        private readonly By figureLocator = By.CssSelector(".figure");
+        private readonly By contentLocator = By.CssSelector(".figcaption h5");
+        private readonly By linkLocator = By.CssSelector(".figcaption a");
 
         /// <summary>
-        /// Initializes a new instance of the HoverActions class.
+        /// Initializes a new instance of the <see cref="HoverActions"/> class.
         /// </summary>
-        /// <param name="driver">The WebDriver instance used to interact with the web page.</param>
-        public HoverActions(IWebDriver driver)
-        {
-            _driver = driver;
-        }
+        /// <param name="driver">The WebDriver instance used to interact with the page.</param>
+        public HoverActions(IWebDriver driver) : base(driver) { }
 
         /// <summary>
-        /// Hovers over the specified element (such as an image or button).
+        /// Hovers over the specified element to reveal associated content.
         /// </summary>
-        /// <param name="element">The element to hover over.</param>
-        public void hoverOverElement(IWebElement element)
+        /// <param name="element">The WebElement to hover over.</param>
+        public void HoverOverElement(IWebElement element)
         {
-            // Create an instance of Actions class to perform the hover action
-            Actions actions = new Actions(_driver);
-            actions.MoveToElement(element).Perform();  // Perform hover action
+            // Perform hover action using Actions class
+            Actions actions = new Actions(driver);
+            actions.MoveToElement(element).Perform();
             Console.WriteLine("Hovered over the element.");
         }
 
         /// <summary>
-        /// Validates that the content (such as a username or link) becomes visible after hovering over the specified element.
+        /// Validates that the content becomes visible after hovering over a figure element.
         /// </summary>
-        /// <param name="element">The element over which the hover action is performed.</param>
-        /// <returns>Returns true if the content appears after hover, otherwise false.</returns>
-        public bool validateContentAppears(IWebElement element)
+        /// <param name="element">The figure element to validate content for.</param>
+        /// <returns>True if the content is visible; otherwise, false.</returns>
+        public bool ValidateContentAppears(IWebElement element)
         {
             try
             {
-                // Find the content (like username or link) after hovering
-                IWebElement content = element.FindElement(By.XPath(".//div[@class='figcaption']//h5"));
-                return content.Displayed; // Return true if content is visible after hover
+                // Find the content within the hovered figure
+                IWebElement content = element.FindElement(contentLocator);
+                return content.Displayed;
             }
             catch (NoSuchElementException)
             {
-                return false; // Return false if content doesn't appear
+                return false; // Content is not visible
             }
         }
 
         /// <summary>
-        /// Clicks on the revealed link or content that appears after hovering over the specified element.
+        /// Clicks on the revealed link within the hovered figure.
         /// </summary>
-        /// <param name="link">The revealed link or content to click.</param>
-        public void clickOnRevealedLink(IWebElement link)
+        /// <param name="element">The figure element containing the link.</param>
+        public void ClickOnRevealedLink(IWebElement element)
         {
-            // Click on the revealed link or content
-            link.Click();
-            Console.WriteLine("Clicked on the revealed link.");
+            try
+            {
+                // Locate and click the link
+                IWebElement link = element.FindElement(linkLocator);
+                link.Click();
+                Console.WriteLine("Clicked on the revealed link.");
+            }
+            catch (NoSuchElementException)
+            {
+                throw new InvalidOperationException("Link not found within the hovered element.");
+            }
         }
     }
 }

@@ -60,5 +60,6 @@ namespace HerokuAppOperations
         /// This method can be used to check if the login was successful or if any errors occurred.
         /// </summary>
         public void VerifyingLogin();
+        string GetTitle();
     }
 }

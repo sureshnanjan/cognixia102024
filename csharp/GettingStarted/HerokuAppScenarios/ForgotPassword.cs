@@ -6,9 +6,9 @@ regarding copyright ownership. The SFC licenses this file
 to you under the Apache License, Version 2.0 (the
 "License"); you may not use this file except in compliance
 with the License. You may obtain a copy of the License at
- 
+
   http://www.apache.org/licenses/LICENSE-2.0
- 
+
 Unless required by applicable law or agreed to in writing,
 software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -16,138 +16,111 @@ KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
 */
-using System;
-using NUnit.Framework;
 
-namespace HerokuAppOperations
+using NUnit.Framework;
+using HerokuAppWebdriverAdapter;
+using System;
+using HerokuAppOperations;
+
+namespace HerokuAppScenarios
 {
     /// <summary>
-    /// Test suite for testing the Forgot Password page behavior using a stub implementation of IForgotPassword interface.
+    /// Test suite for validating the 'Forgot Password' functionality on the HerokuApp website.
+    /// Includes tests for verifying page title, button state, email input, and password retrieval.
     /// </summary>
     [TestFixture]
-    public class ForgotPassword
+    public class ForgotPasswordTests
     {
-        /// <summary>
-        /// Stub class implementing the IForgotPassword interface for testing purposes.
-        /// </summary>
-        public class ForgotPasswordStub : IForgotPassword
-        {
-            /// <summary>
-            /// Represents the title of the Forgot Password page.
-            /// </summary>
-            public string PageTitle { get; set; }
-
-            /// <summary>
-            /// Simulates retrieving the title of the Forgot Password page.
-            /// </summary>
-            /// <returns>The page title if set; otherwise, an empty string.</returns>
-            public string GetTitle()
-            {
-                return PageTitle ?? ""; // Return empty string if PageTitle is null
-            }
-
-            /// <summary>
-            /// Simulates verifying if a button is enabled or clickable.
-            /// </summary>
-            public void VerifyingButton()
-            {
-                // No actual implementation required for testing method invocation.
-            }
-
-            /// <summary>
-            /// Simulates entering an email address into the input field.
-            /// </summary>
-            public void EnteringEmail()
-            {
-                // No actual implementation required for testing method invocation.
-            }
-
-            /// <summary>
-            /// Simulates clicking the 'Retrieve Password' button.
-            /// </summary>
-            public void ClickingRetrievePassword()
-            {
-                // No actual implementation required for testing method invocation.
-            }
-        }
-
-        private ForgotPasswordStub _forgotPassword;
+        // Instance of the IForgotPassword implementation
+        private IForgotPassword forgotPassword;
 
         /// <summary>
-        /// Initializes the test setup by creating a new instance of ForgotPasswordStub.
+        /// Setup method to initialize test dependencies.
+        /// This method runs before each test case.
         /// </summary>
         [SetUp]
-        public void SetUp()
+        public void Setup()
         {
-            _forgotPassword = new ForgotPasswordStub();
+            // Initialize the IForgotPassword implementation (e.g., ForgotPasswordPage).
+            forgotPassword = new ForgotPasswordPage();
         }
 
         /// <summary>
-        /// Tests that GetTitle returns an empty string when the title is not set.
+        /// TearDown method to clean up after each test case.
+        /// This method runs after each test case.
         /// </summary>
-        [Test]
-        public void GetTitle_ShouldReturnEmptyString_WhenTitleNotSet()
+        [TearDown]
+        public void TearDown()
         {
-            // Act
-            var result = _forgotPassword.GetTitle();
-
-            // Assert
-            Assert.IsEmpty(result, "Title should be empty when not set.");
+            // You can add cleanup logic if needed
         }
 
         /// <summary>
-        /// Verifies that the VerifyingButton method executes without throwing any exceptions.
+        /// Test to validate the title of the 'Forgot Password' page.
         /// </summary>
         [Test]
-        public void VerifyingButton_ShouldExecuteWithoutError()
+        public void ValidatePageTitle()
         {
-            // Act
-            _forgotPassword.VerifyingButton();
+            // Arrange: Prepare the expected page title.
+            string expectedTitle = "Forgot Password";
 
-            // Assert
-            Assert.Pass("VerifyingButton method called successfully.");
+            // Act: Retrieve the actual page title.
+            string actualTitle = forgotPassword.GetTitle();
+
+            // Assert: Verify that the page title matches the expected title.
+            Assert.AreEqual(expectedTitle, actualTitle, "Page title mismatch.");
         }
 
         /// <summary>
-        /// Verifies that the EnteringEmail method executes without throwing any exceptions.
+        /// Test to verify if the 'Forgot Password' button is enabled.
         /// </summary>
         [Test]
-        public void EnteringEmail_ShouldExecuteWithoutError()
+        public void VerifyButtonIsEnabled()
         {
-            // Act
-            _forgotPassword.EnteringEmail();
+            // Arrange: Prepare for verifying the button state.
 
-            // Assert
-            Assert.Pass("EnteringEmail method called successfully.");
+            // Act: Verify that the button is clickable (enabled).
+            forgotPassword.VerifyingButton();
+
+            // Assert: We assume that no exceptions occur, which indicates the button is enabled.
+            // If any issues occur during the check, the test will fail.
+            Assert.Pass("Forgot Password button is enabled and clickable.");
         }
 
         /// <summary>
-        /// Verifies that the ClickingRetrievePassword method executes without throwing any exceptions.
+        /// Test to validate the email input functionality for the 'Forgot Password' form.
         /// </summary>
         [Test]
-        public void ClickingRetrievePassword_ShouldExecuteWithoutError()
+        public void EnterEmailForPasswordReset()
         {
-            // Act
-            _forgotPassword.ClickingRetrievePassword();
+            // Arrange: Provide an email address for the 'Forgot Password' form.
+            string testEmail = "testuser@example.com";
 
-            // Assert
-            Assert.Pass("ClickingRetrievePassword method called successfully.");
+            // Act: Enter the email address in the form field.
+            forgotPassword.EnteringEmail();
+
+            // Assert: This test will pass if no exceptions occur during the email entry process.
+            // You could enhance this test by verifying that the email is actually entered correctly.
+            Console.WriteLine("Email entered for password reset.");
+            Assert.Pass("Email entered successfully.");
         }
 
         /// <summary>
-        /// Tests that GetTitle returns the correct page title when it is set.
+        /// Test to validate the functionality of the 'Retrieve Password' button.
         /// </summary>
         [Test]
-        public void GetTitle_ShouldReturnCorrectTitle()
+        public void RetrievePasswordFunctionality()
         {
-            // Arrange
-            _forgotPassword.PageTitle = "Forgot Password - MyApp";
+            // Arrange: Prepare the email address and ensure it's entered.
+            string testEmail = "testuser@example.com";
+            forgotPassword.EnteringEmail();
 
-            // Act
-            var result = _forgotPassword.GetTitle();
+            // Act: Click the 'Retrieve Password' button to trigger the password reset process.
+            forgotPassword.ClickingRetrievePassword();
 
-            // Assert
-            Assert.AreEqual("Forgot Password - MyApp", result, "Title should be 'Forgot Password - MyApp'.");
+            // Assert: You would typically verify that the reset process starts (e.g., confirmation message or redirection).
+            // This can be done by checking for success messages or email prompts. For now, we assume success if no exception occurs.
+            Assert.Pass("Password retrieval process triggered successfully.");
         }
     }
 }
