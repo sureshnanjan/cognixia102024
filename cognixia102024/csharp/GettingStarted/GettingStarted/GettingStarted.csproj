@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BrowserAutomation\BrowserAutomation.csproj" />
+    <ProjectReference Include="..\KeywordLearning\KeywordLearning.csproj" />
+    <ProjectReference Include="..\MyExtensionQA\MyExtensionQA.csproj" />
+    <ProjectReference Include="..\PetstoreModel\PetstoreModel.csproj" />
+    <ProjectReference Include="..\TypeSystemDemo\TypeSystemDemo.csproj" />
+		  <ProjectReference Include="..\HerokuAppOperations\HerokuAppOperations.csproj" />
+		  <ProjectReference Include="..\HerokuAppWebdriverAdapter\HerokuAppWebdriverAdapter.csproj" />
+  </ItemGroup>
+
+</Project>
