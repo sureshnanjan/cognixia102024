@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignments", "Assignments\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrowserAutomation", "BrowserAutomation\BrowserAutomation.csproj", "{457A190C-2FB8-42F9-A93D-067879AB8955}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuersticCheck", "HuersticCheck\HuersticCheck.csproj", "{433C696D-3C1E-482E-9941-0B94D6CA38A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{457A190C-2FB8-42F9-A93D-067879AB8955}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{457A190C-2FB8-42F9-A93D-067879AB8955}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{457A190C-2FB8-42F9-A93D-067879AB8955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{433C696D-3C1E-482E-9941-0B94D6CA38A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{433C696D-3C1E-482E-9941-0B94D6CA38A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{433C696D-3C1E-482E-9941-0B94D6CA38A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{433C696D-3C1E-482E-9941-0B94D6CA38A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
