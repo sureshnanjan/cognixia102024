@@ -17,6 +17,7 @@ under the License.
 
 using HerokuAppOperations;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Edge;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,38 +26,65 @@ using System.Threading.Tasks;
 
 namespace HerokuAppWebdriverAdapter
 {
-    // Class for handling A/B testing functionality, inherits common functionality from HerokuAppCommon
-    public class ABTest : HerokuAppCommon, IABTesting
+    /// <summary>
+    /// Class for handling A/B testing functionality. Inherits common functionality from HerokuAppCommon.
+    /// Implements the IABTest interface.
+    /// </summary>
+
+    public class ABTest : HerokuAppCommon, IABTest
     {
-        // Constructor to initialize the driver, passing it to the base class
-        public ABTest(IWebDriver driver) : base(driver) { }
+        //public void OptInABTest()
+        //{
+        //    driver.Manage().Cookies.DeleteCookie(new Cookie("optimizelyOptOut", "true"));
+        //}
 
-        // Method to get the description text from the A/B test page
-        public string GetDiscription()
+        //public void OptOutABTest()
+        //{
+        //    driver.Manage().Cookies.AddCookie(new Cookie("optimizelyOptOut", "true"));
+        //}
+        // Locator for the A/B Test message element on the page.
+        private readonly By abTestMessageLocator = By.XPath("//div[@class='example']/h3");
+
+        /// <summary>
+        /// Initializes a new instance of the ABTest class and navigates to the A/B Test page.
+        /// </summary>
+
+        public ABTest(IWebDriver driver) : base(driver)
         {
-            // Locate the description element using XPath
-            IWebElement dis = driver.FindElement(By.XPath("//p[contains(text(),'Also known as split testing. This is a way in whic')]"));
-            return dis.Text; // Return the text content of the element
+            // Navigate to the A/B Test page on Heroku app.
+            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/abtest");
+        }
+        public ABTest()
+        {
+            this.driver = driver;
+            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/abtest");
+        }
+        /// <summary>
+        /// Gets the text of the A/B Test message displayed on the page.
+        /// </summary>
+
+        public string GetABTestMessage()
+        {
+            try
+            {
+                // Attempt to find and return the A/B Test message text.
+                var messageElement = driver.FindElement(abTestMessageLocator);
+                return messageElement.Text;
+            }
+            catch (NoSuchElementException)
+            {
+                // Return a default message if the element is not found.
+                return "No message displayed.";
+            }
         }
 
-        // Method to get the title of the current page
-        public string GetTitle()
-        {
-            return driver.Title; // Retrieve and return the title of the current page
-        }
+        /// <summary>
+        /// Gets the current URL of the page being displayed in the browser.
+        /// </summary>
 
-        // Method to opt-in to the A/B test by deleting the opt-out cookie
-        public void OptInABTest()
+        public string GetCurrentUrl()
         {
-            // Delete the cookie that opts the user out of A/B testing
-            driver.Manage().Cookies.DeleteCookie(new Cookie("optimizelyOptOut", "true"));
-        }
-
-        // Method to opt-out of the A/B test by adding the opt-out cookie
-        public void OptOutABTest()
-        {
-            // Add a cookie that opts the user out of A/B testing
-            driver.Manage().Cookies.AddCookie(new Cookie("optimizelyOptOut", "true"));
+            return driver.Url;
         }
     }
 }
