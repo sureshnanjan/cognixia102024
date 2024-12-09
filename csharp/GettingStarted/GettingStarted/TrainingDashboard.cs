@@ -18,6 +18,7 @@ under the License.
 */
 
 using System.Reflection.Metadata;
+using BrowserAutomation;
 using KeywordLearning;
 using Newtonsoft.Json;
 using PetstoreModel;
@@ -65,7 +66,7 @@ namespace GettingStarted
         /// <param name="desc"></param>
         /// <param name="participants"></param>
         public void Populate(string title, string desc, string participants) { }
-        static void Main(string[] args)
+        static void programs()
         {
             GettingStartedDelegate myref = mymethod;
             Action myactionref = mymethod;
@@ -252,6 +253,18 @@ namespace GettingStarted
             Console.WriteLine($"\nUsing in keyword:");
             Program.DisplaySquare(constantValue);
 
+
+            
+        }
+
+        static void Main(string[] args)
+        {
+            //Assignment
+            //programs();
+
+
+            //ExtensionCalls();
+            ChromeAutomator chr = new ChromeAutomator();
         }
 
         private static void SomeOtherMethod() {
