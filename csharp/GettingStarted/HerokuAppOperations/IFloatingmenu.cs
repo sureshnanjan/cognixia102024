@@ -16,38 +16,34 @@ KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
 */
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
-    public interface IFloatingmenu
+    /// <summary>
+    /// Interface for interacting with the Floating Menu page on the HerokuApp website.
+    /// Provides methods for verifying menu visibility and navigation.
+    /// </summary>
+    public interface IFloatingMenu
     {
         /// <summary>
-        /// Opens the target URL for checking the tittle.
+        /// Navigates to the Floating Menu page.
         /// </summary>
-
-        public void GetTittle();
+        void NavigateToFloatingMenuPage();
 
         /// <summary>
-        /// Opens the target URL for testing the floating menu.
+        /// Checks if the floating menu is visible on the page.
         /// </summary>
-        /// <param name="url">The URL of the floating menu page.</param>
-
-        public void ScrollTo(int position);
-
-        /// <summary>
-        /// Checks if the floating menu is visible on the screen.
-        /// </summary>
-        /// <returns>A boolean indicating whether the floating menu is visible.</returns>
-       public bool IsFloatingMenuVisible();
+        /// <returns>True if the floating menu is visible; otherwise, false.</returns>
+        bool IsFloatingMenuVisible();
 
         /// <summary>
-        /// Closes the browser.
+        /// Simulates scrolling on the page and verifies menu visibility.
         /// </summary>
-       public void CloseBrowser();
+        /// <returns>True if the menu remains visible after scrolling; otherwise, false.</returns>
+        bool VerifyMenuVisibilityAfterScroll();
+
+        string GetPageTitle();
+
+        
     }
 }

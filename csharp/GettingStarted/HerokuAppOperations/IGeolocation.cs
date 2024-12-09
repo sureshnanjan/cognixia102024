@@ -16,32 +16,40 @@ KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
 */
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
+    /// <summary>
+    /// Interface for interacting with the Geolocation page.
+    /// Provides methods to retrieve geolocation data and validate its presence.
+    /// </summary>
     public interface IGeolocation
     {
         /// <summary>
-        /// This method is called when the user clicks the "Where am I?" button or performs an action
-        /// to determine their current geolocation.
-        /// <summary>
-        public void OnclickWhereami();
+        /// Navigates to the Geolocation page.
+        /// </summary>
+        void NavigateToGeolocationPage();
 
         /// <summary>
-        /// This method retrieves and displays the location details such as latitude, longitude,
-        /// based on the current geolocation.
-        /// <summary>
-        public void GetLocationDetails();
+        /// Requests the user's location by clicking the "Where am I?" button.
+        /// </summary>
+        void RequestLocation();
 
         /// <summary>
-        /// This method is invoked when the user clicks a "Show in Maps" button 
-        /// to open the current geolocation in a mapping application, such as Google Maps.
+        /// Gets the latitude displayed on the page.
+        /// </summary>
+        /// <returns>The latitude as a string, or null if not found.</returns>
+        string GetLatitude();
+
         /// <summary>
-        public void OnclickShowInMaps();
+        /// Gets the longitude displayed on the page.
+        /// </summary>
+        /// <returns>The longitude as a string, or null if not found.</returns>
+        string GetLongitude();
+
+        string GetPageTitle();
+
+        string GetPageDescription();
     }
 }
+

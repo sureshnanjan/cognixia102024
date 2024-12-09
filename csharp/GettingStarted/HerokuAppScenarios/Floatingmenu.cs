@@ -1,74 +1,151 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HerokuAppOperations;
-using NUnit.Framework;
-using NUnit.Framework;
-using HerokuAppWebdriverAdapter;
+﻿using HerokuAppOperations;
+using OpenQA.Selenium;
 
 namespace HerokuAppScenarios
 {
+    /// <summary>
+    /// Test suite for validating Floating Menu functionality on the HerokuApp website.
+    /// </summary>
     [TestFixture]
     public class FloatingMenuTests
     {
-        private IFloatingmenu floatingMenu;
+        private FloatingMenu floatingMenu;
 
+        /// <summary>
+        /// Sets up the test environment before each test.
+        /// </summary>
         [SetUp]
         public void Setup()
         {
-            // Initialize the FloatingMenu instance.
+
             floatingMenu = new FloatingMenu();
         }
 
+        /// <summary>
+        /// Cleans up after each test.
+        /// </summary>
         [TearDown]
-        public void TearDown()
+        public void Teardown()
         {
-            // Close the browser after each test.
-            floatingMenu.CloseBrowser();
+            floatingMenu.Close();
         }
 
-        /// <summary>
-        /// Test to validate that the title of the page is retrieved correctly.
-        /// </summary>
         [Test]
-        public void ValidatePageTitle()
+        public void Title()
         {
-            // Act: Get the page title.
-            floatingMenu.GetTittle();
+            // Arrange: Navigate to the Floating Menu page.
+            floatingMenu.NavigateToFloatingMenuPage();
 
-            // Assert: Title check (this can be adapted as needed based on the actual implementation).
-            Console.WriteLine("Page title validated.");
+            // Act: Retrieve the page title.
+            string actualTitle = floatingMenu.GetPageTitle(); // Assuming this is implemented as a utility in base class.
+            string expectedTitle = "Floating Menu";
+
+            // Assert: Verify that the title matches the expected page title.
+            Assert.AreEqual(expectedTitle, actualTitle);
         }
 
-        /// <summary>
-        /// Test to validate scrolling to a specific position on the page.
-        /// </summary>
-        [Test]
-        public void ValidateScrollPosition()
-        {
-            // Arrange: Set the position to scroll to.
-            int position = 300;
-
-            // Act: Scroll to the specified position.
-            floatingMenu.ScrollTo(position);
-
-            // Assert: No explicit assertion as the test ensures the action completes without error.
-            Console.WriteLine($"Page scrolled to position {position}.");
-        }
+        
 
         /// <summary>
-        /// Test to check if the floating menu is visible on the page.
+        /// Test: Verify that the floating menu is visible when the page is loaded.
+        /// Description: Ensures that the floating menu is displayed upon loading the page.
         /// </summary>
         [Test]
-        public void ValidateFloatingMenuVisibility()
+        public void VerifyFloatingMenuIsVisibleOnPageLoad()
         {
+            // Arrange: Navigate to the Floating Menu page.
+            floatingMenu.NavigateToFloatingMenuPage();
+
             // Act: Check if the floating menu is visible.
             bool isVisible = floatingMenu.IsFloatingMenuVisible();
 
             // Assert: Verify that the floating menu is visible.
-            Assert.IsTrue(isVisible, "The floating menu is not visible.");
+            Assert.IsTrue(isVisible, "Floating menu is not visible on page load.");
+        }
+
+        /// <summary>
+        /// Test: Verify that the floating menu remains visible after scrolling to the bottom of the page.
+        /// Description: Confirms that the floating menu stays visible when scrolling down.
+        /// </summary>
+        [Test]
+        public void VerifyFloatingMenuVisibilityAfterScrolling()
+        {
+            // Arrange: Navigate to the Floating Menu page.
+            floatingMenu.NavigateToFloatingMenuPage();
+
+            // Act: Simulate scrolling and check menu visibility.
+            bool isVisibleAfterScroll = floatingMenu.VerifyMenuVisibilityAfterScroll();
+
+            // Assert: Verify that the floating menu is visible after scrolling.
+            Assert.IsTrue(isVisibleAfterScroll, "Floating menu is not visible after scrolling.");
+        }
+
+        /// <summary>
+        /// Test: Verify menu remains visible after partial scroll.
+        /// Description: Ensures the menu is visible when the user scrolls halfway through the page.
+        /// </summary>
+        [Test]
+        public void VerifyFloatingMenuVisibilityAfterPartialScroll()
+        {
+            // Arrange: Navigate to the Floating Menu page.
+            floatingMenu.NavigateToFloatingMenuPage();
+
+            // Act: Simulate partial scrolling.
+            IJavaScriptExecutor jsExecutor = (IJavaScriptExecutor)floatingMenu.driver;
+            jsExecutor.ExecuteScript("window.scrollTo(0, document.body.scrollHeight / 2);");
+
+            // Verify menu visibility.
+            bool isVisibleAfterPartialScroll = floatingMenu.IsFloatingMenuVisible();
+
+            // Assert: Confirm the menu is visible after partial scrolling.
+            Assert.IsTrue(isVisibleAfterPartialScroll, "Floating menu is not visible after partial scrolling.");
+        }
+
+        /// <summary>
+        /// Test: Verify menu remains visible when scrolling up after scrolling to the bottom.
+        /// Description: Ensures the floating menu remains visible when the user scrolls back to the top after reaching the bottom.
+        /// </summary>
+        [Test]
+        public void VerifyFloatingMenuVisibilityWhenScrollingUp()
+        {
+            // Arrange: Navigate to the Floating Menu page.
+            floatingMenu.NavigateToFloatingMenuPage();
+
+            // Act: Scroll to the bottom and then back to the top.
+            IJavaScriptExecutor jsExecutor = (IJavaScriptExecutor)floatingMenu.driver;
+            jsExecutor.ExecuteScript("window.scrollTo(0, document.body.scrollHeight);");
+            jsExecutor.ExecuteScript("window.scrollTo(0, 0);");
+
+            // Verify menu visibility.
+            bool isVisibleAfterScrollUp = floatingMenu.IsFloatingMenuVisible();
+
+            // Assert: Confirm the menu is visible after scrolling up.
+            Assert.IsTrue(isVisibleAfterScrollUp, "Floating menu is not visible after scrolling back to the top.");
+        }
+
+        /// <summary>
+        /// Test: Verify floating menu functionality under rapid scrolls.
+        /// Description: Simulates rapid scrolling and verifies the menu remains visible throughout.
+        /// </summary>
+        [Test]
+        public void VerifyFloatingMenuVisibilityUnderRapidScrolls()
+        {
+            // Arrange: Navigate to the Floating Menu page.
+            floatingMenu.NavigateToFloatingMenuPage();
+
+            // Act: Simulate rapid scrolling up and down.
+            IJavaScriptExecutor jsExecutor = (IJavaScriptExecutor)floatingMenu.driver;
+            for (int i = 0; i < 5; i++)
+            {
+                jsExecutor.ExecuteScript("window.scrollTo(0, document.body.scrollHeight);");
+                jsExecutor.ExecuteScript("window.scrollTo(0, 0);");
+            }
+
+            // Verify menu visibility after rapid scrolling.
+            bool isVisibleAfterRapidScroll = floatingMenu.IsFloatingMenuVisible();
+
+            // Assert: Confirm the menu remains visible during rapid scrolling.
+            Assert.IsTrue(isVisibleAfterRapidScroll, "Floating menu is not visible after rapid scrolling.");
         }
     }
 }

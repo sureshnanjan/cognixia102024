@@ -1,8 +1,9 @@
-﻿using NUnit.Framework;
+﻿using HerokuAppOperations;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using System;
 
-namespace HerokuAppOperations.Tests
+namespace HerokuAppScenarios
 {
     [TestFixture]
     public class ShiftingContentOperationsTests

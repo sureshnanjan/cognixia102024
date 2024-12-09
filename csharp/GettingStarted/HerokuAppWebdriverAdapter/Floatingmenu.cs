@@ -17,80 +17,49 @@ specific language governing permissions and limitations
 under the License.
 */
 
-using System;
-using System.Collections.Generic;
 using OpenQA.Selenium;
-using HerokuAppOperations;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using System;
 
-namespace HerokuAppWebdriverAdapter
+namespace HerokuAppOperations
 {
     /// <summary>
-    /// Represents the Floating Menu page on the HerokuApp website.
-    /// Provides functionality to interact with and verify the behavior of the floating menu.
+    /// Implementation of the Floating Menu page interactions.
+    /// Provides methods to verify visibility and functionality of the floating menu.
     /// </summary>
-    public class FloatingMenu : HerokuAppCommon, IFloatingmenu
+    public class FloatingMenu : IFloatingMenu
     {
-        // Locator for the floating menu element
-        private readonly By floatingMenuLocator = By.Id("menu");  // Assuming the floating menu has an ID of 'menu'
-        private readonly By titleLocator = By.TagName("h1");  // Assuming the title is within an <h1> tag
-        private readonly By floatingMenuItemsLocator = By.CssSelector(".floating-menu-item");  // Example class for menu items
+        public readonly IWebDriver driver;
+        private readonly WebDriverWait wait;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="FloatingMenu"/> class.
+        /// Sets up WebDriver and WebDriverWait.
+        /// </summary>
+        public FloatingMenu()
+        {
+            driver = new ChromeDriver();
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+        }
+
+        /// <summary>
         /// Navigates to the Floating Menu page.
         /// </summary>
-        public FloatingMenu() : base()
+        public void NavigateToFloatingMenuPage()
         {
-            // Navigate to the floating menu page
             driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/floating_menu");
         }
 
         /// <summary>
-        /// Opens the target URL for checking the title.
+        /// Checks if the floating menu is visible on the page.
         /// </summary>
-        public void GetTittle()
-        {
-            try
-            {
-                // Output the title of the page
-                string pageTitle = driver.FindElement(titleLocator).Text;
-                Console.WriteLine($"Page title: {pageTitle}");
-            }
-            catch (NoSuchElementException)
-            {
-                Console.WriteLine("Title not found on the page.");
-            }
-        }
-
-        /// <summary>
-        /// Scrolls to the specified position on the page.
-        /// </summary>
-        /// <param name="position">The position to scroll to.</param>
-        public void ScrollTo(int position)
-        {
-            try
-            {
-                // Use JavaScript to scroll to the specified position
-                IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
-                js.ExecuteScript($"window.scrollTo(0, {position});");
-                Console.WriteLine($"Scrolled to position: {position}");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine($"Error scrolling to position {position}: {e.Message}");
-            }
-        }
-
-        /// <summary>
-        /// Checks if the floating menu is visible on the screen.
-        /// </summary>
-        /// <returns>True if the floating menu is visible, false otherwise.</returns>
+        /// <returns>True if the floating menu is visible; otherwise, false.</returns>
         public bool IsFloatingMenuVisible()
         {
             try
             {
-                // Check if the floating menu is visible
-                IWebElement floatingMenu = driver.FindElement(floatingMenuLocator);
+                IWebElement floatingMenu = driver.FindElement(By.Id("menu"));
                 return floatingMenu.Displayed;
             }
             catch (NoSuchElementException)
@@ -100,20 +69,41 @@ namespace HerokuAppWebdriverAdapter
         }
 
         /// <summary>
-        /// Closes the browser.
+        /// Simulates scrolling and verifies if the menu remains visible.
         /// </summary>
-        public void CloseBrowser()
+        /// <returns>True if the menu is still visible after scrolling; otherwise, false.</returns>
+        public bool VerifyMenuVisibilityAfterScroll()
         {
             try
             {
-                driver.Quit();
-                driver = null;
-                Console.WriteLine("Browser closed.");
+                // Scroll down the page
+                IJavaScriptExecutor jsExecutor = (IJavaScriptExecutor)driver;
+                jsExecutor.ExecuteScript("window.scrollTo(0, document.body.scrollHeight);");
+
+                // Check menu visibility after scrolling
+                IWebElement floatingMenu = driver.FindElement(By.Id("menu"));
+                return floatingMenu.Displayed;
             }
-            catch (Exception e)
+            catch (NoSuchElementException)
             {
-                Console.WriteLine($"Error closing the browser: {e.Message}");
+                return false;
             }
+        }
+
+        public string GetPageTitle()
+        {
+            return driver.FindElement(By.TagName("h3")).Text;
+        }
+
+        
+
+        /// <summary>
+        /// Closes the browser and cleans up resources.
+        /// </summary>
+        public void Close()
+        {
+            driver.Quit();
         }
     }
 }
+

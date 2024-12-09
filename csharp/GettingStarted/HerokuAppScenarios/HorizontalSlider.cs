@@ -18,7 +18,7 @@ under the License.
 using NUnit.Framework;
 using OpenQA.Selenium;
 
-namespace HerokuAppOperations
+namespace HerokuAppScenarios
 {
     /// <summary>
     /// Defines a contract for horizontal slider operations in a Heroku app.

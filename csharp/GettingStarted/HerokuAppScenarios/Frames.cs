@@ -19,7 +19,7 @@ using System;
 using NUnit.Framework;
 using HerokuAppOperations;
 
-namespace HerokuAppOperations.Tests
+namespace HerokuAppScenarios
 {
     public class IFramesTests
     {

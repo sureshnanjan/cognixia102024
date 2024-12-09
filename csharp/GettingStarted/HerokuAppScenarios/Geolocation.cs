@@ -15,127 +15,109 @@ specific language governing permissions and limitations
 under the License.
 */
 
-using System;
+using HerokuAppOperations;
+using NUnit.Framework;
 
-namespace HerokuAppOperations
+namespace HerokuAppScenarios
 {
     /// <summary>
-    /// Defines a contract for geolocation operations in a Heroku app.
-    /// </summary>
-    public interface IGeolocation
-    {
-        /// <summary>
-        /// This method is called when the user clicks the "Where am I?" button or performs an action
-        /// to determine their current geolocation.
-        /// </summary>
-        void OnclickWhereami();
-
-        /// <summary>
-        /// This method retrieves and displays the location details such as latitude, longitude,
-        /// based on the current geolocation.
-        /// </summary>
-        void GetLocationDetails();
-
-        /// <summary>
-        /// This method is invoked when the user clicks a "Show in Maps" button 
-        /// to open the current geolocation in a mapping application, such as Google Maps.
-        /// </summary>
-        void OnclickShowInMaps();
-    }
-}
-
-namespace HerokuAppOperations.Tests
-{
-    using NUnit.Framework;
-
-    /// <summary>
-    /// A stub implementation of the IGeolocation interface used for testing purposes.
-    /// </summary>
-    public class GeolocationStub : IGeolocation
-    {
-        public bool IsWhereAmIClicked { get; private set; }
-        public bool IsLocationDetailsRetrieved { get; private set; }
-        public bool IsShowInMapsClicked { get; private set; }
-
-        /// <summary>
-        /// Simulates the "Where am I?" button click.
-        /// </summary>
-        public void OnclickWhereami()
-        {
-            IsWhereAmIClicked = true;
-        }
-
-        /// <summary>
-        /// Simulates retrieving and displaying location details.
-        /// </summary>
-        public void GetLocationDetails()
-        {
-            IsLocationDetailsRetrieved = true;
-        }
-
-        /// <summary>
-        /// Simulates opening the current location in a mapping application.
-        /// </summary>
-        public void OnclickShowInMaps()
-        {
-            IsShowInMapsClicked = true;
-        }
-    }
-
-    /// <summary>
-    /// Contains NUnit tests for the IGeolocation interface using the GeolocationStub implementation.
+    /// Test suite for validating Geolocation functionality on the HerokuApp website.
     /// </summary>
     [TestFixture]
     public class GeolocationTests
     {
-        private GeolocationStub _geolocation;
+        private Geolocation geolocation;
 
         /// <summary>
-        /// Initializes the GeolocationStub instance before each test.
+        /// Sets up the test environment before each test.
         /// </summary>
         [SetUp]
-        public void SetUp()
+        public void Setup()
         {
-            _geolocation = new GeolocationStub();
+            geolocation = new Geolocation();
         }
 
         /// <summary>
-        /// Tests that OnclickWhereami sets IsWhereAmIClicked to true.
+        /// Cleans up after each test.
         /// </summary>
-        [Test]
-        public void OnclickWhereami_ShouldSetIsWhereAmIClickedToTrue()
+        [TearDown]
+        public void Teardown()
         {
-            // Act
-            _geolocation.OnclickWhereami();
-
-            // Assert
-            Assert.IsTrue(_geolocation.IsWhereAmIClicked, "OnclickWhereami should set IsWhereAmIClicked to true.");
+            geolocation.Close();
         }
 
         /// <summary>
-        /// Tests that GetLocationDetails sets IsLocationDetailsRetrieved to true.
+        /// Verifies that the geolocation functionality works and latitude/longitude are displayed.
         /// </summary>
         [Test]
-        public void GetLocationDetails_ShouldSetIsLocationDetailsRetrievedToTrue()
+        public void VerifyGeolocationDisplaysCoordinates()
         {
-            // Act
-            _geolocation.GetLocationDetails();
+            // Arrange: Navigate to the Geolocation page.
+            geolocation.NavigateToGeolocationPage();
 
-            // Assert
-            Assert.IsTrue(_geolocation.IsLocationDetailsRetrieved, "GetLocationDetails should set IsLocationDetailsRetrieved to true.");
+            // Act: Request the location.
+            geolocation.RequestLocation();
+            string latitude = geolocation.GetLatitude();
+            string longitude = geolocation.GetLongitude();
+
+            // Assert: Verify that latitude and longitude are not null or empty.
+            Assert.IsFalse(string.IsNullOrEmpty(latitude), "Latitude is not displayed.");
+            Assert.IsFalse(string.IsNullOrEmpty(longitude), "Longitude is not displayed.");
         }
 
         /// <summary>
-        /// Tests that OnclickShowInMaps sets IsShowInMapsClicked to true.
+        /// Extra Test Case: Verify geolocation page loads successfully.
         /// </summary>
         [Test]
-        public void OnclickShowInMaps_ShouldSetIsShowInMapsClickedToTrue()
+        public void Title()
         {
-            // Act
-            _geolocation.OnclickShowInMaps();
+            // Arrange: Navigate to the Geolocation page.
+            geolocation.NavigateToGeolocationPage();
 
-            // Assert
-            Assert.IsTrue(_geolocation.IsShowInMapsClicked, "OnclickShowInMaps should set IsShowInMapsClicked to true.");
+            // Act: Retrieve the page title.
+            string actualTitle = geolocation.GetPageTitle(); // Assuming this is implemented as a utility in base class.
+            string expectedTitle = "Geolocation";
+
+            // Assert: Verify that the title matches the expected page title.
+            Assert.AreEqual(expectedTitle, actualTitle, "Geolocation page did not load successfully.");
         }
-    }
+
+        [Test]
+        public void Description()
+        {
+            // Arrange: Navigate to the Geolocation page.
+            geolocation.NavigateToGeolocationPage();
+
+            // Act: Retrieve the page title.
+            string actualDescription = geolocation.GetPageDescription(); // Assuming this is implemented as a utility in base class.
+            string expectedDescription = "Click the button to get your current latitude and longitude";
+
+            // Assert: Verify that the title matches the expected page title.
+            Assert.AreEqual(actualDescription, expectedDescription, "Geolocation page did not load successfully.");
+        }
+        /// <summary>
+        /// Verifies that the geolocation functionality works and latitude/longitude are displayed.
+        /// </summary>
+        [Test]
+        public void VerifyCoordinatesAndGoogleLink()
+        {
+            // Arrange: Navigate to the Geolocation page.
+            geolocation.NavigateToGeolocationPage();
+
+            // Act: Request the location.
+            geolocation.RequestLocation();
+            string latitude = geolocation.GetLatitude();
+            string longitude = geolocation.GetLongitude();
+            string googleLink = geolocation.ClickSeeItOnGoogle();
+
+            // Assert: Verify that latitude and longitude are not null or empty.
+            Assert.IsFalse(string.IsNullOrEmpty(latitude), "Latitude is not displayed.");
+            Assert.IsFalse(string.IsNullOrEmpty(longitude), "Longitude is not displayed.");
+
+            // Assert: Verify that the Google Maps link is valid.
+            Assert.IsNotNull(googleLink, "Google link is not available.");
+            Assert.IsTrue(googleLink.Contains("maps.google.com"), "Google link is incorrect.");
+        }
+    
+}
 }
