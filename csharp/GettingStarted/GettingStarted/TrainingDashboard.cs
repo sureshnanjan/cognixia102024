@@ -20,6 +20,7 @@ under the License.
 
 using System.Reflection.Metadata;
 using System.Text.Json.Nodes;
+using BrowserAutomation;
 using KeywordLearning;
 using PetstoreModel;
 using TypeSystemDemo;
@@ -68,76 +69,80 @@ namespace GettingStarted
         /// <param name="desc"></param>
         /// <param name="participants"></param>
         public void Populate(string title, string desc, string participants) { }
-        static void Main(string[] args)
+        //static void Main(string[] args)
+        //{
+        //    GettingStartedDelegate myref = mymethod;
+        //    Action myactionref = mymethod;
+        //    Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
+        //    MyIntDelegate myintref = SomeMethod;
+        //    Func<int,int> myfunc = SomeMethod;
+        //    Func<int> mylambdafunc = () => 100;
+        //    //myref();
+        //    mylambdaaction();
+        //    Console.WriteLine(mylambdafunc());
+        //    mylambdafunc();
+
+        //    int[] numbers = { 1, 2, 3, 4, 5 };
+        //    int added = numbers.Aggregate((x,y)=> x + y);
+        //    int multipled = numbers.Aggregate((x, y) => x * y);
+        //    int adddoubled = numbers.Aggregate((x, y) => (x + y) * 2);
+        //    Console.WriteLine(multipled);
+        //    Console.WriteLine(added);
+        //    Console.WriteLine(adddoubled);
+        //    //numbers.
+        //    CollectionDemo.Demo();
+
+        //    Console.WriteLine("--Task1--");
+        //    //task1
+
+        //    Codingtask.Codingconvention();
+
+        //    //task2
+
+        //    Console.WriteLine("--Task2--");
+        //    Collectionframe.Collectionmethods();
+
+        //    //task3
+        //    Console.WriteLine("--Task3--");
+        //    Genricanddelegate.DemonstrateGenerics();
+        //    Genricanddelegate.DemonstrateDelegates();
+            
+
+        //    //task4
+        //    Console.WriteLine();
+        //    Console.WriteLine("--Task4---");
+        //    GetJson.SerializeWrite();
+
+        //    //task5
+        //    Console.WriteLine();
+        //    Console.WriteLine("--Task5---");
+        //    oops.Demonstrateoops();
+
+        //    //task6
+        //    Console.WriteLine();
+        //    Console.WriteLine("--Task6---");
+        //    SystemFeatures.execute();
+
+        //    //task7
+        //    Console.WriteLine();
+        //    Console.WriteLine("--Task7---");
+        //    CourseDetails.Display();
+
+
+        //    //task8
+        //    Console.WriteLine();
+        //    Console.WriteLine("--Task8---");
+        //    MethodCalling.Execute();
+
+
+            
+
+
+
+        //}
+        public static void Main(String[] args)
         {
-            GettingStartedDelegate myref = mymethod;
-            Action myactionref = mymethod;
-            Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
-            MyIntDelegate myintref = SomeMethod;
-            Func<int,int> myfunc = SomeMethod;
-            Func<int> mylambdafunc = () => 100;
-            //myref();
-            mylambdaaction();
-            Console.WriteLine(mylambdafunc());
-            mylambdafunc();
-
-            int[] numbers = { 1, 2, 3, 4, 5 };
-            int added = numbers.Aggregate((x,y)=> x + y);
-            int multipled = numbers.Aggregate((x, y) => x * y);
-            int adddoubled = numbers.Aggregate((x, y) => (x + y) * 2);
-            Console.WriteLine(multipled);
-            Console.WriteLine(added);
-            Console.WriteLine(adddoubled);
-            //numbers.
-            CollectionDemo.Demo();
-
-            Console.WriteLine("--Task1--");
-            //task1
-
-            Codingtask.Codingconvention();
-
-            //task2
-
-            Console.WriteLine("--Task2--");
-            Collectionframe.Collectionmethods();
-
-            //task3
-            Console.WriteLine("--Task3--");
-            Genricanddelegate.DemonstrateGenerics();
-            Genricanddelegate.DemonstrateDelegates();
-            
-
-            //task4
-            Console.WriteLine();
-            Console.WriteLine("--Task4---");
-            GetJson.SerializeWrite();
-
-            //task5
-            Console.WriteLine();
-            Console.WriteLine("--Task5---");
-            oops.Demonstrateoops();
-
-            //task6
-            Console.WriteLine();
-            Console.WriteLine("--Task6---");
-            SystemFeatures.execute();
-
-            //task7
-            Console.WriteLine();
-            Console.WriteLine("--Task7---");
-            CourseDetails.Display();
-
-
-            //task8
-            Console.WriteLine();
-            Console.WriteLine("--Task8---");
-            MethodCalling.Execute();
-
-
-            
-
-
-
+            ChromeAutomator chr = new ChromeAutomator();   
         }
 
         

@@ -10,9 +10,11 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.26.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BrowserAutomation\BrowserAutomation.csproj" />
     <ProjectReference Include="..\KeywordLearning\KeywordLearning.csproj" />
     <ProjectReference Include="..\PetstoreModel\PetstoreModel.csproj" />
     <ProjectReference Include="..\TypeSystemDemo\TypeSystemDemo.csproj" />
