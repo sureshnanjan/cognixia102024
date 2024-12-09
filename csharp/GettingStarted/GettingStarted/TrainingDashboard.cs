@@ -20,6 +20,7 @@ under the License.
 
 using System;
 using System.Reflection.Metadata;
+using BrowserAutomation;
 using KeywordLearning;
 using KeywordLearning.Assignment;
 using Microsoft.VisualBasic;
@@ -71,6 +72,11 @@ namespace GettingStarted
         public void Populate(string title, string desc, string participants) { }
         static void Main(string[] args)
         {
+
+            //Extensioncalls();
+            ChromeAutomator chrome = new ChromeAutomator();
+
+
             GettingStartedDelegate myref = mymethod;
             Action myactionref = mymethod;
             Action mylambdaaction = () => { Console.WriteLine("This is a lambda method method to demo"); };
