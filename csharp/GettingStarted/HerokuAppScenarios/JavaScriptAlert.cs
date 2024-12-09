@@ -7,7 +7,7 @@ using OpenQA.Selenium;
 using HerokuAppScenarios;
 using HerokuAppOperations;
 using HerokuAppWebdriverAdapter;
-namespace HerokuAppScenarios
+namespace HerokuAppWebdriverTests
 {
      public class JavaScriptAlertTest
     {
@@ -18,6 +18,7 @@ namespace HerokuAppScenarios
         {
             // Arrange: Initialize JavaScriptAlert object
             jsAlert = new JavaScriptAlert();
+           
         }
 
         [Test]
@@ -108,7 +109,15 @@ namespace HerokuAppScenarios
             // Assert: Verify the prompt was dismissed
             Assert.IsTrue(promptTriggered && promptDismissed, "The JavaScript prompt was not dismissed correctly.");
         }
-
+        [TearDown]
+        public void TearDown()
+        {
+            // Close the driver and quit the browser session
+            jsAlert.QuitDriver();
+        }
     }
+
+
 }
+
 

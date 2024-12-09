@@ -7,7 +7,7 @@ regarding copyright ownership. The SFC licenses this file
 to you under the Apache License, Version 2.0 (the
 "License"); you may not use this file except in compliance
 with the License. You may obtain a copy of the License at
-http://www.apache.org/licenses/LICENSE-2.0 
+http://www.apache.org/licenses/LICENSE-2.0
 Unless required by applicable law or agreed to in writing,
 software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -25,14 +25,31 @@ using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
-    public interface IBrokenImage
+    /// <summary>
+    /// Interface for interacting with broken image functionality on the Heroku app.
+    /// Defines methods to retrieve the total image count, broken image count, and the status of a specific image.
+    /// </summary>
+    public interface IBrokenImages
     {
         /// <summary>
-        /// Validates all images on a given web page and returns the number of broken images.
+        /// Method to get the total number of images on the page.
         /// </summary>
-        /// <param name="url">The URL of the web page to validate.</param>
-        /// <returns>The number of broken images.</returns>
-        int ValidateImages(string url);
-    }
 
+        int GetTotalImageCount();
+
+        /// <summary>
+        /// Method to get the number of broken images on the page.
+        /// </summary>
+
+        int GetBrokenImageCount();
+
+        /// <summary>
+        /// Method to get the status of a specific image by checking if it's broken or not.
+        /// </summary>
+
+        bool IsImageBroken(string imageSrc);
+        public String GetPageTitle();
+        void QuitDriver();
+    }
 }
+

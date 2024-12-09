@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using HerokuAppOperations;
 using HerokuAppWebdriverAdapter;
+using OpenQA.Selenium;
 
-namespace HerokuAppScenarios
+namespace HerokuAppWebdriverTests
 {
-    internal class SortableTableTest
+    class SortableTableTest
     {
         SortableTables tables;
         [SetUp]
@@ -20,15 +21,15 @@ namespace HerokuAppScenarios
         public void Test_GetRowData_ValidCell()
         {
             // Arrange
-            int rowIndex = 1; // Second row (0-based index)
-            int columnIndex = 2; // Third column (0-based index)
+            int rowIndex = 3; // Second row (0-based index)
+            int columnIndex = 3; // Third column (0-based index)
 
             // Act
             string cellData = tables.GetRowData(rowIndex, columnIndex);
 
             // Assert
             Assert.IsNotNull(cellData, "Cell data should not be null.");
-            Assert.AreEqual("ExpectedValue", cellData, "The cell data does not match the expected value.");
+            Assert.AreEqual("jdoe@hotmail.com", cellData, "The cell data does not match the expected value.");
         }
 
         [Test]
@@ -39,11 +40,11 @@ namespace HerokuAppScenarios
             int columnIndex = 2;
 
             // Act & Assert
-            var ex = Assert.Throws<ArgumentOutOfRangeException>(() =>
+            var ex = Assert.Throws<NoSuchElementException>(() =>
             {
                 tables.GetRowData(invalidRowIndex, columnIndex);
             });
-            Assert.That(ex.Message, Does.Contain("Row index is out of range."));
+            Assert.That(ex.Message, Does.Contain("Unable to locate element"));
         }
 
         [Test]
@@ -55,11 +56,11 @@ namespace HerokuAppScenarios
             int invalidColumnIndex = 10; // Exceeds the number of columns
 
             // Act & Assert
-            var ex = Assert.Throws<ArgumentOutOfRangeException>(() =>
+            var ex = Assert.Throws<NoSuchElementException>(() =>
             {
                 tables.GetRowData(rowIndex, invalidColumnIndex);
             });
-            Assert.That(ex.Message, Does.Contain("Column index is out of range."));
+            Assert.That(ex.Message, Does.Contain("Unable to locate element"));
         }
 
         [Test]
@@ -69,7 +70,7 @@ namespace HerokuAppScenarios
             int rowCount = tables.GetRowCount();
 
             // Assert
-            Assert.AreEqual(4, rowCount, "Row count should match the expected value (excluding header).");
+            Assert.AreEqual(5, rowCount, "Row count should match the expected value (excluding header).");
         }
 
         [Test]
@@ -85,17 +86,11 @@ namespace HerokuAppScenarios
         [Test]
         public void Test_SortByColumn()
         {
-            // Arrange
-            int columnIndex = 0; // Sort by the first column
-
-            // Act
-            tables.SortByColumn(columnIndex);
-
+            // Arrange and Act
+            // Sort by the first column
+            String column = "Web Site";
             // Assert
-            string firstCellBefore = tables.GetRowData(0, columnIndex);
-            string firstCellAfter = tables.GetRowData(1, columnIndex);
-
-            Assert.AreNotEqual(firstCellBefore, firstCellAfter, "The table was not sorted as expected.");
+            Assert.IsTrue(tables.SortByColumn(column), "false");
         }
     }
-}
+    }

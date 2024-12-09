@@ -123,5 +123,12 @@ namespace HerokuAppWebdriverAdapter
             catch (Exception e) { return false; }
             return true ;   
         }
+        public  void QuitDriver()
+        {
+
+            driver.Quit();
+                
+            
+        }
     }
 }

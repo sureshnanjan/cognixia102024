@@ -34,5 +34,6 @@ namespace HerokuAppOperations
 
         public bool ClickforJsPrompt(); // Method to trigger a JavaScript prompt dialog
         public bool ClickforJsPromptClose(String message); // Method to close the JavaScript prompt with a specified input message
+        void QuitDriver();
     }
 }

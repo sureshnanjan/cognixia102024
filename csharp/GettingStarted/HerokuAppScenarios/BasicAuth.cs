@@ -75,7 +75,7 @@ namespace HerokuAppTests
 
             // Log out and clear session cookies to prevent session persistence
             basicAuth.LogOut();
-           // basicAuth.ClearCookies();
+            // basicAuth.ClearCookies();
 
             // Verify if the user is redirected to the login page
             basicAuth.NavigateToBasicAuthPage(); // Revisit the page to trigger re-login prompt
@@ -188,7 +188,7 @@ namespace HerokuAppTests
 
             // Log out and clear session cookies
             basicAuth.LogOut();
-           // basicAuth.ClearCookies();
+            // basicAuth.ClearCookies();
 
             // Revisit the Basic Auth page to ensure the user is logged out
             basicAuth.NavigateToBasicAuthPage();

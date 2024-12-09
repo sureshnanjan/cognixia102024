@@ -29,43 +29,49 @@ namespace HerokuAppWebdriverAdapter
     /// </summary>
     public class StatusCodes : HerokuAppCommon, IStatusCodes
     {
-        // Locator for the page header
+        // private IWebDriver driver;
+
+        // Locator for the page header (<h3> tag)
         private readonly By pageHeader = By.TagName("h3");
 
-        // Locator for the text describing the HTTP status code
+        // Locator for the status code text (<p> tag)
         private readonly By statusCodeText = By.TagName("p");
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="StatusCodesPage"/> class.
-        /// </summary>
-        /// <param name="driver">The Selenium WebDriver used to interact with the page.</param>
-        public StatusCodes(IWebDriver driver) : base(driver) { }
+        // Constructor initializes the driver
+        public StatusCodes(IWebDriver driver)
+        {
+            this.driver = driver;
+        }
+        //public StatusCodes(IWebDriver driver) : base(driver) { }
 
-        /// <summary>
-        /// Navigates to the page for a specific HTTP status code.
-        /// </summary>
-        /// <param name="code">The HTTP status code to navigate to (e.g., "200", "404").</param>
+        // Navigates to the page for a specific HTTP status code
         public void NavigateToStatusCode(string code)
         {
             driver.Navigate().GoToUrl($"https://the-internet.herokuapp.com/status_codes/{code}");
         }
 
-        /// <summary>
-        /// Retrieves the header text of the Status Codes page.
-        /// </summary>
-        /// <returns>A string representing the header text of the page.</returns>
+        // Retrieves the page title (<title> tag)
+        public string GetPageTitle()
+        {
+            return driver.Title;  // This gets the <title> tag content of the HTML page
+        }
+
+        // Retrieves the header text (from <h3> tag)
         public string GetPageHeader()
         {
             return driver.FindElement(pageHeader).Text;
         }
 
-        /// <summary>
-        /// Retrieves the descriptive text of the HTTP status code from the page.
-        /// </summary>
-        /// <returns>A string representing the description of the HTTP status code.</returns>
+        // Retrieves the descriptive text (from <p> tag)
         public string GetStatusCodeText()
         {
             return driver.FindElement(statusCodeText).Text;
+        }
+
+        // Close the browser (cleanup after tests)
+        public void CloseBrowser()
+        {
+            driver.Quit(); // This properly closes the browser after the tests are completed
         }
     }
 }

@@ -37,5 +37,7 @@ namespace HerokuAppOperations
         /// <param name="timeoutInSeconds">The time to wait for the content to load (in seconds).</param>
         /// <returns>A string representing the content text of the page after it has loaded.</returns>
         string GetContentAfterLoading(int timeoutInSeconds);
+        // Add the method for navigating to the page
+        void NavigateToPage();
     }
 }

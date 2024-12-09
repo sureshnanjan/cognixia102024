@@ -69,5 +69,14 @@ namespace HerokuAppWebdriverAdapter
         {
             driver.Navigate().Refresh();
         }
+
+        public void QuitDriver()
+        {
+            if (driver != null)
+            {
+                driver.Quit();
+                driver = null;
+            }
+        }
     }
 }

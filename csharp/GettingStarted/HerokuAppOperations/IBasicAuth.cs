@@ -25,34 +25,27 @@ using System.Threading.Tasks; // Importing the System.Threading.Tasks namespace 
 
 namespace HerokuAppOperations
 {
-    // Defining the IBasicAuth interface, which outlines methods for handling basic authentication and sign-in logic.
     public interface IBasicAuth
     {
-        // Method to navigate to the Basic Authentication page
+        // Navigate to the Basic Authentication page
         void NavigateToBasicAuthPage();
 
-        // Method to validate if the authentication was successful
-        bool IsAuthenticationSuccessful();
-
-        // Method to print the success message upon successful authentication
-        void PrintSuccessMessage();
-
-        // Method to enter the username in the username field
+        // Enter the username in the Basic Authentication dialog
         void EnterUsername(string username);
 
-        // Method to enter the password in the password field
+        // Enter the password in the Basic Authentication dialog
         void EnterPassword(string password);
 
-        // Method to click the "Sign In" or "Login" button
-        void ClickSignInButton();
+        // Check if authentication is successful by verifying a page element
+        bool IsAuthenticationSuccessful();
 
-        // Method to check if the user has been successfully redirected after signing in
-        bool IsUserRedirectedToDashboard();
+        // Check if the user is still on the login page after authentication failure
+        bool IsOnLoginPage();
 
-        // Method to log out the user
+        // Perform logout action (if applicable)
         void LogOut();
 
-        // Optional: Method to check if the user is on the login page
-        bool IsOnLoginPage();
+        // Close the browser after test execution
+        void Close();
     }
 }

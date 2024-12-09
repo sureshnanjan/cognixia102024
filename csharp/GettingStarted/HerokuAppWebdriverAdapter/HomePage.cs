@@ -1,6 +1,7 @@
 ﻿using HerokuAppOperations;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 namespace HerokuAppWebdriverAdapter
 {
     public class HomePage :HerokuAppCommon, IHomePage
@@ -62,7 +63,7 @@ namespace HerokuAppWebdriverAdapter
             return new CheckBox(this.driver);
         }
 
-        public IABTesting navigateToABTest()
+        public IABTest navigateToABTest()
         {
             throw new NotImplementedException();
         }
@@ -73,5 +74,14 @@ namespace HerokuAppWebdriverAdapter
             return "";
             
         }
+        public void CloseDriver()
+        {
+            if (driver != null)
+            {
+                driver.Quit();
+                driver = null; // Avoid memory leaks by nullifying the driver reference
+            }
+        }
+
     }
 }

@@ -49,6 +49,6 @@ namespace HerokuAppOperations
         /// Sorts the table by a specific column.
         /// </summary>
         /// <param name="columnIndex">The zero-based index of the column to sort by.</param>
-        void SortByColumn(int columnIndex);
-    }
+        bool SortByColumn(String column);
+    }   
 }

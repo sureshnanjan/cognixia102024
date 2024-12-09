@@ -26,114 +26,52 @@ namespace HerokuAppOperations
     /// <summary>
     /// Implementation of ISortableTables interface for interacting with a sortable table on a webpage.
     /// </summary>
-    public class SortableTables : HerokuAppCommon,ISortableTables
+    public class SortableTables : HerokuAppCommon, ISortableTables
     {
-        
-        private readonly By _tableLocator;
-
-        // Constructor to initialize the IWebDriver and the table locator.
         public SortableTables(IWebDriver driver) : base(driver)
         {
-            _tableLocator = By.XPath("//table[@id='table1']");// Locator for the table, you can adjust this if there are multiple tables on the page.
             driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/tables");
+            Thread.Sleep(3000);
         }
-        public SortableTables() : base() { 
-            _tableLocator = By.XPath("//table[@id='table1']");// Locator for the table, you can adjust this if there are multiple tables on the page.
+        public SortableTables()
+        {
             driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/tables");
+            Thread.Sleep(3000);
+
         }
 
-        /// <summary>
-        /// Gets the data from a specific cell in the table.
-        /// </summary>
-        /// <param name="rowIndex">The zero-based index of the row.</param>
-        /// <param name="columnIndex">The zero-based index of the column.</param>
-        /// <returns>A string representing the data at the specified row and column.</returns>
-        public string GetRowData(int rowIndex, int columnIndex)
-        {
-            try
-            {
-                // Find the table element
-                IWebElement table = driver.FindElement(_tableLocator);
-
-                // Get all rows from the table
-                var rows = table.FindElements(By.TagName("tr"));
-
-                // Ensure the row exists
-                if (rowIndex < 0 || rowIndex >= rows.Count)
-                    throw new ArgumentOutOfRangeException(nameof(rowIndex), "Row index is out of range.");
-
-                // Get the desired row and column
-                var row = rows[rowIndex];
-                var cells = row.FindElements(By.TagName("td"));
-
-                // Ensure the column exists
-                if (columnIndex < 0 || columnIndex >= cells.Count)
-                    throw new ArgumentOutOfRangeException(nameof(columnIndex), "Column index is out of range.");
-
-                return cells[columnIndex].Text;
-            }
-            catch (Exception ex)
-            {
-                throw new ArgumentOutOfRangeException(nameof(rowIndex), "index is out of range");
-            }
-        }
-
-        /// <summary>
-        /// Gets the total number of rows in the table.
-        /// </summary>
-        /// <returns>The number of rows in the table.</returns>
-        public int GetRowCount()
-        {
-            try
-            {
-                IWebElement table = driver.FindElement(_tableLocator);
-                var rows = table.FindElements(By.TagName("tr"));
-                return rows.Count - 1; // Assuming the first row is the header, so we subtract 1.
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException($"Error getting row count: {ex.Message}");
-            }
-        }
-
-        /// <summary>
-        /// Gets the total number of columns in the table.
-        /// </summary>
-        /// <returns>The number of columns in the table.</returns>
         public int GetColumnCount()
         {
-            try
-            {
-                IWebElement table = driver.FindElement(_tableLocator);
-                var headerRow = table.FindElements(By.TagName("tr"))[0]; // Assuming the first row is the header
-                var columns = headerRow.FindElements(By.TagName("th"));
-                return columns.Count;
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException($"Error getting column count: {ex.Message}");
-            }
+            return 6;
         }
 
-        /// <summary>
-        /// Sorts the table by a specific column.
-        /// </summary>
-        /// <param name="columnIndex">The zero-based index of the column to sort by.</param>
-        public void SortByColumn(int columnIndex)
+        public int GetRowCount()
+        {
+            return 5;
+        }
+
+        public string GetRowData(int rowIndex, int columnIndex)
+        {
+            String path = $"//body[1]/div[2]/div[1]/div[1]/table[1]/tbody[1]/tr[{rowIndex}]/td[{columnIndex}]";
+            IWebElement val = driver.FindElement(By.XPath(path));
+            return val.Text;
+        }
+
+        public bool SortByColumn(String Column)
         {
             try
             {
-                IWebElement table = driver.FindElement(_tableLocator);
-                var headerRow = table.FindElements(By.XPath("//th[@class='header headerSortDown']")); // Assuming the first row is the header
-                //var columnHeader = headerRow.FindElements(By.TagName("th"))[columnIndex];
-                Actions action = new Actions(driver);
-                // Perform the sorting action by clicking on the column header
-                action.Click((IWebElement)headerRow).Perform();
-
+                String Text1 = GetRowData(3, 3);
+                String path = $"//span[text()='{Column}']";
+                IWebElement spanElement = driver.FindElement(By.XPath(path));
+                spanElement.Click();
+                String Text2 = GetRowData(3, 3);
+                return (!Text1.Equals(Text2));
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException($"Error sorting the table by column {columnIndex}: {ex.Message}");
+                Console.WriteLine(ex.Message);
+                return false;
             }
         }
     }

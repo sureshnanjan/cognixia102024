@@ -7,7 +7,7 @@ using HerokuAppOperations;
 using HerokuAppWebdriverAdapter;
 using OpenQA.Selenium;
 
-namespace HerokuAppScenarios
+namespace HerokuAppWebdriverTests
 {
     public class ChallengingDOMTEST
     {  

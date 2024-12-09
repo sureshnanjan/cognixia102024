@@ -8,6 +8,7 @@ using HerokuAppWebdriverAdapter;
 using OpenQA.Selenium;
 
 namespace HerokuAppScenarios
+
 {
     public class TinyMCEEditorTest
     {

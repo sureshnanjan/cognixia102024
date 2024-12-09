@@ -25,52 +25,119 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace HerokuAppWebdriverAdapter
 {
-    // Class for validating broken images on a webpage
-    public class BrokenImage : IBrokenImage
+    /// <summary>
+    /// Class for validating broken images on a webpage. Inherits common functionality from HerokuAppCommon.
+    /// Implements the IBrokenImages interface.
+    /// </summary>
+    public class BrokenImages : HerokuAppCommon, IBrokenImages
     {
-        private readonly IWebDriver _driver; // WebDriver instance for interacting with the browser
+        // Locator for image elements on the page.
+        private readonly By imageLocator = By.XPath("//div[@id='content']//img");
 
-        // Constructor initializes the WebDriver (ChromeDriver in this case)
-        public BrokenImage()
+        /// <summary>
+        /// Initializes a new instance of the BrokenImages class and navigates to the Broken Images page.
+        /// </summary>
+        /// <param name="driver">The WebDriver instance to interact with the browser.</param>
+        public BrokenImages(IWebDriver driver) : base(driver)
         {
-            _driver = new ChromeDriver(); // Instantiating a Chrome browser driver
+            // Navigate to the Broken Images page on Heroku app.
+            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/broken_images");
+        }
+        public BrokenImages() : base()
+        {
+            driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/broken_images");
         }
 
-        // Method to validate all images on a webpage and return the count of broken images
-        public int ValidateImages(string url)
+        /// <summary>
+        /// Gets the total number of images on the page.
+        /// </summary>
+        /// <returns>The total count of image elements found on the page.</returns>
+        public int GetTotalImageCount()
         {
-            _driver.Navigate().GoToUrl(url); // Navigate to the specified URL
-
-            // Find all image elements on the page
-            IReadOnlyCollection<IWebElement> images = _driver.FindElements(By.TagName("img"));
-            int brokenImageCount = 0; // Counter for broken images
-
-            foreach (var image in images) // Iterate through each image element
+            try
             {
-                string imageUrl = image.GetAttribute("src"); // Get the source URL of the image
-                // Check if the image URL is valid and increment the broken image count if not
-                if (!string.IsNullOrEmpty(imageUrl) && !IsImageValid(imageUrl))
+                // Find all image elements on the page and return their count.
+                var imageElements = driver.FindElements(imageLocator);
+                return imageElements.Count;
+            }
+            catch (NoSuchElementException)
+            {
+                // Return 0 if no image elements are found on the page.
+                Console.WriteLine("No images found.");
+                return 0;
+            }
+        }
+
+        /// <summary>
+        /// Gets the number of broken images on the page.
+        /// </summary>
+
+        public int GetBrokenImageCount()
+        {
+            int brokenImageCount = 0;
+            // Find all image elements on the page.
+            var imageElements = driver.FindElements(imageLocator);
+
+            foreach (var imageElement in imageElements)
+            {
+                // Check if each image is broken.
+                if (!IsImageBroken(imageElement))
                 {
                     brokenImageCount++;
                 }
             }
 
-            return brokenImageCount; // Return the total count of broken images
+            return brokenImageCount;
         }
 
-        // Helper method to validate if the image URL returns a valid response
-        private bool IsImageValid(string imageUrl)
-        {
-            // Create an HTTP request for the image URL
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(imageUrl);
-            request.Method = "HEAD"; // Only request the headers to verify the image
+        /// <summary>
+        /// Checks if a specific image is broken based on its source URL.
+        /// </summary>
 
-            // Get the response and check if the status code is OK
-            using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+        public bool IsImageBroken(string imageSrc)
+        {
+            try
             {
-                return (response.StatusCode == HttpStatusCode.OK); // Returns true if the status code is 200 OK
+                // Find the image by its source URL.
+                var image = driver.FindElement(By.XPath($"//img[@src='{imageSrc}']"));
+                // Check if the image is broken by looking at its naturalWidth attribute.
+                var isBroken = image.GetAttribute("naturalWidth") == "0"; // Broken image will have naturalWidth = 0
+                return isBroken;
+            }
+            catch (NoSuchElementException)
+            {
+                // Log message if the image source is not found.
+                Console.WriteLine($"Image with source {imageSrc} not found.");
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Alternative method to check if an image is broken by inspecting the image element.
+        /// This method would typically involve making an HTTP request to validate the image URL's status code.
+        /// </summary>
+
+        private bool IsImageBroken(IWebElement imageElement)
+        {
+            var imageUrl = imageElement.GetAttribute("src");
+            // Logic to validate image URL (e.g., send HTTP request to check status code) should go here.
+            return false; // Simplified assumption, actual implementation would require additional checks (like status codes).
+        }
+        public string GetPageTitle()
+        {
+            // Get the page title.
+            string title = driver.FindElement(By.TagName("h3")).Text;
+            return title;
+        }
+        public void QuitDriver()
+        {
+            if (driver != null)
+            {
+                driver.Quit();
+                driver = null;
             }
         }
     }

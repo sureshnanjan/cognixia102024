@@ -6,7 +6,7 @@ regarding copyright ownership. The SFC licenses this file
 to you under the Apache License, Version 2.0 (the
 "License"); you may not use this file except in compliance
 with the License. You may obtain a copy of the License at
-http://www.apache.org/licenses/LICENSE-2.0 
+http://www.apache.org/licenses/LICENSE-2.0
 Unless required by applicable law or agreed to in writing,
 software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -17,19 +17,25 @@ under the License.
 
 namespace HerokuAppOperations
 {
-    // Interface defining methods for handling A/B testing functionality
-    public interface IABTesting
+    /// <summary>
+    /// Interface for interacting with the A/B Test functionality on the Heroku app.
+    /// Defines methods to retrieve the A/B Test message and the current page URL.
+    /// </summary>
+    public interface IABTest
     {
-        // Method to opt-in to the A/B test
-        public void OptInABTest();
+        //public void OptInABTest();
+        //public void OptOutABTest();
+        /// <summary>
+        /// Method to get the text of the A/B Test message.
+        /// </summary>
+        /// <returns>The message displayed for the A/B Test.</returns>
+        public string GetABTestMessage();
 
-        // Method to opt-out of the A/B test
-        public void OptOutABTest();
-
-        // Method to get the title of the page
-        public String GetTitle();
-
-        // Method to get the description text from the page
-        public String GetDiscription();
+        /// <summary>
+        /// Method to get the URL of the current page.
+        /// </summary>
+        /// <returns>The current URL of the page.</returns>
+        public string GetCurrentUrl();
+        void QuitDriver();
     }
 }

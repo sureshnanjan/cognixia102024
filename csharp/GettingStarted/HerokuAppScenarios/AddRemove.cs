@@ -67,5 +67,11 @@ namespace HerokuAppScenarios
             var deleteButtons = driver.FindElements(By.XPath("//button[text()='Delete']"));
             Assert.AreEqual(0, deleteButtons.Count, "There should be no 'Delete' button initially.");
         }
+        [TearDown]
+        public void TearDown()
+        {
+            // Ensure the browser window is closed after each test
+            _addRemovePage.Quit();
+        }
     }
 }

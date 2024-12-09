@@ -10,9 +10,10 @@ namespace HerokuAppWebdriverAdapter
     public class AddRemovePage : HerokuAppCommon, IAddRemove
     {
         // Constructor which uses inherited WebDriver from HerokuAppCommon
-         //private IWebDriver driver;
+        //private IWebDriver driver;
         private WebDriverWait wait;
-        public AddRemovePage() : base() {
+        public AddRemovePage() : base()
+        {
             //driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             driver.Navigate().GoToUrl("https://the-internet.herokuapp.com/");
@@ -29,7 +30,7 @@ namespace HerokuAppWebdriverAdapter
         {
             //string ele = driver.FindElement(By.XPath("//h3[normalize-space()='Add/Remove Elements']"));
             string ele = driver.FindElement(By.XPath("//h3[normalize-space()='Add/Remove Elements']")).Text;
-           // Console.WriteLine(ele);
+            // Console.WriteLine(ele);
             return ele;
         }
 
@@ -53,6 +54,14 @@ namespace HerokuAppWebdriverAdapter
         public int GetCountofElements()
         {
             return driver.FindElements(By.XPath("/html/body/div[2]/div/div/div/button")).Count;
+        }
+        public void Quit()
+        {
+            if (driver != null)
+            {
+                driver.Quit();
+                driver = null;
+            }
         }
     }
 }

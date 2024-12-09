@@ -42,5 +42,6 @@ namespace HerokuAppOperations
         /// Refreshes the Typos page to simulate a retry or load operation.
         /// </summary>
         void RefreshPage();
+        public void QuitDriver();
     }
 }

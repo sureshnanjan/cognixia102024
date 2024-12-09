@@ -36,6 +36,10 @@ namespace HerokuAppWebdriverAdapter
         {
             this.driver = driver;
         }
+        public IWebDriver GetDriver()
+        {
+            return driver;
+        }
 
 
     }

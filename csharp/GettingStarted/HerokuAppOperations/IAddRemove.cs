@@ -47,6 +47,7 @@ namespace HerokuAppOperations
         // Method declaration for getting the current count of elements.
         // This method returns an integer representing the number of elements on the page.
         public int GetCountofElements();
+        void Quit();
     }
 }
 

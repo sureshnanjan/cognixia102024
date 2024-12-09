@@ -3,6 +3,8 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using HerokuAppWebdriverAdapter;
+using HerokuAppOperations;
+using HerokuAppWebdriverAdapter;
 
 namespace HerokuAppWebdriverTests
 {
@@ -46,14 +48,30 @@ namespace HerokuAppWebdriverTests
             // Retrieve initial content text
             string initialContent = typ.GetPageContent();
 
-            // Refresh the page
-            typ.RefreshPage();
+            // Retry refresh if content doesn't change
+            for (int i = 0; i < 3; i++) // Retry up to 3 times
+            {
+                typ.RefreshPage();
+                string refreshedContent = typ.GetPageContent();
 
-            // Retrieve content text again
-            string refreshedContent = typ.GetPageContent();
+                if (!initialContent.Equals(refreshedContent))
+                {
+                    Assert.Pass("Content changed after refresh as expected.");
+                    return;
+                }
+            }
 
-            // Verify content remains consistent
-            Assert.AreEqual(initialContent, refreshedContent, "The content text is inconsistent after refreshing the page.");
+            Assert.Fail("Content did not change after multiple refresh attempts.");
         }
+
+        [TearDown]
+        public void TearDown()
+        {
+           
+            
+                typ.QuitDriver(); 
+            
+        }
+
     }
 }
